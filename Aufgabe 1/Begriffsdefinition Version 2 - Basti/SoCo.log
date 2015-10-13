@@ -1,19 +1,13 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.24)  12 OCT 2015 15:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.8.4)  13 OCT 2015 21:47
 entering extended mode
 **SoCo.tex
-("F:\Studium\Semester VII\3) Softcomputing\Aufgaben\1) Begriffsdefinition\SoCo.tex"
-LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, arabic, armenian, assamese, basque, bengali
-, bokmal, bulgarian, catalan, coptic, croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, galic
-ian, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, icelandic, indonesian, interlingua, irish, italian,
- kannada, kurmanji, latin, latvian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, ngerman
--x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, romanian, russian, sanskrit, serbian, slovak, sloven
-ian, spanish, swedish, swissgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usenglishmax, w
-elsh, loaded.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\article.cls"
-Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size10.clo"
-File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+(SoCo.tex
+LaTeX2e <2014/05/01>
+Babel <3.9l> and hyphenation patterns for 68 languages loaded.
+(D:\Programme\LateX\MiK\tex\latex\base\article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(D:\Programme\LateX\MiK\tex\latex\base\size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@section=\count80
@@ -26,35 +20,31 @@ File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+) (D:\Programme\LateX\MiK\tex\latex\base\fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.def"
+(D:\Programme\LateX\MiK\tex\latex\base\t1enc.def
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
-))
-(C:\Users\Schoetteler\AppData\Roaming\MiKTeX\2.9\tex\latex\german\ngerman.sty v2.5e 1998-07-08
+)) (D:\Programme\LateX\MiK\tex\latex\german\ngerman.sty
+v2.5e 1998-07-08
 Package: ngerman 1998/07/08 v2.5e Support for writing german texts (br)
 \grmnU@D=\dimen103
 ngerman -- \language number for naustrian undefined, default 43 used.
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+) (D:\Programme\LateX\MiK\tex\latex\geometry\geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
-Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+(D:\Programme\LateX\MiK\tex\latex\graphics\keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+) (D:\Programme\LateX\MiK\tex\generic\oberdiek\ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
+(D:\Programme\LateX\MiK\tex\generic\oberdiek\ifvtex.sty
 Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+) (D:\Programme\LateX\MiK\tex\generic\ifxetex\ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count87
@@ -70,8 +60,7 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen111
 \Gm@dimlist=\toks15
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
-("F:\Studium\Semester VII\3) Softcomputing\Aufgaben\1) Begriffsdefinition\SoCo.aux")
+(D:\Programme\LateX\MiK\tex\latex\geometry\geometry.cfg)) (SoCo.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
@@ -126,8 +115,8 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 10.
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 17.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+(D:\Programme\LateX\MiK\tex\latex\base\omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 17.
@@ -138,7 +127,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--21
 
 [1
 
-{C:/Users/Schoetteler/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+{C:/Users/Sebastian/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 Underfull \hbox (badness 2088) in paragraph at lines 56--62
 \T1/cmr/m/n/10 /lexikon/technologien-methoden/KI-und-Softcomputing/Softcomputing, 2008, On-li-ne, Zu-griff am
  []
@@ -149,24 +138,22 @@ Underfull \hbox (badness 3302) in paragraph at lines 64--70
 on.gabler.de/Definition/soft-
  []
 
-[2] ("F:\Studium\Semester VII\3) Softcomputing\Aufgaben\1) Begriffsdefinition\SoCo.aux") ) 
+[2] (SoCo.aux) ) 
 Here is how much of TeX's memory you used:
- 1173 strings out of 493921
- 14897 string characters out of 3144858
- 70125 words of memory out of 3000000
- 4504 multiletter control sequences out of 15000+200000
+ 1172 strings out of 493698
+ 14032 string characters out of 3146442
+ 74122 words of memory out of 3000000
+ 4536 multiletter control sequences out of 15000+200000
  10900 words of font info for 29 fonts, out of 3000000 for 9000
- 841 hyphenation exceptions out of 8191
- 23i,6n,19p,637b,187s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Schoetteler\AppData
-\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1000.pk> <C:\Users\Schoetteler\AppData\Local\MiKTeX\2.9\fonts\p
-k\ljfour\jknappen\ec\dpi600\ecrm1000.pk> <C:\Users\Schoetteler\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi6
-00\ecbx1440.pk> <C:\Users\Schoetteler\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\Users
-\Schoetteler\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1728.pk><C:/Program Files (x86)/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on SoCo.pdf (2 pages, 73904 bytes).
+ 1025 hyphenation exceptions out of 8191
+ 23i,6n,19p,637b,199s stack positions out of 5000i,500n,10000p,200000b,50000s
+{D:/Programme/LateX/MiK/fonts/enc/dvips/cm-super/cm-super-t1.enc}<D:/Programme/LateX/MiK/fonts/type1/pub
+lic/amsfonts/cm/cmsy10.pfb><D:/Programme/LateX/MiK/fonts/type1/public/cm-super/sfbx1440.pfb><D:/Programme/LateX/MiK/font
+s/type1/public/cm-super/sfrm1000.pfb><D:/Programme/LateX/MiK/fonts/type1/public/cm-super/sfrm1200.pfb><D:/Programme/Late
+X/MiK/fonts/type1/public/cm-super/sfrm1728.pfb><D:/Programme/LateX/MiK/fonts/type1/public/cm-super/sfti1000.pfb>
+Output written on SoCo.pdf (2 pages, 110981 bytes).
 PDF statistics:
- 208 PDF objects out of 1000 (max. 8388607)
+ 34 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
