@@ -1,0 +1,83 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[german]{babel}    % Deutsche Sprache in automatisch generiertem
+\usepackage{latexsym}         % Fuer recht seltene Zeichen
+\usepackage[utf8]{inputenc}   % =E4 =F6 =FC =DF; danach  geht auch das ß richtig
+\usepackage{caption}          % Figure-Captions formatieren
+\usepackage{sectsty}          % Section headings formatieren
+\usepackage[fixlanguage]{babelbib} %Korrektur
+\usepackage[a4paper,lmargin={2.5cm},rmargin={2.5cm},tmargin={2cm},bmargin={2.2cm}]{geometry} %Seitenformatierung
+\usepackage{graphicx}
+\usepackage{tocstyle}
+\usepackage{hyperref}
+
+
+%Informationen zum Text
+\pdfinfo
+{
+	/Title		(Extrapolation von Zeitreihen mit Hilfe von künstlichen neuronalen Netzen am Beispiel von Börsenprognosen)
+	/Subject	(Eine Anwendung im Fach Softcomputing – Teilgebiet neuronale Netze)
+	/Author		(Sebastian Schötteler \& Benedikt Hofrichter)
+}
+
+%Sonstige Einstellungen
+\selectbiblanguage{german} %Korrektursprache
+
+
+%Ab hier beginnt das Dokument
+\begin{document}
+
+%Exposé mit Titel versehen
+\title{{\bf Extrapolation von Zeitreihen mit Hilfe von künstlichen neuronalen Netzen am Beispiel von Börsenprognosen} \\
+\begin{large}Eine Anwendung im Fach Softcomputing – Teilgebiet neuronale Netze\end{large}\\
+\begin{large}Abstract\end{large}}
+\author
+{
+	Sebastian Schötteler \& Benedikt Hofrichter \\
+	Matrikelnummer 2429289 \& Matrikelnummer 2272198 \\\\ 
+	Technische Hochschule Nürnberg Georg Simon Ohm \\
+}
+\date{\today}
+\maketitle
+
+\tableofcontents
+
+%Ab hier beginnen die einzelnen Abschnitte
+\section{Motivation}
+Die Untersuchung von Zeitreihen und die Extrapolation dieser ist ein bedeutendes Thema in zahlreichen Gebieten. Typische Anwendungsbereiche sind die Prognose von Wetterdaten, Therapieverläufen in der Medizin und Psychologie, Arbeitslosenzahlen auf dem Arbeitsmarkt sowie Börsenkursen. Um eine Zeitreihe möglichst genau zu extrapolieren, wird auf mehreren Hilfsmitteln zugegriffen. Einer dieser Hilfsmittel sind künstliche neuronale Netze (auch: KNN).
+Die Funktionsweise und Effektivität von KNN bei der Extrapolation von Zeitreihen soll anhand einer Anwendung, die den Börsenkurs für die nächsten Börsentage prognostiziert, ermittelt und anschließend demonstriert werden.
+
+\section{Herangehensweise}
+Zunächst müssen gewisse Fragen zum benötigten KNN beantwortet werden. 
+\begin{itemize}
+	\item Welches KNN wird benötigt – Reicht ein vorwärtsgerichtetes neuronales Netz aus oder muss hier auf ein Backpropagation-Netz zurückgegriffen werden?
+	\item Welche Architektur muss das benötigte KNN aufweisen? 
+	\item Wie sind die weiteren Einstellungen des KNN wie beispielsweise die sigmoide Funktion und die Schwellenwerte zu wählen?
+	\item Wie kann das KNN möglichst gut trainiert werden?
+\end{itemize}
+Nachdem diese Fragen beantwortet wurden, wird nach ein geeignetes Framework gesucht, das es erlaubt, das KNN abzubilden, entsprechend zu trainieren und anschließend zu testen. Die benötigten Trainings- und Testdaten können unter Anderem von folgender Quelle (beispielsweise als JSON) bezogen werden: \textit{https://www.quandl.com} Dieses KNN wird dann in einer Anwendung eingebunden und die Anwendung entsprechend angepasst.
+
+
+\section{Anwendung}
+Die zu entstehende Anwendung soll mit Hilfe eines KNN sukzessive den Börsenkurs prognostizieren. Dabei wechseln sich der prognostizierte sowie der 
+tatsächliche Börsenkurs stets ab. Dieses Wechselspiel zwischen den prognostizierten und tatsächlichen Börsenkursen wird für den gesamten 
+gewählten Zeitraum durchgeführt. Da das KNN bei Start der Anwendung bereits trainiert ist, sollte die Anwendung gute Prognosewerte liefern.
+Aus den prognostizierten Werten können folgende weitere Werte kalkuliert werden:
+\begin{itemize}
+	\item Distribution: Gibt die Anzahl der zu niedrigen, zu hohen sowie exakten Prognosen an.
+	\item Prediction Accuracy: Gibt die Genauigkeit der Prognosen (akkumuliert) an.
+	\item Mean Squared Error: Gibt die mittlere quadratische Abweichung der Prognosen in einem Graph in Echtzeit wieder
+	\item Prediction Next Day: Gibt den letzten Prognosewert wieder. Hiermit können echte Zukunftsprognosen erstellt werden.
+\end{itemize}
+In der folgenden Abbildung wird ein Mockup der geplanten Anwendung dargestellt:
+\\
+\begin{figure}[h]
+\centering
+	\includegraphics[scale= 0.6]{C:/Users/Sebastian/Desktop/Mockup.PNG}
+	\label{fig:Mockup}
+	\caption{Mockup der geplanten Anwendung}
+\end{figure}
+\\
+Der Anwender lädt die Datei mit den Börsenkursen mittels dem Button ''Read Dataset'' hoch und startet die Prognose des KNN mit dem Button 'Start Prediction'. Entsprechende Dateien 
+können zum Beispiel von \textit{https://www.quandl.com} bezogen werden.
+\end{document}
