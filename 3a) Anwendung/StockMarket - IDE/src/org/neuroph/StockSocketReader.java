@@ -12,7 +12,7 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with Neuroph. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.neuroph.contrib.samples.stockmarket;
+package org.neuroph;
 
 import java.io.BufferedReader;
 import java.io.IOException;
