@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="DataExtractor:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/DataExtractor_jar</output-path>
+    <root id="archive" name="DataExtractor.jar">
+      <element id="module-output" name="DataExtractor" />
+    </root>
+  </artifact>
+</component>
