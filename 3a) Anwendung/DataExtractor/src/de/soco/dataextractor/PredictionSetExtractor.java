@@ -1,6 +1,10 @@
 package de.soco.dataextractor;
 
+import au.com.bytecode.opencsv.CSVReader;
+
 import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Benedikt Hofrichter on 31.10.15.
@@ -13,7 +17,15 @@ public class PredictionSetExtractor {
 
     protected String csvLine  = "resources/YAHOO-INDEX_GDAXI_RAW.csv";
 
-    protected String prefix = "resources/analyzed/StockMarket";
+    protected String prefix = "resources/analyzed/";
+
+    protected List<String[]> RawDataAsc;
+
+    public double daxMax;
+
+    public String filename = "";
+
+    public String targetLocation = "";
 
     protected int columnLength;
 
@@ -32,31 +44,121 @@ public class PredictionSetExtractor {
     public PredictionSetExtractor(String csvSplitBy, int lineLength) {
         this.csvSplitBy = csvSplitBy;
         this.lineLength = lineLength;
-        this.columnLength = 0;
     }
 
-    public void extract() {
-        this.setColumnLength();
-        String name = this.createFileName();
-        System.out.print("creating file: " + name + " . . .");
-        this.generateCsvFile(name, csvSplitBy);
+
+    public void getValueInList() {
+        this.daxMax = 0.0d;
+        for(int i = 1; i < this.RawDataAsc.size(); i++) {
+            double cur = Double.parseDouble(this.RawDataAsc.get(i)[1]);
+            if (cur > this.daxMax) {
+                this.daxMax = cur;
+            }
+        }
+    }
+
+    public void extract(String setType) {
+        getStockDataRawAsc();
+        createFileName(setType);
+        System.out.print("creating file: " + this.targetLocation + " . . .");
+        generateCsvFileAsc(this.targetLocation, csvSplitBy);
         System.out.print("done.\n");
     }
 
 
-    protected String createFileName() {
-        setBeginDate();
-        setEndDate();
-        String fileName = this.prefix + "-" + getBeginDate() + "_" + getEndDate() + "-" + "Prediction_Set" + ".csv";
-        return fileName;
+    protected void createFileName(String setType) {
+        this.filename = "StockMarket" + "-" + this.getBeginDate() + "_" + this.getEndDate() + "-" + setType + ".csv";
+        this.targetLocation = this.prefix +  this.filename;
+    }
+
+    protected List<String[]> getStockDataRawDesc() {
+        List<String[]> tmp = new ArrayList<String[]>();
+        try {
+            CSVReader reader = new CSVReader(new FileReader(this.csvLine));
+            String[] elements;
+            do {
+                elements = reader.readNext();
+                tmp.add(elements);
+            } while (elements != null);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (br != null) {
+                try {
+                    br.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        return tmp;
+    }
+
+    protected void getStockDataRawAsc() {
+        List<String[]> tmp = new ArrayList<String[]>();
+        tmp = this.getStockDataRawDesc();
+        this.RawDataAsc = new ArrayList<String[]>(tmp.size());
+        for (int i = tmp.size()-1; i >= 0 ; i--) {
+            this.RawDataAsc.add(tmp.get(i));
+        }
+        setBeginDate(this.RawDataAsc.get(lineLength)[0]);
+        setEndDate(this.RawDataAsc.get(this.RawDataAsc.size()-1)[0]);
+        setColumnLength(this.RawDataAsc.size());
+        getValueInList();
+    }
+
+    public void setColumnLength(int columnLength) {
+        this.columnLength = columnLength;
+    }
+
+    public void setBeginDate(String beginDate) {
+        this.beginDate = beginDate;
+    }
+
+    public void setEndDate(String endDate) {
+        this.endDate = endDate;
     }
 
 
-
-    protected void generateCsvFile(String fileName, String delimiter) {
+    protected void generateCsvFileAsc(String fileName, String delimiter) {
         try {
             String[] lineValueSet = new String[this.lineLength];
-            FileWriter fileWriter = new FileWriter(fileName); 
+            RandomAccessFile fileWriter = new RandomAccessFile(new File(fileName), "rw");
+
+            for(int i = lineLength; i<this.RawDataAsc.size(); i++) {
+                String[] singleLine = this.RawDataAsc.get(i);
+                fileWriter.write(singleLine[0].getBytes());
+                fileWriter.write(csvSplitBy.getBytes());
+                for (int j = i - lineLength+1; j <= i; j++) {
+                    fileWriter.write(this.RawDataAsc.get(j)[1].getBytes());
+                    if (j!=i) {
+                        fileWriter.write(csvSplitBy.getBytes());
+                    }
+                }
+                fileWriter.write("\n".getBytes());
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (br != null) {
+                try {
+                    br.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+
+
+    protected void generateCsvFileDesc(String fileName, String delimiter) {
+        try {
+            String[] lineValueSet = new String[this.lineLength];
+            FileWriter fileWriter = new FileWriter(fileName);
             int counter=0;
             int rowCounter=0;
 
@@ -91,7 +193,6 @@ public class PredictionSetExtractor {
                 }
                 rowCounter++;
                 fileWriter.flush();
-                br.close();
             } while (line != null);
 
 
@@ -105,73 +206,6 @@ public class PredictionSetExtractor {
                     br.close();
                 } catch (IOException e) {
                     e.printStackTrace();
-                }
-            }
-        }
-    }
-
-    protected void setEndDate() {
-        try {
-            br = new BufferedReader(new FileReader(csvLine));
-            line = br.readLine();
-            String[] valueRow = line.split(csvSplitBy);
-            this.endDate = valueRow[0];
-            br.close();
-        } catch (FileNotFoundException e) {
-            System.out.println("setEndDateException: " + e);
-        } catch (IOException e) {
-            System.out.println("setEndDateException: " + e);
-        } finally {
-            if (br != null) {
-                try {
-                    br.close();
-                } catch (IOException e) {
-                    System.out.println("setEndDateException: " + e);
-                }
-            }
-        }
-    }
-
-    protected void setColumnLength() {
-        try {
-            br = new BufferedReader(new FileReader(csvLine));
-            while ((line = br.readLine()) != null) {
-                this.columnLength++;
-            }
-            br.close();
-        } catch (IOException e) {
-            System.out.println("setColumnLengthException: " + e);
-        } finally {
-            if (br != null) {
-                try {
-                    br.close();
-                } catch (IOException e) {
-                    System.out.println("setColumnLengthException: " + e);
-                }
-            }
-        }
-    }
-
-
-    protected void setBeginDate() {
-        try {
-            br = new BufferedReader(new FileReader(csvLine));
-            for(int i = 0; i < this.columnLength-this.lineLength+1; i++) {
-                line = br.readLine();
-            }
-            String[] valueRow = line.split(csvSplitBy);
-            this.beginDate = valueRow[0];
-            br.close();
-        } catch (FileNotFoundException e) {
-            System.out.println("setBeginDateException: " + e);
-        } catch (IOException e) {
-            System.out.println("setBeginDateException: " + e);
-        } finally {
-            if (br != null) {
-                try {
-                    br.close();
-                } catch (IOException e) {
-                    System.out.println("setBeginDateException: " + e);
                 }
             }
         }

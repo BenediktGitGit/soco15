@@ -1,17 +1,20 @@
 package de.soco.dataextractor;
 
 /**
- * Created by bthofrichter on 01.11.15.
+ * Created by Benedikt Hofrichter on 31.10.15.
+ *
  */
 public class Main {
 
     public static void main(String[] args) {
 
         PredictionSetExtractor extractor = new PredictionSetExtractor(",",5);
-        extractor.extract();
+        extractor.extract("PredictionSet");
 
         TestSetPredictionSetExtractor testSetExtractor = new TestSetPredictionSetExtractor(",",5);
-        testSetExtractor.extract();
+        testSetExtractor.extract("TestSet");
 
+        double maximum = extractor.daxMax;
+        System.out.println(maximum);
     }
 }
