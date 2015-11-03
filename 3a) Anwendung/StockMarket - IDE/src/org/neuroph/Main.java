@@ -1,12 +1,12 @@
-
 package org.neuroph;
 
 import com.opencsv.CSVReader; //Erlaubt einfache Einbindung von CSV-Dateien.
 import java.io.FileNotFoundException; //Exception wird geworfen, fall keine CSV gefunden wurde.
-import java.io.FileReader; //Benötigt zum Einlesen der CSV
-import java.io.IOException; //Exception wird geworfen, fall es Probleme beim Einlesen der CSV ergeben.
-import java.util.Arrays;
-import java.util.LinkedList;
+import java.io.FileReader; //Benötigt zum Einlesen der CSV.
+import java.io.IOException; //Exception wird geworfen, falls es Probleme beim Einlesen der CSV ergeben.
+import java.lang.reflect.Array;
+import java.util.Arrays; //Zum Erstellen von Arrays.
+import java.util.LinkedList; //Zum Erstellen von verketteten Listen.
 import org.neuroph.core.data.DataSet; //Benötigt, um Datensätze anzulegen.
 import org.neuroph.core.NeuralNetwork; //Benötigt, um ein neuronales Netz zu erstellen.
 import org.neuroph.core.data.DataSetRow; //Benötigt, um Zeilen im Datensatz anzulegen.
@@ -17,70 +17,77 @@ public class Main
     public static void main(String[] args) throws FileNotFoundException, IOException 
     {            
         //Lade ein in Neuroph bereits trainiertes und getestetes neuronales Netz.
-        NeuralNetwork knn = MultiLayerPerceptron.createFromFile("ann/4-09-1_Sigmoid.nnet");
-        //Lade einen Datensatz, über dessen Zeitraum vorhergesagt wird.
-        DataSet PredictionSet = new DataSet(4,1);
-        //Parse die CSV in zwei Arrays rein: datearr[] enthält alle Daten als double daxarr[] enthält die DAX-Werte von t-4 bis t         
-         CSVReader reader = new CSVReader(new FileReader("predict/31-03-2009_31.03.2009-PredictionSet.csv"));
+        NeuralNetwork ann = MultiLayerPerceptron.createFromFile("ann/4-09-1_Sigmoid_Bias.nnet"); //Namenskonvention: input-hidden-output_transferfunction   
+        
+        //Lade einen  normalisierten Datensatz, über dessen Zeitraum vorhergesagt wird.
+        //Mit diesem Wert wurde der Datensatz normalisiert.
+         int normfactor = 10000;
+         DataSet PredictionSet = new DataSet(4,1); 
+         CSVReader reader = new CSVReader(new FileReader("predict/31.03.2009_31.03.2009-PredictionSet.csv")); //Namenskonvention: Startdatum_Enddatum-Set
+                 
+         //Verkettete Liste, die das Datum der Börsenkurse speichert.
+         LinkedList datelist = new LinkedList();
+        
+         //Dient als Cache für die aktuelle Zeile
          String [] nextLine;
          
-         //Zwei verkettete Listen: Eine für das Datum|| Eine für den echten Backpropagationwert.
-         LinkedList datelist = new LinkedList();
-         LinkedList backproplist = new LinkedList();
-        
          while ((nextLine = reader.readNext()) != null) 
          {
-            //Setze Input sowie tatsächlichen Output 
-            System.out.println(nextLine[0]+ nextLine[1] + nextLine[2] + nextLine[3] + nextLine[4] + nextLine[5]);
+            //Setze den Input sowie den tatsächlichen Output (der tatsächliche Börsenkurs). 
             PredictionSet.addRow(new DataSetRow(new double[]{Double.parseDouble(nextLine[1]),
-            Double.parseDouble(nextLine[2]),Double.parseDouble(nextLine[3]),Double.parseDouble(nextLine[4])}, new double[]{Double.parseDouble(nextLine[5])}));
+                Double.parseDouble(nextLine[2]),Double.parseDouble(nextLine[3]),Double.parseDouble(nextLine[4])}, new double[]{Double.parseDouble(nextLine[5])}));
         
-            //Setze Datum und Backpropagationwert in verkettete Liste.
-            datelist.add(nextLine[0]);
-            backproplist.add(nextLine[5]);
-            
+            //Setze Datum in die verketteten Listen.
+            datelist.add(nextLine[0]); 
          }
     
-        //Die benötigten Variablen vordefinieren.
-        double MSE = 0.0D;  //Der MSE
-        int numoverall = 0; //Die Anzahl der bisher verarbeiteten Zeilen des Datensatzes.
-        int numtoolow = 0;   //Die Anzahl der zu niedrigen Vorhersagen (Abweichung > 2)
-        int numright = 0;   //Die Anzahl der zu richtigen Vorhersagen (Abweichung maximal +/- 2)
-        int numtoohigh = 0;  //Die Anzahl der zu hohen Vorhersagen  (Abweichung > 2)
+        //Die benötigten Variablen zur Ausgabe werden definiert und initialisiert.
+        double MSE = 0.0D;  //Zur Berrechnung des MSE des trainierten KNN.
+        int numoverall = 0; //Die Anzahl der bisher verarbeiteten Börsentage.
+        int numtoolow = 0;  //Die Anzahl der zu niedrigen Vorhersagen (Abweichung < -20).
+        int numright = 0;   //Die Anzahl der richtigen Vorhersagen (Abweichung maximal +/- 20).
+        int numtoohigh = 0;  //Die Anzahl der zu hohen Vorhersagen (Abweichung > 20).
          
         //Über die einzelnen Zeilen des Datensatze iterieren.
         for (DataSetRow row : PredictionSet.getRows())
         {
-            //Neuer Zeile wird gelesen, also Anzahl verarbeiter Zeilen des Datensatzes + 1
+            //Neuer Zeile wird gelesen, also Anzahl verarbeiter Zeilen des Datensatzes + 1.
             numoverall = numoverall +1;
-            //Lese Zeile in das knn und berechne Output
-            knn.setInput(row.getInput());
-            knn.calculate();
-         
-            //Hier wird Ausgegeben: Der Tag||Die 4 Inputneuronen||Das Outputneuron||Der tatsächliche Wert||Der MSE
-            //Sowie die Anzahl zu hoher,perfekter und zu niedriger Vorhesagen.
-            double[ ] networkOutput = knn.getOutput();
-            System.out.print("Betrachter Börsenschluss am: " + datelist.pop());
+            //Lese eine Zeile in das KNN und berechne den Output.
+            ann.setInput(row.getInput());
+            ann.calculate();
+          
+            //Die Werte müssen nun denormalisiert werden.
+            //Denormalisiere den Output des Ausgabeneurons
+            double denormoutput = Array.getDouble(ann.getOutput(),0)*normfactor;
+            //Denormalisiere den gewünschten Output,
+            double denormdesiredoutput = Array.getDouble(row.getDesiredOutput(),0)*normfactor;
+
+            //Denormalisiere den Input
+            double denorminput [] = row.getInput();
+            for(int i = 0; i < denorminput.length;i++)
+                denorminput[i] = denorminput[i]*normfactor;
             
-            System.out.print(" Inputneuronen: " + Arrays.toString(row.getInput()));
-            System.out.print(" Outputneuron: " + Arrays.toString(networkOutput)); 
+            //Kalkuliere Delta und MSE
+            double delta = (denormoutput - denormdesiredoutput);
+            MSE = MSE + Math.pow(delta,2)/numoverall; 
             
-            double realval = Double.parseDouble((String) backproplist.pop());
-            System.out.print(" Tatsächlicher Wert: " + realval);
-            double delta = realval - networkOutput[0];
-            MSE = MSE + Math.pow(delta,2)/numoverall;
-            System.out.print(" MSE: " + MSE);
-            
-            if(delta < -0.0010)
+            //Kalkuliere Vorhersagegüte
+            if(delta < -0.0020)
                 numtoolow = numtoolow+1;
-            else if(delta > 0.0010)
+            else if(delta > 0.0020)
                 numtoohigh = numtoohigh+1;
             else 
                 numright = numright +1;
-            
-            System.out.println("Anzahl: Zu hohe : "+numtoolow+" Richtige: " + numright + " Zu niedrige: " + numtoohigh+ " Vorhersgen.");
+                     
+            //Ausgabe: Der Tag|Die 4 Inputneuronen||Das Outputneuron||Der tatsächliche Wert||Der MSE||Anzahl zu hoher, richtiger und zu niedriger Vorhesagen.
+            System.out.println("-----------------------------------------------------------------------------------------------------------------------------------------------------------------");
+            System.out.print("Betrachter Börsenschluss am: " + datelist.pop() + " Inputneuronen: " + Arrays.toString(denorminput)+ " Outputneuron: " + denormoutput);   
+            System.out.println(" Tatsächlicher Wert: " + denormdesiredoutput);
+            System.out.print("Abweichung vom tatsächlichen Börsenkurs: " + delta + " Mean Squared Error: " + MSE);
+            System.out.println(" Anzahl zu niedriger Vorhersagen: "+numtoolow+" Anzahl richtiger Vorhersagen: " + numright + " Anzahl zu hoher Vorhersagen: " + numtoohigh);      
         }
-        
+     
       //Beende das Programm  
       System.exit(0);
     }
