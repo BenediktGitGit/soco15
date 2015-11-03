@@ -1,0 +1,84 @@
+\documentclass[11pt,a4paper]{scrreprt}
+
+\usepackage[german]{babel}    % Deutsche Sprache in automatisch generiertem
+\usepackage{latexsym}         % Fuer recht seltene Zeichen
+\usepackage[utf8]{inputenc}   % =E4 =F6 =FC =DF; danach  geht auch das ß richtig
+\usepackage{caption}          % Figure-Captions formatieren
+\usepackage{sectsty}          % Section headings formatieren
+\usepackage[fixlanguage]{babelbib} %Korrektur
+\usepackage[a4paper,lmargin={2.5cm},rmargin={2.5cm},tmargin={2cm},bmargin={2.2cm}]{geometry} %Seitenformatierung
+\usepackage{graphicx}
+\usepackage{tocstyle}
+
+%Informationen zum Text
+\pdfinfo
+{
+	/Title		(Extrapolation von Zeitreihen mit Hilfe von künstlichen neuronalen Netzen am Beispiel von Börsenprognosen)
+	/Subject	(Eine Anwendung im Fach Softcomputing – Teilgebiet neuronale Netze)
+	/Author		(Sebastian Schötteler \& Benedikt Hofrichter)
+}
+
+%Sonstige Einstellungen
+\selectbiblanguage{german} %Korrektursprache
+
+%Ab hier beginnt das Dokument
+\begin{document}
+
+%Titel versehen
+\title
+{
+\bf Extrapolation von Zeitreihen mit Hilfe von künstlichen neuronalen Netzen am Beispiel von Börsenprognosen
+\author
+{
+	Sebastian Schötteler \& Benedikt Hofrichter \\
+	Matrikelnummer 2429289 \& Matrikelnummer 2272198 \\\\ 
+	Technische Hochschule Nürnberg Georg Simon Ohm \\
+}
+%\date{\today}
+}
+
+\maketitle
+
+
+\tableofcontents
+
+\chapter{Einleitung}
+ \section{Motivation}
+ \section{Ziel dieser Arbeit}
+
+\chapter{Konzeption}
+	\section{Konzeption der Java-Anwendung}
+		\subsection{Funktionalitäten der Anwendung}
+		\subsection{Mockup der Anwendung}
+	\section{Konzeption des künstlichen neuronalen Netzes}
+		\subsection{Klasse des künstlichen neuronalen Netzes}
+		\subsection{Topologie des künstlichen neuronalen Netzes}
+		\subsection{Lernverfahren des künstlichen neuronalen Netzes}
+	\section{Analyse geeigneter Frameworks zur Erstellung künstlicher neuronaler Netze}
+		\subsection{SNNS}
+	  \subsection{JavaNNS} 
+		\subsection{Neuroph}
+	\section{Wahl des geeignetsten Frameworks}
+	
+\chapter{Umsetzung}
+	\section{Erstellung künstlicher neuronaler Netze}
+	 \subsection{4-09-1 – Layer mit Sigmoider Funktion}
+	 \subsection{4-09-1 – Layer mit Tanh Funktion}
+	 \subsection{4-21-1 – Layer mit Sigmoider Funktion}
+	 \subsection{4-21-1 – Layer mit Tanh Funktion}
+  \subsection{Validierung der künstlichen neuronalen Netze}
+	\section{Überführung der künstlichen neuronalen Netze in einer Java-Anwendung}
+	\section{Anpassen der Java-Anwendung}
+
+\chapter{Beschreibung der Anwendung}
+ \section{Elemente der Anwendung}
+ \section{Zusammenspiel mit dem Framework}
+
+\chapter{Fazit}
+
+\chapter{Appendix}
+\section{Abbildungsverzeichnis}
+\section{Tabellenverzeichnis}
+\section{Literaturverzeichnis}
+
+\end{document}
