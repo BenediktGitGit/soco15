@@ -1,16 +1,14 @@
 \documentclass[11pt,a4paper]{scrreprt}
 
-\usepackage[german]{babel}    % Deutsche Sprache in automatisch generiertem
-\usepackage{latexsym}         % Fuer recht seltene Zeichen
-\usepackage[utf8]{inputenc}   % =E4 =F6 =FC =DF; danach  geht auch das ß richtig
-\usepackage{caption}          % Figure-Captions formatieren
-\usepackage{sectsty}          % Section headings formatieren
-\usepackage[fixlanguage]{babelbib} %Korrektur
-\usepackage[a4paper,lmargin={2.5cm},rmargin={2.5cm},tmargin={2cm},bmargin={2.2cm}]{geometry} %Seitenformatierung
+\usepackage[ngerman]{babel} 
+\usepackage[T1]{fontenc}           
+\usepackage[utf8]{inputenc}  
+\usepackage[a4paper,lmargin={2.25cm},rmargin={2.0cm},tmargin={2.5cm},bmargin={2.0cm}]{geometry}
 \usepackage{graphicx}
-\usepackage{tocstyle}
 
-%Informationen zum Text
+\usepackage[fixlanguage]{babelbib} 
+\selectbiblanguage{german} 
+
 \pdfinfo
 {
 	/Title		(Extrapolation von Zeitreihen mit Hilfe von künstlichen neuronalen Netzen am Beispiel von Börsenprognosen)
@@ -18,43 +16,43 @@
 	/Author		(Sebastian Schötteler \& Benedikt Hofrichter)
 }
 
-%Sonstige Einstellungen
-\selectbiblanguage{german} %Korrektursprache
-
-%Ab hier beginnt das Dokument
 \begin{document}
 
-%Titel versehen
+
 \title
 {
-\bf Extrapolation von Zeitreihen mit Hilfe von künstlichen neuronalen Netzen am Beispiel von Börsenprognosen
+ {\bf Extrapolation von Zeitreihen mit Hilfe von künstlichen neuronalen Netzen am Beispiel von Börsenprognosen}
+}
+
 \author
 {
 	Sebastian Schötteler \& Benedikt Hofrichter \\
 	Matrikelnummer 2429289 \& Matrikelnummer 2272198 \\\\ 
 	Technische Hochschule Nürnberg Georg Simon Ohm \\
 }
-%\date{\today}
-}
+
 
 \maketitle
 
-
 \tableofcontents
 
+
 \chapter{Einleitung}
- \section{Motivation}
- \section{Ziel dieser Arbeit}
+	\section{Motivation}
+Die Untersuchung  und Extrapolation von Zeitreihen ist ein bedeutendes Thema in zahlreichen Gebieten. Typische Anwendungsbereiche sind dabei Prognose von Wetterdaten, von Therapieverläufen in der  Medizin und Psychologie, von Arbeitslosenzahlen auf dem Arbeitsmarkt sowie Börsenkursen. Um eine Zeitreihe möglichst genau zu extrapolieren, wird auf mehreren Hilfsmitteln zugegriffen. Einer dieser Hilfsmittel sind KNN (künstliche neuronale Netze).
+
+	\section{Ziel dieser Arbeit}
+Die Funktionsweise und Effektivität von KNN bei der Extrapolation von Zeitreihen soll anhand einer Anwendung, die den Boersenkurs des DAX für die nächsten Börsentage prognostiziert, ermittelt und anschließend demonstriert werden.
 
 \chapter{Konzeption} %Beide
-	\section{Konzeption der Java-Anwendung} %Benedikt
+	\section{Konzeption der Anwendung} %Benedikt
 		\subsection{Funktionalitäten der Anwendung} %Benedikt
 		\subsection{Mockup der Anwendung} %Benedikt
 	\section{Konzeption des künstlichen neuronalen Netzes} %Sebastian
 		\subsection{Klasse des künstlichen neuronalen Netzes} %Sebastian
 		\subsection{Topologie des künstlichen neuronalen Netzes} %Sebastian
 		\subsection{Lernverfahren des künstlichen neuronalen Netzes} %Sebastian
-	\section{Analyse geeigneter Frameworks zur Erstellung künstlicher neuronaler Netze} %Benedikt
+	\section{Analyse von Frameworks} %Benedikt
 		\subsection{SNNS} %Benedikt
 	  \subsection{JavaNNS}  %Benedikt
 		\subsection{Neuroph} %Benedikt
@@ -62,23 +60,23 @@
 	
 \chapter{Umsetzung} %Beide
 	\section{Erstellung künstlicher neuronaler Netze} %Sebastian
-	 \subsection{4-09-1 – Layer mit Sigmoider Funktion} %Sebastian
-	 \subsection{4-09-1 – Layer mit Tanh Funktion} %Sebastian
-	 \subsection{4-21-1 – Layer mit Sigmoider Funktion} %Sebastian
-	 \subsection{4-21-1 – Layer mit Tanh Funktion} %Sebastian
-  \subsection{Validierung der künstlichen neuronalen Netze} %Sebstian
-	\section{Überführung der künstlichen neuronalen Netze in einer Java-Anwendung} %Benedikt
-	\section{Anpassen der Java-Anwendung} %Benedikt
+		\subsection{Mehrlagiges Perzeptron mit Topologie: 4-05-1} %Sebastian
+		\subsection{Mehrlagiges Perzeptron mit Topologie: 4-09-1} %Sebastian
+		\subsection{Mehrlagiges Perzeptron mit Topologie: 4-13-1} %Sebastian
+  \section{Analyse der künstlichen neuronalen Netze} %Sebastian
+	\section{Überführung des geeignetsten Netzes in einer Anwendung}
+	\section{Anpassen der Anwendung} %Benedikt
 
 \chapter{Beschreibung der Anwendung} %Benedikt
- \section{Elemente der Anwendung} %Benedikt
- \section{Zusammenspiel mit dem Framework} %Benedikt
+	\section{Elemente der GUI} %Benedikt
+	\section{Architektur der Anwendung} %Benedikt
+	\section{Zusammenspiel mit dem Framework} %Benedikt
 
 \chapter{Fazit} %Beide
 
 \chapter{Appendix}
-\section{Abbildungsverzeichnis}
-\section{Tabellenverzeichnis}
-\section{Literaturverzeichnis}
+	\section{Abbildungsverzeichnis}
+	\section{Tabellenverzeichnis}
+	\section{Literaturverzeichnis}
 
 \end{document}
