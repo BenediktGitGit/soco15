@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.8.4)  8 NOV 2015 18:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.8.4)  8 NOV 2015 18:18
 entering extended mode
 **"Börsenprognosen – Dokumentation.tex"
 ("Börsenprognosen – Dokumentation.tex"
@@ -455,7 +455,7 @@ babelbib extension \btxifchangecaseoff added to \extrasngerman
 babelbib: Load BibTeX extensions \bibsngerman for ngerman
 babelbib: Set language for keywords in the bibliography fixed to ngerman
 babelbib: Set language for keywords in the bibliography fixed to german
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 40.
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 38.
 (D:\Programme\LateX\MiK\tex\latex\base\t1cmss.fd
 File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 ) [1
@@ -485,31 +485,36 @@ Kapitel 1.
 
 ] [7]
 Kapitel 2.
-[8
+<mockup.PNG, id=32, 703.87968pt x 477.28313pt>
+File: mockup.PNG Graphic file (type png)
+ <use mockup.PNG>
+Package pdftex.def Info: mockup.PNG used on input line 62.
+(pdftex.def)             Requested size: 347.64232pt x 235.72787pt.
+ [8
 
-]
+ <./mockup.PNG>] [9]
 Kapitel 3.
-[9
-
-]
-Kapitel 4.
 [10
 
 ]
-Kapitel 5.
+Kapitel 4.
 [11
 
-] [12
+]
+Kapitel 5.
+[12
+
+] [13
 
 ] ("Börsenprognosen – Dokumentation.aux") ) 
 Here is how much of TeX's memory you used:
- 4492 strings out of 493698
- 64612 string characters out of 3146442
- 188558 words of memory out of 3000000
- 7754 multiletter control sequences out of 15000+200000
+ 4499 strings out of 493698
+ 64711 string characters out of 3146442
+ 188568 words of memory out of 3000000
+ 7759 multiletter control sequences out of 15000+200000
  17655 words of font info for 43 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 40i,7n,52p,697b,224s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,7n,52p,697b,233s stack positions out of 5000i,500n,10000p,200000b,50000s
 {D:/Programme/LateX/MiK/fonts/enc/dvips/cm-super/cm-super-t1.enc}<D:/Progr
 amme/LateX/MiK/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/Programme/LateX/MiK/fonts/type1/public/amsfonts/cm/cmmi8.pf
 b><D:/Programme/LateX/MiK/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Programme/LateX/MiK/fonts/type1/public/amsfonts/c
@@ -520,9 +525,9 @@ K/fonts/type1/public/cm-super/sfsx1095.pfb><D:/Programme/LateX/MiK/fonts/type1/p
 e/LateX/MiK/fonts/type1/public/cm-super/sfsx1440.pfb><D:/Programme/LateX/MiK/fonts/type1/public/cm-super/sfsx1728.pfb><D
 :/Programme/LateX/MiK/fonts/type1/public/cm-super/sfsx2074.pfb><D:/Programme/LateX/MiK/fonts/type1/public/cm-super/sfti1
 095.pfb>
-Output written on "Börsenprognosen – Dokumentation.pdf" (12 pages, 256115 bytes).
+Output written on "Börsenprognosen – Dokumentation.pdf" (13 pages, 284726 bytes).
 PDF statistics:
- 102 PDF objects out of 1000 (max. 8388607)
+ 109 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
