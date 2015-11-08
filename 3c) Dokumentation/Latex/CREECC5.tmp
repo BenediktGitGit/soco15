@@ -20,7 +20,7 @@
 {
 /Title		(Extrapolation von Zeitreihen mit Hilfe von künstlichen neuronalen Netzen am Beispiel von Börsenprognosen)
 /Subject	(Eine Anwendung im Fach Softcomputing – Teilgebiet neuronale Netze)
-/Author		(Sebastian Schötteler \& Benedikt Hofrichter)
+/Author		(Sebastian Schötteler \ Benedikt Hofrichter)
 }
 
 %Kopf- und Fußzeile
@@ -28,12 +28,20 @@
 
 \begin{document}
 
-\subject{Seminararbeit}
-\title{Extrapolation von Zeitreihen mit Hilfe von künstlichen neuronalen Netzen am Beispiel von Börsenprognosen}
-\author{Sebastian Schötteler -- Matrikelnummer 2429289 \and Benedikt Hofrichter -- Matrikelnummer 2272198}
-\publishers{Technische Hochschule Nürnberg Georg Simon Ohm}
+\title
+{
+{\textbf Extrapolation von Zeitreihen mit Hilfe von künstlichen neuronalen Netzen am Beispiel von Börsenprognosen}
+}
 
-%Zur Überscchrift machen
+\author
+{
+Sebastian Schötteler \and Benedikt Hofrichter \\
+Matrikelnummer 2429289 \and Matrikelnummer 2272198 \\\\ 
+Technische Hochschule Nürnberg Georg Simon Ohm \\
+}
+
+
+%Zur Übercshrift machen
 \maketitle
 
 %Verzeichnisse
@@ -41,6 +49,7 @@
 \listoffigures
 \listoftables
 \listofformels
+
 
 \chapter{Einleitung} %Beide
 \section{Motivation}
@@ -101,7 +110,7 @@ f(x)= tanh(x)
 \chapter{Fazit} %Beide
 Das prognostizieren von Börsenkursen mittels künstlichen neuronalen Netzen ist möglich.
 
-%%Literaturverzeichnis
+
 \begin{thebibliography}{999}
 
 \bibitem{00} Uwe Lämmel \& Jürgen Cleve,\emph{Künstliche Intelligenz}, Hanser Verlag, München, 3., neu bearbeitete Auflage, 2008.
