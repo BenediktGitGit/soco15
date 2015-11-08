@@ -3,14 +3,14 @@
 \contentsline {section}{\numberline {1.1}Motivation}{3}
 \contentsline {section}{\numberline {1.2}Ziel dieser Arbeit}{3}
 \contentsline {chapter}{\numberline {2}Konzeption}{4}
-\contentsline {section}{\numberline {2.1}Konzeption der Anwendung}{4}
+\contentsline {section}{\numberline {2.1}Fachliche Konzeption der Anwendung}{4}
 \contentsline {subsection}{\numberline {2.1.1}Funktionalit\IeC {\"a}ten der Anwendung}{4}
 \contentsline {subsection}{\numberline {2.1.2}Mockup der Anwendung}{4}
 \contentsline {section}{\numberline {2.2}Konzeption des k\IeC {\"u}nstlichen neuronalen Netzes}{4}
 \contentsline {subsection}{\numberline {2.2.1}Typ des k\IeC {\"u}nstlichen neuronalen Netzes}{4}
 \contentsline {subsection}{\numberline {2.2.2}Architektur des k\IeC {\"u}nstlichen neuronalen Netzes}{4}
 \contentsline {subsection}{\numberline {2.2.3}Lernverfahren des k\IeC {\"u}nstlichen neuronalen Netzes}{4}
-\contentsline {section}{\numberline {2.3}Analyse von Frameworks}{4}
+\contentsline {section}{\numberline {2.3}Beschreibung von Frameworks}{4}
 \contentsline {subsection}{\numberline {2.3.1}SNNS}{4}
 \contentsline {subsection}{\numberline {2.3.2}JavaNNS}{4}
 \contentsline {subsection}{\numberline {2.3.3}Neuroph}{4}
@@ -21,7 +21,7 @@
 \contentsline {subsection}{\numberline {3.1.2}Wahl der Transferfunktion}{5}
 \contentsline {subsection}{\numberline {3.1.3}Wahl der Lernregel}{5}
 \contentsline {section}{\numberline {3.2}\IeC {\"U}berf\IeC {\"u}hrung des k\IeC {\"u}nstlichen neuronalen Netzes in einer Anwendung}{5}
-\contentsline {section}{\numberline {3.3}Anpassen der Anwendung}{5}
+\contentsline {section}{\numberline {3.3}Umsetzen der Anwendung}{5}
 \contentsline {chapter}{\numberline {4}Beschreibung der Anwendung}{6}
 \contentsline {section}{\numberline {4.1}Elemente der GUI}{6}
 \contentsline {section}{\numberline {4.2}Architektur der Anwendung}{6}
