@@ -79,8 +79,5 @@
     <requires type="dynamic">
       <file>"Börsenprognosen – Dokumentation".bcf</file>
     </requires>
-    <requires type="editable">
-      <file>Literatur.bib</file>
-    </requires>
   </external>
 </requests>

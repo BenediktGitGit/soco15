@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.8.4)  8 NOV 2015 19:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.8.4)  8 NOV 2015 19:43
 entering extended mode
 **"Börsenprognosen – Dokumentation.tex"
 ("Börsenprognosen – Dokumentation.tex"
@@ -413,50 +413,37 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
-(D:\Programme\LateX\MiK\tex\latex\babelbib\babelbib.sty
-Package: babelbib 2012/01/03 v1.31 babelbib: multilingual bibliographies (HH)
-\c@btxromaniannumeral=\count103
-)
-Package tocbasic Info: setting babel extension for `for' on input line 16.
- ("Börsenprognosen – Dokumentation.aux")
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
+Package tocbasic Info: setting babel extension for `for' on input line 15.
 
-(D:\Programme\LateX\MiK\tex\context\base\supp-pdf.mkii
+("Börsenprognosen – Dokumentation.aux")
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+ (D:\Programme\LateX\MiK\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count104
+\scratchcounter=\count103
 \scratchdimen=\dimen115
 \scratchbox=\box29
-\nofMPsegments=\count105
-\nofMParguments=\count106
+\nofMPsegments=\count104
+\nofMParguments=\count105
 \everyMPshowfont=\toks22
-\MPscratchCnt=\count107
+\MPscratchCnt=\count106
 \MPscratchDim=\dimen116
-\MPnumerator=\count108
-\makeMPintoPDFobject=\count109
+\MPnumerator=\count107
+\makeMPintoPDFobject=\count108
 \everyMPtoPDFconversion=\toks23
 )
-babelbib: Set bibliography fall-back language to ngerman
-(D:\Programme\LateX\MiK\tex\latex\babelbib\german.bdf
-File: german.bdf 2012/01/03 v1.31 babelbib: multilingual bibliographies (HH)
-
-babelbib extension \btxifchangecaseoff added to \extrasngerman
-)
-babelbib: Load BibTeX extensions \bibsngerman for ngerman
-babelbib: Set language for keywords in the bibliography fixed to ngerman
-babelbib: Set language for keywords in the bibliography fixed to german
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 39.
-(D:\Programme\LateX\MiK\tex\latex\base\t1cmss.fd
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 38.
+ (D:\Programme\LateX\MiK\tex\latex\base\t1cmss.fd
 File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 ) [1
 
@@ -488,7 +475,7 @@ Kapitel 2.
 <mockup.PNG, id=32, 703.87968pt x 477.28313pt>
 File: mockup.PNG Graphic file (type png)
  <use mockup.PNG>
-Package pdftex.def Info: mockup.PNG used on input line 63.
+Package pdftex.def Info: mockup.PNG used on input line 62.
 (pdftex.def)             Requested size: 347.64232pt x 235.72787pt.
  [8
 
@@ -508,10 +495,10 @@ Kapitel 5.
 
 ] ("Börsenprognosen – Dokumentation.aux") ) 
 Here is how much of TeX's memory you used:
- 4499 strings out of 493698
- 64711 string characters out of 3146442
- 188568 words of memory out of 3000000
- 7759 multiletter control sequences out of 15000+200000
+ 4201 strings out of 493698
+ 60026 string characters out of 3146442
+ 178986 words of memory out of 3000000
+ 7469 multiletter control sequences out of 15000+200000
  17655 words of font info for 43 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  40i,7n,52p,697b,233s stack positions out of 5000i,500n,10000p,200000b,50000s

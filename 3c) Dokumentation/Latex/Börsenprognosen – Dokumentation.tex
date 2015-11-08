@@ -7,10 +7,9 @@
 \usepackage{graphicx}
 \usepackage{amsmath}
 
- 
-%Deutsche Rechtschreibung
-\usepackage[fixlanguage]{babelbib} 
-\selectbiblanguage{german} 
+%Literaturverzeichnis
+%\usepackage[backend=biber]{biblatex}
+%\usepackage[babel,german=quotes]{csquotes}
 
 %Formelverzeichnis mittels KOMA-Script erstellen
 \DeclareNewTOC[type=formel,name={Formel},hang=5em,listname={Formelverzeichnis}]{for}
@@ -111,11 +110,12 @@ f(x)= tanh(x)
 \chapter{Fazit} %Beide
 Das prognostizieren von Börsenkursen mittels künstlichen neuronalen Netzen ist möglich.
 
+
 %%Literaturverzeichnis
 \begin{thebibliography}{999}
-
 \bibitem{00} Uwe Lämmel \& Jürgen Cleve,\emph{Künstliche Intelligenz}, Hanser Verlag, München, 3., neu bearbeitete Auflage, 2008.
-
 \end{thebibliography}
+
+%\printbibliography
 
 \end{document}
