@@ -1,0 +1,832 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.11.8)  9 NOV 2015 16:13
+entering extended mode
+**"Börsenprognosen – Dokumentation.tex"
+("Börsenprognosen – Dokumentation.tex"
+LaTeX2e <2015/01/01> patch level 2
+Babel <3.9m> and hyphenation patterns for 69 languages loaded.
+
+(C:\Users\Sebastian\Documents\texmf-koma-script-current\tex\latex\koma-script\s
+crreprt.cls
+Document Class: scrreprt 2015/02/07 v3.16 KOMA-Script document class (report)
+
+(C:\Users\Sebastian\Documents\texmf-koma-script-current\tex\latex\koma-script\s
+crkbase.sty
+Package: scrkbase 2015/02/07 v3.16 KOMA-Script package (KOMA-Script-dependent b
+asics and keyval usage)
+
+(C:\Users\Sebastian\Documents\texmf-koma-script-current\tex\latex\koma-script\s
+crbase.sty
+Package: scrbase 2015/02/07 v3.16 KOMA-Script package (KOMA-Script-independent 
+basics and keyval usage)
+ (D:\Programme\MikTeX\tex\latex\graphics\keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(C:\Users\Sebastian\Documents\texmf-koma-script-current\tex\latex\koma-script\s
+crlfile.sty
+Package: scrlfile 2015/02/07 v3.16 KOMA-Script package (loading files)
+
+Package scrlfile, 2015/02/07 v3.16 KOMA-Script package (loading files)
+                  Copyright (C) Markus Kohm
+
+)))
+(C:\Users\Sebastian\Documents\texmf-koma-script-current\tex\latex\koma-script\t
+ocbasic.sty
+Package: tocbasic 2015/02/07 v3.16 KOMA-Script package (handling toc-files)
+)
+Package tocbasic Info: omitting babel extension for `toc'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `toc' on input line 118.
+Package tocbasic Info: omitting babel extension for `lof'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `lof' on input line 119.
+Package tocbasic Info: omitting babel extension for `lot'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `lot' on input line 120.
+Package tocbasic Info: defining new hook before heading of `' on input line 118
+0.
+Class scrreprt Info: File `scrsize11pt.clo' used instead of
+(scrreprt)           file `scrsize11.clo' to setup font sizes on input line 171
+2.
+
+(C:\Users\Sebastian\Documents\texmf-koma-script-current\tex\latex\koma-script\s
+crsize11pt.clo
+File: scrsize11pt.clo 2015/02/07 v3.16 KOMA-Script font size class option (11pt
+)
+)
+(C:\Users\Sebastian\Documents\texmf-koma-script-current\tex\latex\koma-script\t
+ypearea.sty
+Package: typearea 2015/02/07 v3.16 KOMA-Script package (type area)
+
+Package typearea, 2015/02/07 v3.16 KOMA-Script package (type area)
+                  Copyright (C) Frank Neukam, 1992-1994
+                  Copyright (C) Markus Kohm, 1994-
+
+\ta@bcor=\skip41
+\ta@div=\count79
+Package typearea Info: You've used standard option `a4paper'.
+(typearea)             This is correct!
+(typearea)             Internally I'm using `paper=a4'.
+(typearea)             If you'd like to set the option with \KOMAoptions,
+(typearea)             you'd have to use `paper=a4' there
+(typearea)             instead of `a4paper', too.
+\ta@hblk=\skip42
+\ta@vblk=\skip43
+\ta@temp=\skip44
+\footheight=\skip45
+Package typearea Info: These are the values describing the layout:
+(typearea)             DIV  = 11
+(typearea)             BCOR = 0.0pt
+(typearea)             \paperwidth      = 597.50793pt
+(typearea)              \textwidth      = 434.55125pt
+(typearea)              DIV departure   = -10%
+(typearea)              \evensidemargin = 9.20834pt
+(typearea)              \oddsidemargin  = 9.20834pt
+(typearea)             \paperheight     = 845.04694pt
+(typearea)              \textheight     = 582.20026pt
+(typearea)              \topmargin      = 4.55246pt
+(typearea)              \headheight     = 17.0pt
+(typearea)              \headsep        = 20.40001pt
+(typearea)              \topskip        = 11.0pt
+(typearea)              \footskip       = 47.6pt
+(typearea)              \baselineskip   = 13.6pt
+(typearea)              on input line 1342.
+)
+\c@part=\count80
+\c@chapter=\count81
+\c@section=\count82
+\c@subsection=\count83
+\c@subsubsection=\count84
+\c@paragraph=\count85
+\c@subparagraph=\count86
+LaTeX Info: Redefining \textsubscript on input line 3826.
+\abovecaptionskip=\skip46
+\belowcaptionskip=\skip47
+\c@pti@nb@sid@b@x=\box26
+\c@figure=\count87
+\c@table=\count88
+\bibindent=\dimen102
+) (D:\Programme\MikTeX\tex\generic\babel\babel.sty
+Package: babel 2015/08/03 3.9m The Babel package
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(D:\Programme\MikTeX\tex\latex\00miktex\bblopts.cfg
+File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
+)
+(D:\Programme\MikTeX\tex\latex\babel-german\ngerman.ldf
+Language: ngerman 2013/12/13 v2.7 German support for babel (new orthography)
+
+(D:\Programme\MikTeX\tex\latex\babel-german\ngermanb.ldf
+Language: ngermanb 2013/12/13 v2.7 German support for babel (new orthography)
+
+(D:\Programme\MikTeX\tex\generic\babel\babel.def
+File: babel.def 2015/08/03 3.9m Babel common definitions
+\babel@savecnt=\count89
+\U@D=\dimen103
+)
+\l@naustrian = a dialect from \language\l@ngerman 
+\l@nswissgerman = a dialect from \language\l@ngerman 
+Package babel Info: Making " an active character on input line 88.
+)))
+(D:\Programme\MikTeX\tex\latex\base\fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(D:\Programme\MikTeX\tex\latex\base\t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
+(D:\Programme\MikTeX\tex\latex\base\inputenc.sty
+Package: inputenc 2015/03/17 v1.2c Input encoding file
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
+
+(D:\Programme\MikTeX\tex\latex\base\utf8.def
+File: utf8.def 2015/06/27 v1.1n UTF-8 support for inputenc
+Now handling font encoding OML ...
+... no UTF-8 mapping file for font encoding OML
+Now handling font encoding T1 ...
+... processing UTF-8 mapping file for font encoding T1
+
+(D:\Programme\MikTeX\tex\latex\base\t1enc.dfu
+File: t1enc.dfu 2015/06/27 v1.1n UTF-8 support for inputenc
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0104 (decimal 260)
+   defining Unicode char U+0105 (decimal 261)
+   defining Unicode char U+0106 (decimal 262)
+   defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+010C (decimal 268)
+   defining Unicode char U+010D (decimal 269)
+   defining Unicode char U+010E (decimal 270)
+   defining Unicode char U+010F (decimal 271)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0118 (decimal 280)
+   defining Unicode char U+0119 (decimal 281)
+   defining Unicode char U+011A (decimal 282)
+   defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011E (decimal 286)
+   defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0130 (decimal 304)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0132 (decimal 306)
+   defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0139 (decimal 313)
+   defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013D (decimal 317)
+   defining Unicode char U+013E (decimal 318)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0143 (decimal 323)
+   defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0147 (decimal 327)
+   defining Unicode char U+0148 (decimal 328)
+   defining Unicode char U+014A (decimal 330)
+   defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+0150 (decimal 336)
+   defining Unicode char U+0151 (decimal 337)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0154 (decimal 340)
+   defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0158 (decimal 344)
+   defining Unicode char U+0159 (decimal 345)
+   defining Unicode char U+015A (decimal 346)
+   defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015E (decimal 350)
+   defining Unicode char U+015F (decimal 351)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0162 (decimal 354)
+   defining Unicode char U+0163 (decimal 355)
+   defining Unicode char U+0164 (decimal 356)
+   defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+016E (decimal 366)
+   defining Unicode char U+016F (decimal 367)
+   defining Unicode char U+0170 (decimal 368)
+   defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+0179 (decimal 377)
+   defining Unicode char U+017A (decimal 378)
+   defining Unicode char U+017B (decimal 379)
+   defining Unicode char U+017C (decimal 380)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+)
+Now handling font encoding OT1 ...
+... processing UTF-8 mapping file for font encoding OT1
+
+(D:\Programme\MikTeX\tex\latex\base\ot1enc.dfu
+File: ot1enc.dfu 2015/06/27 v1.1n UTF-8 support for inputenc
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00B8 (decimal 184)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+)
+Now handling font encoding OMS ...
+... processing UTF-8 mapping file for font encoding OMS
+
+(D:\Programme\MikTeX\tex\latex\base\omsenc.dfu
+File: omsenc.dfu 2015/06/27 v1.1n UTF-8 support for inputenc
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+)
+Now handling font encoding OMX ...
+... no UTF-8 mapping file for font encoding OMX
+Now handling font encoding U ...
+... no UTF-8 mapping file for font encoding U
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2423 (decimal 9251)
+))
+(D:\Programme\MikTeX\tex\latex\graphics\graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(D:\Programme\MikTeX\tex\latex\graphics\graphics.sty
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+
+(D:\Programme\MikTeX\tex\latex\graphics\trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(D:\Programme\MikTeX\tex\latex\00miktex\graphics.cfg
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 94.
+
+(D:\Programme\MikTeX\tex\latex\pdftex-def\pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(D:\Programme\MikTeX\tex\generic\oberdiek\infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(D:\Programme\MikTeX\tex\generic\oberdiek\ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count90
+))
+\Gin@req@height=\dimen104
+\Gin@req@width=\dimen105
+)
+(D:\Programme\MikTeX\tex\latex\amsmath\amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip48
+
+For additional information on amsmath, use the `?' option.
+(D:\Programme\MikTeX\tex\latex\amsmath\amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(D:\Programme\MikTeX\tex\latex\amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks17
+\ex@=\dimen106
+))
+(D:\Programme\MikTeX\tex\latex\amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen107
+)
+(D:\Programme\MikTeX\tex\latex\amsmath\amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count91
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count92
+\leftroot@=\count93
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count94
+\DOTSCASE@=\count95
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box27
+\strutbox@=\box28
+\big@size=\dimen108
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count96
+\c@MaxMatrixCols=\count97
+\dotsspace@=\muskip10
+\c@parentequation=\count98
+\dspbrk@lvl=\count99
+\tag@help=\toks18
+\row@=\count100
+\column@=\count101
+\maxfields@=\count102
+\andhelp@=\toks19
+\eqnshift@=\dimen109
+\alignsep@=\dimen110
+\tagshift@=\dimen111
+\tagwidth@=\dimen112
+\totwidth@=\dimen113
+\lineht@=\dimen114
+\@envbody=\toks20
+\multlinegap=\skip49
+\multlinetaggap=\skip50
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+(D:\Programme\MikTeX\tex\latex\biblatex\biblatex.sty
+Package: biblatex 2015/10/21 v3.1 programmable bibliographies (PK/JW/AB)
+
+(D:\Programme\MikTeX\tex\latex\biblatex\biblatex2.sty
+Package: biblatex2 2015/10/21 v3.1 programmable bibliographies (biber) (PK/JW/A
+B)
+
+(D:\Programme\MikTeX\tex\latex\etoolbox\etoolbox.sty
+Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count103
+)
+(D:\Programme\MikTeX\tex\latex\oberdiek\kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(D:\Programme\MikTeX\tex\generic\oberdiek\kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(D:\Programme\MikTeX\tex\generic\oberdiek\etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+
+(D:\Programme\MikTeX\tex\generic\oberdiek\ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+(D:\Programme\MikTeX\tex\latex\logreq\logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count104
+
+(D:\Programme\MikTeX\tex\latex\logreq\logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+(D:\Programme\MikTeX\tex\latex\base\ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(D:\Programme\MikTeX\tex\latex\url\url.sty
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+\c@tabx@nest=\count105
+\c@listtotal=\count106
+\c@listcount=\count107
+\c@liststart=\count108
+\c@liststop=\count109
+\c@citecount=\count110
+\c@citetotal=\count111
+\c@multicitecount=\count112
+\c@multicitetotal=\count113
+\c@instcount=\count114
+\c@maxnames=\count115
+\c@minnames=\count116
+\c@maxitems=\count117
+\c@minitems=\count118
+\c@citecounter=\count119
+\c@savedcitecounter=\count120
+\c@uniquelist=\count121
+\c@uniquename=\count122
+\c@refsection=\count123
+\c@refsegment=\count124
+\c@maxextratitle=\count125
+\c@maxextratitleyear=\count126
+\c@maxextrayear=\count127
+\c@maxextraalpha=\count128
+\c@abbrvpenalty=\count129
+\c@highnamepenalty=\count130
+\c@lownamepenalty=\count131
+\c@maxparens=\count132
+\c@parenlevel=\count133
+\blx@tempcnta=\count134
+\blx@tempcntb=\count135
+\blx@tempcntc=\count136
+\blx@maxsection=\count137
+\blx@maxsegment@0=\count138
+\blx@notetype=\count139
+\blx@parenlevel@text=\count140
+\blx@parenlevel@foot=\count141
+\blx@sectionciteorder@0=\count142
+\labelnumberwidth=\skip51
+\labelalphawidth=\skip52
+\biblabelsep=\skip53
+\bibitemsep=\skip54
+\bibnamesep=\skip55
+\bibinitsep=\skip56
+\bibparsep=\skip57
+\bibhang=\skip58
+\blx@bcfin=\read1
+\blx@bcfout=\write3
+\c@mincomprange=\count143
+\c@maxcomprange=\count144
+\c@mincompwidth=\count145
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(D:\Programme\MikTeX\tex\latex\biblatex\blx-dm.def)
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count146
+\c@savedafterword=\count147
+\c@annotator=\count148
+\c@savedannotator=\count149
+\c@author=\count150
+\c@savedauthor=\count151
+\c@bookauthor=\count152
+\c@savedbookauthor=\count153
+\c@commentator=\count154
+\c@savedcommentator=\count155
+\c@editor=\count156
+\c@savededitor=\count157
+\c@editora=\count158
+\c@savededitora=\count159
+\c@editorb=\count160
+\c@savededitorb=\count161
+\c@editorc=\count162
+\c@savededitorc=\count163
+\c@foreword=\count164
+\c@savedforeword=\count165
+\c@holder=\count166
+\c@savedholder=\count167
+\c@introduction=\count168
+\c@savedintroduction=\count169
+\c@namea=\count170
+\c@savednamea=\count171
+\c@nameb=\count172
+\c@savednameb=\count173
+\c@namec=\count174
+\c@savednamec=\count175
+\c@translator=\count176
+\c@savedtranslator=\count177
+\c@shortauthor=\count178
+\c@savedshortauthor=\count179
+\c@shorteditor=\count180
+\c@savedshorteditor=\count181
+\c@labelname=\count182
+\c@savedlabelname=\count183
+\c@institution=\count184
+\c@savedinstitution=\count185
+\c@lista=\count186
+\c@savedlista=\count187
+\c@listb=\count188
+\c@savedlistb=\count189
+\c@listc=\count190
+\c@savedlistc=\count191
+\c@listd=\count192
+\c@savedlistd=\count193
+\c@liste=\count194
+\c@savedliste=\count195
+\c@listf=\count196
+\c@savedlistf=\count197
+\c@location=\count198
+\c@savedlocation=\count199
+\c@organization=\count200
+\c@savedorganization=\count201
+\c@origlocation=\count202
+\c@savedoriglocation=\count203
+\c@origpublisher=\count204
+\c@savedorigpublisher=\count205
+\c@publisher=\count206
+\c@savedpublisher=\count207
+\c@language=\count208
+\c@savedlanguage=\count209
+\c@pageref=\count210
+\c@savedpageref=\count211
+\shorthandwidth=\skip59
+\shortjournalwidth=\skip60
+\shortserieswidth=\skip61
+\shorttitlewidth=\skip62
+\shortauthorwidth=\skip63
+\shorteditorwidth=\skip64
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(D:\Programme\MikTeX\tex\latex\biblatex\blx-compat.def
+File: blx-compat.def 2015/10/21 v3.1 biblatex compatibility (PK/JW/AB)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+
+(D:\Programme\MikTeX\tex\latex\biblatex\biblatex.def
+File: biblatex.def 
+\c@textcitecount=\count212
+\c@textcitetotal=\count213
+\c@textcitemaxnames=\count214
+\c@biburlnumpenalty=\count215
+\c@biburlucpenalty=\count216
+\c@biburllcpenalty=\count217
+\c@smartand=\count218
+)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+
+(D:\Programme\MikTeX\tex\latex\biblatex\bbx\numeric.bbx
+File: numeric.bbx 2015/10/21 v3.1 biblatex bibliography style (PK/JW/AB)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+(D:\Programme\MikTeX\tex\latex\biblatex\bbx\standard.bbx
+File: standard.bbx 2015/10/21 v3.1 biblatex bibliography style (PK/JW/AB)
+\c@bbx:relatedcount=\count219
+\c@bbx:relatedtotal=\count220
+))
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
+
+(D:\Programme\MikTeX\tex\latex\biblatex\cbx\numeric.cbx
+File: numeric.cbx 2015/10/21 v3.1 biblatex citation style (PK/JW/AB)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(D:\Programme\MikTeX\tex\latex\biblatex\biblatex.cfg
+File: biblatex.cfg 
+)))
+(D:\Programme\MikTeX\tex\latex\csquotes\csquotes.sty
+Package: csquotes 2015/07/18 v5.1f context-sensitive quotations (JAW)
+\csq@reset=\count221
+\csq@gtype=\count222
+\csq@glevel=\count223
+\csq@qlevel=\count224
+\csq@maxlvl=\count225
+\csq@tshold=\count226
+\csq@ltx@everypar=\toks22
+
+(D:\Programme\MikTeX\tex\latex\csquotes\csquotes.def
+File: csquotes.def 2015/07/18 v5.1f csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+(D:\Programme\MikTeX\tex\latex\csquotes\csquotes.cfg
+File: csquotes.cfg 
+)
+Package csquotes Info: Option 'babel' depreciated.
+(csquotes)             Using 'autostyle'.
+Package csquotes Info: Enabling multilingual quotes.
+Package csquotes Info: Redefining alias 'german' -> 'german/quotes'.
+)
+Package tocbasic Info: setting babel extension for `for' on input line 15.
+Package biblatex Info: Trying to load language 'ngerman'...
+Package biblatex Info: ... file 'ngerman.lbx' found.
+
+(D:\Programme\MikTeX\tex\latex\biblatex\lbx\ngerman.lbx
+File: ngerman.lbx 2015/10/21 v3.1 biblatex localization (PK/JW/AB)
+Package biblatex Info: Trying to load language 'german'...
+Package biblatex Info: ... file 'german.lbx' found.
+
+(D:\Programme\MikTeX\tex\latex\biblatex\lbx\german.lbx
+File: german.lbx 2015/10/21 v3.1 biblatex localization (PK/JW/AB)
+))
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... found 'babel' package.
+
+("Börsenprognosen – Dokumentation.aux")
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+
+(D:\Programme\MikTeX\tex\context\base\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count227
+\scratchdimen=\dimen115
+\scratchbox=\box29
+\nofMPsegments=\count228
+\nofMParguments=\count229
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count230
+\MPscratchDim=\dimen116
+\MPnumerator=\count231
+\makeMPintoPDFobject=\count232
+\everyMPtoPDFconversion=\toks24
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file '"Börsenprognosen – Dokumentation".bbl' not 
+found.
+
+No file "Börsenprognosen – Dokumentation".bbl.
+Package biblatex Info: Reference section=0 on input line 29.
+Package biblatex Info: Reference segment=0 on input line 29.
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 38.
+(D:\Programme\MikTeX\tex\latex\base\t1cmss.fd
+File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+) [1
+
+
+
+{C:/Users/Sebastian/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+("Börsenprognosen – Dokumentation.toc")
+\tf@toc=\write4
+ [2
+
+]
+("Börsenprognosen – Dokumentation.lof")
+\tf@lof=\write5
+ [3
+
+]
+("Börsenprognosen – Dokumentation.lot")
+\tf@lot=\write6
+ [4
+
+]
+("Börsenprognosen – Dokumentation.for")
+\tf@for=\write7
+ [5
+
+]
+Kapitel 1.
+[6
+
+] [7]
+Kapitel 2.
+<mockup.PNG, id=32, 703.87968pt x 477.28313pt>
+File: mockup.PNG Graphic file (type png)
+ <use mockup.PNG>
+Package pdftex.def Info: mockup.PNG used on input line 62.
+(pdftex.def)             Requested size: 347.64232pt x 235.72787pt.
+ [8
+
+ <./mockup.PNG>] [9]
+Kapitel 3.
+[10
+
+]
+Kapitel 4.
+[11
+
+]
+Kapitel 5.
+[12
+
+] ("Börsenprognosen – Dokumentation.aux")
+Package logreq Info: Writing requests to '"Börsenprognosen – Dokumentation".
+run.xml'.
+ ) 
+Here is how much of TeX's memory you used:
+ 10186 strings out of 493673
+ 165437 string characters out of 3147214
+ 668670 words of memory out of 3000000
+ 13394 multiletter control sequences out of 15000+200000
+ 16966 words of font info for 42 fonts, out of 3000000 for 9000
+ 1029 hyphenation exceptions out of 8191
+ 56i,7n,52p,868b,1461s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Sebastian\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi
+600\ecsx1200.pk> <C:\Users\Sebastian\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\j
+knappen\ec\dpi600\ecsl1095.pk> <C:\Users\Sebastian\AppData\Local\MiKTeX\2.9\fon
+ts\pk\ljfour\jknappen\ec\dpi600\ecsx1440.pk> <C:\Users\Sebastian\AppData\Local\
+MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk> <C:\Users\Sebastian\
+AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx1095.pk> <C:\Us
+ers\Sebastian\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx1
+728.pk> <C:\Users\Sebastian\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\e
+c\dpi600\ecrm1440.pk> <C:\Users\Sebastian\AppData\Local\MiKTeX\2.9\fonts\pk\ljf
+our\jknappen\ec\dpi600\ecsx2074.pk> <C:\Users\Sebastian\AppData\Local\MiKTeX\2.
+9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk><D:/Programme/MikTeX/fonts/typ
+e1/public/amsfonts/cm/cmmi10.pfb><D:/Programme/MikTeX/fonts/type1/public/amsfon
+ts/cm/cmmi8.pfb><D:/Programme/MikTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><
+D:/Programme/MikTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Programme/Mik
+TeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on "Börsenprognosen – Dokumentation.pdf" (12 pages, 188015 by
+tes).
+PDF statistics:
+ 399 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+
