@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.11.8)  9 NOV 2015 16:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.11.8)  9 NOV 2015 23:33
 entering extended mode
 **"Börsenprognosen – Dokumentation.tex"
 ("Börsenprognosen – Dokumentation.tex"
@@ -440,335 +440,68 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
-(D:\Programme\MikTeX\tex\latex\biblatex\biblatex.sty
-Package: biblatex 2015/10/21 v3.1 programmable bibliographies (PK/JW/AB)
-
-(D:\Programme\MikTeX\tex\latex\biblatex\biblatex2.sty
-Package: biblatex2 2015/10/21 v3.1 programmable bibliographies (biber) (PK/JW/A
-B)
-
-(D:\Programme\MikTeX\tex\latex\etoolbox\etoolbox.sty
-Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count103
-)
-(D:\Programme\MikTeX\tex\latex\oberdiek\kvoptions.sty
-Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
-
-(D:\Programme\MikTeX\tex\generic\oberdiek\kvsetkeys.sty
-Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
-
-(D:\Programme\MikTeX\tex\generic\oberdiek\etexcmds.sty
-Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
-
-(D:\Programme\MikTeX\tex\generic\oberdiek\ifluatex.sty
-Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
-(D:\Programme\MikTeX\tex\latex\logreq\logreq.sty
-Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count104
-
-(D:\Programme\MikTeX\tex\latex\logreq\logreq.def
-File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
-))
-(D:\Programme\MikTeX\tex\latex\base\ifthen.sty
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-)
-(D:\Programme\MikTeX\tex\latex\url\url.sty
-\Urlmuskip=\muskip11
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-)
-\c@tabx@nest=\count105
-\c@listtotal=\count106
-\c@listcount=\count107
-\c@liststart=\count108
-\c@liststop=\count109
-\c@citecount=\count110
-\c@citetotal=\count111
-\c@multicitecount=\count112
-\c@multicitetotal=\count113
-\c@instcount=\count114
-\c@maxnames=\count115
-\c@minnames=\count116
-\c@maxitems=\count117
-\c@minitems=\count118
-\c@citecounter=\count119
-\c@savedcitecounter=\count120
-\c@uniquelist=\count121
-\c@uniquename=\count122
-\c@refsection=\count123
-\c@refsegment=\count124
-\c@maxextratitle=\count125
-\c@maxextratitleyear=\count126
-\c@maxextrayear=\count127
-\c@maxextraalpha=\count128
-\c@abbrvpenalty=\count129
-\c@highnamepenalty=\count130
-\c@lownamepenalty=\count131
-\c@maxparens=\count132
-\c@parenlevel=\count133
-\blx@tempcnta=\count134
-\blx@tempcntb=\count135
-\blx@tempcntc=\count136
-\blx@maxsection=\count137
-\blx@maxsegment@0=\count138
-\blx@notetype=\count139
-\blx@parenlevel@text=\count140
-\blx@parenlevel@foot=\count141
-\blx@sectionciteorder@0=\count142
-\labelnumberwidth=\skip51
-\labelalphawidth=\skip52
-\biblabelsep=\skip53
-\bibitemsep=\skip54
-\bibnamesep=\skip55
-\bibinitsep=\skip56
-\bibparsep=\skip57
-\bibhang=\skip58
-\blx@bcfin=\read1
-\blx@bcfout=\write3
-\c@mincomprange=\count143
-\c@maxcomprange=\count144
-\c@mincompwidth=\count145
-Package biblatex Info: Trying to load biblatex default data model...
-Package biblatex Info: ... file 'blx-dm.def' found.
-
-(D:\Programme\MikTeX\tex\latex\biblatex\blx-dm.def)
-Package biblatex Info: Trying to load biblatex custom data model...
-Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count146
-\c@savedafterword=\count147
-\c@annotator=\count148
-\c@savedannotator=\count149
-\c@author=\count150
-\c@savedauthor=\count151
-\c@bookauthor=\count152
-\c@savedbookauthor=\count153
-\c@commentator=\count154
-\c@savedcommentator=\count155
-\c@editor=\count156
-\c@savededitor=\count157
-\c@editora=\count158
-\c@savededitora=\count159
-\c@editorb=\count160
-\c@savededitorb=\count161
-\c@editorc=\count162
-\c@savededitorc=\count163
-\c@foreword=\count164
-\c@savedforeword=\count165
-\c@holder=\count166
-\c@savedholder=\count167
-\c@introduction=\count168
-\c@savedintroduction=\count169
-\c@namea=\count170
-\c@savednamea=\count171
-\c@nameb=\count172
-\c@savednameb=\count173
-\c@namec=\count174
-\c@savednamec=\count175
-\c@translator=\count176
-\c@savedtranslator=\count177
-\c@shortauthor=\count178
-\c@savedshortauthor=\count179
-\c@shorteditor=\count180
-\c@savedshorteditor=\count181
-\c@labelname=\count182
-\c@savedlabelname=\count183
-\c@institution=\count184
-\c@savedinstitution=\count185
-\c@lista=\count186
-\c@savedlista=\count187
-\c@listb=\count188
-\c@savedlistb=\count189
-\c@listc=\count190
-\c@savedlistc=\count191
-\c@listd=\count192
-\c@savedlistd=\count193
-\c@liste=\count194
-\c@savedliste=\count195
-\c@listf=\count196
-\c@savedlistf=\count197
-\c@location=\count198
-\c@savedlocation=\count199
-\c@organization=\count200
-\c@savedorganization=\count201
-\c@origlocation=\count202
-\c@savedoriglocation=\count203
-\c@origpublisher=\count204
-\c@savedorigpublisher=\count205
-\c@publisher=\count206
-\c@savedpublisher=\count207
-\c@language=\count208
-\c@savedlanguage=\count209
-\c@pageref=\count210
-\c@savedpageref=\count211
-\shorthandwidth=\skip59
-\shortjournalwidth=\skip60
-\shortserieswidth=\skip61
-\shorttitlewidth=\skip62
-\shortauthorwidth=\skip63
-\shorteditorwidth=\skip64
-Package biblatex Info: Trying to load compatibility code...
-Package biblatex Info: ... file 'blx-compat.def' found.
-
-(D:\Programme\MikTeX\tex\latex\biblatex\blx-compat.def
-File: blx-compat.def 2015/10/21 v3.1 biblatex compatibility (PK/JW/AB)
-)
-Package biblatex Info: Trying to load generic definitions...
-Package biblatex Info: ... file 'biblatex.def' found.
-
-(D:\Programme\MikTeX\tex\latex\biblatex\biblatex.def
-File: biblatex.def 
-\c@textcitecount=\count212
-\c@textcitetotal=\count213
-\c@textcitemaxnames=\count214
-\c@biburlnumpenalty=\count215
-\c@biburlucpenalty=\count216
-\c@biburllcpenalty=\count217
-\c@smartand=\count218
-)
-Package biblatex Info: Trying to load bibliography style 'numeric'...
-Package biblatex Info: ... file 'numeric.bbx' found.
-
-(D:\Programme\MikTeX\tex\latex\biblatex\bbx\numeric.bbx
-File: numeric.bbx 2015/10/21 v3.1 biblatex bibliography style (PK/JW/AB)
-Package biblatex Info: Trying to load bibliography style 'standard'...
-Package biblatex Info: ... file 'standard.bbx' found.
-
-(D:\Programme\MikTeX\tex\latex\biblatex\bbx\standard.bbx
-File: standard.bbx 2015/10/21 v3.1 biblatex bibliography style (PK/JW/AB)
-\c@bbx:relatedcount=\count219
-\c@bbx:relatedtotal=\count220
-))
-Package biblatex Info: Trying to load citation style 'numeric'...
-Package biblatex Info: ... file 'numeric.cbx' found.
-
-(D:\Programme\MikTeX\tex\latex\biblatex\cbx\numeric.cbx
-File: numeric.cbx 2015/10/21 v3.1 biblatex citation style (PK/JW/AB)
-Package biblatex Info: Redefining '\cite'.
-Package biblatex Info: Redefining '\parencite'.
-Package biblatex Info: Redefining '\footcite'.
-Package biblatex Info: Redefining '\footcitetext'.
-Package biblatex Info: Redefining '\smartcite'.
-Package biblatex Info: Redefining '\supercite'.
-Package biblatex Info: Redefining '\textcite'.
-Package biblatex Info: Redefining '\textcites'.
-Package biblatex Info: Redefining '\cites'.
-Package biblatex Info: Redefining '\parencites'.
-Package biblatex Info: Redefining '\smartcites'.
-)
-Package biblatex Info: Trying to load configuration file...
-Package biblatex Info: ... file 'biblatex.cfg' found.
-
-(D:\Programme\MikTeX\tex\latex\biblatex\biblatex.cfg
-File: biblatex.cfg 
-)))
-(D:\Programme\MikTeX\tex\latex\csquotes\csquotes.sty
-Package: csquotes 2015/07/18 v5.1f context-sensitive quotations (JAW)
-\csq@reset=\count221
-\csq@gtype=\count222
-\csq@glevel=\count223
-\csq@qlevel=\count224
-\csq@maxlvl=\count225
-\csq@tshold=\count226
-\csq@ltx@everypar=\toks22
-
-(D:\Programme\MikTeX\tex\latex\csquotes\csquotes.def
-File: csquotes.def 2015/07/18 v5.1f csquotes generic definitions (JAW)
-)
-Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
-Package csquotes Info: ... configuration file loaded successfully.
-
-(D:\Programme\MikTeX\tex\latex\csquotes\csquotes.cfg
-File: csquotes.cfg 
-)
-Package csquotes Info: Option 'babel' depreciated.
-(csquotes)             Using 'autostyle'.
-Package csquotes Info: Enabling multilingual quotes.
-Package csquotes Info: Redefining alias 'german' -> 'german/quotes'.
-)
-Package tocbasic Info: setting babel extension for `for' on input line 15.
-Package biblatex Info: Trying to load language 'ngerman'...
-Package biblatex Info: ... file 'ngerman.lbx' found.
-
-(D:\Programme\MikTeX\tex\latex\biblatex\lbx\ngerman.lbx
-File: ngerman.lbx 2015/10/21 v3.1 biblatex localization (PK/JW/AB)
-Package biblatex Info: Trying to load language 'german'...
-Package biblatex Info: ... file 'german.lbx' found.
-
-(D:\Programme\MikTeX\tex\latex\biblatex\lbx\german.lbx
-File: german.lbx 2015/10/21 v3.1 biblatex localization (PK/JW/AB)
-))
-Package csquotes Info: Checking for multilingual support...
-Package csquotes Info: ... found 'babel' package.
+Package tocbasic Info: setting babel extension for `for' on input line 17.
 
 ("Börsenprognosen – Dokumentation.aux")
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
 
 (D:\Programme\MikTeX\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count227
+\scratchcounter=\count103
 \scratchdimen=\dimen115
 \scratchbox=\box29
-\nofMPsegments=\count228
-\nofMParguments=\count229
-\everyMPshowfont=\toks23
-\MPscratchCnt=\count230
+\nofMPsegments=\count104
+\nofMParguments=\count105
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count106
 \MPscratchDim=\dimen116
-\MPnumerator=\count231
-\makeMPintoPDFobject=\count232
-\everyMPtoPDFconversion=\toks24
+\MPnumerator=\count107
+\makeMPintoPDFobject=\count108
+\everyMPtoPDFconversion=\toks23
 )
-Package biblatex Info: Input encoding 'utf8' detected.
-Package biblatex Info: Automatic encoding selection.
-(biblatex)             Assuming data encoding 'utf8'.
-Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file '"Börsenprognosen – Dokumentation".bbl' not 
-found.
-
-No file "Börsenprognosen – Dokumentation".bbl.
-Package biblatex Info: Reference section=0 on input line 29.
-Package biblatex Info: Reference segment=0 on input line 29.
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 38.
-(D:\Programme\MikTeX\tex\latex\base\t1cmss.fd
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 41.
+ (D:\Programme\MikTeX\tex\latex\base\t1cmss.fd
 File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-) [1
+)
+<titelbild.png, id=1, 1314.0pt x 1046.82pt>
+File: titelbild.png Graphic file (type png)
+ <use titelbild.png>
+Package pdftex.def Info: titelbild.png used on input line 41.
+(pdftex.def)             Requested size: 142.26378pt x 113.3296pt.
+ [1
 
 
 
-{C:/Users/Sebastian/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+{C:/Users/Sebastian/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./titel
+bild.png>]
 ("Börsenprognosen – Dokumentation.toc")
-\tf@toc=\write4
+\tf@toc=\write3
  [2
 
 ]
 ("Börsenprognosen – Dokumentation.lof")
-\tf@lof=\write5
+\tf@lof=\write4
  [3
 
 ]
 ("Börsenprognosen – Dokumentation.lot")
-\tf@lot=\write6
+\tf@lot=\write5
  [4
 
 ]
 ("Börsenprognosen – Dokumentation.for")
-\tf@for=\write7
+\tf@for=\write6
  [5
 
 ]
@@ -777,10 +510,10 @@ Kapitel 1.
 
 ] [7]
 Kapitel 2.
-<mockup.PNG, id=32, 703.87968pt x 477.28313pt>
+<mockup.PNG, id=35, 703.87968pt x 477.28313pt>
 File: mockup.PNG Graphic file (type png)
  <use mockup.PNG>
-Package pdftex.def Info: mockup.PNG used on input line 62.
+Package pdftex.def Info: mockup.PNG used on input line 74.
 (pdftex.def)             Requested size: 347.64232pt x 235.72787pt.
  [8
 
@@ -794,39 +527,41 @@ Kapitel 4.
 
 ]
 Kapitel 5.
-[12
+("Börsenprognosen – Dokumentation.bbl" [12
 
-] ("Börsenprognosen – Dokumentation.aux")
-Package logreq Info: Writing requests to '"Börsenprognosen – Dokumentation".
-run.xml'.
- ) 
+]) [13
+
+]
+("Börsenprognosen – Dokumentation.aux") ) 
 Here is how much of TeX's memory you used:
- 10186 strings out of 493673
- 165437 string characters out of 3147214
- 668670 words of memory out of 3000000
- 13394 multiletter control sequences out of 15000+200000
- 16966 words of font info for 42 fonts, out of 3000000 for 9000
- 1029 hyphenation exceptions out of 8191
- 56i,7n,52p,868b,1461s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Sebastian\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi
-600\ecsx1200.pk> <C:\Users\Sebastian\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\j
-knappen\ec\dpi600\ecsl1095.pk> <C:\Users\Sebastian\AppData\Local\MiKTeX\2.9\fon
-ts\pk\ljfour\jknappen\ec\dpi600\ecsx1440.pk> <C:\Users\Sebastian\AppData\Local\
-MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk> <C:\Users\Sebastian\
-AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx1095.pk> <C:\Us
-ers\Sebastian\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx1
-728.pk> <C:\Users\Sebastian\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\e
-c\dpi600\ecrm1440.pk> <C:\Users\Sebastian\AppData\Local\MiKTeX\2.9\fonts\pk\ljf
-our\jknappen\ec\dpi600\ecsx2074.pk> <C:\Users\Sebastian\AppData\Local\MiKTeX\2.
-9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk><D:/Programme/MikTeX/fonts/typ
-e1/public/amsfonts/cm/cmmi10.pfb><D:/Programme/MikTeX/fonts/type1/public/amsfon
-ts/cm/cmmi8.pfb><D:/Programme/MikTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><
-D:/Programme/MikTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Programme/Mik
-TeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on "Börsenprognosen – Dokumentation.pdf" (12 pages, 188015 by
+ 4218 strings out of 493673
+ 60309 string characters out of 3147214
+ 179351 words of memory out of 3000000
+ 7503 multiletter control sequences out of 15000+200000
+ 17655 words of font info for 43 fonts, out of 3000000 for 9000
+ 1025 hyphenation exceptions out of 8191
+ 40i,7n,52p,697b,263s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Sebastian\AppData\Local\
+MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1095.pk> <C:\Users\Sebastian\
+AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx1200.pk> <C:\Us
+ers\Sebastian\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecsl1
+095.pk> <C:\Users\Sebastian\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\e
+c\dpi600\ecsx1440.pk> <C:\Users\Sebastian\AppData\Local\MiKTeX\2.9\fonts\pk\ljf
+our\jknappen\ec\dpi600\ecrm1095.pk> <C:\Users\Sebastian\AppData\Local\MiKTeX\2.
+9\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx1095.pk> <C:\Users\Sebastian\AppData\L
+ocal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx1728.pk> <C:\Users\Sebas
+tian\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1440.pk> <
+C:\Users\Sebastian\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
+ecsx2074.pk> <C:\Users\Sebastian\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknap
+pen\ec\dpi600\ecbx1440.pk><D:/Programme/MikTeX/fonts/type1/public/amsfonts/cm/c
+mmi10.pfb><D:/Programme/MikTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/Pro
+gramme/MikTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Programme/MikTeX/fon
+ts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Programme/MikTeX/fonts/type1/public/
+amsfonts/cm/cmsy8.pfb>
+Output written on "Börsenprognosen – Dokumentation.pdf" (13 pages, 211765 by
 tes).
 PDF statistics:
- 399 PDF objects out of 1000 (max. 8388607)
+ 418 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

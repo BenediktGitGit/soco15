@@ -1,3 +1,6 @@
+%%TODO: Label setzen\
+
+%Dokument erstellen
 \documentclass[a4paper,DIV11,bibliography=totoc,headings=normal,ngerman,headsepline]{scrreprt}
 
 %Benötigte Packages
@@ -8,8 +11,9 @@
 \usepackage{amsmath}
 
 %Literaturverzeichnis
-\usepackage[backend=biber]{biblatex}
-\usepackage[babel,german=quotes]{csquotes}
+%\usepackage[babel,german=quotes]{csquotes}
+%\usepackage[backend=biber]{biblatex}
+\bibliographystyle{plain}
 
 %Formelverzeichnis mittels KOMA-Script erstellen
 \DeclareNewTOC[type=formel,name={Formel},hang=5em,listname={Formelverzeichnis}]{for}
@@ -31,6 +35,7 @@
 \subject{Seminararbeit}
 \title{Extrapolation von Zeitreihen mit Hilfe von künstlichen neuronalen Netzen am Beispiel von Börsenprognosen}
 \author{Sebastian Schötteler -- Matrikelnummer 2429289 \and Benedikt Hofrichter -- Matrikelnummer 2272198}
+\subtitle{\bigskip\includegraphics[width=50mm]{titelbild.png}} 
 \publishers{Technische Hochschule Nürnberg Georg Simon Ohm}
 
 %Zur Überscchrift machen
@@ -42,22 +47,31 @@
 \listoftables
 \listofformels
 
+%Text startet hier
 \chapter{Einleitung} %Beide
+\label{cha:Einleitung}
 \section{Motivation}
-Die Untersuchung  und Extrapolation von Zeitreihen ist ein bedeutendes Thema in zahlreichen Gebieten. Typische Anwendungsbereiche sind dabei Prognose von Wetterdaten, von Therapieverläufen in der  Medizin und Psychologie, von Arbeitslosenzahlen auf dem Arbeitsmarkt sowie Börsenkursen. Um eine Zeitreihe möglichst genau zu extrapolieren, wird auf mehreren Hilfsmitteln zugegriffen. Einer dieser Hilfsmittel sind künstliche neuronale Netze (Abgekürzt: KNN). Bei künstlichen neuronale Netzen handelt es sich um ein in sich geschlossenes System von Neuronen, die die Eingabe weiterverarbeiten und das Ergebnis an weitere Neuronen weiterleiten.  
+\label{sec:Motivation}
+Die Untersuchung  und Extrapolation von Zeitreihen ist ein bedeutendes Thema in zahlreichen Gebieten. Typische Anwendungsbereiche sind dabei Prognose von Wetterdaten, von Therapieverläufen in der  Medizin und der Psychologie, von Arbeitslosenzahlen auf dem Arbeitsmarkt sowie Börsenkursen. Um eine Zeitreihe möglichst genau zu extrapolieren, wird auf mehreren Hilfsmitteln zugegriffen. Einer dieser Hilfsmittel sind künstliche neuronale Netze. Bei künstlichen neuronale Netzen handelt es sich um ein in sich geschlossenes System von Neuronen, die die Eingabe weiterverarbeiten und das Ergebnis an weitere Neuronen weiterleiten.  
 Die Untersuchung  und Extrapolation von Zeitreihen ist ein bedeutendes Thema in zahlreichen Gebieten. Typische Anwendungsbereiche sind dabei Prognose von Wetterdaten, von Therapieverläufen in der  Medizin und Psychologie, von Arbeitslosenzahlen auf dem Arbeitsmarkt sowie Börsenkursen. Um eine Zeitreihe möglichst genau zu extrapolieren, wird auf mehreren Hilfsmitteln zugegriffen. Einer dieser Hilfsmittel sind künstliche neuronale Netze (Abgekürzt: KNN). Bei künstlichen neuronale Netzen handelt es sich um ein in sich geschlossenes System von Neuronen, die die Eingabe weiterverarbeiten und das Ergebnis an weitere Neuronen weiterleiten. 
 Die Untersuchung  und Extrapolation von Zeitreihen ist ein bedeutendes Thema in zahlreichen Gebieten. Typische Anwendungsbereiche sind dabei Prognose von Wetterdaten, von Therapieverläufen in der  Medizin und Psychologie, von Arbeitslosenzahlen auf dem Arbeitsmarkt sowie Börsenkursen. Um eine Zeitreihe möglichst genau zu extrapolieren, wird auf mehreren Hilfsmitteln zugegriffen. Einer dieser Hilfsmittel sind künstliche neuronale Netze (Abgekürzt: KNN). Bei künstlichen neuronale Netzen handelt es sich um ein in sich geschlossenes System von Neuronen, die die Eingabe weiterverarbeiten und das Ergebnis an weitere Neuronen weiterleiten. 
-Die Untersuchung  und Extrapolation von Zeitreihen ist ein bedeutendes Thema in zahlreichen Gebieten. Typische Anwendungsbereiche sind dabei Prognose von Wetterdaten, von Therapieverläufen in der  Medizin und Psychologie, von Arbeitslosenzahlen auf dem Arbeitsmarkt sowie Börsenkursen. Um eine Zeitreihe möglichst genau zu extrapolieren, wird auf mehreren Hilfsmitteln zugegriffen. Einer dieser Hilfsmittel sind künstliche neuronale Netze (Abgekürzt: KNN). Bei künstlichen neuronale Netzen handelt es sich um ein in sich geschlossenes System von Neuronen, die die Eingabe weiterverarbeiten und das Ergebnis an weitere Neuronen weiterleiten. 
+Die Untersuchung  und Extrapolation von Zeitreihen ist ein bedeutendes Thema in zahlreichen Gebieten. Typische Anwendungsbereiche sind dabei Prognose von Wetterdaten, von Therapieverläufen in der  Medizin und Psychologie, von Arbeitslosenzahlen auf dem Arbeitsmarkt sowie Börsenkursen. Um eine Zeitreihe möglichst genau zu extrapolieren, wird auf mehreren Hilfsmitteln zugegriffen. Einer dieser Hilfsmittel sind künstliche neuronale Netze (Abgekürzt: KNN). Bei künstlichen neuronale Netzen handelt es sich um ein in sich geschlossenes System von Neuronen, die die Eingabe weiterverarbeiten und das Ergebnis an weitere Neuronen weiterleiten.
 
 \section{Ziel dieser Arbeit}
+\label{sec:Ziel}
 Die Funktionsweise und Effektivität von KNN bei der Extrapolation von Zeitreihen soll anhand einer Anwendung, die den Boersenkurs des DAX für die nächsten Börsentage prognostiziert, ermittelt und anschließend demonstriert werden.
+\ref{cha:Einleitung}
  
 \chapter{Konzeption} %Beide
+\label{cha:Konzeption}
 \section{Fachliche Konzeption der Anwendung} %Benedikt
+\label{sec:Konzeption Anwendung}
 \subsection{Funktionalitäten der Anwendung} %Benedikt
+\label{subsec:Funktionalitäten Anwendung}
 \subsection{Mockup der Anwendung} %Benedikt
+\label{subsec:Mockup Anwendung}
 
-\begin{figure}[htbp]
+\begin{figure}[htbp]3
 \centering
 		\includegraphics[width=0.80\textwidth]{mockup.PNG}
 	\caption{Mockup der Anwendung}
@@ -108,14 +122,10 @@ f(x)= tanh(x)
 \section{Zusammenspiel mit dem Framework} %Sebastian
 
 \chapter{Fazit} %Beide
-Das prognfsdfdsostizieren von Börsenkursen mittels künstlichen neuronalen Netzen ist möglich.
+\label{cha:Fazit}
+Das prognostizieren von Börsenkursen mittels künstlichen neuronalen Netzen ist möglich.
 
-
-%%Literaturverzeichnis
-%\begin{thebibliography}{999}
-%\bibitem{00} Uwe Lämmel \& Jürgen Cleve,\emph{Künstliche Intelligenz}, Hanser Verlag, München, 3., neu bearbeitete Auflage, 2008.
-%\end{thebibliography}
-
-%\printbibliography
+%Literaturverzeichnis anzeigen
+\bibliography{Literatur}
 
 \end{document}
