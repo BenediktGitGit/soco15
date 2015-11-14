@@ -4,7 +4,7 @@
 \contentsline {chapter}{\nonumberline Formelverzeichnis}{IV}
 \contentsline {chapter}{\numberline {1}Einleitung}{1}
 \contentsline {section}{\numberline {1.1}Motivation}{1}
-\contentsline {section}{\numberline {1.2}Ziel dieser Arbeit}{2}
+\contentsline {section}{\numberline {1.2}Ziel und Aufbau dieser Arbeit}{2}
 \contentsline {chapter}{\numberline {2}Konzeption}{3}
 \contentsline {section}{\numberline {2.1}Fachliche Konzeption der Anwendung}{3}
 \contentsline {section}{\numberline {2.2}Konzeption des k\IeC {\"u}nstlichen neuronalen Netzes}{4}

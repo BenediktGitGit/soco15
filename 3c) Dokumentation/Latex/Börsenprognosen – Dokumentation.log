@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.11.8)  14 NOV 2015 23:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.11.8)  15 NOV 2015 00:30
 entering extended mode
 **"Börsenprognosen – Dokumentation.tex"
 ("Börsenprognosen – Dokumentation.tex"
@@ -589,10 +589,10 @@ Kapitel 1.
 
 ] [2]
 Kapitel 2.
-<mockup.PNG, id=33, 703.87968pt x 477.28313pt>
+<mockup.PNG, id=34, 703.87968pt x 477.28313pt>
 File: mockup.PNG Graphic file (type png)
  <use mockup.PNG>
-Package pdftex.def Info: mockup.PNG used on input line 75.
+Package pdftex.def Info: mockup.PNG used on input line 79.
 (pdftex.def)             Requested size: 347.64232pt x 235.72787pt.
  [3
 
@@ -613,24 +613,24 @@ Kapitel 5.
 ]
 ("Börsenprognosen – Dokumentation.aux") ) 
 Here is how much of TeX's memory you used:
- 4364 strings out of 493673
- 63268 string characters out of 3147214
- 179486 words of memory out of 3000000
- 7625 multiletter control sequences out of 15000+200000
+ 4366 strings out of 493673
+ 63295 string characters out of 3147214
+ 179517 words of memory out of 3000000
+ 7626 multiletter control sequences out of 15000+200000
  62424 words of font info for 47 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 40i,7n,52p,697b,263s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,7n,52p,834b,261s stack positions out of 5000i,500n,10000p,200000b,50000s
 {D:/Programme/MikTeX/fonts/enc/dvip
-s/lm/lm-ec.enc}{D:/Programme/MikTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{D:/Progra
-mme/MikTeX/fonts/enc/dvips/lm/lm-rm.enc}{D:/Programme/MikTeX/fonts/enc/dvips/lm
-/lm-mathit.enc}<D:/Programme/MikTeX/fonts/type1/public/lm/lmbx12.pfb><D:/Progra
+s/lm/lm-mathsy.enc}{D:/Programme/MikTeX/fonts/enc/dvips/lm/lm-rm.enc}{D:/Progra
+mme/MikTeX/fonts/enc/dvips/lm/lm-mathit.enc}{D:/Programme/MikTeX/fonts/enc/dvip
+s/lm/lm-ec.enc}<D:/Programme/MikTeX/fonts/type1/public/lm/lmbx12.pfb><D:/Progra
 mme/MikTeX/fonts/type1/public/lm/lmmi10.pfb><D:/Programme/MikTeX/fonts/type1/pu
 blic/lm/lmmi8.pfb><D:/Programme/MikTeX/fonts/type1/public/lm/lmr10.pfb><D:/Prog
 ramme/MikTeX/fonts/type1/public/lm/lmr12.pfb><D:/Programme/MikTeX/fonts/type1/p
 ublic/lm/lmri10.pfb><D:/Programme/MikTeX/fonts/type1/public/lm/lmro10.pfb><D:/P
 rogramme/MikTeX/fonts/type1/public/lm/lmssbx10.pfb><D:/Programme/MikTeX/fonts/t
 ype1/public/lm/lmsy10.pfb><D:/Programme/MikTeX/fonts/type1/public/lm/lmsy8.pfb>
-Output written on "Börsenprognosen – Dokumentation.pdf" (13 pages, 306651 by
+Output written on "Börsenprognosen – Dokumentation.pdf" (13 pages, 315167 by
 tes).
 PDF statistics:
  97 PDF objects out of 1000 (max. 8388607)
