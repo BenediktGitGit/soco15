@@ -1,30 +1,30 @@
 \select@language {ngerman}
 \contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{II}
 \contentsline {chapter}{\nonumberline Tabellenverzeichnis}{III}
-\contentsline {chapter}{\nonumberline Formelverzeichnis}{1}
-\contentsline {chapter}{\numberline {1}Einleitung}{2}
-\contentsline {section}{\numberline {1.1}Motivation}{2}
-\contentsline {section}{\numberline {1.2}Ziel dieser Arbeit}{3}
-\contentsline {chapter}{\numberline {2}Konzeption}{4}
-\contentsline {section}{\numberline {2.1}Fachliche Konzeption der Anwendung}{4}
-\contentsline {section}{\numberline {2.2}Konzeption des k\IeC {\"u}nstlichen neuronalen Netzes}{5}
-\contentsline {subsection}{\numberline {2.2.1}Typ des k\IeC {\"u}nstlichen neuronalen Netzes}{5}
-\contentsline {subsection}{\numberline {2.2.2}Architektur des k\IeC {\"u}nstlichen neuronalen Netzes}{5}
-\contentsline {subsection}{\numberline {2.2.3}Lernverfahren des k\IeC {\"u}nstlichen neuronalen Netzes}{5}
-\contentsline {section}{\numberline {2.3}Beschreibung von Frameworks}{5}
-\contentsline {subsection}{\numberline {2.3.1}SNNS}{5}
-\contentsline {subsection}{\numberline {2.3.2}JavaNNS}{5}
-\contentsline {subsection}{\numberline {2.3.3}Neuroph}{5}
-\contentsline {section}{\numberline {2.4}Wahl des geeignetsten Frameworks}{5}
-\contentsline {chapter}{\numberline {3}Umsetzung}{6}
-\contentsline {section}{\numberline {3.1}Erstellung des k\IeC {\"u}nstlichen neuronalen Netzes}{6}
-\contentsline {subsection}{\numberline {3.1.1}Wahl der Topologie}{6}
-\contentsline {subsection}{\numberline {3.1.2}Wahl der Transferfunktion}{6}
-\contentsline {subsection}{\numberline {3.1.3}Wahl der Lernregel}{6}
-\contentsline {section}{\numberline {3.2}\IeC {\"U}berf\IeC {\"u}hrung des k\IeC {\"u}nstlichen neuronalen Netzes in einer Anwendung}{6}
-\contentsline {section}{\numberline {3.3}Umsetzen der Anwendung}{6}
-\contentsline {chapter}{\numberline {4}Beschreibung der Anwendung}{7}
-\contentsline {section}{\numberline {4.1}Elemente der GUI}{7}
-\contentsline {section}{\numberline {4.2}Architektur der Anwendung}{7}
-\contentsline {chapter}{\numberline {5}Fazit}{8}
-\contentsline {chapter}{\nonumberline Literaturverzeichnis}{9}
+\contentsline {chapter}{\nonumberline Formelverzeichnis}{IV}
+\contentsline {chapter}{\numberline {1}Einleitung}{1}
+\contentsline {section}{\numberline {1.1}Motivation}{1}
+\contentsline {section}{\numberline {1.2}Ziel dieser Arbeit}{2}
+\contentsline {chapter}{\numberline {2}Konzeption}{3}
+\contentsline {section}{\numberline {2.1}Fachliche Konzeption der Anwendung}{3}
+\contentsline {section}{\numberline {2.2}Konzeption des k\IeC {\"u}nstlichen neuronalen Netzes}{4}
+\contentsline {subsection}{\numberline {2.2.1}Typ des k\IeC {\"u}nstlichen neuronalen Netzes}{4}
+\contentsline {subsection}{\numberline {2.2.2}Architektur des k\IeC {\"u}nstlichen neuronalen Netzes}{4}
+\contentsline {subsection}{\numberline {2.2.3}Lernverfahren des k\IeC {\"u}nstlichen neuronalen Netzes}{4}
+\contentsline {section}{\numberline {2.3}Beschreibung von Frameworks}{4}
+\contentsline {subsection}{\numberline {2.3.1}SNNS}{4}
+\contentsline {subsection}{\numberline {2.3.2}JavaNNS}{4}
+\contentsline {subsection}{\numberline {2.3.3}Neuroph}{4}
+\contentsline {section}{\numberline {2.4}Wahl des geeignetsten Frameworks}{4}
+\contentsline {chapter}{\numberline {3}Umsetzung}{5}
+\contentsline {section}{\numberline {3.1}Erstellung des k\IeC {\"u}nstlichen neuronalen Netzes}{5}
+\contentsline {subsection}{\numberline {3.1.1}Wahl der Topologie}{5}
+\contentsline {subsection}{\numberline {3.1.2}Wahl der Transferfunktion}{5}
+\contentsline {subsection}{\numberline {3.1.3}Wahl der Lernregel}{5}
+\contentsline {section}{\numberline {3.2}\IeC {\"U}berf\IeC {\"u}hrung des k\IeC {\"u}nstlichen neuronalen Netzes in einer Anwendung}{5}
+\contentsline {section}{\numberline {3.3}Umsetzen der Anwendung}{5}
+\contentsline {chapter}{\numberline {4}Beschreibung der Anwendung}{6}
+\contentsline {section}{\numberline {4.1}Elemente der GUI}{6}
+\contentsline {section}{\numberline {4.2}Architektur der Anwendung}{6}
+\contentsline {chapter}{\numberline {5}Fazit}{7}
+\contentsline {chapter}{\nonumberline Literaturverzeichnis}{8}
