@@ -1,7 +1,7 @@
 %%TODO: Label setzen\
 
 %Dokument erstellen
-\documentclass[a4paper,DIV11,bibliography=totoc,headings=normal,ngerman,headsepline]{scrreprt}
+\documentclass[a4paper,DIV11,bibliography=totoc,headings=normal,ngerman,headsepline,listof=totoc]{scrreprt}
 
 %Benötigte Packages
 \usepackage{babel} 
@@ -42,11 +42,13 @@
 %Zur Überscchrift machen
 \maketitle
 
+\pagenumbering{Roman}
 %Verzeichnisse
 \tableofcontents
 \listoffigures
 \listoftables
 \listofformels
+\pagenumbering{arabic}
 
 %Text startet hier
 \chapter{Einleitung} %Beide
@@ -67,10 +69,6 @@ Die Funktionsweise und Effektivität von KNN bei der Extrapolation von Zeitreihe
 \label{cha:Konzeption}
 \section{Fachliche Konzeption der Anwendung} %Benedikt
 \label{sec:Konzeption Anwendung}
-\subsection{Funktionalitäten der Anwendung} %Benedikt
-\label{subsec:Funktionalitäten Anwendung}
-\subsection{Mockup der Anwendung} %Benedikt
-\label{subsec:Mockup Anwendung}
 
 \begin{figure}[htbp]3
 \centering
@@ -120,7 +118,6 @@ f(x)= tanh(x)
 \chapter{Beschreibung der Anwendung} %Benedikt
 \section{Elemente der GUI} %Beide
 \section{Architektur der Anwendung} %Benedikt
-\section{Zusammenspiel mit dem Framework} %Sebastian
 
 \chapter{Fazit} %Beide
 \label{cha:Fazit}

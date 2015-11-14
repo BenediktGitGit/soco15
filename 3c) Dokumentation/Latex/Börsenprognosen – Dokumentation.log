@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.11.8)  14 NOV 2015 22:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.11.8)  14 NOV 2015 22:50
 entering extended mode
 **"Börsenprognosen – Dokumentation.tex"
 ("Börsenprognosen – Dokumentation.tex"
@@ -554,64 +554,64 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 bild.png>]
 ("Börsenprognosen – Dokumentation.toc"
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 3.
+(Font)              <10.95> on input line 6.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 3.
+(Font)              <8> on input line 6.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 3.
+(Font)              <6> on input line 6.
 )
 \tf@toc=\write3
- [2
+ [1
 
 ]
 ("Börsenprognosen – Dokumentation.lof")
 \tf@lof=\write4
- [3
+ [2
 
 ]
 ("Börsenprognosen – Dokumentation.lot")
 \tf@lot=\write5
- [4
+ [3
 
 ]
 ("Börsenprognosen – Dokumentation.for")
 \tf@for=\write6
- [5
+ [1
 
 ]
 Kapitel 1.
-[6
+[2
 
-] [7]
+] [3]
 Kapitel 2.
 <mockup.PNG, id=32, 703.87968pt x 477.28313pt>
 File: mockup.PNG Graphic file (type png)
  <use mockup.PNG>
-Package pdftex.def Info: mockup.PNG used on input line 77.
+Package pdftex.def Info: mockup.PNG used on input line 75.
 (pdftex.def)             Requested size: 347.64232pt x 235.72787pt.
- [8
+ [4
 
- <./mockup.PNG>] [9]
+ <./mockup.PNG>] [5]
 Kapitel 3.
-[10
+[6
 
 ]
 Kapitel 4.
-[11
+[7
 
 ]
 Kapitel 5.
-("Börsenprognosen – Dokumentation.bbl" [12
+("Börsenprognosen – Dokumentation.bbl" [8
 
-]) [13
+]) [9
 
 ]
 ("Börsenprognosen – Dokumentation.aux") ) 
 Here is how much of TeX's memory you used:
  4358 strings out of 493673
- 63223 string characters out of 3147214
- 179456 words of memory out of 3000000
- 7622 multiletter control sequences out of 15000+200000
+ 63190 string characters out of 3147214
+ 179486 words of memory out of 3000000
+ 7621 multiletter control sequences out of 15000+200000
  62424 words of font info for 47 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  40i,7n,52p,697b,263s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -625,7 +625,7 @@ ramme/MikTeX/fonts/type1/public/lm/lmr12.pfb><D:/Programme/MikTeX/fonts/type1/p
 ublic/lm/lmri10.pfb><D:/Programme/MikTeX/fonts/type1/public/lm/lmro10.pfb><D:/P
 rogramme/MikTeX/fonts/type1/public/lm/lmssbx10.pfb><D:/Programme/MikTeX/fonts/t
 ype1/public/lm/lmsy10.pfb><D:/Programme/MikTeX/fonts/type1/public/lm/lmsy8.pfb>
-Output written on "Börsenprognosen – Dokumentation.pdf" (13 pages, 228344 by
+Output written on "Börsenprognosen – Dokumentation.pdf" (13 pages, 228381 by
 tes).
 PDF statistics:
  96 PDF objects out of 1000 (max. 8388607)
