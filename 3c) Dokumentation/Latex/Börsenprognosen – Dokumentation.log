@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.11.8)  15 NOV 2015 00:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.11.8)  15 NOV 2015 18:24
 entering extended mode
 **"Börsenprognosen – Dokumentation.tex"
 ("Börsenprognosen – Dokumentation.tex"
@@ -475,6 +475,58 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
 )
+(D:\Programme\MikTeX\tex\latex\acronym\acronym.sty
+Package: acronym 2015/03/21 v1.41 Support for acronyms (Tobias Oetiker)
+
+(D:\Programme\MikTeX\tex\latex\bigfoot\suffix.sty
+Package: suffix 2006/07/15 1.5a Variant command support
+)
+(D:\Programme\MikTeX\tex\latex\xstring\xstring.sty
+(D:\Programme\MikTeX\tex\generic\xstring\xstring.tex
+\@xs@message=\write3
+\integerpart=\count103
+\decimalpart=\count104
+)
+Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
+)
+\AC@clearlist=\toks22
+)
+(D:\Programme\MikTeX\tex\latex\geometry\geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(D:\Programme\MikTeX\tex\generic\oberdiek\ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+(D:\Programme\MikTeX\tex\generic\oberdiek\ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(D:\Programme\MikTeX\tex\generic\ifxetex\ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count105
+\Gm@cntv=\count106
+\c@Gm@tempcnt=\count107
+\Gm@bindingoffset=\dimen115
+\Gm@wd@mp=\dimen116
+\Gm@odd@mp=\dimen117
+\Gm@even@mp=\dimen118
+\Gm@layoutwidth=\dimen119
+\Gm@layoutheight=\dimen120
+\Gm@layouthoffset=\dimen121
+\Gm@layoutvoffset=\dimen122
+\Gm@dimlist=\toks23
+
+(D:\Programme\MikTeX\tex\latex\geometry\geometry.cfg))
+(D:\Programme\MikTeX\tex\latex\float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count108
+\float@exts=\toks24
+\float@box=\box29
+\@float@everytoks=\toks25
+\@floatcapt=\box30
+)
 Package tocbasic Info: setting babel extension for `for' on input line 20.
 
 ("Börsenprognosen – Dokumentation.aux")
@@ -497,20 +549,54 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 (D:\Programme\MikTeX\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count103
-\scratchdimen=\dimen115
-\scratchbox=\box29
-\nofMPsegments=\count104
-\nofMParguments=\count105
-\everyMPshowfont=\toks22
-\MPscratchCnt=\count106
-\MPscratchDim=\dimen116
-\MPnumerator=\count107
-\makeMPintoPDFobject=\count108
-\everyMPtoPDFconversion=\toks23
+\scratchcounter=\count109
+\scratchdimen=\dimen123
+\scratchbox=\box31
+\nofMPsegments=\count110
+\nofMParguments=\count111
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count112
+\MPscratchDim=\dimen124
+\MPnumerator=\count113
+\makeMPintoPDFobject=\count114
+\everyMPtoPDFconversion=\toks27
 )
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
+* v-part:(T,H,B)=(56.9055pt, 725.54538pt, 62.59596pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=725.54538pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-52.7645pt
+* \headheight=17.0pt
+* \headsep=20.40001pt
+* \topskip=11.0pt
+* \footskip=47.6pt
+* \marginparwidth=54.3189pt
+* \marginparsep=12.8401pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
 LaTeX Font Info:    Try loading font information for T1+lmss on input line 44.
- (D:\Programme\MikTeX\tex\latex\lm\t1lmss.fd
+(D:\Programme\MikTeX\tex\latex\lm\t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 <titelbild.png, id=1, 1314.0pt x 1046.82pt>
@@ -559,81 +645,140 @@ Package pdftex.def Info: TH-Logo.jpg used on input line 44.
 {C:/Users/Sebastian/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./titel
 bild.png> <./TH-Logo.jpg>] ("Börsenprognosen – Dokumentation.toc"
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 6.
+(Font)              <10.95> on input line 7.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 6.
+(Font)              <8> on input line 7.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 6.
+(Font)              <6> on input line 7.
 )
-\tf@toc=\write3
+\tf@toc=\write4
  [1
 
 ]
 ("Börsenprognosen – Dokumentation.lof")
-\tf@lof=\write4
+\tf@lof=\write5
  [2
 
 ]
 ("Börsenprognosen – Dokumentation.lot")
-\tf@lot=\write5
+\tf@lot=\write6
  [3
 
 ]
 ("Börsenprognosen – Dokumentation.for")
-\tf@for=\write6
+\tf@for=\write7
  [4
+
+] [5
 
 ]
 Kapitel 1.
-[1
 
-] [2]
+Class scrreprt Warning: \float@addtolists detected!
+(scrreprt)              Implementation of \float@addtolist became
+(scrreprt)              deprecated in KOMA-Script v3.01 2008/11/14 and
+(scrreprt)              has been replaced by several more flexible
+(scrreprt)              features of package `tocbasic`.
+(scrreprt)              Since Version 3.12 support for deprecated
+(scrreprt)              \float@addtolist interface has been
+(scrreprt)              restricted to only some of the KOMA-Script
+(scrreprt)              features and been removed from others.
+(scrreprt)              Loading of package `scrhack' may help to
+(scrreprt)              avoid this warning, if you are using a
+(scrreprt)              a package that still implements the
+(scrreprt)              deprecated \float@addtolist interface .
+
+Package acronym Info: Label `acro:knn' newly defined as it shall be overridden
+although it is yet undefined on input line 69.
+<Vorgehensdiagramm.PNG, id=29, 510.40688pt x 447.92343pt>
+File: Vorgehensdiagramm.PNG Graphic file (type png)
+
+<use Vorgehensdiagramm.PNG>
+Package pdftex.def Info: Vorgehensdiagramm.PNG used on input line 82.
+(pdftex.def)             Requested size: 432.48051pt x 379.55429pt.
+ [1
+
+]
+Package acronym Info: Label `acro:dax' newly defined as it shall be overridden
+although it is yet undefined on input line 88.
+Package acronym Info: Label `acro:gui' newly defined as it shall be overridden
+although it is yet undefined on input line 92.
+ [2 <./Vorgehensdiagramm.PNG>]
 Kapitel 2.
-<mockup.PNG, id=34, 703.87968pt x 477.28313pt>
+<mockup.PNG, id=39, 974.64125pt x 579.16376pt>
 File: mockup.PNG Graphic file (type png)
  <use mockup.PNG>
-Package pdftex.def Info: mockup.PNG used on input line 79.
-(pdftex.def)             Requested size: 347.64232pt x 235.72787pt.
+Package pdftex.def Info: mockup.PNG used on input line 105.
+(pdftex.def)             Requested size: 432.48051pt x 256.98914pt.
  [3
 
  <./mockup.PNG>] [4]
 Kapitel 3.
-[5
+<4-5-1.PNG, id=47, 350.05782pt x 269.50688pt>
+File: 4-5-1.PNG Graphic file (type png)
+ <use 4-5-1.PNG>
+Package pdftex.def Info: 4-5-1.PNG used on input line 142.
+(pdftex.def)             Requested size: 341.43307pt x 262.88535pt.
 
-]
+<4-9-1.PNG, id=48, 550.30594pt x 284.56313pt>
+File: 4-9-1.PNG Graphic file (type png)
+ <use 4-9-1.PNG>
+Package pdftex.def Info: 4-9-1.PNG used on input line 150.
+(pdftex.def)             Requested size: 341.43307pt x 176.5619pt.
+ [5
+
+ <./4-5-1.PNG>] <4-13-1.PNG, id=57, 753.5653pt x 272.51813pt>
+File: 4-13-1.PNG Graphic file (type png)
+ <use 4-13-1.PNG>
+Package pdftex.def Info: 4-13-1.PNG used on input line 159.
+(pdftex.def)             Requested size: 341.43307pt x 123.47198pt.
+
+<Sigmoid.PNG, id=58, 231.11343pt x 182.93344pt>
+File: Sigmoid.PNG Graphic file (type png)
+ <use Sigmoid.PNG>
+Package pdftex.def Info: Sigmoid.PNG used on input line 193.
+(pdftex.def)             Requested size: 227.62206pt x 180.17235pt.
+
+<tanh.PNG, id=59, 237.13594pt x 168.63pt>
+File: tanh.PNG Graphic file (type png)
+ <use tanh.PNG>
+Package pdftex.def Info: tanh.PNG used on input line 206.
+(pdftex.def)             Requested size: 227.62206pt x 161.87009pt.
+ [6 <./4-9-1.PNG> <./4-13-1.PNG>] [7 <./Sigmoid.PNG> <./tanh.PNG>] [8]
 Kapitel 4.
-[6
+[9
 
 ]
 Kapitel 5.
-("Börsenprognosen – Dokumentation.bbl" [7
+("Börsenprognosen – Dokumentation.bbl" [10
 
-]) [8
+]) [11
 
 ]
 ("Börsenprognosen – Dokumentation.aux") ) 
 Here is how much of TeX's memory you used:
- 4366 strings out of 493673
- 63295 string characters out of 3147214
- 179517 words of memory out of 3000000
- 7626 multiletter control sequences out of 15000+200000
+ 5485 strings out of 493673
+ 79518 string characters out of 3147214
+ 206411 words of memory out of 3000000
+ 8706 multiletter control sequences out of 15000+200000
  62424 words of font info for 47 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 40i,7n,52p,834b,261s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,8n,52p,829b,263s stack positions out of 5000i,500n,10000p,200000b,50000s
 {D:/Programme/MikTeX/fonts/enc/dvip
 s/lm/lm-mathsy.enc}{D:/Programme/MikTeX/fonts/enc/dvips/lm/lm-rm.enc}{D:/Progra
 mme/MikTeX/fonts/enc/dvips/lm/lm-mathit.enc}{D:/Programme/MikTeX/fonts/enc/dvip
-s/lm/lm-ec.enc}<D:/Programme/MikTeX/fonts/type1/public/lm/lmbx12.pfb><D:/Progra
-mme/MikTeX/fonts/type1/public/lm/lmmi10.pfb><D:/Programme/MikTeX/fonts/type1/pu
-blic/lm/lmmi8.pfb><D:/Programme/MikTeX/fonts/type1/public/lm/lmr10.pfb><D:/Prog
-ramme/MikTeX/fonts/type1/public/lm/lmr12.pfb><D:/Programme/MikTeX/fonts/type1/p
-ublic/lm/lmri10.pfb><D:/Programme/MikTeX/fonts/type1/public/lm/lmro10.pfb><D:/P
-rogramme/MikTeX/fonts/type1/public/lm/lmssbx10.pfb><D:/Programme/MikTeX/fonts/t
-ype1/public/lm/lmsy10.pfb><D:/Programme/MikTeX/fonts/type1/public/lm/lmsy8.pfb>
-Output written on "Börsenprognosen – Dokumentation.pdf" (13 pages, 315167 by
+s/lm/lm-ec.enc}<D:/Programme/MikTeX/fonts/type1/public/lm/lmbx10.pfb><D:/Progra
+mme/MikTeX/fonts/type1/public/lm/lmbx12.pfb><D:/Programme/MikTeX/fonts/type1/pu
+blic/lm/lmmi10.pfb><D:/Programme/MikTeX/fonts/type1/public/lm/lmmi8.pfb><D:/Pro
+gramme/MikTeX/fonts/type1/public/lm/lmr10.pfb><D:/Programme/MikTeX/fonts/type1/
+public/lm/lmr12.pfb><D:/Programme/MikTeX/fonts/type1/public/lm/lmri10.pfb><D:/P
+rogramme/MikTeX/fonts/type1/public/lm/lmro10.pfb><D:/Programme/MikTeX/fonts/typ
+e1/public/lm/lmssbx10.pfb><D:/Programme/MikTeX/fonts/type1/public/lm/lmsy10.pfb
+><D:/Programme/MikTeX/fonts/type1/public/lm/lmsy8.pfb>
+Output written on "Börsenprognosen – Dokumentation.pdf" (17 pages, 558664 by
 tes).
 PDF statistics:
- 97 PDF objects out of 1000 (max. 8388607)
+ 124 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 

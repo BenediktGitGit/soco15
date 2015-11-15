@@ -1,5 +1,6 @@
 \relax 
 \catcode `"\active 
+\AC@reset@newl@bel
 \bibstyle{plain}
 \select@language{ngerman}
 \@writefile{toc}{\select@language{ngerman}}
@@ -9,6 +10,10 @@
 \@writefile{toc}{\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{II}}
 \@writefile{toc}{\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{III}}
 \@writefile{toc}{\contentsline {chapter}{\nonumberline Formelverzeichnis}{IV}}
+\@writefile{toc}{\contentsline {chapter}{Abk\IeC {\"u}rzungsverzeichnis}{V}}
+\newacro{knn}[\AC@hyperlink{knn}{KNN}]{K\IeC {\"u}nstliches neuronales Netz}
+\newacro{dax}[\AC@hyperlink{dax}{DAX}]{Deutscher Aktienindex}
+\newacro{gui}[\AC@hyperlink{gui}{GUI}]{Graphical User Interface}
 \@writefile{toc}{\contentsline {chapter}{\numberline {1}Einleitung}{1}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
@@ -16,20 +21,47 @@
 \newlabel{cha:Einleitung}{{1}{1}}
 \@writefile{toc}{\contentsline {section}{\numberline {1.1}Motivation}{1}}
 \newlabel{sec:Motivation}{{1.1}{1}}
-\@writefile{toc}{\contentsline {section}{\numberline {1.2}Ziel und Aufbau dieser Arbeit}{2}}
-\newlabel{sec:Ziel}{{1.2}{2}}
+\AC@undonewlabel{acro:knn}
+\newlabel{acro:knn}{{1.1}{1}}
+\acronymused{knn}
+\acronymused{knn}
+\acronymused{knn}
+\acronymused{knn}
+\acronymused{knn}
+\@writefile{toc}{\contentsline {section}{\numberline {1.2}Ziel und Aufbau dieser Arbeit}{1}}
+\newlabel{sec:Ziel}{{1.2}{1}}
+\acronymused{knn}
+\acronymused{dax}
+\acronymused{knn}
+\acronymused{knn}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.1}{\ignorespaces Vorgehensdiagramm}}{2}}
+\newlabel{fig:Vorgehensdiagramm}{{1.1}{2}}
+\acronymused{knn}
+\acronymused{knn}
+\AC@undonewlabel{acro:dax}
+\newlabel{acro:dax}{{1.2}{2}}
+\acronymused{dax}
+\acronymused{knn}
+\acronymused{knn}
+\AC@undonewlabel{acro:gui}
+\newlabel{acro:gui}{{1.2}{2}}
+\acronymused{gui}
 \@writefile{toc}{\contentsline {chapter}{\numberline {2}Konzeption}{3}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{for}{\addvspace {10\p@ }}
 \newlabel{cha:Konzeption}{{2}{3}}
 \@writefile{toc}{\contentsline {section}{\numberline {2.1}Fachliche Konzeption der Anwendung}{3}}
-\newlabel{sec:Konzeption Anwendung}{{2.1}{3}}
+\newlabel{sec:faco}{{2.1}{3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.1}Beschreibung der Anwendung}{3}}
+\newlabel{subsec:beaw}{{2.1.1}{3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.2}Mockup der Anwendung}{3}}
+\newlabel{subsec:moaw}{{2.1.2}{3}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces Mockup der Anwendung}}{3}}
 \newlabel{fig:Mockup der Anwendung}{{2.1}{3}}
 \@writefile{toc}{\contentsline {section}{\numberline {2.2}Konzeption des k\IeC {\"u}nstlichen neuronalen Netzes}{4}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}Typ des k\IeC {\"u}nstlichen neuronalen Netzes}{4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Architektur des k\IeC {\"u}nstlichen neuronalen Netzes}{4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Grundlegende Topologie des k\IeC {\"u}nstlichen neuronalen Netzes}{4}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.2.3}Lernverfahren des k\IeC {\"u}nstlichen neuronalen Netzes}{4}}
 \@writefile{toc}{\contentsline {section}{\numberline {2.3}Beschreibung von Frameworks}{4}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}SNNS}{4}}
@@ -41,28 +73,45 @@
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{for}{\addvspace {10\p@ }}
 \@writefile{toc}{\contentsline {section}{\numberline {3.1}Erstellung des k\IeC {\"u}nstlichen neuronalen Netzes}{5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}Wahl der Topologie}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}Ermittlung der genauen Topologie}{5}}
 \@writefile{for}{\contentsline {formel}{\numberline {Formel~3.1} Optimale Anzahl Neuronen in der versteckten Schicht}{5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}Wahl der Transferfunktion}{5}}
-\@writefile{for}{\contentsline {formel}{\numberline {Formel~3.2} Sigmoide Funktion}{5}}
-\@writefile{for}{\contentsline {formel}{\numberline {Formel~3.3} Tanh Funktion}{5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.3}Wahl der Lernregel}{5}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}\IeC {\"U}berf\IeC {\"u}hrung des k\IeC {\"u}nstlichen neuronalen Netzes in einer Anwendung}{5}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}Umsetzen der Anwendung}{5}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}Beschreibung der Anwendung}{6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces KNN nach 4-05-1 Muster}}{5}}
+\newlabel{fig:KNN nach 4-05-1 Muster}{{3.1}{5}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces Jeweilige Topologien \& korrespondierende MSE}}{6}}
+\newlabel{tab:myfirsttable}{{3.1}{6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces KNN nach 4-09-1 Muster}}{6}}
+\newlabel{fig:KNN nach 4-09-1 Muster}{{3.2}{6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces KNN nach 4-13-1 Muster}}{6}}
+\newlabel{fig:KNN nach 4-13-1 Muster}{{3.3}{6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}Ermittlung der Transferfunktion}{6}}
+\@writefile{for}{\contentsline {formel}{\numberline {Formel~3.2} Sigmoide Funktion}{6}}
+\@writefile{for}{\contentsline {formel}{\numberline {Formel~3.3} Tanh Funktion}{6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces Sigmoide Funktion}}{7}}
+\newlabel{fig:Sigmoide Funktion}{{3.4}{7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces Tangens Hyperbolicus Funktion}}{7}}
+\newlabel{fig:Tangens Hyperbolicus Funktion}{{3.5}{7}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.2}{\ignorespaces Jeweilige Transferfunktionen \& korrespondierende MSE}}{7}}
+\newlabel{tab:tab2}{{3.2}{7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.3}Ermittlung der Lernregel und Lernrate}{8}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.3}{\ignorespaces Jeweilige Lernregeln und beste Lernraten \& korrespondierende MSE}}{8}}
+\newlabel{tab:tab3}{{3.3}{8}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Das erstellte k\IeC {\"u}nstliche neuronale Netz}{8}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Implementierung der Anwendung}{8}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}Zusammenf\IeC {\"u}hrung des Netzes mit der Anwendung}{8}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Beschreibung der Anwendung}{9}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{for}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {4.1}Elemente der GUI}{6}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.2}Architektur der Anwendung}{6}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Elemente der GUI}{9}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Architektur der Anwendung}{9}}
 \bibdata{Literatur}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Fazit}{7}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Fazit}{10}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{for}{\addvspace {10\p@ }}
-\newlabel{cha:Fazit}{{5}{7}}
+\newlabel{cha:Fazit}{{5}{10}}
 \bibcite{juanito}{1}
-\@writefile{toc}{\contentsline {chapter}{\nonumberline Literaturverzeichnis}{8}}
+\@writefile{toc}{\contentsline {chapter}{\nonumberline Literaturverzeichnis}{11}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{for}{\addvspace {10\p@ }}

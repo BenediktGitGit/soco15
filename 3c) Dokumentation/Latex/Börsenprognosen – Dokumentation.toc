@@ -2,14 +2,17 @@
 \contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{II}
 \contentsline {chapter}{\nonumberline Tabellenverzeichnis}{III}
 \contentsline {chapter}{\nonumberline Formelverzeichnis}{IV}
+\contentsline {chapter}{Abk\IeC {\"u}rzungsverzeichnis}{V}
 \contentsline {chapter}{\numberline {1}Einleitung}{1}
 \contentsline {section}{\numberline {1.1}Motivation}{1}
-\contentsline {section}{\numberline {1.2}Ziel und Aufbau dieser Arbeit}{2}
+\contentsline {section}{\numberline {1.2}Ziel und Aufbau dieser Arbeit}{1}
 \contentsline {chapter}{\numberline {2}Konzeption}{3}
 \contentsline {section}{\numberline {2.1}Fachliche Konzeption der Anwendung}{3}
+\contentsline {subsection}{\numberline {2.1.1}Beschreibung der Anwendung}{3}
+\contentsline {subsection}{\numberline {2.1.2}Mockup der Anwendung}{3}
 \contentsline {section}{\numberline {2.2}Konzeption des k\IeC {\"u}nstlichen neuronalen Netzes}{4}
 \contentsline {subsection}{\numberline {2.2.1}Typ des k\IeC {\"u}nstlichen neuronalen Netzes}{4}
-\contentsline {subsection}{\numberline {2.2.2}Architektur des k\IeC {\"u}nstlichen neuronalen Netzes}{4}
+\contentsline {subsection}{\numberline {2.2.2}Grundlegende Topologie des k\IeC {\"u}nstlichen neuronalen Netzes}{4}
 \contentsline {subsection}{\numberline {2.2.3}Lernverfahren des k\IeC {\"u}nstlichen neuronalen Netzes}{4}
 \contentsline {section}{\numberline {2.3}Beschreibung von Frameworks}{4}
 \contentsline {subsection}{\numberline {2.3.1}SNNS}{4}
@@ -18,13 +21,14 @@
 \contentsline {section}{\numberline {2.4}Wahl des geeignetsten Frameworks}{4}
 \contentsline {chapter}{\numberline {3}Umsetzung}{5}
 \contentsline {section}{\numberline {3.1}Erstellung des k\IeC {\"u}nstlichen neuronalen Netzes}{5}
-\contentsline {subsection}{\numberline {3.1.1}Wahl der Topologie}{5}
-\contentsline {subsection}{\numberline {3.1.2}Wahl der Transferfunktion}{5}
-\contentsline {subsection}{\numberline {3.1.3}Wahl der Lernregel}{5}
-\contentsline {section}{\numberline {3.2}\IeC {\"U}berf\IeC {\"u}hrung des k\IeC {\"u}nstlichen neuronalen Netzes in einer Anwendung}{5}
-\contentsline {section}{\numberline {3.3}Umsetzen der Anwendung}{5}
-\contentsline {chapter}{\numberline {4}Beschreibung der Anwendung}{6}
-\contentsline {section}{\numberline {4.1}Elemente der GUI}{6}
-\contentsline {section}{\numberline {4.2}Architektur der Anwendung}{6}
-\contentsline {chapter}{\numberline {5}Fazit}{7}
-\contentsline {chapter}{\nonumberline Literaturverzeichnis}{8}
+\contentsline {subsection}{\numberline {3.1.1}Ermittlung der genauen Topologie}{5}
+\contentsline {subsection}{\numberline {3.1.2}Ermittlung der Transferfunktion}{6}
+\contentsline {subsection}{\numberline {3.1.3}Ermittlung der Lernregel und Lernrate}{8}
+\contentsline {section}{\numberline {3.2}Das erstellte k\IeC {\"u}nstliche neuronale Netz}{8}
+\contentsline {section}{\numberline {3.3}Implementierung der Anwendung}{8}
+\contentsline {section}{\numberline {3.4}Zusammenf\IeC {\"u}hrung des Netzes mit der Anwendung}{8}
+\contentsline {chapter}{\numberline {4}Beschreibung der Anwendung}{9}
+\contentsline {section}{\numberline {4.1}Elemente der GUI}{9}
+\contentsline {section}{\numberline {4.2}Architektur der Anwendung}{9}
+\contentsline {chapter}{\numberline {5}Fazit}{10}
+\contentsline {chapter}{\nonumberline Literaturverzeichnis}{11}
