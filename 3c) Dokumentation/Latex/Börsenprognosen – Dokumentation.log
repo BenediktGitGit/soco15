@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.11.8)  15 NOV 2015 18:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.11.8)  15 NOV 2015 19:30
 entering extended mode
 **"Börsenprognosen – Dokumentation.tex"
 ("Börsenprognosen – Dokumentation.tex"
@@ -705,11 +705,11 @@ Package acronym Info: Label `acro:gui' newly defined as it shall be overridden
 although it is yet undefined on input line 92.
  [2 <./Vorgehensdiagramm.PNG>]
 Kapitel 2.
-<mockup.PNG, id=39, 974.64125pt x 579.16376pt>
+<mockup.PNG, id=39, 740.0147pt x 453.94594pt>
 File: mockup.PNG Graphic file (type png)
  <use mockup.PNG>
 Package pdftex.def Info: mockup.PNG used on input line 105.
-(pdftex.def)             Requested size: 432.48051pt x 256.98914pt.
+(pdftex.def)             Requested size: 432.48051pt x 265.29755pt.
 
 <KonzeptKNN.PNG, id=40, 631.60968pt x 414.79968pt>
 File: KonzeptKNN.PNG Graphic file (type png)
@@ -782,7 +782,7 @@ public/lm/lmr12.pfb><D:/Programme/MikTeX/fonts/type1/public/lm/lmri10.pfb><D:/P
 rogramme/MikTeX/fonts/type1/public/lm/lmro10.pfb><D:/Programme/MikTeX/fonts/typ
 e1/public/lm/lmssbx10.pfb><D:/Programme/MikTeX/fonts/type1/public/lm/lmsy10.pfb
 ><D:/Programme/MikTeX/fonts/type1/public/lm/lmsy8.pfb>
-Output written on "Börsenprognosen – Dokumentation.pdf" (17 pages, 592153 by
+Output written on "Börsenprognosen – Dokumentation.pdf" (17 pages, 594373 by
 tes).
 PDF statistics:
  125 PDF objects out of 1000 (max. 8388607)
