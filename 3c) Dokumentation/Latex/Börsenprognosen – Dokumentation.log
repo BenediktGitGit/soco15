@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.11.8)  15 NOV 2015 18:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.11.8)  15 NOV 2015 18:46
 entering extended mode
 **"Börsenprognosen – Dokumentation.tex"
 ("Börsenprognosen – Dokumentation.tex"
@@ -710,39 +710,46 @@ File: mockup.PNG Graphic file (type png)
  <use mockup.PNG>
 Package pdftex.def Info: mockup.PNG used on input line 105.
 (pdftex.def)             Requested size: 432.48051pt x 256.98914pt.
- [3
 
- <./mockup.PNG>] [4]
+<KonzeptKNN.PNG, id=40, 631.60968pt x 414.79968pt>
+File: KonzeptKNN.PNG Graphic file (type png)
+ <use KonzeptKNN.PNG>
+Package pdftex.def Info: KonzeptKNN.PNG used on input line 117.
+(pdftex.def)             Requested size: 432.48051pt x 284.02847pt.
+
+[3
+
+ <./mockup.PNG>] [4 <./KonzeptKNN.PNG>]
 Kapitel 3.
-<4-5-1.PNG, id=47, 350.05782pt x 269.50688pt>
+<4-5-1.PNG, id=48, 350.05782pt x 269.50688pt>
 File: 4-5-1.PNG Graphic file (type png)
  <use 4-5-1.PNG>
-Package pdftex.def Info: 4-5-1.PNG used on input line 142.
+Package pdftex.def Info: 4-5-1.PNG used on input line 150.
 (pdftex.def)             Requested size: 341.43307pt x 262.88535pt.
 
-<4-9-1.PNG, id=48, 550.30594pt x 284.56313pt>
+<4-9-1.PNG, id=49, 550.30594pt x 284.56313pt>
 File: 4-9-1.PNG Graphic file (type png)
  <use 4-9-1.PNG>
-Package pdftex.def Info: 4-9-1.PNG used on input line 150.
+Package pdftex.def Info: 4-9-1.PNG used on input line 158.
 (pdftex.def)             Requested size: 341.43307pt x 176.5619pt.
  [5
 
- <./4-5-1.PNG>] <4-13-1.PNG, id=57, 753.5653pt x 272.51813pt>
+ <./4-5-1.PNG>] <4-13-1.PNG, id=58, 753.5653pt x 272.51813pt>
 File: 4-13-1.PNG Graphic file (type png)
  <use 4-13-1.PNG>
-Package pdftex.def Info: 4-13-1.PNG used on input line 159.
+Package pdftex.def Info: 4-13-1.PNG used on input line 167.
 (pdftex.def)             Requested size: 341.43307pt x 123.47198pt.
 
-<Sigmoid.PNG, id=58, 231.11343pt x 182.93344pt>
+<Sigmoid.PNG, id=59, 231.11343pt x 182.93344pt>
 File: Sigmoid.PNG Graphic file (type png)
  <use Sigmoid.PNG>
-Package pdftex.def Info: Sigmoid.PNG used on input line 193.
+Package pdftex.def Info: Sigmoid.PNG used on input line 201.
 (pdftex.def)             Requested size: 227.62206pt x 180.17235pt.
 
-<tanh.PNG, id=59, 237.13594pt x 168.63pt>
+<tanh.PNG, id=60, 237.13594pt x 168.63pt>
 File: tanh.PNG Graphic file (type png)
  <use tanh.PNG>
-Package pdftex.def Info: tanh.PNG used on input line 206.
+Package pdftex.def Info: tanh.PNG used on input line 214.
 (pdftex.def)             Requested size: 227.62206pt x 161.87009pt.
  [6 <./4-9-1.PNG> <./4-13-1.PNG>] [7 <./Sigmoid.PNG> <./tanh.PNG>] [8]
 Kapitel 4.
@@ -757,10 +764,10 @@ Kapitel 5.
 ]
 ("Börsenprognosen – Dokumentation.aux") ) 
 Here is how much of TeX's memory you used:
- 5485 strings out of 493673
- 79518 string characters out of 3147214
- 206411 words of memory out of 3000000
- 8706 multiletter control sequences out of 15000+200000
+ 5492 strings out of 493673
+ 79677 string characters out of 3147214
+ 206421 words of memory out of 3000000
+ 8712 multiletter control sequences out of 15000+200000
  62424 words of font info for 47 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  40i,8n,52p,829b,263s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -775,10 +782,10 @@ public/lm/lmr12.pfb><D:/Programme/MikTeX/fonts/type1/public/lm/lmri10.pfb><D:/P
 rogramme/MikTeX/fonts/type1/public/lm/lmro10.pfb><D:/Programme/MikTeX/fonts/typ
 e1/public/lm/lmssbx10.pfb><D:/Programme/MikTeX/fonts/type1/public/lm/lmsy10.pfb
 ><D:/Programme/MikTeX/fonts/type1/public/lm/lmsy8.pfb>
-Output written on "Börsenprognosen – Dokumentation.pdf" (17 pages, 558664 by
+Output written on "Börsenprognosen – Dokumentation.pdf" (17 pages, 592153 by
 tes).
 PDF statistics:
- 124 PDF objects out of 1000 (max. 8388607)
+ 125 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
