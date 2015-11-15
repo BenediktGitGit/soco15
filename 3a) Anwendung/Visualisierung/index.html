@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <link href="c3arch/c3.min.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+
+</head>
+<body>
+<h1>Sample 1: Most basic C3JS sample</h1>
+
+<!-- Load the javascript libraries -->
+<!--<script src="http://cdn.pubnub.com/pubnub.min.js"></script>-->
+<script src="d3-master/d3.min.js" charset="utf-8"></script>
+<script src="c3arch/c3.min.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular-animate.min.js"></script>-->
+<!--<script src="eon-chart-master/pubnub-c3.js"></script>-->
+<!--<script src="js/main.js"></script>-->
+
+<!--<div class="diag-container">-->
+    <div id="chart" style="position: absolute; margin-left: 0px;"></div>
+    <div id="donut" style="position: absolute; margin-left: 500px; padding-left: 500px; z-index: 2; "></div>
+    <!--</div>-->
+
+<script type="text/javascript">
+    
+    donutProcessing();
+    chartProcessing();
+    var handle;
+    function chartProcessing() {
+        var chart = c3.generate({
+            data: {
+                xs: {
+                    data1: 'date1'
+                },
+                // iris data from R
+                columns: [
+                    ['date1', 1425921671000, 1425921672000, 1425921673000, 1425921674000],
+                    ['data1', 1, 2, 3, 4]
+                ],
+                type: 'spline'
+            },
+            axis: {
+                x: {
+                    type: 'timeseries',
+                    tick: {
+                        format: '%m/%d'
+                    }
+                }
+            }
+        });
+        handle = setTimeout(function () {
+            chart.flow({
+                columns: [
+                    ["date1", 1425921675000],
+                    ["data1", 2]
+                ],
+                length: 1
+            });
+        }, 1500);
+        clearTimeout( handle );
+        handle = setTimeout(function () {
+            chart.flow({
+                columns: [
+                    ["date1", 1425921676000],
+                    ["data1", 7]
+                ],
+                length: 1
+            });
+        }, 1500);
+        clearTimeout( handle );
+    }
+    function donutProcessing() {
+        var donut = c3.generate({
+            data: {
+                columns: [
+                    ['data1', 30],
+                    ['data2', 120]
+                ],
+                type: 'donut',
+                onclick: function (d, i) {
+                    console.log("onclick", d, i);
+                },
+                onmouseover: function (d, i) {
+                    console.log("onmouseover", d, i);
+                },
+                onmouseout: function (d, i) {
+                    console.log("onmouseout", d, i);
+                }
+            },
+            donut: {
+                title: "Iris Petal Width"
+            }
+        });
+
+        handle = setTimeout(function () {
+            donut.load({
+                columns: [
+                    ["setosa", 0.2, 0.2, 0.2, 0.2, 0.2, 0.4, 0.3, 0.2, 0.2, 0.1, 0.2, 0.2, 0.1, 0.1, 0.2, 0.4, 0.4, 0.3, 0.3, 0.3, 0.2, 0.4, 0.2, 0.5, 0.2, 0.2, 0.4, 0.2, 0.2, 0.2, 0.2, 0.4, 0.1, 0.2, 0.2, 0.2, 0.2, 0.1, 0.2, 0.2, 0.3, 0.3, 0.2, 0.6, 0.4, 0.3, 0.2, 0.2, 0.2, 0.2],
+                    ["versicolor", 1.4, 1.5, 1.5, 1.3, 1.5, 1.3, 1.6, 1.0, 1.3, 1.4, 1.0, 1.5, 1.0, 1.4, 1.3, 1.4, 1.5, 1.0, 1.5, 1.1, 1.8, 1.3, 1.5, 1.2, 1.3, 1.4, 1.4, 1.7, 1.5, 1.0, 1.1, 1.0, 1.2, 1.6, 1.5, 1.6, 1.5, 1.3, 1.3, 1.3, 1.2, 1.4, 1.2, 1.0, 1.3, 1.2, 1.3, 1.3, 1.1, 1.3],
+                    ["virginica", 2.5, 1.9, 2.1, 1.8, 2.2, 2.1, 1.7, 1.8, 1.8, 2.5, 2.0, 1.9, 2.1, 2.0, 2.4, 2.3, 1.8, 2.2, 2.3, 1.5, 2.3, 2.0, 2.0, 1.8, 2.1, 1.8, 1.8, 1.8, 2.1, 1.6, 1.9, 2.0, 2.2, 1.5, 1.4, 2.3, 2.4, 1.8, 1.8, 2.1, 2.4, 2.3, 1.9, 2.3, 2.5, 2.3, 1.9, 2.0, 2.3, 1.8],
+                ]
+            });
+        }, 1500);
+
+        clearTimeout( handle );
+        handle = setTimeout(function () {
+            donut.load({
+                ids: 'data1'
+            });
+            donut.unload({
+                ids: 'data2'
+            });
+        }, 1500);
+        clearTimeout( handle );
+    }
+
+
+</script>
+
+</body>
+</html>
