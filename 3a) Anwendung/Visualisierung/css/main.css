@@ -6,8 +6,20 @@ body
   font-family:verdana,helvetica,arial,sans-serif;
 }
 
-.chart {
+#chart {
+ margin-right: 20%;
+}
 
+#donut {
+margin-left: 70%;
+}
+
+.MSE-Diag {
+  margin-right: 30%;
+}
+
+.content-MSE-donut-Box {
+  margin-right: 20%;
 }
 
 .amChartsButtonSelected

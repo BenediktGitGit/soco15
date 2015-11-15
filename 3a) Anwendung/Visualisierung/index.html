@@ -9,7 +9,7 @@
 
 </head>
 <body>
-<h1>Sample 1: Most basic C3JS sample</h1>
+<h1>Stockmarket Prediction - Neural Network Cockpit Overview</h1>
 
 <!-- Load the javascript libraries -->
 <!--<script src="http://cdn.pubnub.com/pubnub.min.js"></script>-->
@@ -19,58 +19,61 @@
 <!--<script src="eon-chart-master/pubnub-c3.js"></script>-->
 <!--<script src="js/main.js"></script>-->
 
-<!--<div class="diag-container">-->
-    <div id="chart" style="position: absolute; margin-left: 0px;"></div>
-    <div id="donut" style="position: absolute; margin-left: 500px; padding-left: 500px; z-index: 2; "></div>
-    <!--</div>-->
+
+    <div id="chart"></div>
+    <div class="content-MSE-donut-Box">
+    <div id="donut"></div>
+</div>
 
 <script type="text/javascript">
     
     donutProcessing();
     chartProcessing();
     var handle;
+    var handle1;
     function chartProcessing() {
+
+        var real_output =  ['real_output', 30, 200, 100, 400, 150];
+        var predicted_output = ['predicted output', 50, 20, 10, 40, 15];
+        var i;
+        var helper = 0;
+
         var chart = c3.generate({
+            x: 'real_output',
+            bindto: '#chart',
             data: {
-                xs: {
-                    data1: 'date1'
-                },
-                // iris data from R
                 columns: [
-                    ['date1', 1425921671000, 1425921672000, 1425921673000, 1425921674000],
-                    ['data1', 1, 2, 3, 4]
+                    real_output,
+                    predicted_output
                 ],
-                type: 'spline'
-            },
-            axis: {
-                x: {
-                    type: 'timeseries',
-                    tick: {
-                        format: '%m/%d'
+                axes: {
+                    show: true,
+                    data2: 'DAX',
+                    label: { // ADD
+                        text: 'Value',
+                        position: 'outer-middle'
+                    }
+                },
+                axis: {
+                    x: {
+                        tick: {
+                            count: 5,
+                            format: d3.format("$,")
+                        }
                     }
                 }
-            }
+            },
+            bindto: "#chart"
         });
-        handle = setTimeout(function () {
-            chart.flow({
+
+        setTimeout(function () {
+            chart.load({
                 columns: [
-                    ["date1", 1425921675000],
-                    ["data1", 2]
-                ],
-                length: 1
+                    ['real_output', 200, 100, 400, 400, 300],
+                    ['predicted output', 20, 10, 40, 15, 70]
+                ]
             });
-        }, 1500);
-        clearTimeout( handle );
-        handle = setTimeout(function () {
-            chart.flow({
-                columns: [
-                    ["date1", 1425921676000],
-                    ["data1", 7]
-                ],
-                length: 1
-            });
-        }, 1500);
-        clearTimeout( handle );
+        }, 1000);
     }
     function donutProcessing() {
         var donut = c3.generate({
@@ -92,10 +95,11 @@
             },
             donut: {
                 title: "Iris Petal Width"
-            }
+            },
+            bindto: "#donut"
         });
 
-        handle = setTimeout(function () {
+        handle1 = setTimeout(function () {
             donut.load({
                 columns: [
                     ["setosa", 0.2, 0.2, 0.2, 0.2, 0.2, 0.4, 0.3, 0.2, 0.2, 0.1, 0.2, 0.2, 0.1, 0.1, 0.2, 0.4, 0.4, 0.3, 0.3, 0.3, 0.2, 0.4, 0.2, 0.5, 0.2, 0.2, 0.4, 0.2, 0.2, 0.2, 0.2, 0.4, 0.1, 0.2, 0.2, 0.2, 0.2, 0.1, 0.2, 0.2, 0.3, 0.3, 0.2, 0.6, 0.4, 0.3, 0.2, 0.2, 0.2, 0.2],
@@ -106,7 +110,7 @@
         }, 1500);
 
         clearTimeout( handle );
-        handle = setTimeout(function () {
+        handle1 = setTimeout(function () {
             donut.load({
                 ids: 'data1'
             });

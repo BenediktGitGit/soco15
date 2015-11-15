@@ -30,6 +30,7 @@ var chart = c3.generate({
         x: {
             type: 'timeseries',
             tick: {
+                max: 5,
                 format: '%m/%d'
             }
         }
