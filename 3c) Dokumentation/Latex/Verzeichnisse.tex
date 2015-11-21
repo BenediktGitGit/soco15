@@ -1,0 +1,24 @@
+%Römische Nummerierung % Protusion setzen
+\pagenumbering{Roman}
+\microtypesetup{protrusion=false}
+
+%Verzeichnisse
+\tableofcontents
+\listoffigures
+\listoftables
+\listofformels
+
+%Abkürzungsverzeichnis
+\chapter*{Abkürzungsverzeichnis}
+\addcontentsline{toc}{chapter}{Abkürzungsverzeichnis}
+
+\begin{acronym}[SEPSEP]
+\acro{knn}[KNN]{Künstliches neuronales Netz}
+\acro{dax}[DAX]{Deutscher Aktienindex}
+\acro{gui}[GUI]{Graphical User Interface}
+\end{acronym}  
+ 
+
+\clearpage
+\microtypesetup{protrusion=true} 
+\pagenumbering{arabic} 

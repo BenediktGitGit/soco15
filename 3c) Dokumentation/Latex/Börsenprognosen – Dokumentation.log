@@ -1,64 +1,55 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.11.8)  15 NOV 2015 19:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.11.8)  21 NOV 2015 18:50
 entering extended mode
 **"Börsenprognosen – Dokumentation.tex"
 ("Börsenprognosen – Dokumentation.tex"
 LaTeX2e <2015/01/01> patch level 2
 Babel <3.9m> and hyphenation patterns for 69 languages loaded.
-
-(C:\Users\Sebastian\Documents\texmf-koma-script-current\tex\latex\koma-script\s
-crreprt.cls
-Document Class: scrreprt 2015/02/07 v3.16 KOMA-Script document class (report)
-
-(C:\Users\Sebastian\Documents\texmf-koma-script-current\tex\latex\koma-script\s
-crkbase.sty
-Package: scrkbase 2015/02/07 v3.16 KOMA-Script package (KOMA-Script-dependent b
-asics and keyval usage)
-
-(C:\Users\Sebastian\Documents\texmf-koma-script-current\tex\latex\koma-script\s
-crbase.sty
-Package: scrbase 2015/02/07 v3.16 KOMA-Script package (KOMA-Script-independent 
+(D:\Programme\MikTeX\tex\latex\koma-script\scrreprt.cls
+Document Class: scrreprt 2015/10/03 v3.19a KOMA-Script document class (report)
+(D:\Programme\MikTeX\tex\latex\koma-script\scrkbase.sty
+Package: scrkbase 2015/10/03 v3.19a KOMA-Script package (KOMA-Script-dependent 
 basics and keyval usage)
- (D:\Programme\MikTeX\tex\latex\graphics\keyval.sty
+
+(D:\Programme\MikTeX\tex\latex\koma-script\scrbase.sty
+Package: scrbase 2015/10/03 v3.19a KOMA-Script package (KOMA-Script-independent
+ basics and keyval usage)
+
+(D:\Programme\MikTeX\tex\latex\graphics\keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-(C:\Users\Sebastian\Documents\texmf-koma-script-current\tex\latex\koma-script\s
-crlfile.sty
-Package: scrlfile 2015/02/07 v3.16 KOMA-Script package (loading files)
+(D:\Programme\MikTeX\tex\latex\koma-script\scrlfile.sty
+Package: scrlfile 2015/10/03 v3.19a KOMA-Script package (loading files)
 
-Package scrlfile, 2015/02/07 v3.16 KOMA-Script package (loading files)
+Package scrlfile, 2015/10/03 v3.19a KOMA-Script package (loading files)
                   Copyright (C) Markus Kohm
 
-)))
-(C:\Users\Sebastian\Documents\texmf-koma-script-current\tex\latex\koma-script\t
-ocbasic.sty
-Package: tocbasic 2015/02/07 v3.16 KOMA-Script package (handling toc-files)
+))) (D:\Programme\MikTeX\tex\latex\koma-script\tocbasic.sty
+Package: tocbasic 2015/10/03 v3.19a KOMA-Script package (handling toc-files)
 )
 Package tocbasic Info: omitting babel extension for `toc'
 (tocbasic)             because of feature `nobabel' available
-(tocbasic)             for `toc' on input line 118.
+(tocbasic)             for `toc' on input line 125.
 Package tocbasic Info: omitting babel extension for `lof'
 (tocbasic)             because of feature `nobabel' available
-(tocbasic)             for `lof' on input line 119.
+(tocbasic)             for `lof' on input line 126.
 Package tocbasic Info: omitting babel extension for `lot'
 (tocbasic)             because of feature `nobabel' available
-(tocbasic)             for `lot' on input line 120.
-Package tocbasic Info: defining new hook before heading of `' on input line 118
-0.
+(tocbasic)             for `lot' on input line 127.
+Package tocbasic Info: defining new hook before heading of `' on input line 158
+8.
 Class scrreprt Info: File `scrsize11pt.clo' used instead of
-(scrreprt)           file `scrsize11.clo' to setup font sizes on input line 171
-2.
+(scrreprt)           file `scrsize11.clo' to setup font sizes on input line 224
+8.
 
-(C:\Users\Sebastian\Documents\texmf-koma-script-current\tex\latex\koma-script\s
-crsize11pt.clo
-File: scrsize11pt.clo 2015/02/07 v3.16 KOMA-Script font size class option (11pt
+(D:\Programme\MikTeX\tex\latex\koma-script\scrsize11pt.clo
+File: scrsize11pt.clo 2015/10/03 v3.19a KOMA-Script font size class option (11p
+t)
 )
-)
-(C:\Users\Sebastian\Documents\texmf-koma-script-current\tex\latex\koma-script\t
-ypearea.sty
-Package: typearea 2015/02/07 v3.16 KOMA-Script package (type area)
+(D:\Programme\MikTeX\tex\latex\koma-script\typearea.sty
+Package: typearea 2015/10/03 v3.19a KOMA-Script package (type area)
 
-Package typearea, 2015/02/07 v3.16 KOMA-Script package (type area)
+Package typearea, 2015/10/03 v3.19a KOMA-Script package (type area)
                   Copyright (C) Frank Neukam, 1992-1994
                   Copyright (C) Markus Kohm, 1994-
 
@@ -90,7 +81,7 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 11.0pt
 (typearea)              \footskip       = 47.6pt
 (typearea)              \baselineskip   = 13.6pt
-(typearea)              on input line 1342.
+(typearea)              on input line 1509.
 )
 \c@part=\count80
 \c@chapter=\count81
@@ -99,14 +90,14 @@ Package typearea Info: These are the values describing the layout:
 \c@subsubsection=\count84
 \c@paragraph=\count85
 \c@subparagraph=\count86
-LaTeX Info: Redefining \textsubscript on input line 3826.
+LaTeX Info: Redefining \textsubscript on input line 4652.
 \abovecaptionskip=\skip46
 \belowcaptionskip=\skip47
 \c@pti@nb@sid@b@x=\box26
 \c@figure=\count87
 \c@table=\count88
 \bibindent=\dimen102
-) (D:\Programme\MikTeX\tex\generic\babel\babel.sty
+) (Packages.tex (D:\Programme\MikTeX\tex\generic\babel\babel.sty
 Package: babel 2015/08/03 3.9m The Babel package
 
 *************************************
@@ -527,39 +518,295 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks25
 \@floatcapt=\box30
 )
-Package tocbasic Info: setting babel extension for `for' on input line 20.
+(D:\Programme\MikTeX\tex\latex\amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-("Börsenprognosen – Dokumentation.aux")
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 34.
+(D:\Programme\MikTeX\tex\latex\amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(D:\Programme\MikTeX\tex\latex\amscls\amsthm.sty
+Package: amsthm 2015/03/04 v2.20.2
+\thm@style=\toks26
+\thm@bodyfont=\toks27
+\thm@headfont=\toks28
+\thm@notefont=\toks29
+\thm@headpunct=\toks30
+\thm@preskip=\skip51
+\thm@postskip=\skip52
+\thm@headsep=\skip53
+\dth@everypar=\toks31
+)
+(D:\Programme\MikTeX\tex\latex\base\textcomp.sty
+Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
 
-(D:\Programme\MikTeX\tex\latex\lm\t1lmr.fd
+(D:\Programme\MikTeX\tex\latex\base\ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+Now handling font encoding TS1 ...
+... processing UTF-8 mapping file for font encoding TS1
+
+(D:\Programme\MikTeX\tex\latex\base\ts1enc.dfu
+File: ts1enc.dfu 2015/06/27 v1.1n UTF-8 support for inputenc
+   defining Unicode char U+00A2 (decimal 162)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A5 (decimal 165)
+   defining Unicode char U+00A6 (decimal 166)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00A8 (decimal 168)
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AC (decimal 172)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00AF (decimal 175)
+   defining Unicode char U+00B0 (decimal 176)
+   defining Unicode char U+00B1 (decimal 177)
+   defining Unicode char U+00B2 (decimal 178)
+   defining Unicode char U+00B3 (decimal 179)
+   defining Unicode char U+00B4 (decimal 180)
+   defining Unicode char U+00B5 (decimal 181)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00B9 (decimal 185)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+00BC (decimal 188)
+   defining Unicode char U+00BD (decimal 189)
+   defining Unicode char U+00BE (decimal 190)
+   defining Unicode char U+00D7 (decimal 215)
+   defining Unicode char U+00F7 (decimal 247)
+   defining Unicode char U+0192 (decimal 402)
+   defining Unicode char U+02C7 (decimal 711)
+   defining Unicode char U+02D8 (decimal 728)
+   defining Unicode char U+02DD (decimal 733)
+   defining Unicode char U+0E3F (decimal 3647)
+   defining Unicode char U+2016 (decimal 8214)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+203B (decimal 8251)
+   defining Unicode char U+203D (decimal 8253)
+   defining Unicode char U+2044 (decimal 8260)
+   defining Unicode char U+204E (decimal 8270)
+   defining Unicode char U+2052 (decimal 8274)
+   defining Unicode char U+20A1 (decimal 8353)
+   defining Unicode char U+20A4 (decimal 8356)
+   defining Unicode char U+20A6 (decimal 8358)
+   defining Unicode char U+20A9 (decimal 8361)
+   defining Unicode char U+20AB (decimal 8363)
+   defining Unicode char U+20AC (decimal 8364)
+   defining Unicode char U+20B1 (decimal 8369)
+   defining Unicode char U+2103 (decimal 8451)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2117 (decimal 8471)
+   defining Unicode char U+211E (decimal 8478)
+   defining Unicode char U+2120 (decimal 8480)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2126 (decimal 8486)
+   defining Unicode char U+2127 (decimal 8487)
+   defining Unicode char U+212E (decimal 8494)
+   defining Unicode char U+2190 (decimal 8592)
+   defining Unicode char U+2191 (decimal 8593)
+   defining Unicode char U+2192 (decimal 8594)
+   defining Unicode char U+2193 (decimal 8595)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+2422 (decimal 9250)
+   defining Unicode char U+25E6 (decimal 9702)
+   defining Unicode char U+25EF (decimal 9711)
+   defining Unicode char U+266A (decimal 9834)
+))
+LaTeX Info: Redefining \oldstylenums on input line 334.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 350.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 351.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 352.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 353.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 354.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 355.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 356.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 357.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 358.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 359.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 360.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 361.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 362.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 363.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 364.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 365.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 366.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 367.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 368.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 369.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 370.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 371.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 372.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 373.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 374.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 375.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 376.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 377.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 378.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 379.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 380.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 381.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 382.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 383.
+Package textcomp Info: Setting lmtt sub-encoding to TS1/0 on input line 384.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 385.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 386.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 387.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 388.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 389.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 390.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 391.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 392.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 393.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 394.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 395.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 396.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 397.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 398.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 399.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 400.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 401.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 402.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 403.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 404.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 405.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
+)
+(D:\Programme\MikTeX\tex\latex\setspace\setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+(D:\Programme\MikTeX\tex\latex\koma-script\scrpage2.sty
+Package: scrpage2 2015/10/03 v3.19a KOMA-Script package (page head and foot)
+LaTeX Info: Redefining \pagemark on input line 174.
+)
+(D:\Programme\MikTeX\tex\latex\blindtext\blindtext.sty
+Package: blindtext 2012/01/06 V2.0 blindtext-Package
+
+(D:\Programme\MikTeX\tex\latex\tools\xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+\c@blindtext=\count109
+\c@Blindtext=\count110
+\c@blind@countparstart=\count111
+\blind@countxx=\count112
+\blindtext@numBlindtext=\count113
+\blind@countyy=\count114
+\c@blindlist=\count115
+\c@blindlistlevel=\count116
+\c@blindlist@level=\count117
+\blind@listitem=\count118
+\c@blind@listcount=\count119
+\c@blind@levelcount=\count120
+\blind@mathformula=\count121
+\blind@Mathformula=\count122
+\c@blind@randomcount=\count123
+\c@blind@randommax=\count124
+\c@blind@pangramcount=\count125
+\c@blind@pangrammax=\count126
+)
+(D:\Programme\MikTeX\tex\latex\microtype\microtype.sty
+Package: microtype 2013/05/23 v2.5a Micro-typographical refinements (RS)
+\MT@toks=\toks32
+\MT@count=\count127
+LaTeX Info: Redefining \textls on input line 766.
+\MT@outer@kern=\dimen123
+LaTeX Info: Redefining \textmicrotypecontext on input line 1285.
+\MT@listname@count=\count128
+
+(D:\Programme\MikTeX\tex\latex\microtype\microtype-pdftex.def
+File: microtype-pdftex.def 2013/05/23 v2.5a Definitions specific to pdftex (RS)
+
+LaTeX Info: Redefining \lsstyle on input line 915.
+LaTeX Info: Redefining \lslig on input line 915.
+\MT@outer@space=\skip54
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+
+(D:\Programme\MikTeX\tex\latex\microtype\microtype.cfg
+File: microtype.cfg 2013/05/23 v2.5a microtype main configuration file (RS)
+))) (PDFInfo.tex)
+(Seitenstil.tex
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 17.
+ (D:\Programme\MikTeX\tex\latex\lm\t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
+Package typearea Info: These are the values describing the layout:
+(typearea)             DIV  = 11
+(typearea)             BCOR = 0.0pt
+(typearea)             \paperwidth      = 597.50787pt
+(typearea)              \textwidth      = 434.5512pt
+(typearea)              DIV departure   = -10%
+(typearea)              \evensidemargin = 9.20834pt
+(typearea)              \oddsidemargin  = 9.20834pt
+(typearea)             \paperheight     = 845.04684pt
+(typearea)              \textheight     = 571.89001pt
+(typearea)              \topmargin      = 4.55244pt
+(typearea)              \headheight     = 20.62096pt
+(typearea)              \headsep        = 24.74515pt
+(typearea)              \topskip        = 11.0pt
+(typearea)              \footskip       = 57.73868pt
+(typearea)              \baselineskip   = 16.49677pt
+(typearea)              on input line 17.
+Package tocbasic Info: setting babel extension for `for' on input line 20.
+)
+("Börsenprognosen – Dokumentation.aux")
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 26.
+
+(D:\Programme\MikTeX\tex\latex\base\ts1cmr.fd
+File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 26.
+
 (D:\Programme\MikTeX\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count109
-\scratchdimen=\dimen123
+\scratchcounter=\count129
+\scratchdimen=\dimen124
 \scratchbox=\box31
-\nofMPsegments=\count110
-\nofMParguments=\count111
-\everyMPshowfont=\toks26
-\MPscratchCnt=\count112
-\MPscratchDim=\dimen124
-\MPnumerator=\count113
-\makeMPintoPDFobject=\count114
-\everyMPtoPDFconversion=\toks27
+\nofMPsegments=\count130
+\nofMParguments=\count131
+\everyMPshowfont=\toks33
+\MPscratchCnt=\count132
+\MPscratchDim=\dimen125
+\MPnumerator=\count133
+\makeMPintoPDFobject=\count134
+\everyMPtoPDFconversion=\toks34
 )
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -573,15 +820,15 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 * v-part:(T,H,B)=(56.9055pt, 725.54538pt, 62.59596pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=455.24411pt
-* \textheight=725.54538pt
-* \oddsidemargin=-1.1381pt
-* \evensidemargin=-1.1381pt
-* \topmargin=-52.7645pt
-* \headheight=17.0pt
-* \headsep=20.40001pt
+* \textwidth=434.5512pt
+* \textheight=571.89001pt
+* \oddsidemargin=9.20834pt
+* \evensidemargin=9.20834pt
+* \topmargin=4.55244pt
+* \headheight=20.62096pt
+* \headsep=24.74515pt
 * \topskip=11.0pt
-* \footskip=47.6pt
+* \footskip=57.73868pt
 * \marginparwidth=54.3189pt
 * \marginparsep=12.8401pt
 * \columnsep=10.0pt
@@ -595,84 +842,135 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 44.
+LaTeX Info: Redefining \microtypecontext on input line 26.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2),
+(microtype)             factor: 1100.
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 10, shrink: 10, step: 1, non-selected.
+Package microtype Info: Using default expansion set `basictext'.
+Package microtype Info: Tracking enabled.
+Package microtype Info: Using default tracking set `smallcaps'.
+Package microtype Info: Adjustment of interword spacing enabled.
+Package microtype Info: Using default spacing set `basictext'.
+Package microtype Info: Adjustment of character kerning enabled.
+Package microtype Info: Using default kerning set `alltext'.
+(D:\Programme\MikTeX\tex\latex\microtype\mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
+(RS)
+) (Deckblatt.tex)
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 29.
+
 (D:\Programme\MikTeX\tex\latex\lm\t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
+Package microtype Info: Loading generic settings for font family
+(microtype)             `lmss' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
 <titelbild.png, id=1, 1314.0pt x 1046.82pt>
 File: titelbild.png Graphic file (type png)
  <use titelbild.png>
-Package pdftex.def Info: titelbild.png used on input line 44.
+Package pdftex.def Info: titelbild.png used on input line 29.
 (pdftex.def)             Requested size: 142.26378pt x 113.3296pt.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 44.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 29.
 
 (D:\Programme\MikTeX\tex\latex\lm\ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 44.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 29.
 
 (D:\Programme\MikTeX\tex\latex\lm\omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 44.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 29.
 
 
 (D:\Programme\MikTeX\tex\latex\lm\omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 44.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 29.
 
 
 (D:\Programme\MikTeX\tex\latex\lm\omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 44.
+(Font)              <14.4> on input line 29.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 44.
+(Font)              <10> on input line 29.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 44.
+(Font)              <7> on input line 29.
+LaTeX Font Info:    Try loading font information for U+msa on input line 29.
 
+(D:\Programme\MikTeX\tex\latex\amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+(D:\Programme\MikTeX\tex\latex\microtype\mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 29.
+
+(D:\Programme\MikTeX\tex\latex\amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+(D:\Programme\MikTeX\tex\latex\microtype\mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
 <TH-Logo.jpg, id=3, 1346.02875pt x 189.70876pt>
 File: TH-Logo.jpg Graphic file (type jpg)
  <use TH-Logo.jpg>
-Package pdftex.def Info: TH-Logo.jpg used on input line 44.
+Package pdftex.def Info: TH-Logo.jpg used on input line 29.
 (pdftex.def)             Requested size: 284.52756pt x 40.10052pt.
  [1
 
 
 
 {C:/Users/Sebastian/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./titel
-bild.png> <./TH-Logo.jpg>] ("Börsenprognosen – Dokumentation.toc"
+bild.png> <./TH-Logo.jpg>] (Verzeichnisse.tex
+Package tocbasic Info: character protrusion at toc deactivated on input line 5.
+
+ ("Börsenprognosen – Dokumentation.toc"
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 7.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 7.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 7.
-)
+
+[1
+
+])
 \tf@toc=\write4
- [1
+ [2]
+Package tocbasic Info: character protrusion at lof deactivated on input line 6.
 
-]
-("Börsenprognosen – Dokumentation.lof")
+ ("Börsenprognosen – Dokumentation.lof")
 \tf@lof=\write5
- [2
-
-]
-("Börsenprognosen – Dokumentation.lot")
-\tf@lot=\write6
  [3
 
 ]
-("Börsenprognosen – Dokumentation.for")
-\tf@for=\write7
+Package tocbasic Info: character protrusion at lot deactivated on input line 7.
+
+
+("Börsenprognosen – Dokumentation.lot")
+\tf@lot=\write6
  [4
 
-] [5
-
 ]
-Kapitel 1.
+Package tocbasic Info: character protrusion at for deactivated on input line 8.
+
+
+("Börsenprognosen – Dokumentation.for")
+\tf@for=\write7
+ [5
+
+] [6
+
+]) (Einleitung.tex
+chapter 1.
 
 Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              Implementation of \float@addtolist became
@@ -689,103 +987,113 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              deprecated \float@addtolist interface .
 
 Package acronym Info: Label `acro:knn' newly defined as it shall be overridden
-although it is yet undefined on input line 69.
-<Vorgehensdiagramm.PNG, id=29, 510.40688pt x 447.92343pt>
+although it is yet undefined on input line 10.
+[1
+
+
+] <Vorgehensdiagramm.PNG, id=38, 510.40688pt x 447.92343pt>
 File: Vorgehensdiagramm.PNG Graphic file (type png)
 
 <use Vorgehensdiagramm.PNG>
-Package pdftex.def Info: Vorgehensdiagramm.PNG used on input line 82.
-(pdftex.def)             Requested size: 432.48051pt x 379.55429pt.
- [1
-
-]
+Package pdftex.def Info: Vorgehensdiagramm.PNG used on input line 22.
+(pdftex.def)             Requested size: 412.8223pt x 362.30338pt.
 Package acronym Info: Label `acro:dax' newly defined as it shall be overridden
-although it is yet undefined on input line 88.
+although it is yet undefined on input line 27.
 Package acronym Info: Label `acro:gui' newly defined as it shall be overridden
-although it is yet undefined on input line 92.
- [2 <./Vorgehensdiagramm.PNG>]
-Kapitel 2.
-<mockup.PNG, id=39, 740.0147pt x 453.94594pt>
+although it is yet undefined on input line 31.
+) (Konzeption.tex [2] [3 <./Vorgehensdiagramm.PNG>]
+[4]
+chapter 2.
+<mockup.PNG, id=48, 740.0147pt x 453.94594pt>
 File: mockup.PNG Graphic file (type png)
  <use mockup.PNG>
-Package pdftex.def Info: mockup.PNG used on input line 105.
-(pdftex.def)             Requested size: 432.48051pt x 265.29755pt.
-
-<KonzeptKNN.PNG, id=40, 631.60968pt x 414.79968pt>
-File: KonzeptKNN.PNG Graphic file (type png)
- <use KonzeptKNN.PNG>
-Package pdftex.def Info: KonzeptKNN.PNG used on input line 117.
-(pdftex.def)             Requested size: 432.48051pt x 284.02847pt.
-
-[3
-
- <./mockup.PNG>] [4 <./KonzeptKNN.PNG>]
-Kapitel 3.
-<4-5-1.PNG, id=48, 350.05782pt x 269.50688pt>
-File: 4-5-1.PNG Graphic file (type png)
- <use 4-5-1.PNG>
-Package pdftex.def Info: 4-5-1.PNG used on input line 150.
-(pdftex.def)             Requested size: 341.43307pt x 262.88535pt.
-
-<4-9-1.PNG, id=49, 550.30594pt x 284.56313pt>
-File: 4-9-1.PNG Graphic file (type png)
- <use 4-9-1.PNG>
-Package pdftex.def Info: 4-9-1.PNG used on input line 158.
-(pdftex.def)             Requested size: 341.43307pt x 176.5619pt.
+Package pdftex.def Info: mockup.PNG used on input line 15.
+(pdftex.def)             Requested size: 412.8223pt x 253.23825pt.
  [5
 
- <./4-5-1.PNG>] <4-13-1.PNG, id=58, 753.5653pt x 272.51813pt>
+ <./mockup.PNG>] <KonzeptKNN.PNG, id=53, 631.60968pt x 414.79968pt>
+File: KonzeptKNN.PNG Graphic file (type png)
+ <use KonzeptKNN.PNG>
+Package pdftex.def Info: KonzeptKNN.PNG used on input line 54.
+(pdftex.def)             Requested size: 412.8223pt x 271.11665pt.
+
+[6]) [7 <./KonzeptKNN.PNG>] [8]
+chapter 3.
+<4-5-1.PNG, id=71, 350.05782pt x 269.50688pt>
+File: 4-5-1.PNG Graphic file (type png)
+ <use 4-5-1.PNG>
+Package pdftex.def Info: 4-5-1.PNG used on input line 63.
+(pdftex.def)             Requested size: 325.91339pt x 250.93488pt.
+
+<4-9-1.PNG, id=72, 550.30594pt x 284.56313pt>
+File: 4-9-1.PNG Graphic file (type png)
+ <use 4-9-1.PNG>
+Package pdftex.def Info: 4-9-1.PNG used on input line 71.
+(pdftex.def)             Requested size: 325.91339pt x 168.5334pt.
+
+<4-13-1.PNG, id=73, 753.5653pt x 272.51813pt>
 File: 4-13-1.PNG Graphic file (type png)
  <use 4-13-1.PNG>
-Package pdftex.def Info: 4-13-1.PNG used on input line 167.
-(pdftex.def)             Requested size: 341.43307pt x 123.47198pt.
+Package pdftex.def Info: 4-13-1.PNG used on input line 80.
+(pdftex.def)             Requested size: 325.91339pt x 117.86246pt.
+ [9
 
-<Sigmoid.PNG, id=59, 231.11343pt x 182.93344pt>
+ <./4-9-1.PNG>] [10 <./4-5-1.PNG> <./4-13-1.PNG>]
+<Sigmoid.PNG, id=83, 231.11343pt x 182.93344pt>
 File: Sigmoid.PNG Graphic file (type png)
  <use Sigmoid.PNG>
-Package pdftex.def Info: Sigmoid.PNG used on input line 201.
-(pdftex.def)             Requested size: 227.62206pt x 180.17235pt.
+Package pdftex.def Info: Sigmoid.PNG used on input line 114.
+(pdftex.def)             Requested size: 217.27559pt x 171.98256pt.
 
-<tanh.PNG, id=60, 237.13594pt x 168.63pt>
+<tanh.PNG, id=84, 237.13594pt x 168.63pt>
 File: tanh.PNG Graphic file (type png)
  <use tanh.PNG>
-Package pdftex.def Info: tanh.PNG used on input line 214.
-(pdftex.def)             Requested size: 227.62206pt x 161.87009pt.
- [6 <./4-9-1.PNG> <./4-13-1.PNG>] [7 <./Sigmoid.PNG> <./tanh.PNG>] [8]
-Kapitel 4.
-[9
+Package pdftex.def Info: tanh.PNG used on input line 127.
+(pdftex.def)             Requested size: 217.27559pt x 154.51364pt.
+ [11 <./Sigmoid.PNG>]
+[12 <./tanh.PNG>]
+chapter 4.
+[13
 
 ]
-Kapitel 5.
-("Börsenprognosen – Dokumentation.bbl" [10
-
-]) [11
+chapter 5.
+("Börsenprognosen – Dokumentation.bbl" [14
 
 ]
-("Börsenprognosen – Dokumentation.aux") ) 
+chapter without number
+
+LaTeX Warning: Empty `thebibliography' environment or \BreakBibliography
+               before end of `thebibliography' environment on input line 3.
+
+) [15
+
+] ("Börsenprognosen – Dokumentation.aux") ) 
 Here is how much of TeX's memory you used:
- 5492 strings out of 493673
- 79677 string characters out of 3147214
- 206421 words of memory out of 3000000
- 8712 multiletter control sequences out of 15000+200000
- 62424 words of font info for 47 fonts, out of 3000000 for 9000
+ 8702 strings out of 493673
+ 134199 string characters out of 3147214
+ 310207 words of memory out of 3000000
+ 11780 multiletter control sequences out of 15000+200000
+ 70084 words of font info for 84 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 40i,8n,52p,829b,263s stack positions out of 5000i,500n,10000p,200000b,50000s
-{D:/Programme/MikTeX/fonts/enc/dvip
-s/lm/lm-mathsy.enc}{D:/Programme/MikTeX/fonts/enc/dvips/lm/lm-rm.enc}{D:/Progra
-mme/MikTeX/fonts/enc/dvips/lm/lm-mathit.enc}{D:/Programme/MikTeX/fonts/enc/dvip
-s/lm/lm-ec.enc}<D:/Programme/MikTeX/fonts/type1/public/lm/lmbx10.pfb><D:/Progra
-mme/MikTeX/fonts/type1/public/lm/lmbx12.pfb><D:/Programme/MikTeX/fonts/type1/pu
-blic/lm/lmmi10.pfb><D:/Programme/MikTeX/fonts/type1/public/lm/lmmi8.pfb><D:/Pro
-gramme/MikTeX/fonts/type1/public/lm/lmr10.pfb><D:/Programme/MikTeX/fonts/type1/
-public/lm/lmr12.pfb><D:/Programme/MikTeX/fonts/type1/public/lm/lmri10.pfb><D:/P
-rogramme/MikTeX/fonts/type1/public/lm/lmro10.pfb><D:/Programme/MikTeX/fonts/typ
-e1/public/lm/lmssbx10.pfb><D:/Programme/MikTeX/fonts/type1/public/lm/lmsy10.pfb
-><D:/Programme/MikTeX/fonts/type1/public/lm/lmsy8.pfb>
-Output written on "Börsenprognosen – Dokumentation.pdf" (17 pages, 594373 by
+ 43i,10n,66p,848b,413s stack positions out of 5000i,500n,10000p,200000b,50000s
+{D:/Programme/MikTeX/fonts/enc/dv
+ips/lm/lm-mathsy.enc}{D:/Programme/MikTeX/fonts/enc/dvips/lm/lm-mathex.enc}{D:/
+Programme/MikTeX/fonts/enc/dvips/lm/lm-mathit.enc}{D:/Programme/MikTeX/fonts/en
+c/dvips/lm/lm-rm.enc}{D:/Programme/MikTeX/fonts/enc/dvips/lm/lm-ec.enc}<D:/Prog
+ramme/MikTeX/fonts/type1/public/lm/lmbx10.pfb><D:/Programme/MikTeX/fonts/type1/
+public/lm/lmbx12.pfb><D:/Programme/MikTeX/fonts/type1/public/lm/lmex10.pfb><D:/
+Programme/MikTeX/fonts/type1/public/lm/lmmi10.pfb><D:/Programme/MikTeX/fonts/ty
+pe1/public/lm/lmmi8.pfb><D:/Programme/MikTeX/fonts/type1/public/lm/lmr10.pfb><D
+:/Programme/MikTeX/fonts/type1/public/lm/lmr12.pfb><D:/Programme/MikTeX/fonts/t
+ype1/public/lm/lmr8.pfb><D:/Programme/MikTeX/fonts/type1/public/lm/lmri10.pfb><
+D:/Programme/MikTeX/fonts/type1/public/lm/lmro10.pfb><D:/Programme/MikTeX/fonts
+/type1/public/lm/lmssbx10.pfb><D:/Programme/MikTeX/fonts/type1/public/lm/lmsy10
+.pfb><D:/Programme/MikTeX/fonts/type1/public/lm/lmsy8.pfb><D:/Programme/MikTeX/
+fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on "Börsenprognosen – Dokumentation.pdf" (22 pages, 625229 by
 tes).
 PDF statistics:
- 125 PDF objects out of 1000 (max. 8388607)
+ 154 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 18995 words of extra memory for PDF output out of 20736 (max. 10000000)
 
