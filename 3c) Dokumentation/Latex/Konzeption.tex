@@ -1,14 +1,15 @@
 \chapter{Konzeption}
 \label{chapter:Konzeption}
+In diesem Kapitel wird auf die fachliche Konzeption der Anwendung, die Konzeption des \ac{knn} sowie auf die Beschreibung und Wahl des geeignetsten Frameworks zur Programmierung des \ac{knn} eingegangen.
 
-\section{Fachliche Konzeption der Anwendung} 
-\label{section:Fachliche Konzeption der Anwendung}
+\section{Fachliche Konzeption der Anwendung} %Benedikt
+\label{section:Fachliche Konzeption der Anwendung} %Benedikt
 
-\subsection{Beschreibung der Anwendung}
-\label{subsection:Beschreibung der Anwendung}
+\subsection{Beschreibung der Anwendung} %Benedikt
+\label{subsection:Beschreibung der Anwendung} %Benedikt
 
-\subsection{Mockup der Anwendung}
-\label{subsection:Mockup der Anwendung}
+\subsection{Mockup der Anwendung} %Benedikt
+\label{subsection:Mockup der Anwendung} %Benedikt
 
 \begin{figure}[htbp]
 \centering
@@ -20,13 +21,12 @@
 \section{Konzeption des künstlichen neuronalen Netzes}
 \label{section:Konzeption des künstlichen neuronalen Netzes}
 
-in den folgenden drei Abschnitten wird auf die Konzeption des \ac{knn} eingegangen.
+In den folgenden drei Abschnitten wird auf die Konzeption des \ac{knn} eingegangen. Zunächst wird der Typ des \ac{knn} festgelegt. Anschließend wird die zugrundeliegende Topologie des \ac{knn} und das anzuwendende Lernverfahren bestimmt.
+
 \subsection{Typ des künstlichen neuronalen Netzes}
 \label{subsection:Typ des künstlichen neuronalen Netzes}
 
-Grundsätzliche lassen sich \ac{knn} in zwei Oberklassen unterteilen. Die Hetero-Assoziativen Netze sowie die Auto-Assoziativen Netze. Hetero-Assoziative Netze bilden einen Vektor $A$ der Länge $n$ auf einem Vektor $B$ einer meist kürzeren Länge m $\{m \in \mathbb{N} | m \le n\}$ ab. Auto-Assoziative Netze wiederum bilden einen Eingabevektor der Länge n auf einem Ausgabevektor der gleichen Länge ab.
-
-Innerhalb dieser zwei Klassen lassen sich \ac{knn} wiederum in mehre Modelle aufteilen. folgende Tabelle liefert eine Übersicht der bekanntesten Modelle von \ac{knn} unterteilt in Klassen:
+Grundsätzlich lassen sich \ac{knn} in zwei Oberklassen unterteilen. Die Hetero-Assoziativen Netze sowie die Auto-Assoziativen Netze. Hetero-Assoziative Netze bilden einen Vektor $A$ der Länge $n$ auf einem Vektor $B$ einer meist kürzeren Länge m $\{m \in \mathbb{N} | m \le n\}$ ab. Auto-Assoziative Netze wiederum bilden einen Eingabevektor der Länge $n$ auf einem Ausgabevektor der gleichen Länge ab. Innerhalb dieser zwei Klassen lassen sich \ac{knn} wiederum in mehrere Modelle aufteilen.Die folgende Tabelle liefert eine Übersicht der bekanntesten Modelle von \ac{knn} unterteilt in Klassen:
 
 \begin{center}
 \begin{tabular}{|c|c|}
@@ -42,12 +42,32 @@ Multilayerperzeptron & - \\
 \end{tabular} 
 \end{center}
 
-Da es sich bei dem \ac{dax}-Kurs um einen skalaren Wert handelt, der auf Grund mehrer vorhergehender \ac{dax}-Kurse prognostiziert wird, wir ein Netzmodell aus der Klasse der Hetero-Assoziativen Netze benötigt. Für das Vorhaben ist demnach nur die linke Spalte relevant. Ein weiteres wichtiges Kriterium des benötigten Netzwerkmodells ist die Fähigkeit, mit nicht separierbaren Funktionen zu arbeiten. 
+Da es sich bei dem \ac{dax}-Kurs um einen skalaren Wert handelt, der auf Grund mehrerer vorhergehender \ac{dax}-Kurse prognostiziert wird, wir ein Netzmodell aus der Klasse der Hetero-Assoziativen Netze benötigt. Für die Anwendung ist demnach nur die linke Spalte der Tabelle relevant. 
 
+Für den nächsten Auswahlschritt können die folgenden zwei Theoreme betrachtet werden:
+
+\newtheorem*{theorem2*}{Theorem der linearen Separierbarkeit}
+\begin{theorem2*}
 Seien $X_{0}$ and $X_{1}$ zwei Datenmengen im $n$-dimensionalen euklidischen Raum. Dann sind die Mengen $X_{0}$ and $X_{1}$ genau dann als "`linear separierbar"', wenn es  $n+1$ Werte $w_{1}, w_{2},..,w_{n}, k$, gibt, sodass jeder Punkt  $x \in X_{0}$ die Bedingung $\sum^{n}_{i=1} w_{i}x_{i} > k$ erfüllt und jeder Punkt $x \in X_{1}$ die Bedingung $\sum^{n}_{i=1} w_{i}x_{i} < k$ erfüllt.
+\end{theorem2*}
+
+Da es sich beim Börsenkurs auf Grund des obigen Theorems um eine nicht linear separierbare Funktion handelt, das Perzeptron und die Adaline aber nur linear separierbare Funktionen approximieren können, fallen diese Möglichkeiten weg. Nicht jedoch das mehrschichtige vorwärtsgerichtete Netz.
+
+
+\newtheorem*{theorem1*}{Theorem von Kolmogorov}
+\begin{theorem1*}
+Für ${n \in \mathbb{N} | n>2}$ lässt sich jede reellwertige Funktion $f:[0;1]^n\rightarrow[0;1]$ durch ein dreischichtiges vorwärtsverknüpftes Netz mit maximal $n$ Einheiten in der Eingabeschicht,$(2n+1)$ Einheiten in der Zwischenschicht und $2n+1$ Einheiten in der Ausgabeschicht berechnen.
+\end{theorem1*}
+
+Da eine Börsenprognose im Prinzip einen beliebigen Verlauf haben kann und somit eine beliebige Funktion darstellen kann und  sowohl das Perzeptron als auch die Adaline über keine Zwischenschicht verfügen, fallen diese als Alternativen weg.Nicht jedoch das mehrschichtige vorwärtsgerichtete Netz.
+
+Somit schließen sowohl das Theorem von Kolgomorov sowie das Theorem der linearen Separierbarkeit die Adaline und das Perzeptron als \ac{knn} aus und nur das mehrschichtige vorwärtsgerichtete Netz bleibt übrig.
+
 
 \subsection{Grundlegende Topologie des künstlichen neuronalen Netzes}
 \label{subsection:Grundlegende Topologie des künstlichen neuronalen Netzes}
+
+Zur Prognose werden die vier vergangegen Daten zur Prognose des zukünftigen Wertes als Input Layer genutzt. Da das Ergebnis ein skalarer Wert ist, wir nur ein neurona als Output Layer benötigt. Die optimale Größe des Hidden Layers wird in Punkt (Kapitelverweis) ermittelt. Somit sieht die Topoligie des knn bis jetzt wie golfr aus:
 
 \begin{figure}[H]
 \centering
@@ -59,6 +79,7 @@ Seien $X_{0}$ and $X_{1}$ zwei Datenmengen im $n$-dimensionalen euklidischen Rau
 \subsection{Lernverfahren des künstlichen neuronalen Netzes} 
 \label{subsection:Lernverfahren des künstlichen neuronalen Netzes} 
 
+
 \section{Beschreibung von Frameworks} %Benedikt
 \label{section:Beschreibung von Frameworks} %Benedikt
 
@@ -66,7 +87,7 @@ Seien $X_{0}$ and $X_{1}$ zwei Datenmengen im $n$-dimensionalen euklidischen Rau
 \label{subsection:SNNS} %Benedikt
 
 \subsection{JavaNNS}  %Benedikt
-\subsection{JavaNNS}  %Benedikt
+\label{subsection:JavaNNS}  %Benedikt
 
 \subsection{Neuroph} %Benedikt
 \label{subsection:Neuroph} %Benedikt

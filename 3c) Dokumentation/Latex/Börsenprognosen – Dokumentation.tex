@@ -1,4 +1,5 @@
 %%Präambel--------------------------------------------------
+
 %Dokument erstellen
 \documentclass
 [a4paper,
@@ -20,8 +21,10 @@
 %Seitenstil laden
 \input{Seitenstil}
 
+
 %%Präambel--------------------------------------------------
 %%Body------------------------------------------------------
+
 %Das Dokument beginnt
 \begin{document}
 
@@ -32,153 +35,24 @@
 \input{Verzeichnisse}
 
 %Der eigentliche Text beginnt hier
+
 %Einleitung einlesen
 \input{Einleitung}
 %Konzepton einlesen
 \input{Konzeption}
 
-\chapter{Umsetzung} %Beide
-\section{Erstellung des künstlichen neuronalen Netzes} %Sebastian
+%Umsetzung einlesen
+\input{Umsetzung}
 
-beschreibung folgende 3 abschnitte sukzessive
-normalisierungsfunktion
-beispieldatensatz (training / test)
-verteilung(training/test)
-menge(training/test)
-Anzahl Durchläuge: 100k
-Lernrate 0.5
+%Beschreibung der Anwendung einlesen
+\input{Beschreibung}
 
-
-\subsection{Ermittlung der genauen Topologie} %Sebastian
-In der Literatur wird dabei oft auf die folgende Gleichung zur Ermittlung der optimalen  Menge an Neuronen der versteckten Schicht angegeben:
-
-\begin{equation}\formelentry{Optimale Anzahl Neuronen in der versteckten Schicht}
-  N_h = \frac{N_d}{10*(N_i+N_o)}
-\end{equation}
-
-
-\begin{figure}[htbp]
-\centering
-		\includegraphics[width=0.75\textwidth]{4-5-1.PNG}
-	\caption{KNN nach 4-05-1 Muster}
-	\label{fig:KNN nach 4-05-1 Muster}
-\end{figure}
-
-
-\begin{figure}[H]
-\centering
-		\includegraphics[width=0.75\textwidth]{4-9-1.PNG}
-	\caption{KNN nach 4-09-1 Muster}
-	\label{fig:KNN nach 4-09-1 Muster}
-\end{figure}
-
-
-
-\begin{figure}[htbp]
-\centering
-		\includegraphics[width=0.75\textwidth]{4-13-1.PNG}
-	\caption{KNN nach 4-13-1 Muster}
-	\label{fig:KNN nach 4-13-1 Muster}
-\end{figure}
-
-
-\begin{table}
-  \centering
-  \begin{tabular}{|c|c|}
-  \hline 
-  \rule[0ex]{0pt}{2.5ex} Topologie & Mean Squared Error \\ 
-  \hline 
-  \rule[0ex]{0pt}{2.5ex} 4-05-1 & 0.000 \\ 
-  \hline 
-  \rule[0ex]{0pt}{2.5ex} 4-09-1 & 0.000 \\ 
-  \hline 
-  \rule[0ex]{0pt}{2.5ex} 4-13-1 & 0.000 \\ 
-  \hline 
-  \end{tabular} 
-  \caption{Jeweilige Topologien \& korrespondierende MSE}
-  \label{tab:myfirsttable}
-\end{table}
-
-
-\subsection{Ermittlung der Transferfunktion} %Sebastian
-
-Sigmoide Funktion:
-
-\begin{equation}\formelentry{Sigmoide Funktion}
-f(x)= \frac{1}{1+e^{-cx}}
-\end{equation}
-
-\begin{figure}[htbp]
-\centering
-		\includegraphics[width=0.5\textwidth]{Sigmoid.PNG}
-	\caption{Sigmoide Funktion}
-	\label{fig:Sigmoide Funktion}
-\end{figure}
-
-Tangens Hyperbolicus:
-
-\begin{equation}\formelentry{Tanh Funktion}
-f(x)= tanh(x)
-\end{equation}
-
-\begin{figure}[htbp]
-\centering
-		\includegraphics[width=0.5\textwidth]{tanh.PNG}
-	\caption{Tangens Hyperbolicus Funktion}
-	\label{fig:Tangens Hyperbolicus Funktion}
-\end{figure}
-
-\begin{table}
-  \centering
-  \begin{tabular}{|c|c|}
-  \hline 
-  \rule[0ex]{0pt}{2.5ex} Transferfunktion & Mean Squared Error \\ 
-  \hline 
-  \rule[0ex]{0pt}{2.5ex} 4-05-1 & 0.000 \\ 
-  \hline 
-  \rule[0ex]{0pt}{2.5ex} 4-09-1 & 0.000 \\ 
-  \hline 
-  \rule[0ex]{0pt}{2.5ex} 4-13-1 & 0.000 \\ 
-  \hline 
-  \end{tabular} 
-  \caption{Jeweilige Transferfunktionen \& korrespondierende MSE}
-  \label{tab:tab2}
-\end{table}
-
-\subsection{Ermittlung der Lernregel und Lernrate} %Sebastian
-
-\begin{table}[H]
-  \centering
-  \begin{tabular}{|c|c|c|}
-  \hline 
-  \rule[0ex]{0pt}{2.5ex} Lernregel & beste Lernrate & Mean Squared Error \\ 
-  \hline 
-  \rule[0ex]{0pt}{2.5ex} Backpropagation & 0.000 & 0.000 \\ 
-  \hline 
-  \rule[0ex]{0pt}{2.5ex} Momentum Backpropagation & 0.000 & 0.000\\ 
-  \hline 
-  \rule[0ex]{0pt}{2.5ex} Resilient Propagation & 0.000 & 0.000 \\ 
-  \hline 
-  \end{tabular} 
-  \caption{Jeweilige Lernregeln und beste Lernraten \& korrespondierende MSE}
-  \label{tab:tab3}
-\end{table}
-\section{Das erstellte künstliche neuronale Netz}
-\section{Implementierung der Anwendung} %Benedikt
-\section{Zusammenführung des Netzes mit der Anwendung}
-
-
-\chapter{Beschreibung der Anwendung} %Benedikt
-\section{Elemente der GUI} %Beide
-\section{Architektur der Anwendung} %Benedikt
-
-\chapter{Fazit} %Beide
-\label{cha:Fazit}
-Das prognostizieren von Börsenkursen mittels künstlichen neuronalen Netzen ist möglich.
+%Fazit einlesen
+\input{Fazit}
 
 %Literaturverzeichnis anzeigen
-\bibliographystyle{plain}
-\bibliography{Literatur}
+%\bibliographystyle{plain}
+%\bibliography{Literatur}
 
 \end{document}
 %%Body------------------------------------------------------
