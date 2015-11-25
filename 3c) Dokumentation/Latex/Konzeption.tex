@@ -42,7 +42,7 @@ Multilayerperzeptron & - \\
 \end{tabular} 
 \end{center}
 
-Da es sich bei dem \ac{dax}-Kurs um einen skalaren Wert handelt, der auf Grund mehrerer vorhergehender \ac{dax}-Kurse prognostiziert wird, wir ein Netzmodell aus der Klasse der Hetero-Assoziativen Netze benötigt. Für die Anwendung ist demnach nur die linke Spalte der Tabelle relevant. 
+Da es sich bei dem \ac{dax}-Kurs um einen skalaren Wert handelt, der aufgrund mehrerer vorhergehender \ac{dax}-Kurse prognostiziert wird, wir ein Netzmodell aus der Klasse der Hetero-Assoziativen Netze benötigt. Für die Anwendung ist demnach nur die linke Spalte der Tabelle relevant. 
 
 Für den nächsten Auswahlschritt können die folgenden zwei Theoreme betrachtet werden:
 
@@ -51,7 +51,7 @@ Für den nächsten Auswahlschritt können die folgenden zwei Theoreme betrachtet
 Seien $X_{0}$ and $X_{1}$ zwei Datenmengen im $n$-dimensionalen euklidischen Raum. Dann sind die Mengen $X_{0}$ and $X_{1}$ genau dann als "`linear separierbar"', wenn es  $n+1$ Werte $w_{1}, w_{2},..,w_{n}, k$, gibt, sodass jeder Punkt  $x \in X_{0}$ die Bedingung $\sum^{n}_{i=1} w_{i}x_{i} > k$ erfüllt und jeder Punkt $x \in X_{1}$ die Bedingung $\sum^{n}_{i=1} w_{i}x_{i} < k$ erfüllt.
 \end{theorem2*}
 
-Da es sich beim Börsenkurs auf Grund des obigen Theorems um eine nicht linear separierbare Funktion handelt, das Perzeptron und die Adaline aber nur linear separierbare Funktionen approximieren können, fallen diese Möglichkeiten weg. Nicht jedoch das mehrschichtige vorwärtsgerichtete Netz.
+Da es sich beim Börsenkurs auf Grund des obigen Theorems um eine nicht linear separierbare Funktion handelt, das Perzeptron und die Adaline aber nur linear separierbare Funktionen approximieren können, fallen diese Möglichkeiten weg. Nicht jedoch das mehrschichtige vorwärtsgerichtete Netz. Das dieses \ac{knn} auch tatsächlich dafür geeignet ist, belegt das folgende Theorem:
 
 
 \newtheorem*{theorem1*}{Theorem von Kolmogorov}
@@ -59,9 +59,7 @@ Da es sich beim Börsenkurs auf Grund des obigen Theorems um eine nicht linear s
 Für ${n \in \mathbb{N} | n>2}$ lässt sich jede reellwertige Funktion $f:[0;1]^n\rightarrow[0;1]$ durch ein dreischichtiges vorwärtsverknüpftes Netz mit maximal $n$ Einheiten in der Eingabeschicht,$(2n+1)$ Einheiten in der Zwischenschicht und $2n+1$ Einheiten in der Ausgabeschicht berechnen.
 \end{theorem1*}
 
-Da eine Börsenprognose im Prinzip einen beliebigen Verlauf haben kann und somit eine beliebige Funktion darstellen kann und  sowohl das Perzeptron als auch die Adaline über keine Zwischenschicht verfügen, fallen diese als Alternativen weg. Nicht jedoch das mehrschichtige vorwärtsgerichtete Netz.
-
-Somit schließen sowohl das Theorem von Kolgomorov sowie das Theorem der linearen Separierbarkeit die Adaline und das Perzeptron als \ac{knn} aus und nur das mehrschichtige vorwärtsgerichtete Netz bleibt übrig.
+Ein Börsenkurs kann prinzipiell jede beliebige Funktion annehmen. Durch das obige Theorem ist jedoch sichergestellt, dass das mehrschichtige vorwärstgerichtete Netz in der Lage ist, diese Funktionen zu approximieren.
 
 
 \subsection{Grundlegende Topologie des künstlichen neuronalen Netzes}
