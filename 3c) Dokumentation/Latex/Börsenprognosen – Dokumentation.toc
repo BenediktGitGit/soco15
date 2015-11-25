@@ -10,8 +10,8 @@
 \contentsline {section}{\numberline {2.1}Konzeption der Anwendung}{4}
 \contentsline {subsection}{\numberline {2.1.1}Grundidee}{4}
 \contentsline {subsection}{\numberline {2.1.2}Mockup}{4}
-\contentsline {section}{\numberline {2.2}Konzeption des k\IeC {\"u}nstlichen neuronalen Netzes}{5}
-\contentsline {subsection}{\numberline {2.2.1}Wahl des Netztyps}{5}
+\contentsline {section}{\numberline {2.2}Konzeption des k\IeC {\"u}nstlichen neuronalen Netzes}{4}
+\contentsline {subsection}{\numberline {2.2.1}Wahl des Netztyps}{4}
 \contentsline {subsection}{\numberline {2.2.2}Wahl der Topologie}{6}
 \contentsline {subsection}{\numberline {2.2.3}Wahl des Lernverfahrens}{7}
 \contentsline {chapter}{\numberline {3}Umsetzung}{8}
@@ -26,5 +26,6 @@
 \contentsline {chapter}{\numberline {4}Beschreibung der Anwendung}{13}
 \contentsline {section}{\numberline {4.1}Architektur der Anwendung}{13}
 \contentsline {section}{\numberline {4.2}Elemente der GUI}{14}
-\contentsline {chapter}{\numberline {5}Analyse}{16}
-\contentsline {chapter}{\numberline {6}Fazit}{18}
+\contentsline {chapter}{\numberline {5}Analyse}{17}
+\contentsline {chapter}{\numberline {6}Fazit}{19}
+\contentsline {chapter}{\nonumberline Literaturverzeichnis}{21}
