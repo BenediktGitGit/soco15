@@ -7,3 +7,4 @@
 \contentsline {formel}{\numberline {Formel~3.3} Tanh Funktion}{10}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\addvspace {10\p@ }

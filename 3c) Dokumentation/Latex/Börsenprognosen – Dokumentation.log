@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.11.8)  25 NOV 2015 20:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.11.8)  25 NOV 2015 23:09
 entering extended mode
 **"Börsenprognosen – Dokumentation.tex"
 ("Börsenprognosen – Dokumentation.tex"
@@ -1022,70 +1022,75 @@ chapter 3.
 <4-5-1.PNG, id=68, 350.05782pt x 269.50688pt>
 File: 4-5-1.PNG Graphic file (type png)
  <use 4-5-1.PNG>
-Package pdftex.def Info: 4-5-1.PNG used on input line 23.
+Package pdftex.def Info: 4-5-1.PNG used on input line 28.
 (pdftex.def)             Requested size: 325.91339pt x 250.93488pt.
 
 <4-9-1.PNG, id=69, 550.30594pt x 284.56313pt>
 File: 4-9-1.PNG Graphic file (type png)
  <use 4-9-1.PNG>
-Package pdftex.def Info: 4-9-1.PNG used on input line 31.
+Package pdftex.def Info: 4-9-1.PNG used on input line 36.
 (pdftex.def)             Requested size: 325.91339pt x 168.5334pt.
-
-<4-13-1.PNG, id=70, 753.5653pt x 272.51813pt>
-File: 4-13-1.PNG Graphic file (type png)
- <use 4-13-1.PNG>
-Package pdftex.def Info: 4-13-1.PNG used on input line 40.
-(pdftex.def)             Requested size: 325.91339pt x 117.86246pt.
  [8
 
- <./4-9-1.PNG>] [9 <./4-5-1.PNG> <./4-13-1.PNG>]
-<Sigmoid.PNG, id=80, 231.11343pt x 182.93344pt>
+]
+<4-13-1.PNG, id=73, 753.5653pt x 272.51813pt>
+File: 4-13-1.PNG Graphic file (type png)
+ <use 4-13-1.PNG>
+Package pdftex.def Info: 4-13-1.PNG used on input line 45.
+(pdftex.def)             Requested size: 325.91339pt x 117.86246pt.
+ [9 <./4-5-1.PNG> <./4-9-1.PNG>] <Sigmoid.PNG, id=79, 231.11343pt x 182.93344pt
+>
 File: Sigmoid.PNG Graphic file (type png)
- <use Sigmoid.PNG>
-Package pdftex.def Info: Sigmoid.PNG used on input line 74.
-(pdftex.def)             Requested size: 217.27559pt x 171.98256pt.
 
-<tanh.PNG, id=81, 237.13594pt x 168.63pt>
+<use Sigmoid.PNG>
+Package pdftex.def Info: Sigmoid.PNG used on input line 79.
+(pdftex.def)             Requested size: 217.27559pt x 171.98256pt.
+ <tanh.PNG, id=80, 237.13594pt x 168.63pt>
 File: tanh.PNG Graphic file (type png)
  <use tanh.PNG>
-Package pdftex.def Info: tanh.PNG used on input line 87.
+Package pdftex.def Info: tanh.PNG used on input line 92.
 (pdftex.def)             Requested size: 217.27559pt x 154.51364pt.
- [10 <./Sigmoid.PNG>])
-(Beschreibung.tex [11 <./tanh.PNG>]
+
+[10 <./4-13-1.PNG>] [11 <./Sigmoid.PNG> <./tanh.PNG>]) (Beschreibung.tex
+[12]
 chapter 4.
-) (Fazit.tex [12
+[13
 
-]
+]) [14] (Analyse.tex [15]
 chapter 5.
-) [13
+) [16
 
-] ("Börsenprognosen – Dokumentation.aux") ) 
+] (Fazit.tex [17]
+chapter 6.
+) [18
+
+] [19] ("Börsenprognosen – Dokumentation.aux") ) 
 Here is how much of TeX's memory you used:
- 8722 strings out of 493673
- 134121 string characters out of 3147214
- 310216 words of memory out of 3000000
- 11792 multiletter control sequences out of 15000+200000
- 70214 words of font info for 85 fonts, out of 3000000 for 9000
+ 8724 strings out of 493673
+ 134033 string characters out of 3147214
+ 310172 words of memory out of 3000000
+ 11787 multiletter control sequences out of 15000+200000
+ 70380 words of font info for 87 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  43i,10n,66p,848b,411s stack positions out of 5000i,500n,10000p,200000b,50000s
-{D:/Programme/MikTeX/fonts/enc/dv
-ips/lm/lm-mathsy.enc}{D:/Programme/MikTeX/fonts/enc/dvips/lm/lm-mathex.enc}{D:/
-Programme/MikTeX/fonts/enc/dvips/lm/lm-mathit.enc}{D:/Programme/MikTeX/fonts/en
-c/dvips/lm/lm-rm.enc}{D:/Programme/MikTeX/fonts/enc/dvips/lm/lm-ec.enc}<D:/Prog
-ramme/MikTeX/fonts/type1/public/lm/lmbx10.pfb><D:/Programme/MikTeX/fonts/type1/
-public/lm/lmbx12.pfb><D:/Programme/MikTeX/fonts/type1/public/lm/lmex10.pfb><D:/
-Programme/MikTeX/fonts/type1/public/lm/lmmi10.pfb><D:/Programme/MikTeX/fonts/ty
-pe1/public/lm/lmmi8.pfb><D:/Programme/MikTeX/fonts/type1/public/lm/lmr10.pfb><D
-:/Programme/MikTeX/fonts/type1/public/lm/lmr12.pfb><D:/Programme/MikTeX/fonts/t
-ype1/public/lm/lmr8.pfb><D:/Programme/MikTeX/fonts/type1/public/lm/lmri10.pfb><
-D:/Programme/MikTeX/fonts/type1/public/lm/lmro10.pfb><D:/Programme/MikTeX/fonts
-/type1/public/lm/lmssbx10.pfb><D:/Programme/MikTeX/fonts/type1/public/lm/lmsy10
-.pfb><D:/Programme/MikTeX/fonts/type1/public/lm/lmsy8.pfb><D:/Programme/MikTeX/
-fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "Börsenprognosen – Dokumentation.pdf" (20 pages, 636881 by
+{D:/Programme/MikTeX/fonts/e
+nc/dvips/lm/lm-mathsy.enc}{D:/Programme/MikTeX/fonts/enc/dvips/lm/lm-mathex.enc
+}{D:/Programme/MikTeX/fonts/enc/dvips/lm/lm-mathit.enc}{D:/Programme/MikTeX/fon
+ts/enc/dvips/lm/lm-rm.enc}{D:/Programme/MikTeX/fonts/enc/dvips/lm/lm-ec.enc}<D:
+/Programme/MikTeX/fonts/type1/public/lm/lmbx10.pfb><D:/Programme/MikTeX/fonts/t
+ype1/public/lm/lmbx12.pfb><D:/Programme/MikTeX/fonts/type1/public/lm/lmex10.pfb
+><D:/Programme/MikTeX/fonts/type1/public/lm/lmmi10.pfb><D:/Programme/MikTeX/fon
+ts/type1/public/lm/lmmi8.pfb><D:/Programme/MikTeX/fonts/type1/public/lm/lmr10.p
+fb><D:/Programme/MikTeX/fonts/type1/public/lm/lmr12.pfb><D:/Programme/MikTeX/fo
+nts/type1/public/lm/lmr8.pfb><D:/Programme/MikTeX/fonts/type1/public/lm/lmri10.
+pfb><D:/Programme/MikTeX/fonts/type1/public/lm/lmro10.pfb><D:/Programme/MikTeX/
+fonts/type1/public/lm/lmssbx10.pfb><D:/Programme/MikTeX/fonts/type1/public/lm/l
+msy10.pfb><D:/Programme/MikTeX/fonts/type1/public/lm/lmsy8.pfb><D:/Programme/Mi
+kTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on "Börsenprognosen – Dokumentation.pdf" (26 pages, 655512 by
 tes).
 PDF statistics:
- 148 PDF objects out of 1000 (max. 8388607)
+ 167 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  18995 words of extra memory for PDF output out of 20736 (max. 10000000)
 
