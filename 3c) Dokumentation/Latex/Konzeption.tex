@@ -5,11 +5,11 @@ In diesem Kapitel wird auf die fachliche Konzeption der Anwendung, die Konzeptio
 \section{Fachliche Konzeption der Anwendung} %Benedikt
 \label{section:Fachliche Konzeption der Anwendung} %Benedikt
 
-\subsection{Beschreibung der Anwendung} %Benedikt
-\label{subsection:Beschreibung der Anwendung} %Benedikt
+\subsection{Grundidee} %Benedikt
+\label{subsection:Grundidee} %Benedikt
 
-\subsection{Mockup der Anwendung} %Benedikt
-\label{subsection:Mockup der Anwendung} %Benedikt
+\subsection{Mockup} %Benedikt
+\label{subsection:Mockup} %Benedikt
 
 \begin{figure}[htbp]
 \centering
@@ -23,8 +23,8 @@ In diesem Kapitel wird auf die fachliche Konzeption der Anwendung, die Konzeptio
 
 In den folgenden drei Abschnitten wird auf die Konzeption des \ac{knn} eingegangen. Zunächst wird der Typ des \ac{knn} festgelegt. Anschließend wird die zugrundeliegende Topologie des \ac{knn} und das anzuwendende Lernverfahren bestimmt.
 
-\subsection{Typ des künstlichen neuronalen Netzes}
-\label{subsection:Typ des künstlichen neuronalen Netzes}
+\subsection{Wahl des Netztyps}
+\label{subsection:Wahl des Netztyps}
 
 Grundsätzlich lassen sich \ac{knn} in zwei Oberklassen unterteilen. Die Hetero-Assoziativen Netze sowie die Auto-Assoziativen Netze. Hetero-Assoziative Netze bilden einen Vektor $A$ der Länge $n$ auf einem Vektor $B$ einer meist kürzeren Länge m $\{m \in \mathbb{N} | m \le n\}$ ab. Auto-Assoziative Netze wiederum bilden einen Eingabevektor der Länge $n$ auf einem Ausgabevektor der gleichen Länge ab. Innerhalb dieser zwei Klassen lassen sich \ac{knn} wiederum in mehrere Modelle aufteilen.Die folgende Tabelle liefert eine Übersicht der bekanntesten Modelle von \ac{knn} unterteilt in Klassen:
 
@@ -62,8 +62,8 @@ Für ${n \in \mathbb{N} | n>2}$ lässt sich jede reellwertige Funktion $f:[0;1]^
 Ein Börsenkurs kann prinzipiell jede beliebige Funktion annehmen. Durch das obige Theorem ist jedoch sichergestellt, dass das mehrschichtige vorwärstgerichtete Netz in der Lage ist, diese Funktionen zu approximieren.
 
 
-\subsection{Grundlegende Topologie des künstlichen neuronalen Netzes}
-\label{subsection:Grundlegende Topologie des künstlichen neuronalen Netzes}
+\subsection{Wahl der Grundlegenden Topologie}
+\label{subsection:Wahl Grundlegenden Topologie}
 
 Zur Prognose werden die vier vergangegen Daten zur Prognose des zukünftigen Wertes als Input Layer genutzt. Da das Ergebnis ein skalarer Wert ist, wir nur ein neurona als Output Layer benötigt. Die optimale Größe des Hidden Layers wird in Punkt (Kapitelverweis) ermittelt. Somit sieht die Topoligie des knn bis jetzt wie golfr aus:
 
@@ -74,11 +74,11 @@ Zur Prognose werden die vier vergangegen Daten zur Prognose des zukünftigen Wer
 	\label{fig:Grundlegendes Konzept des KNN}
 \end{figure}
 
-\subsection{Lernverfahren des künstlichen neuronalen Netzes} 
-\label{subsection:Lernverfahren des künstlichen neuronalen Netzes} 
+\subsection{Wahl des Lernverfahrens} 
+\label{subsection:Wahl des Lernverfahrens} 
 
 
-\section{Beschreibung von Frameworks} %Benedikt
+\section{Beschreibung von KNN-Frameworks} %Benedikt
 \label{section:Beschreibung von Frameworks} %Benedikt
 
 \subsection{SNNS} %Benedikt

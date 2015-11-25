@@ -8,20 +8,20 @@
 \contentsline {section}{\numberline {1.2}Ziel und Aufbau dieser Arbeit}{2}
 \contentsline {chapter}{\numberline {2}Konzeption}{4}
 \contentsline {section}{\numberline {2.1}Fachliche Konzeption der Anwendung}{4}
-\contentsline {subsection}{\numberline {2.1.1}Beschreibung der Anwendung}{4}
-\contentsline {subsection}{\numberline {2.1.2}Mockup der Anwendung}{4}
+\contentsline {subsection}{\numberline {2.1.1}Grundidee}{4}
+\contentsline {subsection}{\numberline {2.1.2}Mockup}{4}
 \contentsline {section}{\numberline {2.2}Konzeption des k\IeC {\"u}nstlichen neuronalen Netzes}{5}
-\contentsline {subsection}{\numberline {2.2.1}Typ des k\IeC {\"u}nstlichen neuronalen Netzes}{5}
-\contentsline {subsection}{\numberline {2.2.2}Grundlegende Topologie des k\IeC {\"u}nstlichen neuronalen Netzes}{6}
-\contentsline {subsection}{\numberline {2.2.3}Lernverfahren des k\IeC {\"u}nstlichen neuronalen Netzes}{7}
-\contentsline {section}{\numberline {2.3}Beschreibung von Frameworks}{7}
+\contentsline {subsection}{\numberline {2.2.1}Wahl des Netztyps}{5}
+\contentsline {subsection}{\numberline {2.2.2}Wahl der Grundlegenden Topologie}{6}
+\contentsline {subsection}{\numberline {2.2.3}Wahl des Lernverfahrens}{7}
+\contentsline {section}{\numberline {2.3}Beschreibung von KNN-Frameworks}{7}
 \contentsline {subsection}{\numberline {2.3.1}SNNS}{7}
 \contentsline {subsection}{\numberline {2.3.2}JavaNNS}{7}
 \contentsline {subsection}{\numberline {2.3.3}Neuroph}{7}
 \contentsline {section}{\numberline {2.4}Wahl des geeignetsten Frameworks}{7}
 \contentsline {chapter}{\numberline {3}Umsetzung}{8}
 \contentsline {section}{\numberline {3.1}Erstellung des k\IeC {\"u}nstlichen neuronalen Netzes}{8}
-\contentsline {subsection}{\numberline {3.1.1}Ermittlung der genauen Topologie}{8}
+\contentsline {subsection}{\numberline {3.1.1}Ermittlung der konkreten Topologie}{8}
 \contentsline {subsection}{\numberline {3.1.2}Ermittlung der Transferfunktion}{10}
 \contentsline {subsection}{\numberline {3.1.3}Ermittlung der Lernregel und Lernrate}{11}
 \contentsline {section}{\numberline {3.2}Das erstellte k\IeC {\"u}nstliche neuronale Netz}{11}
