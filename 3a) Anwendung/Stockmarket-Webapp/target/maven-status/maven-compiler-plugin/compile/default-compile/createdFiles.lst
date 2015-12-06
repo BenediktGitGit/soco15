@@ -1,7 +1,7 @@
-com/springapp/mvc/controller/annController.class
-com/springapp/mvc/AnnPerformer.class
-com/springapp/mvc/extractor/Extractor.class
-com/springapp/mvc/extractor/TestSetTrainingSetExtractor.class
-com/springapp/mvc/extractor/ExtractorReport.class
-com/springapp/mvc/Application.class
-com/springapp/mvc/extractor/PredictionSetExtractor.class
+de/soco/stockmarket/extractor/PredictionSetExtractor.class
+de/soco/stockmarket/controller/annController.class
+de/soco/stockmarket/Application.class
+de/soco/stockmarket/AnnPerformer.class
+de/soco/stockmarket/extractor/ExtractorReport.class
+de/soco/stockmarket/extractor/Extractor.class
+de/soco/stockmarket/extractor/TestSetTrainingSetExtractor.class

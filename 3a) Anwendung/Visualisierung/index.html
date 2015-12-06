@@ -26,10 +26,30 @@
 
 <div class="charts-Box" style="margin-left: 10%; margin-right: 10%; ">
     <div class="container-fluid">
+        <div class="row">
         <div class="col-xs-12 col-sm-offset-0 col-md-offset-0">
             <div class="row">
-                <div class="col-xs-8">
+                <div class="col-xs-6">
                     <div id="chart"></div>
+                </div>
+                <div class="col-md-2">
+                    <div class="prompt-boxes">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div id="real_acctual" class="prompt-container">real</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div id="pred_acctual" class="prompt-container">predicted</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div id="accurrancy" class="prompt-container">accuracy</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-xs-4">
                     <div id="donut"></div>
@@ -37,22 +57,31 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-xs-8">
-                <div id="chartContainer"></div>
+            <div class="col-xs-6">
+                <div id="line_chart_abs"></div>
             </div>
-            <div class="colxs4">
-                <div class="container-fluid">
-                    <div class="col-xs-12">
-                        <div class="prompt-boxes">
-                            <div id="accurrancy"></div>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-xs-6">
+                <div id="mse_chart"></div>
             </div>
         </div>
     </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-2">
+            </div>
+            <div class="col-md-8">
+                <div id="v_interval"></div>
+            </div>
+            <div class="col-xs-2">
+            </div>
+        </div>
+    </div>
+        </div>
 </div>
 
+
+
+<div id="testRest" style="width: 900px; height: 1000px; margin: 20px; padding: 20px;"></div>
 
 
 <script type="text/javascript">
@@ -60,36 +89,64 @@
     // predicted value:
     // real value:
 
+    var base_url = 'http://localhost:8080/stock';
+    var dist_data_url = base_url + '/dist_data';
+    var test_data_url = base_url + '/test_data';
+
+
     var chartgen = 0;
     var donut = 0;
     var mse_chart = 0;
+    var line_chart_abs=0;
+
 
     var i = 1;
-    var c = 0;
+//    var c = 0;
 
 
     var interval = 1500;
-    var real_output_list = Create2DArray(4);
-    var predicted_output_list = Create2DArray(4);
+    var real_output_list = Create2DArray(6);
+    var predicted_output_list = Create2DArray(6);
     var dist = Create2DArray(3);
     var dist_helper = Create2DArray(3);
+    var abs_helper = Create2DArray(2);
 
-    var dps = '[{"x": 1, "y": 70}, {"x": 2, "y": 60}, {"x": 3, "y": 50}, {"x": 4, "y": 40}, {"x": 5, "y": 20}, {"x": 6, "y": 10}]';
-    var dps_json = JSON.parse(dps);
-    var dps_iter = [];
-    dps_iter.push(dps_json[0]);
+    var timer = 0;
+
+    var mse_data = ['MSE', 150];
+
+    // AJAX Calls
+//    $.ajax({
+//        url: dist_data_url,
+//        success: function(data) {
+////            console.log(JSON.stringify(data.dataset_data));
+//            $('#notification-bar').text('The page has been successfully loaded');
+//        },
+//        error: function() {
+//            alert("error.");
+//        }
+//    }).done(function() {
+//    });
 
     // GET predicted & real Value List
 
     real_output_list[0] = ['real output', 30, 200, 100, 400, 150];
     real_output_list[1] = ['real output', 200, 100, 400, 400, 300];
     real_output_list[2] = ['real output', 100, 400, 400, 300, 270];
-    real_output_list[3] = ['real output', 400, 400, 300, 270, 290];
+    real_output_list[3] = ['real output', 400, 400, 300, 290, 290];
+    real_output_list[4] = ['real output', 400, 300, 290, 290, 123];
+    real_output_list[5] = ['real output', 300, 290, 290, 123, 190];
+
 
     predicted_output_list[0] = ['predicted output', 50, 20, 10, 40, 15];
     predicted_output_list[1] = ['predicted output', 20, 10, 40, 15, 70];
     predicted_output_list[2] = ['predicted output', 10, 40, 15, 70, 120];
     predicted_output_list[3] = ['predicted output', 40, 15, 70, 120, 79];
+    predicted_output_list[4] = ['predicted output', 15, 70, 120, 79, 143];
+    predicted_output_list[5] = ['predicted output', 70, 120, 79, 123, 188];
+
+    abs_helper[0] = real_output_list[0];
+    abs_helper[1] = predicted_output_list[0];
 
     ro_output = real_output_list[0][0];
     po_output = predicted_output_list[0][0];
@@ -108,6 +165,12 @@
     dist[0].push(['under', 0]);
     dist[1].push(['equal', 0]);
     dist[2].push(['over', 1]);
+    dist[0].push(['under', 1]);
+    dist[1].push(['equal', 0]);
+    dist[2].push(['over', 0]);
+    dist[0].push(['under', 1]);
+    dist[1].push(['equal', 0]);
+    dist[2].push(['over', 0]);
 
     dist_helper[0] = dist[0][0];
     dist_helper[1] = dist[1][0];
@@ -117,10 +180,11 @@
     over_cap = dist[1][0];
     equal_cap = dist[2][0];
 
-    chartgen = initChartProcessing();
+    chartgen = initChart('chart', [ abs_helper[0], abs_helper[1] ], ['orange', 'yellow'], 'volume', 'DAX (single period)'); // initChartProcessing();
     donut = initDonutProcessing();
-    mse_chart = initMseChart();
-    loadCharts(i, predicted_output_list.length);
+    mse_chart = initChart('mse_chart', [ mse_data ], ['red'], 'volume', 'MSE'); //initMseChart();
+    line_chart_abs = initChart('line_chart_abs', [ abs_helper[0], abs_helper[1] ], ['green', 'yellow'], 'volume', 'DAX (abs)'); // initlineChartAbs();
+    timer = loadCharts(i, predicted_output_list.length);
 
 
     function Create2DArray(rows) {
@@ -133,37 +197,49 @@
         return arr;
     }
 
-    function initChartProcessing() {
-
+    function initChart(bindTo, cols, colors, xLabel, yLabel) {
+        renderSpeedSlider();
         return c3.generate({
-            x: ro_output,
-            bindto: '#chart',
+            x: bindTo,
+            bindto: '#' + bindTo,
             data: {
-                columns: [
-                    real_output_list[0],
-                    predicted_output_list[0]
-                ]
+                columns: cols
             },
-                axis: {
-                    x: {
-                        label: {
-                            text: 'volume / periode',
-                            position: 'outer-middle'
-                        }
-                    },
-                    y: {
-                        label: {
-                            text: 'Period',
-                            position: 'outer-middle'
-                        }
+            axis: {
+                x: {
+                    label: {
+                        text: xLabel,
+                        position: 'outer-middle'
                     }
-
+                },
+                y: {
+                    label: {
+                        text: yLabel,
+                        position: 'outer-middle'
+                    }
+                }
+            },
+            grid: {
+                y: {
+                    show: true
+                }
             },
             color: {
-                pattern: ['orange', 'yellow']
-            },
-            bindto: '#chart'
+                pattern: colors
+            }
         });
+    }
+
+    function renderSpeedSlider() {
+        $('#v_interval').html("<input id=\"velocity\" type=" + "\"range\"" + " name" + "=" + "\"velocity\"" +" min=\"0\" max=" + "\"3000\"" + " value=\"" + interval + "\">");
+        $('#velocity').change(function() {
+            interval = $('#velocity').val();
+        })
+
+//        <input type="range" name="auswertung" min="0" max="10" value="5">
+//        Punkte: <output name="numerisch">5</output>
+//
+//        </form>
     }
 
     function initDonutProcessing() {
@@ -200,18 +276,42 @@
         return donut;
     }
 
-
     function loadCharts(i, length) {
-        setTimeout(function () {
+      return  setTimeout(function () {
+            var ro_acctual = real_output_list[i][real_output_list[i].length-1];
+            var po_acctual = predicted_output_list[i][predicted_output_list[i].length-1];
+            var accurrancy = ro_acctual / po_acctual;
+            if(accurrancy > 1) {
+                accurrancy = (po_acctual / ro_acctual) * 100;
+            }
+            else {
+                accurrancy = accurrancy * 100;
+            }
+            accurrancy = accurrancy.toPrecision(4);
+
+            abs_helper[0].push(ro_acctual);
+            abs_helper[1].push(po_acctual);
+
+            dist_helper[0].push(dist[0][i][1]);
+            dist_helper[1].push(dist[1][i][1]);
+            dist_helper[2].push(dist[2][i][1]);
+
+            $('#real_acctual').html('real: ' + ro_acctual);
+            $('#pred_acctual').html('predicted: ' + po_acctual);
+            $('#accurrancy').html('accuracy: ' + accurrancy + ' %');
+
             chartgen.load({
                 columns: [
                     real_output_list[i],
                     predicted_output_list[i]
                 ]
             });
-            dist_helper[0].push(dist[0][i][1]);
-            dist_helper[1].push(dist[1][i][1]);
-            dist_helper[2].push(dist[2][i][1]);
+            line_chart_abs.load({
+                columns: [
+                    abs_helper[0],
+                    abs_helper[1]
+                ]
+            });
             donut.load({
                 columns: [
                     dist_helper[0],
@@ -219,8 +319,14 @@
                     dist_helper[2]
                 ]
             });
-            dps_iter.push(dps_json[i]);
-            mse_chart.render();
+//            dps_iter.push(dps_json[i]);
+            mse_data.push(ro_acctual-po_acctual);
+            mse_chart.load({
+                columns: [
+                    mse_data
+                   ]
+            });
+//            mse_chart.render();
             i++;
             if (i < length) {
                 loadCharts(i, length);
@@ -228,42 +334,6 @@
         }, interval);
     }
 
-
-    function initMseChart() {
-        return new CanvasJS.Chart('chartContainer', {
-            title: {
-
-            },
-            axisX: {
-                title: "Timeseries",
-                titleFontColor: "white",
-                labelFontColor: "white",
-                lineColor: "white"
-            },
-            axisY: {
-                title: "MSE",
-                titleFontColor: "white",
-                labelFontColor: "white",
-                lineColor: "white",
-                gridColor: "white",
-                gridThickness: 0.5
-            },
-            backgroundColor: "#1b6d85",
-            legend : {
-                fontColor: "#ff0000"
-            },
-            data: [{
-                type: "line",
-                indexLabelFontSize: 15,
-                indexLabelFontColor: "white",
-                color: "red",
-                lineThickness: 4,
-                dataPoints: dps_iter
-            }]
-        });
-
-        mse_chart.render();
-    }
 </script>
 
 

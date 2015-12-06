@@ -12,15 +12,57 @@ body {
 .c3 .c3-axis-x path, .c3 .c3-axis-x line, .c3 .c3-axis-y path, .c3 .c3-axis-y line  {
   stroke: white;
 }
-#chart .c3-line {
+#chart .c3-line, #line_chart_abs .c3-line, #mse_chart .c3-line {
   stroke-width: 4px;
 }
 
 .c3-axis-y-label, .c3-axis-x-label{
   font-weight:bold;
-  font-size:15pt;
+  font-size:12pt;
+  position: relative!important;
+  margin-bottom: 20pt!important;
+  overflow: visible;
 }
 
-#chart g.c3-axis-x, #chart  g.c3-axis-y {
-  stroke: white;
+#chart g.c3-axis-x, #chart  g.c3-axis-y, #line_chart_abs g.c3-axis-x, #line_chart_abs  g.c3-axis-y, #mse_chart g.c3-axis-x, #mse_chart g.c3-axis-y {
+  fill: white;
+  stroke-width: 2px;
 }
+
+#donut g, #chart g, #line_chart_abs g {
+  fill: white!important;
+}
+
+.prompt-boxes {
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+
+.prompt-container {
+  margin: 10px;
+  background-color: #964E4B;
+  border-radius: 25px;
+  border-style: solid;
+  border-width: thin;
+  border-color: white;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+#accurracy {
+
+}
+
+.charts-Box {
+  margin-top: 4%;
+  margin-bottom: 6%;
+}
+
+.v_interval {
+  margin-top: 20px;
+}
+
+
+
