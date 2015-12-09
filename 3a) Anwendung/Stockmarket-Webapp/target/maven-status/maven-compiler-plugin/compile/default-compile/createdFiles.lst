@@ -1,7 +1,8 @@
+de/soco/stockmarket/SimpleCORSFilter.class
+de/soco/stockmarket/controller/AnnController.class
 de/soco/stockmarket/extractor/PredictionSetExtractor.class
-de/soco/stockmarket/controller/annController.class
 de/soco/stockmarket/Application.class
-de/soco/stockmarket/AnnPerformer.class
 de/soco/stockmarket/extractor/ExtractorReport.class
-de/soco/stockmarket/extractor/Extractor.class
+de/soco/stockmarket/AnnPerformer.class
 de/soco/stockmarket/extractor/TestSetTrainingSetExtractor.class
+de/soco/stockmarket/extractor/Extractor.class

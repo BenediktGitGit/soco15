@@ -55,7 +55,7 @@ public abstract class Extractor {
     protected int[] colSignatur;
 
     public Extractor(String filename, int lineLength, String csvSplitBy) {
-        this.csvLine = "resources/source/YAHOO-INDEX_GDAXI_RAW.csv";
+        this.csvLine = "resources/de.soco.stockmarket.source/YAHOO-INDEX_GDAXI_RAW.csv";
         this.prefix = "resources/analyzed/";
         this.filename = filename;
         this.lineLength = lineLength;

@@ -64,5 +64,28 @@ body {
   margin-top: 20px;
 }
 
+#form {
+  height: 15pt;
+}
+
+#submit_btn {
+background-color: white;
+}
+
+.date_field , .dataset_field, .ann_field{
+  background-color: lightgrey;
+}
+
+.form-frame {
+  border-style: dotted;
+}
+
+#ann_field, #dataset_field {
+
+}
+
+
+
+
 
 

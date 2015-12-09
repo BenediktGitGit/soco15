@@ -4128,7 +4128,7 @@
 			textBlock.render(true);
 		}
 
-		//source and dest would be same when animation is not enabled
+		//de.soco.stockmarket.source and dest would be same when animation is not enabled
 		var animationInfo = { source: ctx, dest: this.plotArea.ctx, animationCallback: AnimationHelper.fadeInAnimation, easingFunction: AnimationHelper.easing.easeInQuad, animationBase: 0, startTimePercent: .7 };
 		return animationInfo;
 	}
@@ -4313,7 +4313,7 @@
 		if (isCanvasSupported)
 			ghostCtx.beginPath();
 
-		//source and dest would be same when animation is not enabled
+		//de.soco.stockmarket.source and dest would be same when animation is not enabled
 		var animationInfo = { source: ctx, dest: this.plotArea.ctx, animationCallback: AnimationHelper.xClipAnimation, easingFunction: AnimationHelper.easing.linear, animationBase: 0 };
 		return animationInfo;
 	}
@@ -4496,7 +4496,7 @@
 		if (isCanvasSupported)
 			ghostCtx.beginPath();
 
-		//source and dest would be same when animation is not enabled
+		//de.soco.stockmarket.source and dest would be same when animation is not enabled
 		var animationInfo = { source: ctx, dest: this.plotArea.ctx, animationCallback: AnimationHelper.xClipAnimation, easingFunction: AnimationHelper.easing.linear, animationBase: 0 };
 		return animationInfo;
 	}
@@ -4712,7 +4712,7 @@
 			}
 		}
 
-		//source and dest would be same when animation is not enabled
+		//de.soco.stockmarket.source and dest would be same when animation is not enabled
 		var animationInfo = { source: ctx, dest: this.plotArea.ctx, animationCallback: AnimationHelper.xClipAnimation, easingFunction: AnimationHelper.easing.linear, animationBase: 0 };
 		return animationInfo;
 	}
@@ -4975,7 +4975,7 @@
 		if (isCanvasSupported)
 			this._eventManager.ghostCtx.restore();
 
-		//source and dest would be same when animation is not enabled
+		//de.soco.stockmarket.source and dest would be same when animation is not enabled
 		var animationBase = Math.min(yZeroToPixel, plotUnit.axisY.boundingRect.y2);
 		var animationInfo = { source: ctx, dest: this.plotArea.ctx, animationCallback: AnimationHelper.yScaleAnimation, easingFunction: AnimationHelper.easing.easeOutQuart, animationBase: animationBase };
 		return animationInfo;
@@ -5121,7 +5121,7 @@
 		if (isCanvasSupported)
 			this._eventManager.ghostCtx.restore();
 
-		//source and dest would be same when animation is not enabled
+		//de.soco.stockmarket.source and dest would be same when animation is not enabled
 		var animationBase = Math.min(yZeroToPixel, plotUnit.axisY.boundingRect.y2);
 		var animationInfo = { source: ctx, dest: this.plotArea.ctx, animationCallback: AnimationHelper.yScaleAnimation, easingFunction: AnimationHelper.easing.easeOutQuart, animationBase: animationBase };
 		return animationInfo;
@@ -5270,7 +5270,7 @@
 		if (isCanvasSupported)
 			this._eventManager.ghostCtx.restore();
 
-		//source and dest would be same when animation is not enabled
+		//de.soco.stockmarket.source and dest would be same when animation is not enabled
 		var animationBase = Math.min(yZeroToPixel, plotUnit.axisY.boundingRect.y2);
 		var animationInfo = { source: ctx, dest: this.plotArea.ctx, animationCallback: AnimationHelper.yScaleAnimation, easingFunction: AnimationHelper.easing.easeOutQuart, animationBase: animationBase };
 		return animationInfo;
@@ -5402,7 +5402,7 @@
 		if (isCanvasSupported)
 			this._eventManager.ghostCtx.restore();
 
-		//source and dest would be same when animation is not enabled
+		//de.soco.stockmarket.source and dest would be same when animation is not enabled
 		var animationBase = Math.max(yZeroToPixel, plotUnit.axisX.boundingRect.x2);
 		var animationInfo = { source: ctx, dest: this.plotArea.ctx, animationCallback: AnimationHelper.xScaleAnimation, easingFunction: AnimationHelper.easing.easeOutQuart, animationBase: animationBase };
 		return animationInfo;
@@ -5540,7 +5540,7 @@
 		if (isCanvasSupported)
 			this._eventManager.ghostCtx.restore();
 
-		//source and dest would be same when animation is not enabled
+		//de.soco.stockmarket.source and dest would be same when animation is not enabled
 		var animationBase = Math.max(yZeroToPixel, plotUnit.axisX.boundingRect.x2);
 		var animationInfo = { source: ctx, dest: this.plotArea.ctx, animationCallback: AnimationHelper.xScaleAnimation, easingFunction: AnimationHelper.easing.easeOutQuart, animationBase: animationBase };
 		return animationInfo;
@@ -5684,7 +5684,7 @@
 		if (isCanvasSupported)
 			this._eventManager.ghostCtx.restore();
 
-		//source and dest would be same when animation is not enabled
+		//de.soco.stockmarket.source and dest would be same when animation is not enabled
 		var animationBase = Math.max(yZeroToPixel, plotUnit.axisX.boundingRect.x2);
 		var animationInfo = { source: ctx, dest: this.plotArea.ctx, animationCallback: AnimationHelper.xScaleAnimation, easingFunction: AnimationHelper.easing.easeOutQuart, animationBase: animationBase };
 		return animationInfo;
@@ -5896,7 +5896,7 @@
 			startPoint = { x: x, y: y };
 		}
 
-		//source and dest would be same when animation is not enabled
+		//de.soco.stockmarket.source and dest would be same when animation is not enabled
 		var animationInfo = { source: ctx, dest: this.plotArea.ctx, animationCallback: AnimationHelper.xClipAnimation, easingFunction: AnimationHelper.easing.linear, animationBase: 0 };
 		return animationInfo;
 	}
@@ -6100,7 +6100,7 @@
 			}
 		}
 
-		//source and dest would be same when animation is not enabled
+		//de.soco.stockmarket.source and dest would be same when animation is not enabled
 		var animationInfo = { source: ctx, dest: this.plotArea.ctx, animationCallback: AnimationHelper.xClipAnimation, easingFunction: AnimationHelper.easing.linear, animationBase: 0 };
 		return animationInfo;
 	}
@@ -6318,7 +6318,7 @@
 			startPoint = { x: x, y: y };
 		}
 
-		//source and dest would be same when animation is not enabled
+		//de.soco.stockmarket.source and dest would be same when animation is not enabled
 		var animationInfo = { source: ctx, dest: this.plotArea.ctx, animationCallback: AnimationHelper.xClipAnimation, easingFunction: AnimationHelper.easing.linear, animationBase: 0 };
 		return animationInfo;
 	}
@@ -6587,7 +6587,7 @@
 		if (isCanvasSupported)
 			ghostCtx.restore();
 
-		//source and dest would be same when animation is not enabled
+		//de.soco.stockmarket.source and dest would be same when animation is not enabled
 		var animationInfo = { source: ctx, dest: this.plotArea.ctx, animationCallback: AnimationHelper.xClipAnimation, easingFunction: AnimationHelper.easing.linear, animationBase: 0 };
 		return animationInfo;
 	}
@@ -6868,7 +6868,7 @@
 		if (isCanvasSupported)
 			ghostCtx.restore();
 
-		//source and dest would be same when animation is not enabled
+		//de.soco.stockmarket.source and dest would be same when animation is not enabled
 		var animationInfo = { source: ctx, dest: this.plotArea.ctx, animationCallback: AnimationHelper.xClipAnimation, easingFunction: AnimationHelper.easing.linear, animationBase: 0 };
 		return animationInfo;
 	}
@@ -7025,7 +7025,7 @@
 		if (isCanvasSupported)
 			this._eventManager.ghostCtx.restore();
 
-		//source and dest would be same when animation is not enabled
+		//de.soco.stockmarket.source and dest would be same when animation is not enabled
 		var animationInfo = { source: ctx, dest: this.plotArea.ctx, animationCallback: AnimationHelper.fadeInAnimation, easingFunction: AnimationHelper.easing.easeInQuad, animationBase: 0 };
 		return animationInfo;
 	}
@@ -7165,7 +7165,7 @@
 		if (isCanvasSupported)
 			this._eventManager.ghostCtx.restore();
 
-		//source and dest would be same when animation is not enabled
+		//de.soco.stockmarket.source and dest would be same when animation is not enabled
 		var animationInfo = { source: ctx, dest: this.plotArea.ctx, animationCallback: AnimationHelper.fadeInAnimation, easingFunction: AnimationHelper.easing.easeInQuad, animationBase: 0 };
 		return animationInfo;
 	}
@@ -7361,7 +7361,7 @@
 		if (isCanvasSupported)
 			ghostCtx.restore();
 
-		//source and dest would be same when animation is not enabled
+		//de.soco.stockmarket.source and dest would be same when animation is not enabled
 		var animationInfo = { source: ctx, dest: this.plotArea.ctx, animationCallback: AnimationHelper.fadeInAnimation, easingFunction: AnimationHelper.easing.easeInQuad, animationBase: 0 };
 		return animationInfo;
 	}
@@ -7508,7 +7508,7 @@
 			this._eventManager.ghostCtx.restore();
 
 
-		//source and dest would be same when animation is not enabled
+		//de.soco.stockmarket.source and dest would be same when animation is not enabled
 		var animationInfo = { source: ctx, dest: this.plotArea.ctx, animationCallback: AnimationHelper.fadeInAnimation, easingFunction: AnimationHelper.easing.easeInQuad, animationBase: 0 };
 		return animationInfo;
 	}
@@ -7653,7 +7653,7 @@
 		if (isCanvasSupported)
 			this._eventManager.ghostCtx.restore();
 
-		//source and dest would be same when animation is not enabled
+		//de.soco.stockmarket.source and dest would be same when animation is not enabled
 		var animationInfo = { source: ctx, dest: this.plotArea.ctx, animationCallback: AnimationHelper.fadeInAnimation, easingFunction: AnimationHelper.easing.easeInQuad, animationBase: 0 };
 		return animationInfo;
 	}
@@ -7921,7 +7921,7 @@
 		}
 
 		//ctx.beginPath();
-		//source and dest would be same when animation is not enabled
+		//de.soco.stockmarket.source and dest would be same when animation is not enabled
 		var animationInfo = { source: ctx, dest: this.plotArea.ctx, animationCallback: AnimationHelper.xClipAnimation, easingFunction: AnimationHelper.easing.linear, animationBase: 0 };
 		return animationInfo;
 	}
@@ -8176,7 +8176,7 @@
 			}
 		}
 
-		//source and dest would be same when animation is not enabled
+		//de.soco.stockmarket.source and dest would be same when animation is not enabled
 		var animationInfo = { source: ctx, dest: this.plotArea.ctx, animationCallback: AnimationHelper.xClipAnimation, easingFunction: AnimationHelper.easing.linear, animationBase: 0 };
 		return animationInfo;
 	}
@@ -13418,7 +13418,7 @@
 		this.animationRequestId = null;
 	}
 
-	//Animator.prototype.animate = function (duration, base, dest, source, animationCallback, onComplete) {
+	//Animator.prototype.animate = function (duration, base, dest, de.soco.stockmarket.source, animationCallback, onComplete) {
 	Animator.prototype.animate = function (startDelay, duration, animationCallback, onComplete, easingFunction) {
 		var _this = this;
 

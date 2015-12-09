@@ -1,5 +1,4 @@
 <!doctype html>
-<html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +6,19 @@
     <link href="c3arch/c3.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap-theme.min.css" type="text/css">
+    <link rel="stylesheet" href="bootstrap-datepicker-1.5.0-dist/css/bootstrap-datepicker.standalone.min.css" type="text/css">
+    <link rel="stylesheet" href="bootstrap-datepicker-1.5.0-dist/css/bootstrap-datepicker.min.css" type="text/css">
+    <link rel="stylesheet" href="bootstrap-datepicker-1.5.0-dist/css/bootstrap-datepicker3.min.css" type="text/css">
+    <link rel="stylesheet" href="bootstrap-datepicker-1.5.0-dist/css/bootstrap-datepicker3.standalone.min.css" type="text/css">
+
 
     <link rel="stylesheet" href="css/main.css" type="text/css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <!--<script type="text/javascript" src="js/jquery-ui-1.7.2.min.js"></script>-->
+    <script type="text/javascript" src="bootstrap-datepicker-1.5.0-dist/js/bootstrap-datepicker.min.js"></script>
+
 
 </head>
 <body>
@@ -22,77 +30,102 @@
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
 <script type="text/javascript" src="canvasjs-1.7.0/canvasjs.min.js"></script>
 <script type="text/javascript" src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
-<script src="js/main.js"></script>
+<script type="text/javascript" src="http://malsup.github.com/jquery.form.js"></script>
+
+
+    <script src="js/main.js"></script>
+
+<!--<div class="panel">-->
+    <!--<div id="time-panel"></div>-->
+    <!--<div id="analyisis-panel"></div>-->
+<!--</div>-->
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-2"></div>
+        <form id="form">
+            <div class="col-md-1 col-lg-offset-1" id="start-date-container">
+                <input class="date_field" type="startDate"></div>
+            <div class="col-md-1 col-lg-offset-1" id="end-date-container">
+                <input class="date_field" type="endDate"></div>
+            <div class="col-md-1" id="dataset-container">
+                <div class="container-fluid">
+                    <div class="row">
+                        <select id="dataset_field"></select></div>
+                    <div class="row">
+                        <select id="ann_field" name="ann_field" ></select></div>
+                    </div>
+                </div>
+            <div class="col-md-1 col-lg-offset-1">
+                <input id="submit_btn" type="submit" value="Test Timeseries"/>
+            </div>
+        </form>
+    </div>
+</div>
 
 <div class="charts-Box" style="margin-left: 10%; margin-right: 10%; ">
     <div class="container-fluid">
         <div class="row">
-        <div class="col-xs-12 col-sm-offset-0 col-md-offset-0">
-            <div class="row">
-                <div class="col-xs-6">
-                    <div id="chart"></div>
-                </div>
-                <div class="col-md-2">
-                    <div class="prompt-boxes">
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <div id="real_acctual" class="prompt-container">real</div>
+            <div class="col-xs-12 col-sm-offset-0 col-md-offset-0">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div id="chart"></div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="prompt-boxes">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div id="real_acctual" class="prompt-container">real</div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <div id="pred_acctual" class="prompt-container">predicted</div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div id="pred_acctual" class="prompt-container">predicted</div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <div id="accurrancy" class="prompt-container">accuracy</div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div id="accurrancy" class="prompt-container">accuracy</div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div class="col-xs-4">
+                        <div id="donut"></div>
+                    </div>
                 </div>
-                <div class="col-xs-4">
-                    <div id="donut"></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6">
+                    <div id="line_chart_abs"></div>
+                </div>
+                <div class="col-xs-6">
+                    <div id="mse_chart"></div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-xs-6">
-                <div id="line_chart_abs"></div>
-            </div>
-            <div class="col-xs-6">
-                <div id="mse_chart"></div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-2">
+                </div>
+                <div class="col-md-8">
+                    <div id="v_interval"></div>
+                </div>
+                <!--<div class="col-xs-2">-->
+                <!--<input id="pause_btn" type="button" value="pause" />-->
+                <!--</div>-->
             </div>
         </div>
     </div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-xs-2">
-            </div>
-            <div class="col-md-8">
-                <div id="v_interval"></div>
-            </div>
-            <div class="col-xs-2">
-            </div>
-        </div>
-    </div>
-        </div>
 </div>
 
 
-
-<div id="testRest" style="width: 900px; height: 1000px; margin: 20px; padding: 20px;"></div>
-
-
 <script type="text/javascript">
-    // accurrancy: 1 - po/ro or 1 - ro/po
-    // predicted value:
-    // real value:
 
     var base_url = 'http://localhost:8080/stock';
-    var dist_data_url = base_url + '/dist_data';
-    var test_data_url = base_url + '/test_data';
-
+    var data_url = base_url + '/data';
+    var ann_url = base_url + '/ann_names';
+    var dataset_url = base_url + '/datasets';
 
     var chartgen = 0;
     var donut = 0;
@@ -101,8 +134,6 @@
 
 
     var i = 1;
-//    var c = 0;
-
 
     var interval = 1500;
     var real_output_list = Create2DArray(6);
@@ -115,18 +146,104 @@
 
     var mse_data = ['MSE', 150];
 
-    // AJAX Calls
-//    $.ajax({
-//        url: dist_data_url,
-//        success: function(data) {
-////            console.log(JSON.stringify(data.dataset_data));
-//            $('#notification-bar').text('The page has been successfully loaded');
-//        },
-//        error: function() {
-//            alert("error.");
+    var start_date_container = $('#start-date-container input').datepicker();
+    var end_date_container =  $('#end-date-container input').datepicker();
+
+    var startDate = 0;
+    var endDate = 0;
+
+//    var flag = true;
+//    function pause(){
+//        if (flag){
+//            setTimeout(pause(), 100);
 //        }
-//    }).done(function() {
-//    });
+//    }
+//
+//    function stop(){
+//        flag = false;
+//    }
+    renderSelects(ann_url, 'ann_field');
+    renderSelects(dataset_url, 'dataset_field');
+
+    function renderSelects(url, field) {
+        $.ajax({
+            url: url,
+            async: false,
+            success: function(data) {
+                console.log(JSON.stringify(data));
+            },
+            error: function() {
+                alert("Error with Rest-Service.");
+            }
+        }).done(function(data) {
+            $.each( data, function( key, value ) {
+                var select = '#'+field;
+                $(select).append(
+                        $('<option></option>').val(key).html(value)
+                );
+            });
+        });
+    }
+
+
+    function formatDates(date) {
+        if (date != null) {
+            var dd = date.getDate();
+            var mm = date.getMonth() + 1;
+            var yyyy = date.getFullYear();
+            if (dd < 10) {
+                dd = '0' + dd
+            }
+            if (mm < 10) {
+                mm = '0' + mm
+            }
+            return yyyy + '-' + mm + '-' + dd;
+        }
+        return "";
+    }
+
+    $(".date_field").change(function() {
+        startDate = start_date_container.datepicker('getDate');
+        startDate = formatDates(startDate);
+
+        endDate = end_date_container.datepicker('getDate');
+        endDate = formatDates(endDate);
+    });
+
+
+
+    $( "#submit_btn" ).click(function( event ) {
+
+        var collapse = "daily";
+        var target_url = data_url + "?startDate=" + startDate + "&endDate=" + endDate + "&collapse=" + collapse;
+
+        if ( startDate.length === 0)  {
+            alert("StartDate is missing.");
+        } else if ( endDate.length === 0){
+            alert("EndDate is missing.");
+        }
+        else {
+//            $.get( target_url, function( data ) {
+//                alert( "Load was performed." );
+//            });
+            $.ajax({
+                url: target_url,
+                async: false,
+                success: function(data) {
+                    alert(data);
+//            console.log(JSON.stringify(data.dataset_data));
+                    alert("success");
+                },
+                error: function() {
+                    alert("Error with Rest-Service.");
+                }
+            }).done(function() {
+                      alert("done");
+                    });
+        }
+    });
+
+
 
     // GET predicted & real Value List
 
@@ -199,6 +316,7 @@
 
     function initChart(bindTo, cols, colors, xLabel, yLabel) {
         renderSpeedSlider();
+//        renderPauseBtn();
         return c3.generate({
             x: bindTo,
             bindto: '#' + bindTo,
@@ -230,8 +348,23 @@
         });
     }
 
+//    function renderPauseBtn() {
+////        $('#pause').html("<input id=\"pause_btn\" type=\"button\" value=\"pause\" />");
+//        $('#pause_btn').click(function () {
+//            if ($('#pause_btn').val() == 'pause') {
+//                $('#pause_btn').val('stopped');
+//                pause();
+//            }
+//            else {
+//                $('#pause_btn').val('pause');
+//                stop();
+//             }
+//        });
+//    }
+
     function renderSpeedSlider() {
         $('#v_interval').html("<input id=\"velocity\" type=" + "\"range\"" + " name" + "=" + "\"velocity\"" +" min=\"0\" max=" + "\"3000\"" + " value=\"" + interval + "\">");
+
         $('#velocity').change(function() {
             interval = $('#velocity').val();
         })

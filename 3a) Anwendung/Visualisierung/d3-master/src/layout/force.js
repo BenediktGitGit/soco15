@@ -69,7 +69,7 @@ d3.layout.force = function() {
         q,
         i, // current index
         o, // current object
-        s, // current source
+        s, // current de.soco.stockmarket.source
         t, // current target
         l, // current distance
         k, // current force

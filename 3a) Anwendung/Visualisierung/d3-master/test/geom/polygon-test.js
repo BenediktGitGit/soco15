@@ -42,7 +42,7 @@ suite.addBatch({
         assertPointInDelta(p.centroid(), [0.5, 0.5]);
       },
       "is not currently supported for clipping": function(p) {
-        // because clipping requires a counterclockwise source polygon
+        // because clipping requires a counterclockwise de.soco.stockmarket.source polygon
       }
     },
     "closed clockwise triangle": {
@@ -59,7 +59,7 @@ suite.addBatch({
         assertPointInDelta(p.centroid(), [2, 2]);
       },
       "is not currently supported for clipping": function(p) {
-        // because clipping requires a counterclockwise source polygon
+        // because clipping requires a counterclockwise de.soco.stockmarket.source polygon
       }
     },
     "open counterclockwise unit square": {
@@ -96,7 +96,7 @@ suite.addBatch({
         assertPointInDelta(p.centroid(), [0.5, 0.5]);
       },
       "is not currently supported for clipping": function(p) {
-        // because clipping requires a counterclockwise source polygon
+        // because clipping requires a counterclockwise de.soco.stockmarket.source polygon
       }
     },
     "open clockwise triangle": {

@@ -1,4 +1,4 @@
-// Copies a variable number of methods from source to target.
+// Copies a variable number of methods from de.soco.stockmarket.source to target.
 d3.rebind = function(target, source) {
   var i = 1, n = arguments.length, method;
   while (++i < n) target[method = arguments[i]] = d3_rebind(target, source, source[method]);

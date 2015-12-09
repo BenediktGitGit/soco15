@@ -24,7 +24,7 @@ function d3_eventDispatch(target) {
   while (++i < n) dispatch[arguments[i]] = d3_dispatch_event(dispatch);
 
   // Creates a dispatch context for the specified `thiz` (typically, the target
-  // DOM element that received the source event) and `argumentz` (typically, the
+  // DOM element that received the de.soco.stockmarket.source event) and `argumentz` (typically, the
   // data `d` and index `i` of the target element). The returned function can be
   // used to dispatch an event to any registered listeners; the function takes a
   // single argument as input, being the event to dispatch. The event must have

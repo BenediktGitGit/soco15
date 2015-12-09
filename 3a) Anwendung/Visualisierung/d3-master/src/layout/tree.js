@@ -51,7 +51,7 @@ d3.layout.tree = function() {
     while ((node1 = queue.pop()) != null) {
       for (var children = node1.children, child, i = 0, n = children.length; i < n; ++i) {
         queue.push((children[i] = child = {
-          _: children[i], // source node
+          _: children[i], // de.soco.stockmarket.source node
           parent: node1,
           children: (child = children[i].children) && child.slice() || [],
           A: null, // default ancestor

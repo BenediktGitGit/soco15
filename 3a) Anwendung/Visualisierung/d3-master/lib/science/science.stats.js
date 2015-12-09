@@ -502,7 +502,7 @@ science.stats.loess = function() {
       i = -1; while (++i < n) {
         x = xval[i];
 
-        // Find out the interval of source points on which
+        // Find out the interval of de.soco.stockmarket.source points on which
         // a regression is to be made.
         if (i > 0) {
           science_stats_loessUpdateBandwidthInterval(xval, weights, i, bandwidthInterval);

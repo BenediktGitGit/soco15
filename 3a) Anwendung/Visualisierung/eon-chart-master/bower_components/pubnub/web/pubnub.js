@@ -1084,7 +1084,7 @@ function PN_API(setup) {
 
         /*
             PUBNUB.replay({
-                source      : 'my_channel',
+                de.soco.stockmarket.source      : 'my_channel',
                 destination : 'new_channel'
             });
         */

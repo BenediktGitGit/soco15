@@ -1,7 +1,8 @@
-/home/bthofrichter/Dropbox/7. Semester/Softcomputing/Unbenannter Ordner/soco15/3a) Anwendung/Stockmarket-Webapp/src/main/java/de/soco/stockmarket/Application.java
-/home/bthofrichter/Dropbox/7. Semester/Softcomputing/Unbenannter Ordner/soco15/3a) Anwendung/Stockmarket-Webapp/src/main/java/de/soco/stockmarket/AnnPerformer.java
-/home/bthofrichter/Dropbox/7. Semester/Softcomputing/Unbenannter Ordner/soco15/3a) Anwendung/Stockmarket-Webapp/src/main/java/de/soco/stockmarket/extractor/ExtractorReport.java
-/home/bthofrichter/Dropbox/7. Semester/Softcomputing/Unbenannter Ordner/soco15/3a) Anwendung/Stockmarket-Webapp/src/main/java/de/soco/stockmarket/controller/annController.java
-/home/bthofrichter/Dropbox/7. Semester/Softcomputing/Unbenannter Ordner/soco15/3a) Anwendung/Stockmarket-Webapp/src/main/java/de/soco/stockmarket/extractor/Extractor.java
-/home/bthofrichter/Dropbox/7. Semester/Softcomputing/Unbenannter Ordner/soco15/3a) Anwendung/Stockmarket-Webapp/src/main/java/de/soco/stockmarket/extractor/PredictionSetExtractor.java
-/home/bthofrichter/Dropbox/7. Semester/Softcomputing/Unbenannter Ordner/soco15/3a) Anwendung/Stockmarket-Webapp/src/main/java/de/soco/stockmarket/extractor/TestSetTrainingSetExtractor.java
+/home/bthofrichter/Dropbox/7.Semester/Softcomputing/Unbenannter Ordner/soco15/3a) Anwendung/Stockmarket-Webapp/src/main/java/de/soco/stockmarket/Application.java
+/home/bthofrichter/Dropbox/7.Semester/Softcomputing/Unbenannter Ordner/soco15/3a) Anwendung/Stockmarket-Webapp/src/main/java/de/soco/stockmarket/controller/AnnController.java
+/home/bthofrichter/Dropbox/7.Semester/Softcomputing/Unbenannter Ordner/soco15/3a) Anwendung/Stockmarket-Webapp/src/main/java/de/soco/stockmarket/extractor/TestSetTrainingSetExtractor.java
+/home/bthofrichter/Dropbox/7.Semester/Softcomputing/Unbenannter Ordner/soco15/3a) Anwendung/Stockmarket-Webapp/src/main/java/de/soco/stockmarket/AnnPerformer.java
+/home/bthofrichter/Dropbox/7.Semester/Softcomputing/Unbenannter Ordner/soco15/3a) Anwendung/Stockmarket-Webapp/src/main/java/de/soco/stockmarket/extractor/ExtractorReport.java
+/home/bthofrichter/Dropbox/7.Semester/Softcomputing/Unbenannter Ordner/soco15/3a) Anwendung/Stockmarket-Webapp/src/main/java/de/soco/stockmarket/extractor/PredictionSetExtractor.java
+/home/bthofrichter/Dropbox/7.Semester/Softcomputing/Unbenannter Ordner/soco15/3a) Anwendung/Stockmarket-Webapp/src/main/java/de/soco/stockmarket/extractor/Extractor.java
+/home/bthofrichter/Dropbox/7.Semester/Softcomputing/Unbenannter Ordner/soco15/3a) Anwendung/Stockmarket-Webapp/src/main/java/de/soco/stockmarket/SimpleCORSFilter.java
