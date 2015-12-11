@@ -43,6 +43,21 @@ public class FormatService {
         return Collections.emptyList();
     }
 
+    public List<List<String>> addCols(List<List<String>> data, List<List<String>> elem) {
+        try {
+            List<List<String>> result = data;
+            for (int i = 0; i < result.size(); i++) {
+                List<String> el = elem.get(i);
+                for (String s : el) {
+                    result.get(i).add(s);
+                }
+            }
+            return result;
+        } catch (Exception e) {
+            logger.error("addCols in " + serviceClass + e);
+        }
+        return Collections.emptyList();
+    }
 
     public List<String> addDistVals(List<String> qdata) {
            // return Date _ _ _ _ ro, po, under, equal, over

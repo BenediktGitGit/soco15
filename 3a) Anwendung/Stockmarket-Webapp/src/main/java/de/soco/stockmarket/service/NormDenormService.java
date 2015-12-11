@@ -27,14 +27,12 @@ public class NormDenormService {
     public NormDenormService() {
     }
 
-    public List<List<String>> normalize(List<List<String>> data, Boolean date) {
+    public List<List<String>> processFormula(List<List<String>> data, Boolean date, String formula) {
         try {
             List<List<String>> result = new ArrayList<>();
 
             ScriptEngineManager mgr = new ScriptEngineManager();
             ScriptEngine engine = mgr.getEngineByName("JavaScript");
-
-            String formula = env.getProperty("normalize.formula");
 
             Double min = 200000d;
             Double max = 0d;
@@ -73,9 +71,21 @@ public class NormDenormService {
         return Collections.emptyList();
     }
 
-    public List<String> denormalize(List<String> data_norm) {
+    public List<List<String>> normalize(List<List<String>> data, Boolean date) {
         try {
+            String formula = env.getProperty("normalize.formula");
+            return processFormula(data, date, formula);
+        }
+        catch (Exception e) {
+            logger.error("denormalize in " + serviceClass + e);
+        }
+        return Collections.emptyList();
+    }
 
+    public List<List<String>> denormalize(List<List<String>> data,  Boolean date) {
+        try {
+            String formula = env.getProperty("denormalize.formula");
+            return processFormula(data, date, formula);
         }
         catch (Exception e) {
             logger.error("denormalize in " + serviceClass + e);

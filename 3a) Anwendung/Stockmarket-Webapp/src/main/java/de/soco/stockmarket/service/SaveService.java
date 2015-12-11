@@ -60,7 +60,7 @@ public class SaveService {
 
     private String getFilename (List<List<String>> data, String dataset, String postFix) {
         try {
-            String base_url = env.getProperty("media.source.analyzed");
+            String base_url = env.getProperty("media.source.base") + env.getProperty("media.source.analyzed");
             Integer periodLengh = Integer.parseInt(env.getProperty("format.period.length"));
 
             String result = base_url + data.get(0).get(0) + "_" + data.get(data.size()-1).get(0) + "_" + dataset.replace("/", "_");

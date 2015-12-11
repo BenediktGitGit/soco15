@@ -1,11 +1,13 @@
 package de.soco.stockmarket.controller;
 
 import de.soco.stockmarket.service.DataService;
+import de.soco.stockmarket.service.EnvService;
+
 import org.apache.log4j.Logger;
 import org.json.JSONArray;
-import org.json.JSONObject;
+
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.env.Environment;
+
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -31,7 +33,7 @@ import java.util.*;
 public class AnnController implements ServletContextAware, ServletConfigAware {
 
     @Autowired
-    private Environment env;
+    private EnvService envService;
 
     @Autowired
     private DataService dataService;
@@ -62,13 +64,14 @@ public class AnnController implements ServletContextAware, ServletConfigAware {
 
             try {
                 List<String> quandlData = new ArrayList<>();
-                String format = env.getProperty("quandl.data.dataset.format");
-                String exclude_header = env.getProperty("quandl.data.dataset.header");
-                String order = env.getProperty("quandl.data.dataset.order");
-                String baseUrl = env.getProperty("quandl.api.baseurl");
-                String dataSet = env.getProperty("quandl.dataset." + stock);
-                String api_key = env.getProperty("quandl.api.key");
-                Integer periodLength = Integer.parseInt(env.getProperty("format.period.length"));
+                String format = envService.getProperty("quandl.data.dataset.format");
+                String exclude_header = envService.getProperty("quandl.data.dataset.header");
+                String order = envService.getProperty("quandl.data.dataset.order");
+                String baseUrl = envService.getProperty("quandl.api.baseurl");
+                String dataSet = envService.getProperty("quandl.dataset." + stock);
+                String api_key = envService.getProperty("quandl.api.key");
+                Integer periodLength = Integer.parseInt(envService.getProperty("format.period.length"));
+                Boolean isDateIncluded = Boolean.parseBoolean(envService.getProperty("format.data.included"));
 
 
                 try {
@@ -96,13 +99,13 @@ public class AnnController implements ServletContextAware, ServletConfigAware {
                     // save formatted Data as csv
                     dataService.saveData(closeData, dataSet, "");
                     // Normalize Data
-                    List<List<String>> normalizedData = dataService.normalize(closeData, true);
+                    List<List<String>> normalizedData = dataService.normalize(closeData, isDateIncluded);
                     // save normalized Data as csv
                     dataService.saveData(normalizedData, dataSet, "normalized");
                     // Test with .nnet and add po
-                    dataService.testWithAnn(normalizedData, ann);
+                    List<List<String>> testedData = dataService.testWithAnn(normalizedData, ann);
                     // Denomralize
-                    dataService.deNormalize();
+                    dataService.deNormalize(testedData, isDateIncluded);
                     // add dist_vals to Data
                     dataService.addDistVals();
                     // Add MSn
@@ -134,10 +137,10 @@ public class AnnController implements ServletContextAware, ServletConfigAware {
     @RequestMapping(value= "/ann_names", method = RequestMethod.GET)
     public List<String> ann_names() {
         try {
-            String media_source = env.getProperty("media.source.ann");
+            String media_source = envService.getProperty("media.source.base") + envService.getProperty("media.source.ann");
             List<String> result = new ArrayList<>();
 
-            result = listFiles(media_source);
+            result = dataService.listFiles(media_source);
 
             return result;
 
@@ -147,28 +150,14 @@ public class AnnController implements ServletContextAware, ServletConfigAware {
         return Collections.emptyList();
     }
 
-    public List<String> listFiles(String directoryName){
-        List<String> result = new ArrayList<>();
-
-        File directory = new File(directoryName);
-
-        File[] fList = directory.listFiles();
-        for (File file : fList){
-            if (file.isFile()){
-                result.add(file.getName());
-            }
-        }
-        return result;
-    }
-
     @RequestMapping(value= "/datasets", method = RequestMethod.GET)
     public String datasets() {
         try {
             List<String> result = new ArrayList<>();
             JSONArray array = new JSONArray();
-            array.put(addProperty("quandl.dataset.name.dax"));
-            array.put(addProperty("quandl.dataset.name.nikkei_225"));
-            array.put(addProperty("quandl.dataset.name.djia"));
+            array.put(envService.addProperty("quandl.dataset.name.dax"));
+            array.put(envService.addProperty("quandl.dataset.name.nikkei_225"));
+            array.put(envService.addProperty("quandl.dataset.name.djia"));
 
             return array.toString();
 
@@ -178,43 +167,4 @@ public class AnnController implements ServletContextAware, ServletConfigAware {
         return "";
     }
 
-    private String addProperty(String propertyName) {
-        try {
-            JSONObject object = new JSONObject();
-            String propStr = env.getProperty(propertyName);
-            List<String> list = Arrays.asList(propStr.split(","));
-            object.put( "name", list.get(0));
-            object.put("value", list.get(1));
-            return object.toString();
-        } catch (Exception e) {
-            System.out.print(e);
-        }
-        return "";
-    }
-
-
-//    private void print_content(HttpsURLConnection con){
-//        if(con!=null){
-//
-//            try {
-//
-//                System.out.println("****** Content of the URL ********");
-//                BufferedReader br =
-//                        new BufferedReader(
-//                                new InputStreamReader(con.getInputStream()));
-//
-//                String input;
-//
-//                while ((input = br.readLine()) != null){
-//                    System.out.println(input);
-//                }
-//                br.close();
-//
-//            } catch (IOException e) {
-//                e.printStackTrace();
-//            }
-//
-//        }
-//
-//    }
 }

@@ -24,7 +24,10 @@ public class DataService {
     private  NormDenormService normDenormService;
     
     @Autowired
-    private TestAnnService testAnnService;
+    private AnnService annService;
+
+    @Autowired
+    private EnvService envService;
 
     private static final Class<DataService> serviceClass = DataService.class;
 
@@ -71,7 +74,7 @@ public class DataService {
 
     public List<List<String>> testWithAnn (List<List<String>> data, String ann_name) {
         try {
-            return testAnnService.testWithAnn(data, ann_name);
+            return annService.testWithAnn(data, ann_name);
         } catch (Exception e)
         {
             logger.error("testWithAnn Exception " + e);
@@ -79,7 +82,7 @@ public class DataService {
         return Collections.emptyList();
     }
 
-    public List<String> addDistVals () {
+    public List<List<String>> addDistVals () {
         try {
             qdata_format = formatService.addDistVals(qdata_format);
         } catch (Exception e)
@@ -89,9 +92,9 @@ public class DataService {
         return Collections.emptyList();
     }
 
-    public List<String> deNormalize() {
+    public List<List<String>> deNormalize(List<List<String>> data,  Boolean date) {
         try {
-            qdata_format = normDenormService.denormalize(qdata_format_norm);
+            return normDenormService.denormalize(data, date);
         } catch (Exception e)
         {
             logger.error("deNormalize Exception " + e);
@@ -99,9 +102,19 @@ public class DataService {
         return Collections.emptyList();
     }
 
-    public List<String> addMSE () {
+    public List<List<String>> addMSE () {
         try {
          qdata_format = formatService.addMSE(qdata_format);
+        } catch (Exception e)
+        {
+            logger.error("addMSE Exception " + e);
+        }
+        return Collections.emptyList();
+    }
+
+    public List<String> listFiles (String path) {
+        try {
+            return envService.listFiles(path);
         } catch (Exception e)
         {
             logger.error("addMSE Exception " + e);
