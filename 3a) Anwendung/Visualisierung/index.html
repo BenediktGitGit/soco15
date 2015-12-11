@@ -32,30 +32,26 @@
 <script type="text/javascript" src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="http://malsup.github.com/jquery.form.js"></script>
 
-
-    <script src="js/main.js"></script>
-
-<!--<div class="panel">-->
-    <!--<div id="time-panel"></div>-->
-    <!--<div id="analyisis-panel"></div>-->
-<!--</div>-->
+<script src="js/main.js"></script>
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-xs-2"></div>
+        <div class="col-xs-1"></div>
         <form id="form">
             <div class="col-md-1 col-lg-offset-1" id="start-date-container">
                 <input class="date_field" type="startDate"></div>
             <div class="col-md-1 col-lg-offset-1" id="end-date-container">
                 <input class="date_field" type="endDate"></div>
-            <div class="col-md-1" id="dataset-container">
-                <div class="container-fluid">
-                    <div class="row">
-                        <select id="dataset_field"></select></div>
-                    <div class="row">
-                        <select id="ann_field" name="ann_field" ></select></div>
+            <div class="col-md-1 col-lg-offset-1" id="dataset-container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <select id="dataset_field" name="dataset_field">
+                        </select>
                     </div>
+                    <div class="col-md-12">
+                        <select id="ann_field" name="ann_field"></select></div>
                 </div>
+            </div>
             <div class="col-md-1 col-lg-offset-1">
                 <input id="submit_btn" type="submit" value="Test Timeseries"/>
             </div>
@@ -63,7 +59,7 @@
     </div>
 </div>
 
-<div class="charts-Box" style="margin-left: 10%; margin-right: 10%; ">
+<div class="charts-Box">
     <div class="container-fluid">
         <div class="row">
             <div class="col-xs-12 col-sm-offset-0 col-md-offset-0">
@@ -162,27 +158,50 @@
 //    function stop(){
 //        flag = false;
 //    }
-    renderSelects(ann_url, 'ann_field');
-    renderSelects(dataset_url, 'dataset_field');
 
-    function renderSelects(url, field) {
+    renderAnnField();
+    renderDatasetField();
+
+    function renderAnnField() {
         $.ajax({
-            url: url,
+            url: ann_url,
             async: false,
             success: function(data) {
-                console.log(JSON.stringify(data));
+//                alert(data);
             },
             error: function() {
-                alert("Error with Rest-Service.");
+//                alert("Error with Rest-Service.");
             }
         }).done(function(data) {
-            $.each( data, function( key, value ) {
-                var select = '#'+field;
+            $.each( data, function(key, value)  {
+                var select = '#ann_field';
                 $(select).append(
-                        $('<option></option>').val(key).html(value)
+                        $('<option></option>').val(value).html(value)
                 );
             });
         });
+    }
+   function renderDatasetField() {
+       $.ajax({
+           url: dataset_url,
+           async: false,
+           success: function(data) {
+//               alert(data);
+           },
+           error: function() {
+//               alert("Error with Rest-Service.");
+           }
+       }).done(function(data) {
+           var jsonData = JSON.parse(data);
+           for (var i = 0; i < jsonData.length; i++) {
+               var obj = JSON.parse(jsonData[i]);
+               var key = obj.name;
+               var val = obj.value;
+               $('#dataset_field').append(
+                       $('<option></option>').val(val).html(key)
+               );
+           }
+       });
     }
 
 
@@ -215,7 +234,9 @@
     $( "#submit_btn" ).click(function( event ) {
 
         var collapse = "daily";
-        var target_url = data_url + "?startDate=" + startDate + "&endDate=" + endDate + "&collapse=" + collapse;
+        var stock = $('#dataset_field').val();
+        var ann = $('#ann_field').val();
+        var target_url = data_url + "?startDate=" + startDate + "&endDate=" + endDate + "&collapse=" + collapse + "&stock=" + stock + "&ann=" + ann;
 
         if ( startDate.length === 0)  {
             alert("StartDate is missing.");
@@ -223,22 +244,17 @@
             alert("EndDate is missing.");
         }
         else {
-//            $.get( target_url, function( data ) {
-//                alert( "Load was performed." );
-//            });
             $.ajax({
                 url: target_url,
                 async: false,
                 success: function(data) {
-                    alert(data);
-//            console.log(JSON.stringify(data.dataset_data));
-                    alert("success");
+//                    alert("success");
                 },
                 error: function() {
-                    alert("Error with Rest-Service.");
+//                    alert("Error with Rest-Service.");
                 }
             }).done(function() {
-                      alert("done");
+//                      alert("done");
                     });
         }
     });

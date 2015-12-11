@@ -209,7 +209,7 @@ public abstract class Extractor {
         return result;
     }
 
-    protected DataSet normalize(DataSet trainingSet, Double factor, Double minLevel) {
+//    protected DataSet normalize(DataSet trainingSet, Double factor, Double minLevel) {
 //        int length = valuesRow.length;
 //        if (length < lineLength) {
 //            System.out.println("valuesRow.length < " + lineLength);
@@ -229,8 +229,8 @@ public abstract class Extractor {
 //            System.out.println(e.getMessage());
 //            return null;
 //        }
-        return trainingSet;
-    }
+//        return trainingSet;
+//    }
 
 
     public String getCsvLine() {

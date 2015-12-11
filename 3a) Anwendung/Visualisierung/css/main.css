@@ -80,10 +80,27 @@ background-color: white;
   border-style: dotted;
 }
 
-#ann_field, #dataset_field {
-
+#chart-box {
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
+
+#ann_field, #dataset_field {
+  width:100%;
+  border: 1px solid #bbb;
+  padding:.15em 1em .5em 1em;
+  margin: .1em;
+  box-shadow: 0 2px 1px 0 rgba(0,0,0,0.2);
+  background-color:lightcyan;
+  /*background-image:url(select-arrow.png);*/
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+#ann_field :hover, #dataset_field :hover {
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1);
+}
 
 
 
