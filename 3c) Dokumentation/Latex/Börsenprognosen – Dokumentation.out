@@ -1,0 +1,31 @@
+\BOOKMARK [0][-]{chapter*.2}{Abbildungsverzeichnis}{}% 1
+\BOOKMARK [0][-]{chapter*.3}{Tabellenverzeichnis}{}% 2
+\BOOKMARK [0][-]{chapter*.4}{Formelverzeichnis}{}% 3
+\BOOKMARK [0][-]{chapter*.5}{Abk\374rzungsverzeichnis}{}% 4
+\BOOKMARK [0][-]{chapter.1}{Einleitung}{}% 5
+\BOOKMARK [1][-]{section.1.1}{Motivation}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.2}{Ziel der Arbeit}{chapter.1}% 7
+\BOOKMARK [0][-]{chapter.2}{Konzeption}{}% 8
+\BOOKMARK [1][-]{section.2.1}{Konzeption der Anwendung}{chapter.2}% 9
+\BOOKMARK [2][-]{subsection.2.1.1}{Grundidee}{section.2.1}% 10
+\BOOKMARK [2][-]{subsection.2.1.2}{Mockup}{section.2.1}% 11
+\BOOKMARK [1][-]{section.2.2}{Konzeption des k\374nstlichen neuronalen Netzes}{chapter.2}% 12
+\BOOKMARK [2][-]{subsection.2.2.1}{Wahl des Netztyps}{section.2.2}% 13
+\BOOKMARK [2][-]{subsection.2.2.2}{Wahl der Topologie}{section.2.2}% 14
+\BOOKMARK [2][-]{subsection.2.2.3}{Wahl des Lernverfahrens}{section.2.2}% 15
+\BOOKMARK [2][-]{subsection.2.2.4}{Wahl der Lernrate}{section.2.2}% 16
+\BOOKMARK [0][-]{chapter.3}{Umsetzung}{}% 17
+\BOOKMARK [1][-]{section.3.1}{Umsetzung der Anwendung}{chapter.3}% 18
+\BOOKMARK [1][-]{section.3.2}{Umsetzung des k\374nstlichen neuronalen Netzes}{chapter.3}% 19
+\BOOKMARK [1][-]{section.3.3}{Optimierung des k\374nstlichen neuronalen Netzes}{chapter.3}% 20
+\BOOKMARK [2][-]{subsection.3.3.1}{Optimierung der Topologie}{section.3.3}% 21
+\BOOKMARK [2][-]{subsection.3.3.2}{Wahl der optimalen Transferfunktion}{section.3.3}% 22
+\BOOKMARK [2][-]{subsection.3.3.3}{Wahl der optimalen Lernregel}{section.3.3}% 23
+\BOOKMARK [1][-]{section.3.4}{Das erstellte k\374nstliche neuronale Netz}{chapter.3}% 24
+\BOOKMARK [1][-]{section.3.5}{Zusammenf\374hrung der Komponenten}{chapter.3}% 25
+\BOOKMARK [0][-]{chapter.4}{Beschreibung der Anwendung}{}% 26
+\BOOKMARK [1][-]{section.4.1}{Architektur der Anwendung}{chapter.4}% 27
+\BOOKMARK [1][-]{section.4.2}{Elemente der GUI}{chapter.4}% 28
+\BOOKMARK [0][-]{chapter.5}{Analyse}{}% 29
+\BOOKMARK [0][-]{chapter.6}{Fazit}{}% 30
+\BOOKMARK [0][-]{chapter*.7}{Literaturverzeichnis}{}% 31
