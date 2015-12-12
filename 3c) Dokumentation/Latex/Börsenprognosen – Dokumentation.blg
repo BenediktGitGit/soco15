@@ -1,6 +1,6 @@
 [0] Config.pm:324> INFO - This is Biber 2.1
 [0] Config.pm:327> INFO - Logfile is 'Börsenprognosen  Dokumentation.blg'
-[62] biber-MSWIN:273> INFO - === %a %b %e, %Y, %H:%M:%S
-[62] Biber.pm:333> INFO - Reading 'Börsenprognosen  Dokumentation.bcf'
-[330] Utils.pm:146> WARN - Warning: Found biblatex control file version 2.8, expected version 2.7
-[331] Utils.pm:146> WARN - No data sources defined!
+[63] biber-MSWIN:273> INFO - === %a %b %e, %Y, %H:%M:%S
+[63] Biber.pm:333> INFO - Reading 'Börsenprognosen  Dokumentation.bcf'
+[323] Utils.pm:146> WARN - Warning: Found biblatex control file version 2.8, expected version 2.7
+[323] Utils.pm:146> WARN - No data sources defined!
