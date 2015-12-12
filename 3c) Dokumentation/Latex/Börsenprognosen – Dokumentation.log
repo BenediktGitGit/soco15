@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.11.8)  12 DEC 2015 19:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.11.8)  12 DEC 2015 22:37
 entering extended mode
 **"Börsenprognosen – Dokumentation.tex"
 ("Börsenprognosen – Dokumentation.tex"
@@ -1549,7 +1549,7 @@ Package babel Info: Redefining ngerman shorthand "~
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 48.
- <Linear_Sep.PNG, id=270, 612.78937pt x 341.77687pt>
+ <Linear_Sep.PNG, id=272, 612.78937pt x 341.77687pt>
 File: Linear_Sep.PNG Graphic file (type png)
  <use Linear_Sep.PNG>
 Package pdftex.def Info: Linear_Sep.PNG used on input line 56.
@@ -1584,7 +1584,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 68--69
 
  []
 
-<Perzeptron.PNG, id=284, 167.12437pt x 240.9pt>
+<Perzeptron.PNG, id=286, 167.12437pt x 240.9pt>
 File: Perzeptron.PNG Graphic file (type png)
  <use Perzeptron.PNG>
 Package pdftex.def Info: Perzeptron.PNG used on input line 74.
@@ -1609,7 +1609,7 @@ Package babel Info: Redefining ngerman shorthand "~
                                                   \fi \fi 
 l.92 \end{bew}
                <./Linear_Sep.PNG>]
-<Testperzeptron.PNG, id=291, 258.9675pt x 210.7875pt>
+<Testperzeptron.PNG, id=293, 258.9675pt x 210.7875pt>
 File: Testperzeptron.PNG Graphic file (type png)
  <use Testperzeptron.PNG>
 Package pdftex.def Info: Testperzeptron.PNG used on input line 100.
@@ -1630,7 +1630,7 @@ Package babel Info: Redefining ngerman shorthand "~
                                                   \fi \fi 
 l.104 
        <./Perzeptron.PNG>]
-<MSEperzeptron.PNG, id=298, 730.22812pt x 671.50874pt>
+<MSEperzeptron.PNG, id=300, 730.22812pt x 671.50874pt>
 File: MSEperzeptron.PNG Graphic file (type png)
  <use MSEperzeptron.PNG>
 Package pdftex.def Info: MSEperzeptron.PNG used on input line 109.
@@ -1700,7 +1700,7 @@ Package babel Info: Redefining ngerman shorthand "~
 Package hyperref Info: bookmark level for unknown formel defaults to 0 on input
  line 146.
 
-<KonzKNN.PNG, id=312, 476.29913pt x 312.98032pt>
+<KonzKNN.PNG, id=314, 476.29913pt x 312.98032pt>
 File: KonzKNN.PNG Graphic file (type png)
  <use KonzKNN.PNG>
 Package pdftex.def Info: KonzKNN.PNG used on input line 161.
@@ -1724,7 +1724,16 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 170.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 170.
-) (Umsetzung.tex
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 190.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 190.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 190.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 190.
+ [10])
+(Umsetzung.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1733,8 +1742,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
-
-[10]
+ [11]
 chapter 3.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
@@ -1756,19 +1764,19 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 18.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 18.
-<4-5-1.PNG, id=322, 350.05782pt x 269.50688pt>
+<4-5-1.PNG, id=332, 350.05782pt x 269.50688pt>
 File: 4-5-1.PNG Graphic file (type png)
  <use 4-5-1.PNG>
 Package pdftex.def Info: 4-5-1.PNG used on input line 28.
 (pdftex.def)             Requested size: 325.91339pt x 250.93488pt.
 
-<4-9-1.PNG, id=323, 550.30594pt x 284.56313pt>
+<4-9-1.PNG, id=333, 550.30594pt x 284.56313pt>
 File: 4-9-1.PNG Graphic file (type png)
  <use 4-9-1.PNG>
 Package pdftex.def Info: 4-9-1.PNG used on input line 36.
 (pdftex.def)             Requested size: 325.91339pt x 168.5334pt.
 
-<4-13-1.PNG, id=324, 753.5653pt x 272.51813pt>
+<4-13-1.PNG, id=334, 753.5653pt x 272.51813pt>
 File: 4-13-1.PNG Graphic file (type png)
  <use 4-13-1.PNG>
 Package pdftex.def Info: 4-13-1.PNG used on input line 45.
@@ -1785,7 +1793,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 73.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 73.
- [11
+ [12
 
 pdfTeX warning (ext4): destination with the same identifier (name{table.3.1}) h
 as been already used, duplicate ignored
@@ -1802,7 +1810,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 73.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 73.
- [12pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+ [13pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1816,13 +1824,13 @@ icate ignored
                                                   \fi \fi 
 l.73 \begin{equation}
                      \formelentry{Sigmoide Funktion} <./4-5-1.PNG> <./4-9-1.PNG
->] <Sigmoid.PNG, id=336, 231.11343pt x 182.93344pt>
+>] <Sigmoid.PNG, id=346, 231.11343pt x 182.93344pt>
 File: Sigmoid.PNG Graphic file (type png)
  <use Sigmoid.PNG>
 Package pdftex.def Info: Sigmoid.PNG used on input line 79.
 (pdftex.def)             Requested size: 217.27559pt x 171.98256pt.
 
-<tanh.PNG, id=337, 237.13594pt x 168.63pt>
+<tanh.PNG, id=347, 237.13594pt x 168.63pt>
 File: tanh.PNG Graphic file (type png)
  <use tanh.PNG>
 Package pdftex.def Info: tanh.PNG used on input line 92.
@@ -1839,7 +1847,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 131.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 131.
- [13pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+ [14pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
 3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1860,7 +1868,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 131.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 131.
- [14pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+ [15pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
 5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1894,7 +1902,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
- [15pdfTeX warning (ext4): destination with the same identifier (name{table.3.3
+ [16pdfTeX warning (ext4): destination with the same identifier (name{table.3.3
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1918,7 +1926,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 4.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 4.
-[16
+[17
 
 ]
 Package babel Info: Redefining ngerman shorthand "|
@@ -1934,7 +1942,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 49.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 49.
- [17]
+ [18]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 49.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1943,7 +1951,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 49.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 49.
- [18] (Analyse.tex
+ [19] (Analyse.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1952,7 +1960,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
- [19]
+ [20]
 chapter 5.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
@@ -1967,7 +1975,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 52.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 52.
- [20
+ [21
 
 ] (Fazit.tex
 Package babel Info: Redefining ngerman shorthand "|
@@ -1978,7 +1986,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
- [21]
+ [22]
 chapter 6.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
@@ -1993,7 +2001,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 55.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 55.
- [22
+ [23
 
 ] ("Börsenprognosen – Dokumentation.bbl"
 Package babel Info: Redefining ngerman shorthand "|
@@ -2004,7 +2012,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
- [23]
+ [24]
 chapter without number
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
@@ -2024,7 +2032,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 61.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 61.
- [24
+ [25
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 61.
@@ -2033,7 +2041,7 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 61.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 61.
 Package rerunfilecheck Info: File `"Börsenprognosen – Dokumentation".out' ha
 s not changed.
-(rerunfilecheck)             Checksum: 3A9C2972471D6E950E5F55892EB08615;2105.
+(rerunfilecheck)             Checksum: F92F23A6B5442E6A3491FC3285D01648;2120.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -2041,11 +2049,11 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 61.
  ) 
 Here is how much of TeX's memory you used:
- 20635 strings out of 493673
- 355000 string characters out of 3147214
- 528874 words of memory out of 3000000
+ 20640 strings out of 493673
+ 355061 string characters out of 3147214
+ 528881 words of memory out of 3000000
  23491 multiletter control sequences out of 15000+200000
- 59512 words of font info for 113 fonts, out of 3000000 for 9000
+ 59637 words of font info for 115 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  56i,11n,66p,10460b,597s stack positions out of 5000i,500n,10000p,200000b,50000s
 {D:/Programme/MikTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{D:/Programme/MikTeX/fo
@@ -2060,10 +2068,10 @@ sy8.pfb><D:/Programme/MikTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><D:
 /Programme/MikTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><D:/Programme/MikTeX/font
 s/type1/urw/helvetic/uhvr8a.pfb><D:/Programme/MikTeX/fonts/type1/urw/helvetic/u
 hvro8a.pfb>
-Output written on "Börsenprognosen – Dokumentation.pdf" (31 pages, 596138 by
+Output written on "Börsenprognosen – Dokumentation.pdf" (32 pages, 601428 by
 tes).
 PDF statistics:
- 453 PDF objects out of 1000 (max. 8388607)
- 88 named destinations out of 1000 (max. 500000)
+ 463 PDF objects out of 1000 (max. 8388607)
+ 90 named destinations out of 1000 (max. 500000)
  18741 words of extra memory for PDF output out of 20736 (max. 10000000)
 

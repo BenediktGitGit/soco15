@@ -173,8 +173,23 @@ Die oben abgebildete Topologie stellt ein solides Grundkonstrukt dar, das in der
 Grundsätzlich gibt es drei grobe Klassifikation von Lernverfahren. in diesem Abschnitt werden alle drei Lernverfahren näher vorgestellt und anschließend eine Begründete Auswahl der Lernverfahrens getroffen.
 
 \begin{itemize}
-\item Überwachtes Lernen
+\item Überwachtes Lernen: Beim überwachten Lernen sind sowohl die Eingabedaten sowie die dazugehörigen Ausgabedaten bekannt. Mit Hilfe dieser Daten kann das \ac{knn} dann trainiert werden. Die berechneten Ausgabedaten können anschließend mit den tatsächlichen Ausgabedaten verglichen werden. Dieser Fehler wird dann genutzt, um die Verbindungsgewichte des \ac{knn} anzupassen. Typische Vertreter dieses Lernverfahrens sind die sogenannten Backpropagation-Lernverfahren.
+	
 \item Bestärkendes Lernen
+Ähnlich wie das überwachte Lernen, jedoch biologisch motivierter ist  das sogenannte bestärkende Lernen. Hier sind dem \ac{knn} die Eingabewerte zwar bekannt, aber die dazugehörigen Ausgabewerte nur zum Teil oder gar nicht. Das \ac{knn} wird lediglich darüber informiert, das Ergebnis richtig bzw. falsch war. Es ist ein sehr Zeitaufwändiges Lernverfahren, da es die Gewichte auf Grund der spärlichen Information nur sehr langsam anpassen kann. Dieser Verfahren kann als Mischung aus überwachtes Lernen und unüberwachtes Lernen gesehen werden.
+
 \item Unüberwachtes Lernen
+Das unüberwachte Lernen ist biologisch gesehen am plausibelsten. Bei diesem  Lernverfahren besteht existieren nur Eingabemuster, es existieren keine erwünschten Ausgaben oder Angaben, ob das Netz die Eingaben richtig oder falsch klassifiziert hat. Stattdessen versucht der Lernalgorithmus selbständig, Gruppen ähnlicher Eingabevektoren zu identifizieren und diese auf Gruppen ähnlicher oder benachbarter Neuronen abzubilden. 
 \end{itemize}
+
+
+Da sowohl die Eingabewerte als auch die Ausgabewerte der zu verwendenden Datensätze bekannt sind, bietet sich das überwachte Lernen an. Verglichen mit den anderen Lernverfahren ist dies die effizienteste Lernmethode. Sie verfügt zwar über kein biologisches Vorbild, dieser Umstand hat aber für diese Seminararbeit keine Relevanz.
+
+Zur Bestimmung des Fehlers zwischen der prognostizierten and tatsächlichen Ausgabe kann der MSE benutzt werden. Die MSE-Formel würde in den konkreten Fall der Anwendung wie folgt lauten:
+
+\begin{equation}\formelentry{MSE zur Berechnung der Abweichung}
+   \frac{1}{2}\sum^{n}_{i=1} (KT_{i} - KV_{i})^2
+\end{equation}
+
+Wobei $n$ für die Anzahl der Datensätze steht, $KT_i$ für den tatsächlichen Ausgabewert für den Datensatz $i$ steht und $KV_i$ für den prognostizierten Datensatz $i$ steht.
 
