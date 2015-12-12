@@ -17,7 +17,7 @@ public class Main
     public static void main(String[] args) throws FileNotFoundException, IOException 
     {            
         //Lade ein in Neuroph bereits trainiertes und getestetes neuronales Netz.
-        NeuralNetwork ann = MultiLayerPerceptron.createFromFile("ann/4-09-1_Sigmoid_Bias.nnet"); //Namenskonvention: input-hidden-output_transferfunction   
+        NeuralNetwork ann = MultiLayerPerceptron.createFromFile("ann/Perzept.nnet"); //Namenskonvention: input-hidden-output_transferfunction   
         
         //Lade einen  normalisierten Datensatz, über dessen Zeitraum vorhergesagt wird.
         //Mit diesem Wert wurde der Datensatz normalisiert.
