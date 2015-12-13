@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.11.8)  12 DEC 2015 22:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.11.8)  13 DEC 2015 18:25
 entering extended mode
 **"Börsenprognosen – Dokumentation.tex"
 ("Börsenprognosen – Dokumentation.tex"
@@ -1099,10 +1099,30 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks31
 \@floatcapt=\box50
 )
+(D:\Programme\MikTeX\tex\latex\subfigure\subfigure.sty
+Package: subfigure 2002/07/30 v2.1.4 subfigure package
+\subfigtopskip=\skip128
+\subfigcapskip=\skip129
+\subfigcaptopadj=\dimen158
+\subfigbottomskip=\skip130
+\subfigcapmargin=\dimen159
+\subfiglabelskip=\skip131
+\c@subfigure=\count173
+\c@lofdepth=\count174
+\c@subtable=\count175
+\c@lotdepth=\count176
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(D:\Programme\MikTeX\tex\latex\subfigure\subfigure.cfg)
+\subfig@top=\skip132
+\subfig@bottom=\skip133
+)
 (D:\Programme\MikTeX\tex\latex\psnfss\helvet.sty
 Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
 )
-LaTeX Font Info:    Try loading font information for T1+phv on input line 25.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 26.
 
 (D:\Programme\MikTeX\tex\latex\psnfss\t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
@@ -1110,18 +1130,18 @@ File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 (D:\Programme\MikTeX\tex\latex\microtype\microtype.sty
 Package: microtype 2013/05/23 v2.5a Micro-typographical refinements (RS)
 \MT@toks=\toks32
-\MT@count=\count173
+\MT@count=\count177
 LaTeX Info: Redefining \textls on input line 766.
-\MT@outer@kern=\dimen158
+\MT@outer@kern=\dimen160
 LaTeX Info: Redefining \textmicrotypecontext on input line 1285.
-\MT@listname@count=\count174
+\MT@listname@count=\count178
 
 (D:\Programme\MikTeX\tex\latex\microtype\microtype-pdftex.def
 File: microtype-pdftex.def 2013/05/23 v2.5a Definitions specific to pdftex (RS)
 
 LaTeX Info: Redefining \lsstyle on input line 915.
 LaTeX Info: Redefining \lslig on input line 915.
-\MT@outer@space=\skip128
+\MT@outer@space=\skip134
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 
@@ -1178,16 +1198,16 @@ LaTeX Font Info:    ... okay on input line 30.
 
 (D:\Programme\MikTeX\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count175
-\scratchdimen=\dimen159
+\scratchcounter=\count179
+\scratchdimen=\dimen161
 \scratchbox=\box51
-\nofMPsegments=\count176
-\nofMParguments=\count177
+\nofMPsegments=\count180
+\nofMParguments=\count181
 \everyMPshowfont=\toks33
-\MPscratchCnt=\count178
-\MPscratchDim=\dimen160
-\MPnumerator=\count179
-\makeMPintoPDFobject=\count180
+\MPscratchCnt=\count182
+\MPscratchDim=\dimen162
+\MPnumerator=\count183
+\makeMPintoPDFobject=\count184
 \everyMPtoPDFconversion=\toks34
 )
 *geometry* driver: auto-detecting
@@ -1232,7 +1252,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (D:\Programme\MikTeX\tex\generic\oberdiek\gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count181
+\c@section@level=\count185
 )
 LaTeX Info: Redefining \ref on input line 30.
 LaTeX Info: Redefining \pageref on input line 30.
@@ -1271,7 +1291,7 @@ LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <20.74> not available
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 33.
 
-<titelbild.png, id=127, 1314.0pt x 1046.82pt>
+<titelbild.png, id=131, 1314.0pt x 1046.82pt>
 File: titelbild.png Graphic file (type png)
  <use titelbild.png>
 Package pdftex.def Info: titelbild.png used on input line 33.
@@ -1324,7 +1344,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (D:\Programme\MikTeX\tex\latex\microtype\mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-<TH-Logo.jpg, id=129, 1346.02875pt x 189.70876pt>
+<TH-Logo.jpg, id=133, 1346.02875pt x 189.70876pt>
 File: TH-Logo.jpg Graphic file (type jpg)
  <use TH-Logo.jpg>
 Package pdftex.def Info: TH-Logo.jpg used on input line 33.
@@ -1531,155 +1551,159 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 16.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 21.
+(babel)             in language  on input line 20.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 21.
+(babel)             in language  on input line 20.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 26.
+(babel)             in language  on input line 25.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 26.
+(babel)             in language  on input line 25.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 26.
+(babel)             in language  on input line 29.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 26.
+(babel)             in language  on input line 29.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 29.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 29.
 [3
 
 ]
-\c@defi=\count182
+\c@defi=\count186
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 48.
- <Linear_Sep.PNG, id=272, 612.78937pt x 341.77687pt>
+(mdframed)              on input line 52.
+ <Linear_Sep.PNG, id=267, 612.78937pt x 341.77687pt>
 File: Linear_Sep.PNG Graphic file (type png)
  <use Linear_Sep.PNG>
-Package pdftex.def Info: Linear_Sep.PNG used on input line 56.
+Package pdftex.def Info: Linear_Sep.PNG used on input line 60.
 (pdftex.def)             Requested size: 412.8223pt x 230.24614pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 59.
+(babel)             in language  on input line 63.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 59.
+(babel)             in language  on input line 63.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 59.
+(babel)             in language  on input line 63.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 59.
+(babel)             in language  on input line 63.
 
 [4]
-\c@bew=\count183
+\c@bew=\count187
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 66.
+(mdframed)              on input line 70.
 
-Overfull \hbox (2.45723pt too wide) in paragraph at lines 66--67
+Overfull \hbox (2.45723pt too wide) in paragraph at lines 70--71
 [][]\T1/phv/b/n/10.95 Beweis 1. []\T1/phv/m/sl/10.95 Be-weis der Ein-ge-schr�nk
 -ten F�-hig-keit von KNN an-hand des XOR-Problems 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--67
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 68--69
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
 
  []
 
-<Perzeptron.PNG, id=286, 167.12437pt x 240.9pt>
+<Perzeptron.PNG, id=281, 167.12437pt x 240.9pt>
 File: Perzeptron.PNG Graphic file (type png)
  <use Perzeptron.PNG>
-Package pdftex.def Info: Perzeptron.PNG used on input line 74.
+Package pdftex.def Info: Perzeptron.PNG used on input line 78.
 (pdftex.def)             Requested size: 82.74898pt x 119.28078pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--90
+Underfull \hbox (badness 10000) in paragraph at lines 89--94
 
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 92.
+(babel)             in language  on input line 96.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 92.
+(babel)             in language  on input line 96.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 92.
+(babel)             in language  on input line 96.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 92.
+(babel)             in language  on input line 96.
 [5pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.92 \end{bew}
+l.96 \end{bew}
                <./Linear_Sep.PNG>]
-<Testperzeptron.PNG, id=293, 258.9675pt x 210.7875pt>
+<Testperzeptron.PNG, id=288, 258.9675pt x 210.7875pt>
 File: Testperzeptron.PNG Graphic file (type png)
  <use Testperzeptron.PNG>
-Package pdftex.def Info: Testperzeptron.PNG used on input line 100.
+Package pdftex.def Info: Testperzeptron.PNG used on input line 104.
 (pdftex.def)             Requested size: 217.27559pt x 176.86087pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 104.
+(babel)             in language  on input line 108.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 104.
+(babel)             in language  on input line 108.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 104.
+(babel)             in language  on input line 108.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 104.
+(babel)             in language  on input line 108.
 
 [6pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.104 
+l.108 
        <./Perzeptron.PNG>]
-<MSEperzeptron.PNG, id=300, 730.22812pt x 671.50874pt>
+<MSEperzeptron.PNG, id=295, 730.22812pt x 671.50874pt>
 File: MSEperzeptron.PNG Graphic file (type png)
  <use MSEperzeptron.PNG>
-Package pdftex.def Info: MSEperzeptron.PNG used on input line 109.
+Package pdftex.def Info: MSEperzeptron.PNG used on input line 113.
 (pdftex.def)             Requested size: 217.27559pt x 199.8045pt.
-\c@theo=\count184
+\c@theo=\count188
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 119.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 119.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 119.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 119.
+(babel)             in language  on input line 123.
 
 [7pdfTeX warning (ext4): destination with the same identifier (name{figure.2.3}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.119 \begin{theo}
+l.123 \begin{theo}
                   Konvergentheorem von Rosenblatt\\pdfTeX warning (ext4): desti
 nation with the same identifier (name{figure.2.4}) has been already used, dupli
 cate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.119 \begin{theo}
+l.123 \begin{theo}
                   Konvergentheorem von Rosenblatt\\ <./Testperzeptron.PNG> <./M
 SEperzeptron.PNG>]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 119.
+(mdframed)              on input line 123.
 Package acronym Info: Label `acro:knn' newly defined as it shall be overridden
-although it is yet undefined on input line 128.
+although it is yet undefined on input line 132.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 130.
+(mdframed)              on input line 134.
 
-Overfull \hbox (13.35431pt too wide) in paragraph at lines 130--132
+Overfull \hbox (13.35431pt too wide) in paragraph at lines 134--136
 \T1/phv/m/sl/10.95 schich-ti-ges vor-w�rts-ver-kn�pf-tes Netz mit ma-xi-mal $\O
 ML/lmm/m/it/10.95 n$ \T1/phv/m/sl/10.95 Ein-hei-ten in der Eingabeschicht,$\OT1
 /lmr/m/n/10.95 (-10) (2\OML/lmm/m/it/10.95 n \OT1/lmr/m/n/10.95 (-10) +$
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 136.
+(babel)             in language  on input line 140.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 136.
-LaTeX Font Info:    Try loading font information for TS1+phv on input line 142.
+(babel)             in language  on input line 140.
+LaTeX Font Info:    Try loading font information for TS1+phv on input line 146.
 
 (D:\Programme\MikTeX\tex\latex\psnfss\ts1phv.fd
 File: ts1phv.fd 2001/06/04 scalable font definitions for TS1/phv.
@@ -1689,51 +1713,42 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 143.
+(babel)             in language  on input line 147.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 143.
+(babel)             in language  on input line 147.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 143.
+(babel)             in language  on input line 147.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 143.
+(babel)             in language  on input line 147.
  [8]
 Package hyperref Info: bookmark level for unknown formel defaults to 0 on input
- line 146.
+ line 150.
 
-<KonzKNN.PNG, id=314, 476.29913pt x 312.98032pt>
+<KonzKNN.PNG, id=309, 476.29913pt x 312.98032pt>
 File: KonzKNN.PNG Graphic file (type png)
  <use KonzKNN.PNG>
-Package pdftex.def Info: KonzKNN.PNG used on input line 161.
+Package pdftex.def Info: KonzKNN.PNG used on input line 165.
 (pdftex.def)             Requested size: 217.27559pt x 142.77399pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 170.
+(babel)             in language  on input line 174.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 170.
+(babel)             in language  on input line 174.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 170.
+(babel)             in language  on input line 174.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 170.
+(babel)             in language  on input line 174.
  [9pdfTeX warning (ext4): destination with the same identifier (name{figure.2.5
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.170 \subsection
+l.174 \subsection
                  {Wahl des Lernverfahrens} <./KonzKNN.PNG>]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 170.
+(babel)             in language  on input line 174.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 170.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 190.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 190.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 190.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 190.
- [10])
-(Umsetzung.tex
+(babel)             in language  on input line 174.
+) (Umsetzung.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1742,7 +1757,8 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
- [11]
+
+[10]
 chapter 3.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
@@ -1757,142 +1773,106 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 5.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 16.
+(babel)             in language  on input line 21.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 16.
+(babel)             in language  on input line 21.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 18.
+(babel)             in language  on input line 21.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 18.
-<4-5-1.PNG, id=332, 350.05782pt x 269.50688pt>
-File: 4-5-1.PNG Graphic file (type png)
- <use 4-5-1.PNG>
-Package pdftex.def Info: 4-5-1.PNG used on input line 28.
-(pdftex.def)             Requested size: 325.91339pt x 250.93488pt.
+(babel)             in language  on input line 21.
+[11
 
-<4-9-1.PNG, id=333, 550.30594pt x 284.56313pt>
-File: 4-9-1.PNG Graphic file (type png)
- <use 4-9-1.PNG>
-Package pdftex.def Info: 4-9-1.PNG used on input line 36.
-(pdftex.def)             Requested size: 325.91339pt x 168.5334pt.
+]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 21.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 21.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 26.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 26.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 58.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 58.
+ <Sigmoid.PNG, id=335, 231.11343pt x 182.93344pt>
+File: Sigmoid.PNG Graphic file (type png)
+ <use Sigmoid.PNG>
+Package pdftex.def Info: Sigmoid.PNG used on input line 64.
+(pdftex.def)             Requested size: 142.26378pt x 112.60527pt.
 
-<4-13-1.PNG, id=334, 753.5653pt x 272.51813pt>
-File: 4-13-1.PNG Graphic file (type png)
- <use 4-13-1.PNG>
-Package pdftex.def Info: 4-13-1.PNG used on input line 45.
-(pdftex.def)             Requested size: 325.91339pt x 117.86246pt.
+<tanh.PNG, id=336, 237.13594pt x 168.63pt>
+File: tanh.PNG Graphic file (type png)
+ <use tanh.PNG>
+Package pdftex.def Info: tanh.PNG used on input line 66.
+(pdftex.def)             Requested size: 142.26378pt x 101.16847pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 69.
+(babel)             in language  on input line 70.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 69.
+(babel)             in language  on input line 70.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 73.
+(babel)             in language  on input line 70.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 73.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 73.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 73.
- [12
-
-pdfTeX warning (ext4): destination with the same identifier (name{table.3.1}) h
-as been already used, duplicate ignored
+(babel)             in language  on input line 70.
+ [12pdfTeX warning (ext4): destination with the same identifier (name{table.3.1
+}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.73 \begin{equation}
-                     \formelentry{Sigmoide Funktion}]
+l.70 
+     ]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 73.
+(babel)             in language  on input line 93.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 73.
+(babel)             in language  on input line 93.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 73.
+(babel)             in language  on input line 99.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 73.
+(babel)             in language  on input line 99.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 99.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 99.
  [13pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.73 \begin{equation}
-                     \formelentry{Sigmoide Funktion}pdfTeX warning (ext4): dest
-ination with the same identifier (name{figure.3.2}) has been already used, dupl
-icate ignored
+l.99 
+     pdfTeX warning (ext4): destination with the same identifier (name{table.3.
+2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.73 \begin{equation}
-                     \formelentry{Sigmoide Funktion} <./4-5-1.PNG> <./4-9-1.PNG
->] <Sigmoid.PNG, id=346, 231.11343pt x 182.93344pt>
-File: Sigmoid.PNG Graphic file (type png)
- <use Sigmoid.PNG>
-Package pdftex.def Info: Sigmoid.PNG used on input line 79.
-(pdftex.def)             Requested size: 217.27559pt x 171.98256pt.
-
-<tanh.PNG, id=347, 237.13594pt x 168.63pt>
-File: tanh.PNG Graphic file (type png)
- <use tanh.PNG>
-Package pdftex.def Info: tanh.PNG used on input line 92.
-(pdftex.def)             Requested size: 217.27559pt x 154.51364pt.
+l.99 
+      <./Sigmoid.PNG> <./tanh.PNG>]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 114.
+(babel)             in language  on input line 137.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 114.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 131.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 131.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 131.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 131.
- [14pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
-3}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.131 \end{table}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{figure.3.4}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.131 \end{table}
-                  <./4-13-1.PNG> <./Sigmoid.PNG>]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 131.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 131.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 131.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 131.
- [15pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
-5}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.131 \end{table}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{table.3.2}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.131 \end{table}
-                  <./tanh.PNG>]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 134.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 134.
+(babel)             in language  on input line 137.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 146.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 146.
 Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 146.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 146.
+ [14pdfTeX warning (ext4): destination with the same identifier (name{table.3.3
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.146 D
+       as ... Empfiehlt.....]
+Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 149.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 149.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 151.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 151.
 ) (Beschreibung.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
@@ -1902,13 +1882,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
- [16pdfTeX warning (ext4): destination with the same identifier (name{table.3.3
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1 \chapter
-            {Beschreibung der Anwendung} %Benedikt]
+ [15]
 chapter 4.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
@@ -1926,7 +1900,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 4.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 4.
-[17
+[16
 
 ]
 Package babel Info: Redefining ngerman shorthand "|
@@ -1942,7 +1916,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 49.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 49.
- [18]
+ [17]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 49.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1951,7 +1925,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 49.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 49.
- [19] (Analyse.tex
+ [18] (Analyse.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1960,7 +1934,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
- [20]
+ [19]
 chapter 5.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
@@ -1975,7 +1949,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 52.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 52.
- [21
+ [20
 
 ] (Fazit.tex
 Package babel Info: Redefining ngerman shorthand "|
@@ -1986,7 +1960,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
- [22]
+ [21]
 chapter 6.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
@@ -2001,7 +1975,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 55.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 55.
- [23
+ [22
 
 ] ("Börsenprognosen – Dokumentation.bbl"
 Package babel Info: Redefining ngerman shorthand "|
@@ -2012,7 +1986,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
- [24]
+ [23]
 chapter without number
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
@@ -2032,7 +2006,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 61.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 61.
- [25
+ [24
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 61.
@@ -2041,7 +2015,7 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 61.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 61.
 Package rerunfilecheck Info: File `"Börsenprognosen – Dokumentation".out' ha
 s not changed.
-(rerunfilecheck)             Checksum: F92F23A6B5442E6A3491FC3285D01648;2120.
+(rerunfilecheck)             Checksum: 70101FFA737073F34F1CAD97B2974C49;2194.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -2049,11 +2023,11 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 61.
  ) 
 Here is how much of TeX's memory you used:
- 20640 strings out of 493673
- 355061 string characters out of 3147214
- 528881 words of memory out of 3000000
- 23491 multiletter control sequences out of 15000+200000
- 59637 words of font info for 115 fonts, out of 3000000 for 9000
+ 20792 strings out of 493673
+ 357208 string characters out of 3147214
+ 530512 words of memory out of 3000000
+ 23634 multiletter control sequences out of 15000+200000
+ 62777 words of font info for 121 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  56i,11n,66p,10460b,597s stack positions out of 5000i,500n,10000p,200000b,50000s
 {D:/Programme/MikTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{D:/Programme/MikTeX/fo
@@ -2068,10 +2042,10 @@ sy8.pfb><D:/Programme/MikTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><D:
 /Programme/MikTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><D:/Programme/MikTeX/font
 s/type1/urw/helvetic/uhvr8a.pfb><D:/Programme/MikTeX/fonts/type1/urw/helvetic/u
 hvro8a.pfb>
-Output written on "Börsenprognosen – Dokumentation.pdf" (32 pages, 601428 by
+Output written on "Börsenprognosen – Dokumentation.pdf" (31 pages, 517172 by
 tes).
 PDF statistics:
- 463 PDF objects out of 1000 (max. 8388607)
- 90 named destinations out of 1000 (max. 500000)
- 18741 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 460 PDF objects out of 1000 (max. 8388607)
+ 87 named destinations out of 1000 (max. 500000)
+ 22830 words of extra memory for PDF output out of 24883 (max. 10000000)
 
