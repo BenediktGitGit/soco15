@@ -1,6 +1,10 @@
 package de.soco.stockmarket.service;
 
 import org.apache.log4j.Logger;
+import org.json.JSONArray;
+import org.json.JSONObject;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
@@ -12,6 +16,9 @@ import java.util.List;
  */
 @Component
 public class FormatService {
+
+    @Autowired
+    private Environment env;
 
     private static final Class<FormatService> serviceClass = FormatService.class;
 
@@ -59,26 +66,36 @@ public class FormatService {
         return Collections.emptyList();
     }
 
-    public List<String> addDistVals(List<String> qdata) {
-           // return Date _ _ _ _ ro, po, under, equal, over
+
+    public JSONArray parseResponseList(List<List<String>> data) {
         try {
+            JSONArray result = new JSONArray();
+            Integer pl = Integer.parseInt(env.getProperty("format.period.length"));
+            for(List<String> ls : data) {
+                JSONObject o = new JSONObject();
+                o.put("date", ls.get(0));
+                JSONArray a = new JSONArray();
+                for(int i = 1; i<pl; i++) {
+                    a.put(ls.get(i));
+                }
+                o.put("input", a);
+                o.put("ro", ls.get(pl));
+                o.put("po", ls.get(pl+1));
 
+                JSONObject ob = new JSONObject();
+                ob.put("under", ls.get(pl+2));
+                ob.put("equal", ls.get(pl+3));
+                ob.put("over", ls.get(pl+4));
+                o.put("dist", ob);
+                o.put("mse", ls.get(pl+5));
+                result.put(o);
+            }
+            return result;
+        } catch (Exception e)
+        {
+            logger.error("parseResponseList Exception " + e);
         }
-        catch (Exception e) {
-            logger.error("addDistVals in " + serviceClass + e);
-        }
-        return Collections.emptyList();
-    }
-
-    public List<String> addMSE(List<String> qdata) {
-        // return Date _ _ _ _ ro, po, under, equal, over, MSE
-        try {
-
-        }
-        catch (Exception e) {
-            logger.error("addMSE in " + serviceClass + e);
-        }
-        return Collections.emptyList();
+        return new JSONArray();
     }
 
 }

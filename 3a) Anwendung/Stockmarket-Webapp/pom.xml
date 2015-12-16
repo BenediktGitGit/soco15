@@ -2,11 +2,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>de.ancud.bosch.kebmali</groupId>
+    <groupId>de.soco.stockmarket</groupId>
     <artifactId>stockmarket-app</artifactId>
     <version>1.0</version>
 
     <packaging>war</packaging>
+
 
     <properties>
         <maven.compiler.source>1.7</maven.compiler.source>
@@ -52,11 +53,11 @@
             <artifactId>opencsv</artifactId>
             <version>2.3</version>
         </dependency>
-            <dependency>
-                <groupId>org.neuroph</groupId>
-                <artifactId>neuroph-core</artifactId>
-                <version>2.9</version>
-            </dependency>
+            <!--<dependency>-->
+                <!--<groupId>org.neuroph</groupId>-->
+                <!--<artifactId>neuroph-core</artifactId>-->
+                <!--<version>2.9</version>-->
+            <!--</dependency>-->
         <dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
@@ -67,11 +68,11 @@
             <artifactId>hsqldb</artifactId>
             <scope>runtime</scope>
         </dependency>
-        <!--<dependency>-->
-            <!--<groupId>com.h2database</groupId>-->
-            <!--<artifactId>h2</artifactId>-->
-            <!--<version>1.3.156</version>-->
-        <!--</dependency>-->
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <version>1.3.156</version>
+        </dependency>
         <dependency>
             <groupId>org.json</groupId>
             <artifactId>json</artifactId>
@@ -88,22 +89,29 @@
             <version>4.5.1</version>
         </dependency>
         <dependency>
-            <groupId>org.reflections</groupId>
-            <artifactId>reflections</artifactId>
-            <version>0.9.9-RC1</version>
-        </dependency>
-        <dependency>
-            <groupId>org.webjars.npm</groupId>
-            <artifactId>is-glob</artifactId>
-            <version>2.0.0</version>
+            <groupId>neuroph-core</groupId>
+            <artifactId>neuroph-core</artifactId>
+            <version>2.92</version>
+            <type>jar</type>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/neuroph-core-2.92.jar</systemPath>
         </dependency>
      </dependencies>
 
     <repositories>
-        <repository>
-            <id>neuroph.sourceforge.net</id>
-            <url>http://neuroph.sourceforge.net/maven2/</url>
+        <!--<repository>-->
+            <!--<id>neuroph.sourceforge.net</id>-->
+            <!--<url>http://neuroph.sourceforge.net/maven2/</url>-->
+        <!--</repository>-->
+            <repository>
+                <id>socoLib</id>
+                <url>file://${project.basedir}/lib</url>
         </repository>
+
+        <!--<repository>-->
+            <!--<id>local-maven-repo</id>-->
+            <!--<url>file:///${project.basedir}/lib</url>-->
+        <!--</repository>-->
         <repository>
             <id>spring-releases</id>
             <url>https://repo.spring.io/libs-release</url>
@@ -128,18 +136,47 @@
     <build>
         <finalName>Stockmarket-Webapp</finalName>
         <plugins>
-            <!--<plugin>-->
-                <!--<artifactId>maven-compiler-plugin</artifactId>-->
-                <!--<configuration>-->
-                    <!--<de.soco.stockmarket.source>1.6</de.soco.stockmarket.source>-->
-                    <!--<target>1.6</target>-->
-                <!--</configuration>-->
-                <!--<version>2.4</version>-->
-            <!--</plugin>-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                    </execution>
+                </executions>
+            </plugin>
                 <plugin>
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-maven-plugin</artifactId>
                 </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <version>2.10</version>
+                <executions>
+                    <execution>
+                        <id>copy-installed</id>
+                        <phase>install</phase>
+                        <goals>
+                            <!--<goal>analyze-only</goal>-->
+                            <goal>copy-dependencies</goal>
+                        </goals>
+                        <configuration>
+                            <artifactItems>
+                                <failOnWarning>false</failOnWarning>
+                                <artifactItem>
+                                    <groupId>neuroph-core</groupId>
+                                    <artifactId>neuroph-core</artifactId>
+                                    <version>2.92</version>
+                                    <type>jar</type>
+                                </artifactItem>
+                            </artifactItems>
+                            <outputDirectory>${project.build.directory}/Stockmarket-Webapp/WEB-INF/lib</outputDirectory>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
 </project>

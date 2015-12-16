@@ -1,6 +1,7 @@
 package de.soco.stockmarket.service;
 
 import org.apache.log4j.Logger;
+import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -28,6 +29,9 @@ public class DataService {
 
     @Autowired
     private EnvService envService;
+
+    @Autowired
+    private ErrorService errorService;
 
     private static final Class<DataService> serviceClass = DataService.class;
 
@@ -82,16 +86,6 @@ public class DataService {
         return Collections.emptyList();
     }
 
-    public List<List<String>> addDistVals () {
-        try {
-            qdata_format = formatService.addDistVals(qdata_format);
-        } catch (Exception e)
-        {
-            logger.error("addDistVals Exception " + e);
-        }
-        return Collections.emptyList();
-    }
-
     public List<List<String>> deNormalize(List<List<String>> data,  Boolean date) {
         try {
             return normDenormService.denormalize(data, date);
@@ -102,24 +96,35 @@ public class DataService {
         return Collections.emptyList();
     }
 
-    public List<List<String>> addMSE () {
+    public List<List<String>> addErrorMessure(List<List<String>> data) {
         try {
-         qdata_format = formatService.addMSE(qdata_format);
+            return errorService.getAllErrorMessures(data);
         } catch (Exception e)
         {
-            logger.error("addMSE Exception " + e);
+            logger.error("addErrorMessure Exception " + e);
         }
         return Collections.emptyList();
     }
+
 
     public List<String> listFiles (String path) {
         try {
             return envService.listFiles(path);
         } catch (Exception e)
         {
-            logger.error("addMSE Exception " + e);
+            logger.error("listFiles Exception " + e);
         }
         return Collections.emptyList();
+    }
+
+    public String parseResponseList(List<List<String>> data) {
+        try {
+            return formatService.parseResponseList(data).toString();
+        } catch (Exception e)
+        {
+            logger.error("parseResponseList Exception " + e);
+        }
+        return "";
     }
 
     /*********Properties***********/

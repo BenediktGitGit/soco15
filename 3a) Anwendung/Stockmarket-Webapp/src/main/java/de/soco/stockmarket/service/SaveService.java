@@ -1,6 +1,6 @@
 package de.soco.stockmarket.service;
 
-import com.sun.org.apache.bcel.internal.generic.NEW;
+
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
@@ -8,7 +8,6 @@ import org.springframework.stereotype.Component;
 
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Collections;
 import java.util.List;
 
 /**

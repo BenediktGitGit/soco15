@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="bootstrap-datepicker-1.5.0-dist/css/bootstrap-datepicker.min.css" type="text/css">
     <link rel="stylesheet" href="bootstrap-datepicker-1.5.0-dist/css/bootstrap-datepicker3.min.css" type="text/css">
     <link rel="stylesheet" href="bootstrap-datepicker-1.5.0-dist/css/bootstrap-datepicker3.standalone.min.css" type="text/css">
+    <!--<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/dc/1.7.5/dc.css" type="text/css">-->
 
 
     <link rel="stylesheet" href="css/main.css" type="text/css">
@@ -31,6 +32,10 @@
 <script type="text/javascript" src="canvasjs-1.7.0/canvasjs.min.js"></script>
 <script type="text/javascript" src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="http://malsup.github.com/jquery.form.js"></script>
+<!--<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/dc/1.7.5/dc.js"></script>-->
+<!--<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/dc/1.7.5/dc.min.js"></script>-->
+<!--<script type="text/javascript" src="https://rawgithub.com/NickQiZhu/dc.js/master/web/js/crossfilter.js"></script>-->
+
 
 <script src="js/main.js"></script>
 
@@ -123,41 +128,44 @@
     var ann_url = base_url + '/ann_names';
     var dataset_url = base_url + '/datasets';
 
+    var ro_caption = 'real value';
+    var po_caption = 'predicted value';
+
+    var dist_under_cap = 'under';
+    var dist_equal_cap = 'equal';
+    var dist_over_cap = 'over';
+
+
+    var response = new Array();
+
     var chartgen = 0;
     var donut = 0;
     var mse_chart = 0;
     var line_chart_abs=0;
 
+    var a =  0;
+    var t = 0;
+    var callback = 0;
 
-    var i = 1;
+    var displays = 0;
+    var single_period = new Array();
+    var abs_period = new Array();
+    var mse_abs_period = new Array();
+
+    single_period.push([ro_caption, po_caption]);
+    abs_period.push([ro_caption, po_caption]);
 
     var interval = 1500;
-    var real_output_list = Create2DArray(6);
-    var predicted_output_list = Create2DArray(6);
-    var dist = Create2DArray(3);
-    var dist_helper = Create2DArray(3);
-    var abs_helper = Create2DArray(2);
-
-    var timer = 0;
-
-    var mse_data = ['MSE', 150];
+    var dist_helper =  new Array();
+    dist_helper[0] = [dist_under_cap, dist_equal_cap, dist_over_cap];
+    var abs_ro_helper = new Array();
+    var abs_po_helper = new Array();
 
     var start_date_container = $('#start-date-container input').datepicker();
     var end_date_container =  $('#end-date-container input').datepicker();
 
     var startDate = 0;
     var endDate = 0;
-
-//    var flag = true;
-//    function pause(){
-//        if (flag){
-//            setTimeout(pause(), 100);
-//        }
-//    }
-//
-//    function stop(){
-//        flag = false;
-//    }
 
     renderAnnField();
     renderDatasetField();
@@ -167,7 +175,6 @@
             url: ann_url,
             async: false,
             success: function(data) {
-//                alert(data);
             },
             error: function() {
 //                alert("Error with Rest-Service.");
@@ -181,12 +188,12 @@
             });
         });
     }
+
    function renderDatasetField() {
        $.ajax({
            url: dataset_url,
            async: false,
            success: function(data) {
-//               alert(data);
            },
            error: function() {
 //               alert("Error with Rest-Service.");
@@ -203,7 +210,6 @@
            }
        });
     }
-
 
     function formatDates(date) {
         if (date != null) {
@@ -229,10 +235,8 @@
         endDate = formatDates(endDate);
     });
 
-
-
     $( "#submit_btn" ).click(function( event ) {
-
+        event.preventDefault();
         var collapse = "daily";
         var stock = $('#dataset_field').val();
         var ann = $('#ann_field').val();
@@ -248,97 +252,133 @@
                 url: target_url,
                 async: false,
                 success: function(data) {
-//                    alert("success");
+                    response = JSON.parse(data);
+//                    alert(data);
                 },
                 error: function() {
 //                    alert("Error with Rest-Service.");
                 }
             }).done(function() {
-//                      alert("done");
-                    });
+                      flushVars();
+                setDeceleratingTimeout(intervalFunc, response.length);
+//                      repeatedTimeout(intervalFunc,response.length, interval);
+        });
+    }});
+
+
+function intervalFunc() {
+            processValues(a, response[a]);
+    }
+
+    function setDeceleratingTimeout( callback, times )
+    {
+        var internalCallback = function( t )
+        {
+            return function()
+            {
+                if ( t-- > 0 )
+                {
+                    window.setTimeout( internalCallback,  interval);
+                    callback();
+                    a++;
+                }
+            }
+        }( times, 0 );
+
+        window.setTimeout( internalCallback, interval );
+    };
+
+    function setDistInput(dist) {
+        var dist_res = [];
+        $.each(dist, function (k, v) {
+            dist_res.push(v[dist_under_cap]);
+            dist_res.push(v[dist_equal_cap]);
+            dist_res.push(v[dist_over_cap]);
+//            $.each(v, function(key, value) {
+//
+//            })
+        });
+        dist_helper.push(dist_res);
+    }
+
+    function setaccuracy(ro , po) {
+        var accurrancy = ro / po;
+        if(accurrancy > 1) {
+            accurrancy = (po / ro) * 100;
         }
-    });
+        else {
+            accurrancy = accurrancy * 100;
+        }
+        return accurrancy.toPrecision(4);
+    }
 
+    function flushVars() {
+        dist_helper =  new Array();
+        single_period = new Array();
+        abs_period = new Array();
+        abs_ro_helper = new Array();
+        abs_po_helper = new Array();
+        mse_abs_period = new Array();
+        dist_helper.push(['under', 'equal', 'over']);
+        single_period.push([ro_caption, po_caption]);
+        abs_period.push([ro_caption, po_caption]);
+        mse_abs_period.push(['MSE', 'time']);
+        a=0;
+        t=0;
+    }
 
+    function processValues(i, row) {
+        var dist_array = new Array();
+        dist_array.push(row.dist);
+        setDistInput(dist_array);
 
-    // GET predicted & real Value List
+        var ro = row.ro;
+        var po = row.po;
+        var mse = row.mse;
+        if(single_period.length <= 6) {
+           single_period.push([ro, po]);
+        }
+        else {
+            single_period.splice(1, 2);
+            single_period.push([ro, po]);
+        }
+        abs_period.push([ro, po]);
+        var acc = setaccuracy(ro, po);
+        mse_abs_period.push([mse]);
 
-    real_output_list[0] = ['real output', 30, 200, 100, 400, 150];
-    real_output_list[1] = ['real output', 200, 100, 400, 400, 300];
-    real_output_list[2] = ['real output', 100, 400, 400, 300, 270];
-    real_output_list[3] = ['real output', 400, 400, 300, 290, 290];
-    real_output_list[4] = ['real output', 400, 300, 290, 290, 123];
-    real_output_list[5] = ['real output', 300, 290, 290, 123, 190];
+        if(i==0) {
+            displays = loadDisplays(ro, po, acc);
+            chartgen = initChart('chart', single_period, ['orange', 'yellow'], 'time', 'DAX (single period)');
+            donut = initDonutProcessing(dist_helper);
+            mse_chart = initChart('mse_chart', mse_abs_period, ['red'], 'time', 'MSE');
+            line_chart_abs = initChart('line_chart_abs', abs_period, ['green', 'yellow'], 'time', 'DAX (abs)');
+            renderSpeedSlider();
+        }
+        else {
+            loadCharts(abs_period, single_period, ro, po, dist_helper, mse_abs_period, acc);
+        }
+    }
 
-
-    predicted_output_list[0] = ['predicted output', 50, 20, 10, 40, 15];
-    predicted_output_list[1] = ['predicted output', 20, 10, 40, 15, 70];
-    predicted_output_list[2] = ['predicted output', 10, 40, 15, 70, 120];
-    predicted_output_list[3] = ['predicted output', 40, 15, 70, 120, 79];
-    predicted_output_list[4] = ['predicted output', 15, 70, 120, 79, 143];
-    predicted_output_list[5] = ['predicted output', 70, 120, 79, 123, 188];
-
-    abs_helper[0] = real_output_list[0];
-    abs_helper[1] = predicted_output_list[0];
-
-    ro_output = real_output_list[0][0];
-    po_output = predicted_output_list[0][0];
-
-
-    // GET Distribution List of Value List
-    dist[0].push(['under', 1]);
-    dist[1].push(['equal', 0]);
-    dist[2].push(['over', 0]);
-    dist[0].push(['under', 0]);
-    dist[1].push(['equal', 1]);
-    dist[2].push(['over', 0]);
-    dist[0].push(['under', 0]);
-    dist[1].push(['equal', 0]);
-    dist[2].push(['over', 1]);
-    dist[0].push(['under', 0]);
-    dist[1].push(['equal', 0]);
-    dist[2].push(['over', 1]);
-    dist[0].push(['under', 1]);
-    dist[1].push(['equal', 0]);
-    dist[2].push(['over', 0]);
-    dist[0].push(['under', 1]);
-    dist[1].push(['equal', 0]);
-    dist[2].push(['over', 0]);
-
-    dist_helper[0] = dist[0][0];
-    dist_helper[1] = dist[1][0];
-    dist_helper[2] = dist[2][0];
-
-    under_cap = dist[0][0];
-    over_cap = dist[1][0];
-    equal_cap = dist[2][0];
-
-    chartgen = initChart('chart', [ abs_helper[0], abs_helper[1] ], ['orange', 'yellow'], 'volume', 'DAX (single period)'); // initChartProcessing();
-    donut = initDonutProcessing();
-    mse_chart = initChart('mse_chart', [ mse_data ], ['red'], 'volume', 'MSE'); //initMseChart();
-    line_chart_abs = initChart('line_chart_abs', [ abs_helper[0], abs_helper[1] ], ['green', 'yellow'], 'volume', 'DAX (abs)'); // initlineChartAbs();
-    timer = loadCharts(i, predicted_output_list.length);
-
-
-    function Create2DArray(rows) {
+    function Create2DArray(rows, cols) {
         var arr = [];
 
         for (var i=0;i<rows;i++) {
-            arr[i] = [];
+            arr[i] = new Array(cols);
         }
-
         return arr;
     }
 
-    function initChart(bindTo, cols, colors, xLabel, yLabel) {
-        renderSpeedSlider();
-//        renderPauseBtn();
+
+    function initChart(bindTo, rows, colors, xLabel, yLabel) {
+
         return c3.generate({
             x: bindTo,
             bindto: '#' + bindTo,
             data: {
-                columns: cols
+                rows: rows
+//                autoReduce: { enabled: true, func: "max" }
             },
+            zoom: { enabled: true},
             axis: {
                 x: {
                     label: {
@@ -364,41 +404,18 @@
         });
     }
 
-//    function renderPauseBtn() {
-////        $('#pause').html("<input id=\"pause_btn\" type=\"button\" value=\"pause\" />");
-//        $('#pause_btn').click(function () {
-//            if ($('#pause_btn').val() == 'pause') {
-//                $('#pause_btn').val('stopped');
-//                pause();
-//            }
-//            else {
-//                $('#pause_btn').val('pause');
-//                stop();
-//             }
-//        });
-//    }
-
     function renderSpeedSlider() {
         $('#v_interval').html("<input id=\"velocity\" type=" + "\"range\"" + " name" + "=" + "\"velocity\"" +" min=\"0\" max=" + "\"3000\"" + " value=\"" + interval + "\">");
 
         $('#velocity').change(function() {
             interval = $('#velocity').val();
         })
-
-//        <input type="range" name="auswertung" min="0" max="10" value="5">
-//        Punkte: <output name="numerisch">5</output>
-//
-//        </form>
     }
 
-    function initDonutProcessing() {
+    function initDonutProcessing(dist) {
         return c3.generate({
             data: {
-                columns: [
-                    dist_helper[0],
-                    dist_helper[1],
-                    dist_helper[2]
-                ],
+                rows: dist,
                 type: 'donut',
                 onclick: function (d, i) {
                     console.log("onclick", d, i);
@@ -425,63 +442,32 @@
         return donut;
     }
 
-    function loadCharts(i, length) {
-      return  setTimeout(function () {
-            var ro_acctual = real_output_list[i][real_output_list[i].length-1];
-            var po_acctual = predicted_output_list[i][predicted_output_list[i].length-1];
-            var accurrancy = ro_acctual / po_acctual;
-            if(accurrancy > 1) {
-                accurrancy = (po_acctual / ro_acctual) * 100;
-            }
-            else {
-                accurrancy = accurrancy * 100;
-            }
-            accurrancy = accurrancy.toPrecision(4);
+    function loadDisplays (ro, po, acc) {
+        $('#real_acctual').html('real: ' + ro);
+        $('#pred_acctual').html('predicted: ' + po);
+        $('#accurrancy').html('accuracy: ' + acc + ' %');
+    }
 
-            abs_helper[0].push(ro_acctual);
-            abs_helper[1].push(po_acctual);
-
-            dist_helper[0].push(dist[0][i][1]);
-            dist_helper[1].push(dist[1][i][1]);
-            dist_helper[2].push(dist[2][i][1]);
-
-            $('#real_acctual').html('real: ' + ro_acctual);
-            $('#pred_acctual').html('predicted: ' + po_acctual);
-            $('#accurrancy').html('accuracy: ' + accurrancy + ' %');
+    function loadCharts(pl_lines_abs, pl_lines, ro, po, dist, MSE, acc) {
+            loadDisplays(ro, po, acc);
 
             chartgen.load({
-                columns: [
-                    real_output_list[i],
-                    predicted_output_list[i]
-                ]
+                rows: pl_lines
             });
             line_chart_abs.load({
-                columns: [
-                    abs_helper[0],
-                    abs_helper[1]
-                ]
+                rows: pl_lines_abs,
+                zoom: { enabled: true}
+
             });
             donut.load({
-                columns: [
-                    dist_helper[0],
-                    dist_helper[1],
-                    dist_helper[2]
-                ]
+                rows: dist
             });
-//            dps_iter.push(dps_json[i]);
-            mse_data.push(ro_acctual-po_acctual);
             mse_chart.load({
-                columns: [
-                    mse_data
-                   ]
+                rows: MSE,
+                zoom: { enabled: true}
             });
-//            mse_chart.render();
-            i++;
-            if (i < length) {
-                loadCharts(i, length);
-            }
-        }, interval);
     }
+
 
 </script>
 

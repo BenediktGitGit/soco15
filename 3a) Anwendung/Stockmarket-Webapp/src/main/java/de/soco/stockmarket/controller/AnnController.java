@@ -6,6 +6,7 @@ import de.soco.stockmarket.service.EnvService;
 import org.apache.log4j.Logger;
 import org.json.JSONArray;
 
+import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 
 
@@ -60,7 +61,7 @@ public class AnnController implements ServletContextAware, ServletConfigAware {
 
 
     @RequestMapping(value= "/data", method = RequestMethod.GET)
-    public List<String> data(@RequestParam String startDate, @RequestParam String endDate, @RequestParam String collapse, @RequestParam String stock, @RequestParam String ann) {
+    public String data(@RequestParam String startDate, @RequestParam String endDate, @RequestParam String collapse, @RequestParam String stock, @RequestParam String ann) {
 
             try {
                 List<String> quandlData = new ArrayList<>();
@@ -96,24 +97,36 @@ public class AnnController implements ServletContextAware, ServletConfigAware {
                     dataService.setQdata(quandlData);
                     // formatting Data
                     List<List<String>> closeData = dataService.extractCloseData(periodLength);
+                    System.out.println("CLOSE:");
+                    System.out.println(Arrays.toString(closeData.toArray()));
                     // save formatted Data as csv
                     dataService.saveData(closeData, dataSet, "");
                     // Normalize Data
                     List<List<String>> normalizedData = dataService.normalize(closeData, isDateIncluded);
+
+                    System.out.println("NOMRMALIZED:");
+                    System.out.println(Arrays.toString(normalizedData.toArray()));
                     // save normalized Data as csv
                     dataService.saveData(normalizedData, dataSet, "normalized");
-                    // Test with .nnet and add po
+                    // Test with .nnet and add po, dist_vals
                     List<List<String>> testedData = dataService.testWithAnn(normalizedData, ann);
-                    // Denomralize
-                    dataService.deNormalize(testedData, isDateIncluded);
-                    // add dist_vals to Data
-                    dataService.addDistVals();
-                    // Add MSn
-                    dataService.addMSE();
-                    // return Data
+                    System.out.println("TESTED:");
+                    System.out.println(Arrays.toString(testedData.toArray()));
 
+                    // Denomralize
+                    List<List<String>> denormData = dataService.deNormalize(testedData, isDateIncluded);
+
+                    System.out.println("DENOMRMALIZED:");
+                    System.out.println(Arrays.toString(denormData.toArray()));
+
+                    //
+                    List<List<String>> errorsAddedList = dataService.addErrorMessure(denormData);
+                    System.out.println("DIST-MSE-Added:");
+                    System.out.println(Arrays.toString(errorsAddedList.toArray()));
+
+
+                    return dataService.parseResponseList(errorsAddedList);
                 }
-                return quandlData;
 
                 } catch (MalformedURLException e) {
                     e.printStackTrace();
@@ -123,15 +136,11 @@ public class AnnController implements ServletContextAware, ServletConfigAware {
                   catch (Exception e) {
                  e.getMessage();
                }
-///            AnnPerformer annPerformer = new AnnPerformer("resources/ann/4-09-1_Sigmoid_Bias.nnet", 4, 1);
-// Load Excel Base File Date, _ _ _ _ ro
-
-// Load Excel Base File Date, _ _ _ _ ro
 
         } catch (Exception e) {
             e.getMessage();
         }
-        return Collections.emptyList();
+        return "";
     }
 
     @RequestMapping(value= "/ann_names", method = RequestMethod.GET)

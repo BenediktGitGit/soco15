@@ -38,7 +38,7 @@ public class EnvService {
             }
             return result;
         } catch (Exception e) {
-            logger.error("addProperty Exception " + e);
+            logger.error("listFiles Exception " + e);
         }
         return Collections.emptyList();
     }
