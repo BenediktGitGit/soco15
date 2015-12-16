@@ -1,0 +1,108 @@
+body {
+  background-color: #1b6d85;
+}
+
+.c3-chart-text text {
+  fill: yellow;
+}
+.c3-chart-arc text {
+  fill: red;
+}
+
+.c3 .c3-axis-x path, .c3 .c3-axis-x line, .c3 .c3-axis-y path, .c3 .c3-axis-y line  {
+  stroke: white;
+}
+#chart .c3-line, #line_chart_abs .c3-line, #mse_chart .c3-line {
+  stroke-width: 4px;
+}
+
+.c3-axis-y-label, .c3-axis-x-label{
+  font-weight:bold;
+  font-size:12pt;
+  position: relative!important;
+  margin-bottom: 20pt!important;
+  overflow: visible;
+}
+
+#chart g.c3-axis-x, #chart  g.c3-axis-y, #line_chart_abs g.c3-axis-x, #line_chart_abs  g.c3-axis-y, #mse_chart g.c3-axis-x, #mse_chart g.c3-axis-y {
+  fill: white;
+  stroke-width: 2px;
+}
+
+#donut g, #chart g, #line_chart_abs g {
+  fill: white!important;
+}
+
+.prompt-boxes {
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+
+.prompt-container {
+  margin: 10px;
+  background-color: #964E4B;
+  border-radius: 25px;
+  border-style: solid;
+  border-width: thin;
+  border-color: white;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+#accurracy {
+
+}
+
+.charts-Box {
+  margin-top: 4%;
+  margin-bottom: 6%;
+}
+
+.v_interval {
+  margin-top: 20px;
+}
+
+#form {
+  height: 15pt;
+}
+
+#submit_btn {
+background-color: white;
+}
+
+.date_field , .dataset_field, .ann_field{
+  background-color: lightgrey;
+}
+
+.form-frame {
+  border-style: dotted;
+}
+
+#chart-box {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+
+#ann_field, #dataset_field {
+  width:100%;
+  border: 1px solid #bbb;
+  padding:.15em 1em .5em 1em;
+  margin: .1em;
+  box-shadow: 0 2px 1px 0 rgba(0,0,0,0.2);
+  background-color:lightcyan;
+  /*background-image:url(select-arrow.png);*/
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+#ann_field :hover, #dataset_field :hover {
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1);
+}
+
+
+
+
+
