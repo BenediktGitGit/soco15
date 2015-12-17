@@ -1,0 +1,27 @@
+%Zeilenabstand 1,5
+\onehalfspacing
+
+%Kopfzeilen, Fußzeilen und Seitennummerierung setzen
+\pagestyle{scrheadings}
+\clearscrheadfoot
+\automark{chapter}
+\ohead[]{\headmark} % Kapitel
+\ofoot[\pagemark]{\pagemark} %Seitenzahl
+\ifoot{Sebastian Schötteler \& Benedikt Hofrichter} %Verfasseer
+
+%Den Abstand vor einer Überschrift erster Klasse verringern
+%\vspace*{2.3\baselineskip} = ORIGINAL 
+%\renewcommand*{\chapterheadstartvskip}{\vspace*{1.0\baselineskip}}% Abstand einstellen
+
+%Schusterjungen und Hurenkinder vermeiden
+\clubpenalty = 10000
+\widowpenalty = 10000 
+\displaywidowpenalty = 10000
+
+
+%Formelverzeichnis mittels KOMA-Script erstellen
+\DeclareNewTOC[type=formel,name={Formel},hang=5em,listname={Formelverzeichnis}]{for}
+\newcommand*{\formelentry}[1]{\addcontentsline{for}{formel}{\protect\numberline{Formel~\theequation} #1}}
+
+%Satzspiegel aktualisieren
+\typearea[current]{last}

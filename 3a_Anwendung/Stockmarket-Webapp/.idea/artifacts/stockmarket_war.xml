@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="stockmarket:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="Stockmarket-Webapp.war">
+      <element id="artifact" artifact-name="stockmarket:war exploded" />
+    </root>
+  </artifact>
+</component>

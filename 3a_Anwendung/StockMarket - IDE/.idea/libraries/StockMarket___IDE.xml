@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="StockMarket_-_IDE">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/StockMarket_-_IDE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

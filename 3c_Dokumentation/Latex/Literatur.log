@@ -1,0 +1,14 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdftex 2015.11.9)  9 NOV 2015 17:08
+entering extended mode
+**"C:/Users/Sebastian/Desktop/soco15/3c) Dokumentation/Latex/Literatur.bib"
+("C:/Users/Sebastian/Desktop/soco15/3c) Dokumentation/Latex/Literatur.bib"
+! Undefined control sequence.
+l.4   title={\LaTeX
+                   \ - A Document Preparation System},
+? 
+! Emergency stop.
+l.4   title={\LaTeX
+                   \ - A Document Preparation System},
+End of file on the terminal!
+
+!  ==> Fatal error occurred, no output PDF file produced!
