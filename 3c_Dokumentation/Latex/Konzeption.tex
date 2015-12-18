@@ -1,34 +1,41 @@
 \chapter{Konzeption}
 \label{chapter:Konzeption}
 
+In den Abschnitten \ref{section:Konzeption der Anwendung} sowie \ref{section:Konzeption des künstlichen neuronalen Netzes} wird die Konzeption der Anwendung sowie  des \acs{knn} beschrieben.
+
 \section{Konzeption der Anwendung} %Benedikt
 \label{section:Konzeption der Anwendung} %Benedikt
 <<Benedikt>>
+\Blindtext
 
 \subsection{Grundidee} %Benedikt
 \label{subsection:Grundidee} %Benedikt
 <<Benedikt>>
+\Blindtext
 
 \subsection{Mockup} %Benedikt
 \label{subsection:Mockup} %Benedikt
 <<Benedikt>>
+\Blindtext
 
 \subsection{Das Neuroph Framework} %Benedikt
 \label{subsection:Das Neuroph Framework} %Benedikt
 <<Benedikt>>
+\Blindtext
 
 \section{Konzeption des künstlichen neuronalen Netzes}
 \label{section:Konzeption des künstlichen neuronalen Netzes}
 
-In den folgenden Abschnitten wird ein \acs{knn} konzeptioniert, dass als Vorlage für alle zu erstellenden \acs{knn} zur Prognose von Börsenkursen dienen soll. 
+In den Abschnitten \ref{subsection:Wahl des Netztyps},\ref{subsection:Wahl der Topologie} sowie \ref{subsection:Wahl des Lernverfahrens} wird ein \acs{knn} zur Prognose des \acs{dax} konzeptioniert. Dieses soll dann  als Vorlage für die Erstellung der \acs{knn} zur Prognose des Dow Jones und Nikkei verwendet werden.
 
 \subsection{Wahl des Netztyps}
 \label{subsection:Wahl des Netztyps}
 Zunächst ist zu ermitteln, welche Netztypen sich zur Prognose von Börsenkursen grundsätzlich eignen. Nicht jeder Netztyp ist gleichermaßen zur Prognose geeignet. Bestimmte \acs{knn} sind beispielsweise überhaupt nicht in der Lage, Prognosen zu erstellen. 
 
-Grundsätzlich lassen sich \acs{knn} in zwei Oberklassen unterteilen. Es gibt hetero-assoziative Netze sowie die auto-assoziative Netze. Hetero-assoziative Netze bilden einen Vektor $A$ der Länge $n$ auf einem Vektor $B$ einer meist kürzeren Länge $m$ $\{m \in \mathbb{N} | m \le n\}$ ab. Auto-assoziative Netze wiederum bilden einen Eingabevektor der Länge $n$ auf einem Ausgabevektor der gleichen Länge ab. Innerhalb dieser zwei Klassen lassen sich \acs{knn} wiederum in mehrere Netztypen aufteilen. Die folgende Tabelle liefert hierzu eine Übersicht:
+Grundsätzlich lassen sich \acs{knn} in zwei Oberklassen unterteilen. Es existieren hetero-assoziative Netze sowie die auto-assoziative Netze. Hetero-assoziative Netze bilden einen Vektor $A$ der Länge $n$ auf einem Vektor $B$ einer meist kürzeren Länge $m$ $\{m \in \mathbb{N} | m \le n\}$ ab. Auto-assoziative Netze wiederum bilden einen Eingabevektor $A$ der Länge $n$ auf einem Ausgabevektor der gleichen Länge ab. Die \acs{knn} innerhalb dieser zwei Klassen lassen sich wiederum in mehrere Netztypen aufteilen. Die Tabelle \ref{tab:Netztypen} liefert hierzu eine Übersicht.
 
-\begin{center}
+\begin{table}[H]
+\centering
 \begin{tabular}{|c|c|}
 \hline 
 \textbf{Hetero-assoziative Netzmodelle} & \textbf{Auto-assoziative Netzmodelle} \\ 
@@ -40,48 +47,48 @@ Perzeptron &  Boltzmann Maschinen \\
 Multilayerperzeptron & - \\ 
 \hline 
 \end{tabular} 
-\end{center}
+\label{tab:Netztypen}
+\caption{Netzklassen \& korrespondierende Netztypen}
 
-Das \acs{knn} soll mithilfe von mehreren vorhergehenden Börsenkursen den zukünftigen Börsenkurs prognostizieren. Da es sich bei den zu prognostizierenden Börsenkurs um einen skalaren Wert handelt, ist die Anzahl der Eingabeneuronen (und damit die Anzahl der Elemente des Eingabevektors) höher als die Anzahl der Ausgabeneuronen (und damit höher als die Anzahl der Elemente des Ausgabevektors). Somit sind für diese Seminararbeit nur hetero-assoziative Netze von Relevanz.
+\end{table}
 
-Aus der Menge der hetero-assoziativen Netze ist nun der Netztyp zu ermitteln, der für die Anwendung am geeignetsten ist.
 
-Zur Wahl eines geeigneten Netztyps kann zunächst die Lineare Separierbarkeit betrachtet werden:
+Aus diesen Netztypen ist nur der beste Netztyp zur Prognose von Börsenkursen zu wählen. Zunächst kann die richtige Klasse ermittelt werden. Dazu kann man sich die Grundidee des \acs{knn} vorstellen: das \acs{knn} soll mithilfe von mehreren vorhergehenden Börsenkursen den zukünftigen Börsenkurs prognostizieren. Da es sich bei den zu prognostizierenden Börsenkurs um einen skalaren Wert handelt, ist die Anzahl der Eingabeneuronen (und damit die Anzahl der Elemente des Eingabevektors) höher als die Anzahl der Ausgabeneuronen (und damit höher als die Anzahl der Elemente des Ausgabevektors). Somit sind für diese Seminararbeit nur hetero-assoziative Netze von Relevanz.
+
+Aus der Menge der hetero-assoziativen Netze ist nun der Netztyp zu ermitteln, der für die Anwendung am besten geeignet ist.
+
+Dafür kann man zunächst die Definition der linearen Separierbarkeit betrachten:
 
 \newmdtheoremenv{defi}{Definition}
 \begin{defi}Definition der linearen Separierbarkeit\\
 Seien $X_{0}$ and $X_{1}$ zwei Datenmengen im $n$-dimensionalen euklidischen Raum. Dann sind die Mengen $X_{0}$ and $X_{1}$ genau dann  "`linear separierbar"', wenn es  $n+1$ Werte $w_{1}, w_{2},..,w_{n}, k$, gibt, sodass jeder Punkt  $x \in X_{0}$ die Bedingung $\sum^{n}_{i=1} w_{i}x_{i} > k$ erfüllt und jeder Punkt $x \in X_{1}$ die Bedingung $\sum^{n}_{i=1} w_{i}x_{i} < k$ erfüllt.
 \end{defi}
 
-Um das Verständnis der oben genannten Definition zu erleichtern, kann die folgende Abbildung betrachtet werden:
+Um das Verständnis der oben genannten Definition zu erleichtern, kann die Abbildung \ref{fig:Bildliche Erläuterung der linearen Separierbarkeit} betrachtet werden. Links kann eine Gerade zur Trennung der möglichen Ergebnisse in zwei Klassen gelegt werden. Somit ist die AND-Funktion linear separierbar. Rechts ist dies nicht mit einer Geraden möglich. Somit ist die XOR-Funktion nicht linear separierbar.  
 
 \begin{figure}[H]
 \centering
-		\includegraphics[width=0.95\textwidth]{Linear_Sep.PNG}
+		\includegraphics[width=0.5\textwidth]{Linear_Sep.PNG}
 	\caption{Bildliche Erläuterung der linearen Separierbarkeit}
 	\label{fig:Bildliche Erläuterung der linearen Separierbarkeit}
 \end{figure}
 
-Man erkennt also, das eine zweidimensionale Funktion dann als linear separierbar gilt, wenn zwischen zwei Ergebnismengen der Funktion eine Gerade gelegt werden kann. Analog setzt sich dies in Funktionen höherer Dimensionen fort. Ist die Funktion zum Beispiel dreidimensional, erfolgt die Separierung durch eine Ebene.
+Analog setzt sich dies in Funktionen höherer Dimensionen fort. Ist die Funktion zum Beispiel dreidimensional, erfolgt die Separierung durch eine Ebene.
 
-Es ist bewiesen, dass einschichtige \acs{knn} nur in der Lage sind, linear separierbare Funktionen zu berechnen. Den Konkreten Beweis dazu liefern Minski \& Papert am Beispiel des XOR-Problems:
+
+Nachdem der Begriff der linearen separierbarkeit erläutert wurde, kann dies als Grundlage für den nächsten Schritt genutzt werden. zur Auswahl des passenden Netztyps kann nun der Beweis der eingeschränkten Fähigkeit von \acs{knn} anhand des XOR-Problems betrachtet werden. Dieser von Minski und Pappert erstellte Beweis \ref{bew:Beweis der eingeschränkten linearer Separierbarkeit} belegt, dass einschichtige \acs{knn} nur in der Lage sind, linear separierbare Funktionen zu berechnen.
 
 \newmdtheoremenv{bew}{Beweis}
 \begin{bew}Beweis der Eingeschränkten Fähigkeit von KNN anhand des XOR-Problems\\
 
-Gegeben sind:\\
-
-Ein Perzetron der folgenden Bauart:
+Gegeben sind ein Perzetron der folgenden Bauart
 
 \begin{figure}[H]
 \centering
-		\includegraphics[width=0.20\textwidth]{Perzeptron.PNG}
-	\caption{Beispielperzeptron zur Darstellung des XOR-Problems}
-	\label{fig:Beispielperzeptron zur Darstellung des XOR-Problems}
+		\includegraphics[width=0.30\textwidth]{Perzeptron.PNG}
 \end{figure}
 
-und folgende Rahmenbedingungen:
-
+und folgende Rahmenbedingungen:\\
 $w_1\cdot1 + w_2\cdot2 = net$\\ 
 $f_(act)(o) = id$ \\
 $\emptyset = Schwellenwert$
@@ -90,46 +97,43 @@ Dann gilt folgendes:\\
 $a) w_1\cdot0 + w_2\cdot0 \le \emptyset$ Bei einem Inputvektor (0,0) liefert der Output 0.\\
 $b) w_1\cdot0 + w_2\cdot0 \geq \emptyset$ Bei einem Inputvektor (0,1) liefert der Output 1.\\
 $c) w_1\cdot0 + w_2\cdot0 \geq \emptyset$ Bei einem Inputvektor (1,0) liefert der Output 1.\\
-$d) w_1\cdot0 + w_2\cdot0 \le \emptyset$ Bei einem Inputvektor (1,1) liefert der Output 0.\\
+$d) w_1\cdot0 + w_2\cdot0 \le \emptyset$ Bei einem Inputvektor (1,1) liefert der Output 0.
 
 Der Widerspruch ergibt sich wie folgt:\\ $(b+c):  w_1 + w_2 \geq \emptyset  \wedge (d)  w_1 + w_2 \leq \emptyset$
+\label{bew:Beweis der eingeschränkten linearer Separierbarkeit}
 \end{bew}
 
-Dieser Beweis kann ebenfalls auf andere nicht linear separierbare Funktionen angewandt werden.Somit steht fest, dass ein einschichtiges Perzeptron nicht in der Lage sein kann, nicht linear separierbare Funktionen zu approximieren.
+Dieser Beweis kann ebenfalls auf andere nicht linear separierbare Funktionen angewandt werden.
 
-Auf Basis der oben genannten Tatsache kann ermittelt werden, ob ein einschichtiges Perzeptron zur Approximation von Börsenkursen geeignet ist. Dafür wurde ein ein Perzeptron folgender Bauart entwickelt und untersucht, ob dieses Konvergiert.
+Somit steht fest, dass ein einschichtiges Perzeptron nicht in der Lage sein kann, nicht linear separierbare Funktionen zu approximieren.
 
-\begin{figure}[H]
-\centering
-		\includegraphics[width=0.5\textwidth]{Testperzeptron.PNG}
-	\caption{Grundlegendes Konzept des KNN}
-	\label{fig:Grundlegendes Konzept des KNN}
-\end{figure}
+Um festzustellen, ob eine funktion linear separierbar ist, kann das Konvergenztheorem von Rosenblatt hinzugezogen werden.
 
-Bei Betrachtung des Netzwerkfehlers des Perzeptrons erkennt man, dass das Perzeptron nicht konvergiert:
-
-\begin{figure}[H]
-\centering
-		\includegraphics[width=0.5\textwidth]{MSEperzeptron.PNG}
-	\caption{Grundlegendes Konzept des KNN}
-	\label{fig:Grundlegendes Konzept des KNN}
-\end{figure}
-
-Der Netzwerkfehler des Perzeptrons bleibt über alle Iterationen konstant auf einen Niveau von circa $0,10$.
-
-Nun ist es sinnvoll, folgendes Theorem zu berücksichtigen:
- 
 \newmdtheoremenv{theo}{Theorem}
 \begin{theo}Konvergentheorem von Rosenblatt\\
 Der Lernalgorithmus des Perzeptrons konvergiert in endlicher Zeit, d.h. das Perzeptron kann in endlicher Zeit alles lernen, was es repräsentieren kann.
 \end{theo}
 
-Betrachtet man alle oben genannten mathematischen Gegebenheiten, ergibt sich die folgende Relation:
-
+Es ergibt sich also folgende Relation:\\\\
 Perzeptron konvergiert $\rightarrow$ Funktion Linear separierbar $\rightarrow$ Perzeptron geeignet.
-und natürlich analog:Perzeptron konvergiert nicht $\rightarrow$ Funktion nicht Linear separierbar $\rightarrow$ Perzeptron nicht geeignet.
+Und analog: Perzeptron konvergiert nicht $\rightarrow$ Funktion nicht Linear separierbar $\rightarrow$ Perzeptron nicht geeignet.
 
-Folglich bleibt nur noch das Multilayerperzeptron als Mögliche Auswahl übrig. Das dieses \ac{knn} tatsächlich zur Prognose geeignet ist, belegt das folgende Theorem:
+Auf Basis der oben genannten Tatsache kann ermittelt werden, ob ein einschichtiges Perzeptron zur Approximation von Börsenkursen geeignet ist. Dafür wurde ein ein Perzeptron folgender Bauart entwickelt und untersucht, ob dieses Konvergiert.
+\begin{figure}[H]
+\hfill
+\subfigure[Test-Perzeptron]{\includegraphics[width=5cm]{Testperzeptron.PNG}}
+\hfill
+\subfigure[MSE des Perzeptrons]{\includegraphics[width=5cm]{MSEperzeptron.PNG}}
+\hfill
+\caption{Test-Perzeptron sowie der dazugehörige MSE}
+\end{figure}
+
+Bei Betrachtung des Netzwerkfehlers des Perzeptrons erkennt man, dass das Perzeptron nicht konvergiert.
+
+
+Der Netzwerkfehler des Perzeptrons bleibt über alle Iterationen konstant auf einem Niveau von circa $0,10$ und konvergiert somit nicht. Somit steht fest, dass der Börsenkurs eine nicht linear separierbare Funktion darstellt und durch einen Perzeptron nicht approximiert werden kann.
+
+Folglich bleibt nur noch das Multilayerperzeptron als Mögliche Auswahl übrig. Das dieses \acs{knn} tatsächlich zur Prognose geeignet ist, belegt Theorem 2.
 
 \begin{theo}Theorem von Kolmogorov\\
 Für ${n \in \mathbb{N} | n>2}$ lässt sich jede reellwertige Funktion $f:[0;1]^n\rightarrow[0;1]$ durch ein dreischichtiges vorwärtsverknüpftes Netz mit maximal $n$ Einheiten in der Eingabeschicht,$(2n+1)$ Einheiten in der Zwischenschicht und $2n+1$ Einheiten in der Ausgabeschicht berechnen.
@@ -143,8 +147,11 @@ Ein Börsenkurs kann prinzipiell jede beliebige Funktion annehmen. Durch das obi
 Zur Prognose des Börsenkurses sollen die letzten vier Börsenkurse als Input dienen. Durch diesen Input soll der Börsenkurs am nächsten Tag prognostiziert werden. Zur richtigen Dimensionierung der inneren Schicht können einige Richtlinien berücksichtigt werden:
 
 \begin{itemize}
-\item Die Anzahl der versteckten Neuronen in der inneren Schicht sollte nicht zu groß gewählt werden, damit das Netz das antrainierte Verhalten nicht "'auswending`" lernt und dieses dann nur bereits trainierte Muster anwenden kann und es somit die Generalisierungsfähigkeit verliert. Man spricht in diesem Fall von Overfittin.g 
+
+\item Die Anzahl der versteckten Neuronen in der inneren Schicht sollte nicht zu groß gewählt werden, damit das Netz das antrainierte Verhalten nicht "'auswending`" lernt und dieses dann nur bereits trainierte Muster anwenden kann und es somit die Generalisierungsfähigkeit verliert. Man spricht in diesem Fall von Overfitting.
+
 \item Die Anzahl der versteckten Neuronen in der inneren Schicht sollte auch nicht zu klein gewählt werden, da eine gewisse Menge an Neuronen wichtig sind, um sich Regeln merken zu können.
+
 \item Eine grobe Annäherung zur Bestimmung der Obergrenze der Anzahl von Neuronen in der versteckten Schicht liefert die folgende Formel:
 
 \begin{equation}\formelentry{Optimale Anzahl Neuronen in der versteckten Schicht}
