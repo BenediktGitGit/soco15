@@ -22,6 +22,12 @@
 %Seitenstil laden
 \input{Seitenstil}
 
+%Befehle laden
+\input{Befehle}
+
+%Literaturverzeichnis einbinden
+\bibliography{Literatur}
+
 
 %%Präambel--------------------------------------------------
 %%Body------------------------------------------------------
@@ -55,8 +61,8 @@
 \input{Fazit}
 
 %Literaturverzeichnis anzeigen
-\bibliographystyle{plain}
-\bibliography{Literatur}
+\renewcommand{\bibname}{Literatur- und Quellenverzeichnis}
+\printbibliography
 
 \end{document}
 %%Body------------------------------------------------------

@@ -20,6 +20,7 @@
 \usepackage{mdframed}
 \usepackage{float}
 \usepackage{subfigure}
+\usepackage{chngcntr}
 
 \usepackage{helvet}
 \renewcommand{\familydefault}{\sfdefault}
@@ -36,4 +37,14 @@
  shrink=10						  %reduce shrinkability (default is 20)
 ]{microtype}
 
+%%Literaturverzeichnis nutzen
+\usepackage
+[backend=biber,         %Biber erstellt im Backend das Verzeichnis 
+ style=ieee,            %Literaturverzeichnis nach IEEE-Stil
+ citestyle=authoryear,  %Auto und Jahr beim Zitieren ausgeben
+ uniquename=init	 	%Löst Doppeldeutigkeiten bei Namensinitialien auf
+]{biblatex}
               
+
+%%Wird für BibLateX benötigt
+\usepackage{csquotes}

@@ -9,15 +9,13 @@
 \ofoot[\pagemark]{\pagemark} %Seitenzahl
 \ifoot{Sebastian Schötteler \& Benedikt Hofrichter} %Verfasseer
 
-%Den Abstand vor einer Überschrift erster Klasse verringern
-%\vspace*{2.3\baselineskip} = ORIGINAL 
-%\renewcommand*{\chapterheadstartvskip}{\vspace*{1.0\baselineskip}}% Abstand einstellen
-
 %Schusterjungen und Hurenkinder vermeiden
 \clubpenalty = 10000
 \widowpenalty = 10000 
 \displaywidowpenalty = 10000
 
+%%Fußnoten fortlaufend durchnummerieren lassen
+\counterwithout{footnote}{chapter}
 
 %Formelverzeichnis mittels KOMA-Script erstellen
 \DeclareNewTOC[type=formel,name={Formel},hang=5em,listname={Formelverzeichnis}]{for}

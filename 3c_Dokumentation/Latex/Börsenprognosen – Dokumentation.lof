@@ -1,16 +1,33 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
 \select@language {ngerman}
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Bildliche Erl\IeC {\"a}uterung der linearen Separierbarkeit}}{10}{figure.2.1}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Test-Perzeptron sowie der dazugeh\IeC {\"o}rige MSE}}{12}{figure.2.2}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Test-Perzeptron}}}{12}{figure.2.2}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {MSE des Perzeptrons}}}{12}{figure.2.2}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Grundlegendes Konzept des KNN}}{14}{figure.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Test-Perzeptron sowie der dazugeh\IeC {\"o}rige MSE}}{13}{figure.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Test-Perzeptron}}}{13}{figure.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {MSE des Perzeptrons}}}{13}{figure.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Grundlegendes Konzept des KNN}}{15}{figure.2.3}
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Die Sigmoide Funktion und die Tanh Funktion im Vergleich}}{18}{figure.3.1}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Sigmoid}}}{18}{figure.3.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Tanh}}}{18}{figure.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Die Sigmoide Funktion und die Tanh Funktion im Vergleich}}{21}{figure.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Sigmoid}}}{21}{figure.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Tanh}}}{21}{figure.3.1}
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
