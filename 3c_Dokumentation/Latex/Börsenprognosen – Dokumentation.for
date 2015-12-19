@@ -19,7 +19,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {formel}{\numberline {Formel~3.4} Formel zur Bestimmung des Betrages der Gewichts\IeC {\"a}nderung}{23}{equation.3.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {formel}{\numberline {Formel~3.5} MSE zur Berechnung der Abweichung}{23}{equation.3.3.5}
+\contentsline {formel}{\numberline {Formel~3.5} MSE zur Berechnung der Abweichung}{24}{equation.3.3.5}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

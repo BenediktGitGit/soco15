@@ -120,7 +120,7 @@ Man erkennt, dass es sich bei der bisher genutzten sigmoiden Funktion bereits um
 \subsection{Wahl der optimalen Lernregel}
 \label{subsection:Wahl der optimalen Lernregel}
 
-Als letzten Schritt wurde die Lernregel des KNN optimiert. Innerhalb des Verfahrens der überwachten Lernens existieren mehrere Lernregeln, um das Netz zu trainieren. Die bekannteste Lernregel ist die Backpropagation-Lernregel. Diese Regel gibt es in mehreren Variationen. In dieser Seminararbeit werden zum einen das Grundverfahren sowie einige Variationen, namentlich das  "`Momentum Backpropagation"' sowie das "`Resilient Backpropagation"' beschrieben und untersucht. Anschließend wird das für die Anwendung am besten geeignete Verfahren ausgewählt\footnote{\Vgl\Zitat{Laemmel},225 f.}.
+Als letzten Schritt wurde die Lernregel des KNN optimiert. Innerhalb des Verfahrens der überwachten Lernens existieren mehrere Lernregeln, um das Netz zu trainieren. Die bekannteste Lernregel ist die Backpropagation-Lernregel. Diese Regel gibt es in mehreren Variationen. In dieser Seminararbeit werden zum einen das Grundverfahren sowie einige Variationen, namentlich das  "`Momentum Backpropagation"' sowie das "`Resilient Backpropagation"' beschrieben und untersucht. Anschließend wird das für die Anwendung am besten geeignete Verfahren ausgewählt\footnote{\Vgl\Zitat{Laemmel}, S. 225 f.}.
 
 \begin{itemize}
 \item \textbf{Backpropagation}:\\
@@ -130,7 +130,7 @@ Dies ist das klassische Fehlerrückführungsverfahren zum Anpassen der Verbindun
 Dieses Verfahren fügt dem klassichen Verfahren einen Trägheitsterm hinzu, indem die Gewichtsveränderung zum Zeitpunkt $t-1$ berücksichtigt wird. Dieser Term kann einen Wert zwischen $0$ und $1$ annehmen. Umso größer dieser Term ist, umso stärker wir die vorhergehende Gewichtsveränderung berücksichtigt. Durch diesen Trägheitsterm wird die Wahrscheinlichkeit verringert, dass das KNN beim Training in ein lokales Minimum oszilliert und sich somit nicht weiter dem Idealwert approximieren kann. Auch die Wahl der Lernrate gestaltet sich hier weniger kritisch. 
 
 \item \textbf{Resilient Propagation}:\\
-Resilient heißt Federnd. Dieses Verfahren nutzt das Vorzeichen das Gradienten zum Zeitpunkt $t$ und entscheidet anhand dessen, ob das Gewicht vergrößert oder verkleinert werden muss. Der Betrag der Gewichtsveränderung wird jedoch unabhängig von der Richtung der Gewichtsänderung ermittelt.  Dadurch werden die typischen Probleme klassischer Gradientenabstiegsverfahren, wie sie beim klassischen Backpropagation sowie beim Momentum Backpropagation genutzt werden, gemindert.
+Resilient heißt Federnd. Dieses Verfahren nutzt das Vorzeichen das Gradienten zum Zeitpunkt $t$ und entscheidet anhand dessen, ob das Gewicht vergrößert oder verkleinert werden muss. Der Betrag der Gewichtsveränderung wird jedoch unabhängig von der Richtung der Gewichtsänderung ermittelt.  Dadurch werden die typischen Probleme klassischer Gradientenabstiegsverfahren, wie sie beim klassischen Backpropagation sowie beim Momentum Backpropagation genutzt werden, gemindert.\footnote{\Vgl\Zitat{Valen}, S. 71}.
 
 Die Formeln für Resilient Propagation lauten wie folgt:
 
@@ -142,9 +142,6 @@ Die Formeln für Resilient Propagation lauten wie folgt:
 \end{cases}
 \end{equation}
 
-Zur Formel 3.3: Ist das Vorzeichen des Kurvenanstiegs zum Zeitpunkt $t$ positiv, dann
-verringere das Gewicht. Ist das Vorzeichen jedoch negativ, dann erhöhe das Gewicht.
-
 \begin{equation}\formelentry{Formel zur Bestimmung des Betrages der Gewichtsänderung}
 \Delta_{ij}=\begin{cases} 
 \Delta_{ij}(t-1)\cdot n^+ & falls S(t-1) \cdot S(t) > 0 \\ 
@@ -152,6 +149,19 @@ verringere das Gewicht. Ist das Vorzeichen jedoch negativ, dann erhöhe das Gewi
 \Delta_{ij}(t-1)       & sonst 
 \end{cases}
 \end{equation}
+
+
+Solange sich das Vorzeichen des Gradienten negativ ist, wird das Vorzeichen beibehalten und die Schrittweite und somit das Gewicht um einen konstanten Wert $n^{+}$ vergrößert. Somit können Plateaus besser überwunden werden.
+Ändert sich das Vorzeichen des Gradienten von negativ auf positiv(was bedeutet, dass ein Minimum übersprungen wurde) so wird das Vorzeichen geändert und die Schrittweite um  einen fixen Faktor $n^{-}$ verringert. Somit werden Oszillationen verhindert.
+
+Die Abbildung \ref{fig:RP} stellt das Vorgehen des Resilient Propagation Algorithmus grafisch dar\footnote{\Vgl\Zitat{Geith}, S. 71}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=10cm]{VisuResi.PNG}
+	\caption{Visualisierung des Resilient Propagation Algorithmus}
+	\label{fig:RP}
+\end{figure}
 
 \end{itemize}
 
@@ -188,7 +198,20 @@ In der Regel liefert Resilient Propagation sehr gute Ergebnisse, dies ist auch h
 \label{section:Die endgültigen künstlichen neuronalen Netze}
 
 Nachdem das KNN zur Prognose des DAX erstellt und optimiert wurde, wurden diese Schritte in analoger weise für die KNN zur Prognose des Nikkei sowie zur Prognose des Dow Jones wiederholt.
-Es stellte sich heraus, dass das optimale KNN für den DAX ebenfalls das Optimale KNN für den Nikkei und den Dow Jones darstellt. Das Endgültige Netz sowie dessen Parameter können aus der Abbildung \ref{fig:ENDKNN} sowie aus der Tabelle \ref{tab:ENDconf} entnommen werden.
+Es stellte sich heraus, dass das optimale KNN für den DAX ebenfalls das Optimale KNN für den Nikkei und den Dow Jones darstellt. Das Endgültige Netz sowie dessen Parameter können aus der Tabelle \ref{tab:ENDconf} sowie aus der  Abbildung \ref{fig:ENDKNN} entnommen werden.
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{|c|c|}
+  \hline 
+  \rule[0ex]{0pt}{2.5ex}  Topologie & 4-7-1 mit Bias\\ 
+  \hline 
+  \rule[0ex]{0pt}{2.5ex}  Lernregel & Resilient Propagation\\  
+  \hline 
+  \end{tabular} 
+  \caption{Die jeweiligen Börsenkurse \& deren Endwerte}
+  \label{tab:ENDconf}
+\end{table}
 
 \begin{figure}[H]
 	\centering
@@ -196,23 +219,6 @@ Es stellte sich heraus, dass das optimale KNN für den DAX ebenfalls das Optimal
 	\caption{Das endgültige KNN für alle Börsenkurse}
 	\label{fig:ENDKNN}
 \end{figure}
-
-\begin{table}[H]
-  \centering
-  \begin{tabular}{|c|c|c|}
-  \hline 
-  \rule[0ex]{0pt}{2.5ex}  Börsenkurs & Training-MSE & Test-MSE\\ 
-  \hline 
-  \rule[0ex]{0pt}{2.5ex} DAX & 0.000 & 0.000  \\ 
-  \hline 
-  \rule[0ex]{0pt}{2.5ex} Nikkei & 0.000 & 0.000  \\ 
-  \hline 
-   \rule[0ex]{0pt}{2.5ex} Dow Jones & 0.000 & 0.000  \\ 
-  \hline 
-  \end{tabular} 
-  \caption{Die endgültigen Parameter für alle Börsenkurse}
-  \label{tab:ENDconf}
-\end{table}
 
 Die Tabelle \ref{tab:ENDval} zeigt die Trainings- sowie Testergebnisse der implementierten und optimierten KNN nach jeweils $200.000$ Trainingszyklen.
 
@@ -222,14 +228,14 @@ Die Tabelle \ref{tab:ENDval} zeigt die Trainings- sowie Testergebnisse der imple
   \hline 
   \rule[0ex]{0pt}{2.5ex}  Börsenkurs & Training-MSE & Test-MSE\\ 
   \hline 
-  \rule[0ex]{0pt}{2.5ex} DAX & 0.000 & 0.000  \\ 
+  \rule[0ex]{0pt}{2.5ex} DAX & $4.252\cdot10^{-5}$ & $4.820\cdot10^{-5}$  \\ 
   \hline 
-  \rule[0ex]{0pt}{2.5ex} Nikkei & 0.000 & 0.000  \\ 
+  \rule[0ex]{0pt}{2.5ex} Nikkei & $1.350\cdot10^{-5}$ & $4.520\cdot10^{-5}$  \\ 
   \hline 
-   \rule[0ex]{0pt}{2.5ex} Dow Jones & 0.000 & 0.000  \\ 
+   \rule[0ex]{0pt}{2.5ex} Dow Jones & $6.672\cdot10^{-5}$ & $2.820\cdot10^{-4}$  \\ 
   \hline 
   \end{tabular} 
-  \caption{Die jeweiligen Börsenkurse \& deren Endwerte}
+  \caption{Die endgültigen Parameter für alle KNN}
   \label{tab:ENDval}
 \end{table}
 

@@ -46,18 +46,18 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3.3}Wahl der optimalen Lernregel}{22}{subsection.3.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Die endg\IeC {\"u}ltigen k\IeC {\"u}nstlichen neuronalen Netze}{24}{section.3.4}
+\contentsline {section}{\numberline {3.4}Die endg\IeC {\"u}ltigen k\IeC {\"u}nstlichen neuronalen Netze}{25}{section.3.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.5}Zusammenf\IeC {\"u}hrung der Komponenten}{26}{section.3.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Beschreibung der Anwendung}{28}{chapter.4}
+\contentsline {chapter}{\numberline {4}Beschreibung der Anwendung}{29}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Architektur der Anwendung}{28}{section.4.1}
+\contentsline {section}{\numberline {4.1}Architektur der Anwendung}{29}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Elemente der GUI}{29}{section.4.2}
+\contentsline {section}{\numberline {4.2}Elemente der GUI}{30}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Analyse der k\IeC {\"u}nstlichen neuronalen Netze}{32}{chapter.5}
+\contentsline {chapter}{\numberline {5}Analyse der k\IeC {\"u}nstlichen neuronalen Netze}{33}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Zusammenfassung und Fazit}{34}{chapter.6}
+\contentsline {chapter}{\numberline {6}Zusammenfassung und Fazit}{35}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Literatur- und Quellenverzeichnis}{35}{chapter*.5}
+\contentsline {chapter}{\nonumberline Literatur- und Quellenverzeichnis}{36}{chapter*.5}
