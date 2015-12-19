@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.11.8)  19 DEC 2015 23:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.11.8)  19 DEC 2015 23:44
 entering extended mode
 **"Börsenprognosen – Dokumentation.tex"
 ("Börsenprognosen – Dokumentation.tex"
@@ -1891,7 +1891,7 @@ Package babel Info: Redefining ngerman shorthand "~
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.77 N
-      achdem der Begriff der linearen separierbarkeit erläutert wurde, kann...
+      achdem der Begriff der linearen Separierbarkeit erläutert wurde, kann...
  <./Linear_Sep.PNG>]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 79.
@@ -2400,11 +2400,11 @@ run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 66.
  ) 
 Here is how much of TeX's memory you used:
- 26572 strings out of 493673
- 461668 string characters out of 3147214
+ 26577 strings out of 493673
+ 461712 string characters out of 3147214
  1006756 words of memory out of 3000000
  29285 multiletter control sequences out of 15000+200000
- 76991 words of font info for 140 fonts, out of 3000000 for 9000
+ 77199 words of font info for 143 fonts, out of 3000000 for 9000
  1029 hyphenation exceptions out of 8191
  56i,12n,66p,10460b,1883s stack positions out of 5000i,500n,10000p,200000b,50000s
 {D:/Programme/MikTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{D:/Programme/MikTeX/fo
@@ -2419,7 +2419,7 @@ sy8.pfb><D:/Programme/MikTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><D:
 /Programme/MikTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><D:/Programme/MikTeX/font
 s/type1/urw/helvetic/uhvr8a.pfb><D:/Programme/MikTeX/fonts/type1/urw/helvetic/u
 hvro8a.pfb>
-Output written on "Börsenprognosen – Dokumentation.pdf" (42 pages, 616870 by
+Output written on "Börsenprognosen – Dokumentation.pdf" (42 pages, 619361 by
 tes).
 PDF statistics:
  524 PDF objects out of 1000 (max. 8388607)

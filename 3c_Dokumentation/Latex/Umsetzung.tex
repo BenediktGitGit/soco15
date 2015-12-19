@@ -151,8 +151,8 @@ Die Formeln für Resilient Propagation lauten wie folgt:
 \end{equation}
 
 
-Solange sich das Vorzeichen des Gradienten negativ ist, wird das Vorzeichen beibehalten und die Schrittweite und somit das Gewicht um einen konstanten Wert $n^{+}$ vergrößert. Somit können Plateaus besser überwunden werden.
-Ändert sich das Vorzeichen des Gradienten von negativ auf positiv(was bedeutet, dass ein Minimum übersprungen wurde) so wird das Vorzeichen geändert und die Schrittweite um  einen fixen Faktor $n^{-}$ verringert. Somit werden Oszillationen verhindert.
+Solange das Vorzeichen des Gradienten negativ ist, wird das Vorzeichen des Gewichtes ebenfalls beibehalten und die Schrittweite und somit das Gewicht um einen konstanten Wert $n^{+}$ vergrößert. Somit können Plateaus besser überwunden werden.
+Ändert sich das Vorzeichen des Gradienten von negativ auf positiv(was bedeutet, dass ein Minimum übersprungen wurde), so wird das Vorzeichen geändert und die Schrittweite um  einen fixen Faktor $n^{-}$ verringert. Somit werden Oszillationen verhindert.
 
 Die Abbildung \ref{fig:RP} stellt das Vorgehen des Resilient Propagation Algorithmus grafisch dar\footnote{\Vgl\Zitat{Geith}, S. 71}.
 
