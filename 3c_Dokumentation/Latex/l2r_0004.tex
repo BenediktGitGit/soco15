@@ -1,0 +1,35 @@
+
+\documentclass
+[a4paper,
+ 11pt,
+ DIV11,
+ bibliography=totoc,
+ headings=normal,
+ ngerman,
+ headsepline,
+ listof=totoc,
+ parskip=half
+]{scrreprt}
+
+\input{Packages}
+
+\input{PDFInfo}
+
+\input{Seitenstil}
+
+\input{Befehle}
+
+\bibliography{Literatur}
+
+
+\thispagestyle{empty}
+\begin{document}
+\setcounter{equation}{1}
+\begin{figure}
+\hfill
+\subfigure[Sigmoid]{\includegraphics[width=5cm]{Sigmoid.PNG}}
+\hfill
+\subfigure[Tanh]{\includegraphics[width=5cm]{tanh.PNG}}
+\hfill
+\end{figure}
+\end{document}

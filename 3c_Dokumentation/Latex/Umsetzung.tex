@@ -49,7 +49,7 @@ Nachdem das Grundmodell des KNN erstellt wurde, ist dieses noch weiter optimiert
 \subsection{Optimierung der Topologie}
 \label{subsection:Optimierung der Topologie}
 
-Das im Abschnitt \ref{section:Umsetzung des künstlichen neuronalen Netzes mit Neurophstudio} erstellte KNN wird in diesem Abschnitt hinsichtlich der verwendeten Topologie optimiert. Dabei werden sukzessive Neuronen in der Zwischenschicht hinzugefügt bzw. entfernt und für jeden Trainings- und Testverlauf der MSE (Meas Squared Error) notiert. Auch wird jede Topologie einmal mit und einmal ohne ein Bias-Neuron trainiert und getestet. Die Topologie mit dem geringsten MSE im Testverlauf wird dann übernommen. Die Ergebnisse dieser Optimierung können aus der Tabelle \ref{tab:TOPMSE} entnommen werden. Der Buchstabe (B) steht dabei für das Bias-Neuron.
+Das im Abschnitt \ref{section:Umsetzung des künstlichen neuronalen Netzes mit Neurophstudio} erstellte KNN wird in diesem Abschnitt hinsichtlich der verwendeten Topologie optimiert. Dabei werden sukzessive Neuronen in der Zwischenschicht hinzugefügt bzw. entfernt und für jeden Trainings- und Testverlauf der MSE (Mean Squared Error) notiert. Auch wird jede Topologie einmal mit und einmal ohne ein Bias-Neuron trainiert und getestet. Die Topologie mit dem geringsten MSE im Testverlauf wird dann übernommen. Die Ergebnisse dieser Optimierung können aus der Tabelle \ref{tab:TOPMSE} entnommen werden. Der Buchstabe (B) steht dabei für das Bias-Neuron.
 
 \begin{table}[H]
   \centering
@@ -124,10 +124,10 @@ Als letzten Schritt wurde die Lernregel des KNN optimiert. Innerhalb des Verfahr
 
 \begin{itemize}
 \item \textbf{Backpropagation}:\\
-Dies ist das klassische Fehlerrückführungsverfahren zum Anpassen der Verbindungsgewichte. Die Gewichtsveränderung erfolgt durch ein Fehlersignal, dass aus der Abweichung von tatsächlicher und prognostizierter Ausgabe berechnet wird. Die Gewichtsveränderung erfolgt hierbei schichtweise von den Ausgangsneuronen bis zu den Eingangneuronen.
+Dies ist das klassische Fehlerrückführungsverfahren zum Anpassen der Verbindungsgewichte. Die Gewichtsveränderung erfolgt durch ein Fehlersignal, dass aus der Abweichung von tatsächlicher und prognostizierter Ausgabe berechnet wird. Die Gewichtsveränderung erfolgt hierbei schichtweise von den Ausgangs-Neuronen bis zu den Eingangs-Neuronen.
 
 \item \textbf{Momentum Backpropagation}:\\
-Dieses Verfahren fügt dem klassichen Verfahren einen Trägheitsterm hinzu, indem die Gewichtsveränderung zum Zeitpunkt $t-1$ berücksichtigt wird. Dieser Term kann einen Wert zwischen $0$ und $1$ annehmen. Umso größer dieser Term ist, umso stärker wir die vorhergehende Gewichtsveränderung berücksichtigt. Durch diesen Trägheitsterm wird die Wahrscheinlichkeit verringert, dass das KNN beim Training in ein lokales Minimum oszilliert und sich somit nicht weiter dem Idealwert approximieren kann. Auch die Wahl der Lernrate gestaltet sich hier weniger kritisch. 
+Dieses Verfahren fügt dem klassischen Verfahren einen Trägheitsterm hinzu, indem die Gewichtsveränderung zum Zeitpunkt $t-1$ berücksichtigt wird. Dieser Term kann einen Wert zwischen $0$ und $1$ annehmen. Umso größer dieser Term ist, umso stärker wir die vorhergehende Gewichtsveränderung berücksichtigt. Durch diesen Trägheitsterm wird die Wahrscheinlichkeit verringert, dass das KNN beim Training in ein lokales Minimum oszilliert und sich somit nicht weiter dem Idealwert approximieren kann. Auch die Wahl der Lernrate gestaltet sich hier weniger kritisch. 
 
 \item \textbf{Resilient Propagation}:\\
 Resilient heißt Federnd. Dieses Verfahren nutzt das Vorzeichen das Gradienten zum Zeitpunkt $t$ und entscheidet anhand dessen, ob das Gewicht vergrößert oder verkleinert werden muss. Der Betrag der Gewichtsveränderung wird jedoch unabhängig von der Richtung der Gewichtsänderung ermittelt.  Dadurch werden die typischen Probleme klassischer Gradientenabstiegsverfahren, wie sie beim klassischen Backpropagation sowie beim Momentum Backpropagation genutzt werden, gemindert.\footnote{\Vgl\Zitat{Valen}, S. 71}.
@@ -165,7 +165,7 @@ Die Abbildung \ref{fig:RP} stellt das Vorgehen des Resilient Propagation Algorit
 
 \end{itemize}
 
-Allen drei Lernregeln ist gemein, dass zur Bestimmung des Fehlers zwischen der prognostizierten and tatsächlichen Ausgabe der MSE benutzt werden kann. Die MSE-Formel würde in dem konkreten Fall der Anwendung wie folgt lauten:
+Allen drei Lernregeln ist gemein, dass zur Bestimmung des Fehlers zwischen der prognostizierten und tatsächlichen Ausgabe der MSE benutzt werden kann. Die MSE-Formel würde in dem konkreten Fall der Anwendung wie folgt lauten:
 
 \begin{equation}\formelentry{MSE zur Berechnung der Abweichung}
    \frac{1}{2}\sum^{n}_{i=1} (KT_{i} - KV_{i})^2
@@ -192,7 +192,7 @@ In der Tabelle \ref{tab:LERNregeln} kann das Ergebnis der Trainings- und Testdur
   \label{tab:LERNregeln}
 \end{table}
 
-In der Regel liefert Resilient Propagation sehr gute Ergebnisse, dies ist auch hier der Fall. Wie man erkennen kann, ist das Resilient Propagation Verfahen  hier den anderen überlegen. Folglich wurde das KNN entsprechend optimiert und Resilient Propagation als Lernregel eingesetzt. Da es sich bei Resilient Propagation um eine adaptive Lernregel handelt und bei der Berechnung keine Lernrate benutzt handelt, muss diese auch nicht angegeben werden.
+In der Regel liefert Resilient Propagation sehr gute Ergebnisse, dies ist auch hier der Fall. Wie man erkennen kann, ist das Resilient Propagation Verfahren  hier den anderen überlegen. Folglich wurde das KNN entsprechend optimiert und Resilient Propagation als Lernregel eingesetzt. Da es sich bei Resilient Propagation um eine adaptive Lernregel handelt und bei der Berechnung keine Lernrate benutzt handelt, muss diese auch nicht angegeben werden.
 
 \section{Die endgültigen künstlichen neuronalen Netze}
 \label{section:Die endgültigen künstlichen neuronalen Netze}

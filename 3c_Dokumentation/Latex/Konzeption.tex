@@ -60,7 +60,7 @@ Aus der Menge der hetero-assoziativen Netze ist nun der Netztyp zu ermitteln, de
 
 \newmdtheoremenv{defi}{Definition}
 \begin{defi}Definition der linearen Separierbarkeit\\
-Seien $X_{0}$ and $X_{1}$ zwei Wertemengen im $n$-dimensionalen euklidischen Raum. Dann sind die Mengen $X_{0}$ and $X_{1}$ genau dann  "`linear separierbar"', wenn es  $n+1$ Werte $w_{1}, w_{2},..,w_{n}, k$, gibt, sodass jeder Punkt  $x \in X_{0}$ die Bedingung $\sum^{n}_{i=1} w_{i}x_{i} < k$ erfüllt und jeder Punkt $y \in X_{1}$ die Bedingung $\sum^{n}_{i=1} w_{i}y_{i} > k$ erfüllt.
+Seien $X_{0}$ und $X_{1}$ zwei Wertemengen im $n$-dimensionalen euklidischen Raum. Dann sind die Mengen $X_{0}$ and $X_{1}$ genau dann  "`linear separierbar"', wenn es  $n+1$ Werte $w_{1}, w_{2},..,w_{n}, k$, gibt, sodass jeder Punkt  $x \in X_{0}$ die Bedingung $\sum^{n}_{i=1} w_{i}x_{i} < k$ erfüllt und jeder Punkt $y \in X_{1}$ die Bedingung $\sum^{n}_{i=1} w_{i}y_{i} > k$ erfüllt.
 \end{defi}
 
 Um das Verständnis der Definition 1 zu erleichtern, kann die Abbildung \ref{fig:Bildliche Erläuterung der linearen Separierbarkeit} betrachtet werden. Im oberen Graph kann eine Gerade zur Unterteilung der möglichen Ergebnisse in Klassen gelegt werden. Somit ist die AND-Funktion linear separierbar. Im unteren Graph ist dies nicht möglich. Somit ist die XOR-Funktion nicht linear separierbar.  
@@ -74,7 +74,7 @@ Um das Verständnis der Definition 1 zu erleichtern, kann die Abbildung \ref{fig
 
 Analog setzt sich dies in Funktionen höherer Dimensionen fort. Ist die Funktion zum Beispiel dreidimensional, erfolgt die Separierung durch eine Ebene.
 
-Nachdem der Begriff der linearen separierbarkeit erläutert wurde, kann dies als Grundlage für den nächsten Schritt genutzt werden. Zur Auswahl des passenden Netztyps kann nun der Beweis 1 betrachtet werden. Dieser von Minski und Pappert erstellte Beweis  belegt, dass einschichtige KNN nur in der Lage sind, linear separierbare Funktionen zu berechnen.\footnote{\Vgl\Zitat{Laemmel}, Seite 212 f.}
+Nachdem der Begriff der linearen Separierbarkeit erläutert wurde, kann dies als Grundlage für den nächsten Schritt genutzt werden. Zur Auswahl des passenden Netztyps kann nun der Beweis 1 betrachtet werden. Dieser von Minski und Pappert erstellte Beweis  belegt, dass einschichtige KNN nur in der Lage sind, linear separierbare Funktionen zu berechnen.\footnote{\Vgl\Zitat{Laemmel}, Seite 212 f.}
 
 \newpage
 
@@ -115,7 +115,7 @@ Es ergibt sich also folgende Relation:\\\\
 Perzeptron konvergiert $\rightarrow$ Funktion linear separierbar $\rightarrow$ Perzeptron geeignet.
 Und analog: Perzeptron konvergiert nicht $\rightarrow$ Funktion nicht linear separierbar $\rightarrow$ Perzeptron nicht geeignet.
 
-Auf Basis der oben genannten Relation kann ermittelt werden, ob ein einschichtiges Perzeptron zur Approximation von Börsenkursen geeignet ist. Dafür wurde ein ein Perzeptron wie in Abbildung \ref{Testperz} entwickelt und untersucht, ob dieses Konvergiert.
+Auf Basis der oben genannten Relation kann ermittelt werden, ob ein einschichtiges Perzeptron zur Approximation von Börsenkursen geeignet ist. Dafür wurde ein Perzeptron wie in Abbildung \ref{Testperz} entwickelt und untersucht, ob dieses Konvergiert.
 
 \begin{figure}[H]
 \hfill
@@ -140,11 +140,11 @@ Ein Börsenkurs kann prinzipiell jede beliebige (stetige) Funktion annehmen. Dur
 \subsection{Wahl der Topologie}
 \label{subsection:Wahl der Topologie}
 
-Zur Prognose des Börsenkurses sollen die letzten vier Börsenkurse als Input dienen. Durch diesen Input soll der Börsenkurs am nächsten Tag prognostiziert werden. Folglich gestaltet sich Auswahl der Anzahl an Inputneuronen (4) sowie Outputneuronen (1) trivial.
+Zur Prognose des Börsenkurses sollen die letzten vier Börsenkurse als Input dienen. Durch diesen Input soll der Börsenkurs am nächsten Tag prognostiziert werden. Folglich gestaltet sich Auswahl der Anzahl an Input-Neuronen (4) sowie Output-Neuronen (1) trivial.
 Etwas komplexer gestaltet sich jedoch die richtige Dimensionierung der inneren Schicht. Hierbei können aber einige Richtlinien hinzugezogen werden, um die Dimensionierung zu erleichtern:
 
 \begin{itemize}
-\item Die Anzahl der versteckten Neuronen in der inneren Schicht sollte nicht zu groß gewählt werden, damit das Netz das antrainierte Verhalten nicht "`auswending"' lernt. Sonst kann es nur das bereits trainierte Muster entsprechend verarbeiten. Dies bedeutet ein Verlust der Generalisierungsfähigkeit. Man spricht in diesem Fall von einem Overfitting.
+\item Die Anzahl der versteckten Neuronen in der inneren Schicht sollte nicht zu groß gewählt werden, damit das Netz das antrainierte Verhalten nicht "`auswendig"' lernt. Sonst kann es nur das bereits trainierte Muster entsprechend verarbeiten. Dies bedeutet ein Verlust der Generalisierungsfähigkeit. Man spricht in diesem Fall von einem Overfitting.
 
 \item Die Anzahl der versteckten Neuronen in der inneren Schicht sollte nicht zu klein gewählt werden, da eine gewisse Menge an Neuronen wichtig ist, um sich Regelsätze merken zu können.
 
@@ -153,7 +153,7 @@ Etwas komplexer gestaltet sich jedoch die richtige Dimensionierung der inneren S
 \begin{equation}\formelentry{Optimale Anzahl Neuronen in der versteckten Schicht}
   N_h = \frac{N_d}{10*(N_i+N_o)}
 \end{equation}
-$N_h$ ist hierbei die Obergrenze, $N_i$ die Anzahl der Inputneuronen und $N_o$ die Anzahl der Outputneutonen. Da $450$ Trainingsdaten verwendet werden sollen, bedeutet das für diese Seminararbeit konkret:
+$N_h$ ist hierbei die Obergrenze, $N_i$ die Anzahl der Input-Neuronen und $N_o$ die Anzahl der Output-Neuronen. Da $450$ Trainingsdaten verwendet werden sollen, bedeutet das für diese Seminararbeit konkret:
 
 \begin{equation}\formelentry{Optimale Anzahl Neuronen in der versteckten Schicht}
   N_h = \frac{450}{10*(4+1) = 9 }   
@@ -181,10 +181,10 @@ Grundsätzlich existieren drei Lernverfahren, wie ein KNN trainiert werden kann.
 Beim überwachten Lernen sind sowohl die Eingabedaten als auch die dazugehörigen Ausgabedaten bekannt. Zunächst berechnet das KNN bestimmte Ausgabedaten zu den Eingabedaten. Diese berechneten Ausgabedaten können anschließend mit den tatsächlichen Ausgabedaten verglichen werden. Dieser Fehler wird dann genutzt, um die Verbindungsgewichte des KNN anzupassen. Typische Vertreter dieses Lernverfahrens sind die sogenannten Backpropagation-Lernverfahren.
 	
 \item \textbf{Bestärkendes Lernen}: \\
-Ähnlich wie das überwachte Lernen, jedoch biologisch motivierter ist das sogenannte bestärkende Lernen. Hier sind dem KNN die Eingabewerte zwar bekannt, aber die dazugehörigen Ausgabewerte nur zum Teil oder gar nicht. Das KNN wird lediglich darüber informiert, ob das Ergebnis richtig bzw. falsch war. Es ist ein sehr zeitaufwändiges Lernverfahren, da es die Gewichte auf Grund der spärlichen Information nur sehr langsam anpassen kann. Dieses Verfahren kann als Mischung aus überwachtes Lernen und unüberwachtes Lernen gesehen werden.
+Ähnlich wie das überwachte Lernen, jedoch biologisch motivierter ist das sogenannte bestärkende Lernen. Hier sind dem KNN die Eingabewerte zwar bekannt, aber die dazugehörigen Ausgabewerte nur zum Teil oder gar nicht. Das KNN wird lediglich darüber informiert, ob das Ergebnis richtig bzw. falsch war. Es ist ein sehr zeitaufwändiges Lernverfahren, da es die Gewichte auf Grund der spärlichen Information nur sehr langsam anpassen kann. Dieses Verfahren kann als Mischung aus überwachtes Lernen und nicht überwachtes Lernen gesehen werden.
 
-\item \textbf{Unüberwachtes Lernen}: \\
-Das unüberwachte Lernen ist biologisch gesehen am plausibelsten. Bei diesem  Lernverfahren existieren nur Eingabemuster, jedoch keine erwünschten Ausgaben oder Angaben, ob das Netz die Eingaben richtig oder falsch klassifiziert hat. Stattdessen versucht der Lernalgorithmus selbständig, Gruppen ähnlicher Eingabevektoren zu identifizieren und diese auf Gruppen ähnlicher oder benachbarter Neuronen abzubilden. 
+\item \textbf{Nicht überwachtes Lernen}: \\
+Das nicht überwachte Lernen ist biologisch gesehen am plausibelsten. Bei diesem  Lernverfahren existieren nur Eingabemuster, jedoch keine erwünschten Ausgaben oder Angaben, ob das Netz die Eingaben richtig oder falsch klassifiziert hat. Stattdessen versucht der Lernalgorithmus selbständig, Gruppen ähnlicher Eingabevektoren zu identifizieren und diese auf Gruppen ähnlicher oder benachbarter Neuronen abzubilden. 
 \end{itemize}
 
 Da sowohl die Eingabewerte als auch die Ausgabewerte der zu verwendenden Datensätze bekannt sind, bietet sich das überwachte Lernen an. Verglichen mit den anderen Lernverfahren ist dies die effizienteste Lernmethode. Sie verfügt zwar über kein biologisches Vorbild, dieser Umstand hat aber für diese Seminararbeit keine Relevanz.
