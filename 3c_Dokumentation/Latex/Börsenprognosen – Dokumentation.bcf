@@ -2215,8 +2215,20 @@
     <bcf:datasource type="file" datatype="bibtex">Literatur.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">Ilmenau</bcf:citekey>
-    <bcf:citekey order="2">Ilmenau</bcf:citekey>
+    <bcf:citekey order="1">Kratzer</bcf:citekey>
+    <bcf:citekey order="2">Kratzer</bcf:citekey>
+    <bcf:citekey order="3">Laemmel</bcf:citekey>
+    <bcf:citekey order="4">Laemmel</bcf:citekey>
+    <bcf:citekey order="5">Laemmel</bcf:citekey>
+    <bcf:citekey order="6">Laemmel</bcf:citekey>
+    <bcf:citekey order="7">Cottbus</bcf:citekey>
+    <bcf:citekey order="8">Cottbus</bcf:citekey>
+    <bcf:citekey order="9">Illmenau</bcf:citekey>
+    <bcf:citekey order="10">Illmenau</bcf:citekey>
+    <bcf:citekey order="11">Laemmel</bcf:citekey>
+    <bcf:citekey order="12">Laemmel</bcf:citekey>
+    <bcf:citekey order="13">Laemmel</bcf:citekey>
+    <bcf:citekey order="14">Laemmel</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="none" type="entry" sortscheme="none">
   <bcf:sorting>

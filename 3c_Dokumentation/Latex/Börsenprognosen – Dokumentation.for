@@ -15,7 +15,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {formel}{\numberline {Formel~3.2} Sigmoide Funktion sowie Tanh Funktion}{21}{equation.3.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {formel}{\numberline {Formel~3.3} MSE zur Berechnung der Abweichung}{22}{equation.3.3.3}
+\contentsline {formel}{\numberline {Formel~3.3} Formel zur Bestimmung der Art der Gewichts\IeC {\"a}nderung}{23}{equation.3.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {formel}{\numberline {Formel~3.4} Formel zur Bestimmung des Betrages der Gewichts\IeC {\"a}nderung}{23}{equation.3.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {formel}{\numberline {Formel~3.5} MSE zur Berechnung der Abweichung}{23}{equation.3.3.5}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

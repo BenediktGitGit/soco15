@@ -2,6 +2,16 @@
 % Encoding: UTF8
 
 
+@Misc{Cottbus,
+  Title                    = {Backpropagation-Netze},
+
+  Author                   = {{TU Cottbus}},
+  HowPublished             = {http://vieta.math.tu-cottbus.de/~kolb/ml-nn/node5.html},
+  Year                     = {2014},
+  Owner                    = {Sebastian},
+  Timestamp                = {2015.12.19}
+}
+
 @Book{Rigdoll,
   Title                    = {Neuronale Netze},
   Author                   = {{Gerhard Rigoll}},
@@ -12,11 +22,11 @@
   Timestamp                = {2015.11.09}
 }
 
-@Misc{Ilmenau,
+@Misc{Illmenau,
   Title                    = {Experimentelle Modellbildung mit einem
 Multilayer Perceptron},
 
-  Author                   = {TU Ilmenau},
+  Author                   = {{TU Illmenau}},
   HowPublished             = {https://www.tu-ilmenau.de/fileadmin/public/systemanalyse/fnc-3.pdf},
   Year                     = {2014},
 
@@ -32,6 +42,17 @@ Multilayer Perceptron},
 
   Owner                    = {Sebastian},
   Timestamp                = {2015.11.09}
+}
+
+@Book{Valen,
+  Title                    = {Steuerung eines mobilen Roboters mit Hilfe von
+Neuronalen Netzen},
+
+  Author                   = {Valentina Stellwag},
+  HowPublished             = {http://fbim.fh-regensburg.de/~saj39122/Diplomarbeiten/ValentinaStellwag/diplomarbeit.pdf},
+  Year                     = {2009},
+  Owner                    = {Sebastian},
+  Timestamp                = {2015.12.19}
 }
 
 @Book{Laemmel,

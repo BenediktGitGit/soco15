@@ -1,17 +1,17 @@
 [0] Config.pm:324> INFO - This is Biber 2.1
 [0] Config.pm:327> INFO - Logfile is 'Börsenprognosen  Dokumentation.blg'
 [67] biber-MSWIN:273> INFO - === %a %b %e, %Y, %H:%M:%S
-[68] Biber.pm:333> INFO - Reading 'Börsenprognosen  Dokumentation.bcf'
-[332] Utils.pm:146> WARN - Warning: Found biblatex control file version 2.8, expected version 2.7
-[333] Biber.pm:645> INFO - Found 1 citekeys in bib section 0
-[358] Biber.pm:2977> INFO - Processing section 0
-[382] Biber.pm:3115> INFO - Looking for bibtex format file 'Literatur.bib' for section 0
+[67] Biber.pm:333> INFO - Reading 'Börsenprognosen  Dokumentation.bcf'
+[329] Utils.pm:146> WARN - Warning: Found biblatex control file version 2.8, expected version 2.7
+[330] Biber.pm:645> INFO - Found 4 citekeys in bib section 0
+[355] Biber.pm:2977> INFO - Processing section 0
+[379] Biber.pm:3115> INFO - Looking for bibtex format file 'Literatur.bib' for section 0
 [396] bibtex.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
-[403] bibtex.pm:895> INFO - Found BibTeX data source 'Literatur.bib'
-[433] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[433] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[433] Biber.pm:2854> INFO - Sorting list 'none' of type 'entry' with scheme 'none' and locale 'de-DE'
-[434] Biber.pm:2858> INFO - No sort tailoring available for locale 'de-DE'
-[435] bbl.pm:505> INFO - Writing 'Börsenprognosen  Dokumentation.bbl' with encoding 'UTF-8'
-[441] bbl.pm:596> INFO - Output to Börsenprognosen  Dokumentation.bbl
-[442] Biber.pm:106> INFO - WARNINGS: 1
+[406] bibtex.pm:895> INFO - Found BibTeX data source 'Literatur.bib'
+[476] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[476] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[476] Biber.pm:2854> INFO - Sorting list 'none' of type 'entry' with scheme 'none' and locale 'de-DE'
+[476] Biber.pm:2858> INFO - No sort tailoring available for locale 'de-DE'
+[481] bbl.pm:505> INFO - Writing 'Börsenprognosen  Dokumentation.bbl' with encoding 'UTF-8'
+[497] bbl.pm:596> INFO - Output to Börsenprognosen  Dokumentation.bbl
+[497] Biber.pm:106> INFO - WARNINGS: 1
