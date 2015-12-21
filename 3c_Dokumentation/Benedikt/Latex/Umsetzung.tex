@@ -185,9 +185,9 @@ Abschließender Schritt zur Antworterstellung ist die Konversion der generierten
 \subsection{Antwort-Verarbeitung}
 Die Zeichenkette des JSON-Arrarys wird in einer globalen Variable zwischengespeichert. Da alle Diagramme und Displays einem einheitlichen Takt folgen sollen, wird die Initialisierung der Graphikkomponenten, sowie deren gesamter Aktualisierungszyklen von einer Funktion \emph{setDeceleratingTimeout} aufgerufen. Nach einer Verzögerung, die durch eine globale Intervalllängendefinition beeinflusst wird und über die JavaScript-spezifische Methode \emph{window.setTimeout()} realisiert wird, wird jeweils die \emph{processValues}-Funktion abgearbeitet. In dieser wird jeweils eine JSONObject-Repräsentation verarbeitet und für die Anzeige für das kommende Intervall vorbereitet sowie anschließend an die Darstellungsfunktionen (Rendering-Funktionen) übergeben. Grob gesagt werden entsprechende temporäre Arrays mit den Werten der Repräsentation befüllt und übergeben. Neben den Darstellungen wird der Schieberegler, der den Wert der globalen Variable \emph{Interval} in Echtzeit verändert, in die Visualisierungslandschaft integriert. 
 
-\subsection{app.properties}
+\subsection{Konfigurationsdatei der Stockmarket-Webapp}
 
-\begin{lstlisting}[basicstyle=\scriptsize, caption=Snippet - app.properties]
+\begin{lstlisting}[basicstyle=\scriptsize, caption=app.properties - Konfigurationsdatei der Stockmarket-Webapp]
 
 ## filepath where ann files are stored
 media.source.base=/home/bthofrichter/Schreibtisch
@@ -234,6 +234,100 @@ denormalize.formula=((X-0.1)/0.8)*(MAX-MIN)+MIN
 error.avail.dist=true
 error.avail.mse=true
 error.avail.acc=true
+\end{lstlisting}
+
+\subsection{Maven POM der Anwendung}
+
+Die in ListingPOM zeigt die Grundstruktur der POM.xml der Anwendung. Diese enthält alle wichtigen Informationen um die Anwendung in der Beschriebenen Systemlandschaft zu bauen.\\
+Kurze Erläuterung zum Aufbau der POM.xml: \\
+Project-Knoten: Enthält alle anderen Knoten. Die Deklaration in 
+Zeile 1--4 verweist auf eine entsprechende Namensraum und Schema-Defintion. 
+modelVersion-Knoten: Die Versionsnummer muss mit den Versionsinformationen im Proect-Knoten übereinstimmen.
+In Zeile 7-9 sind die typischen 3 Knoten \emph{groupId}, \emph{artifactId} und \emph{version} zur Beschreibung einer Dependency. Da diese Knoten nicht mit dem dependency-Knoten eingeschlossen ist, bezieht sich die Dependency-Information auf sich selbst. Sofern die Stockmarket-Webapp also in einem anderen Projekt als Softwarepakte hinzugefügt werden soll, müsste man diese Knoten einfach in den
+dependency-Knoten aufführen.\\
+
+In Zeile 11 beschreibt der packaging-Knoten das Zielformat der kompilierten Anwendung. Für eine Spring-Webapp eignet sich ein Webarchiv (war).\\ 
+
+In Zeile 13-17 werden genaue Angaben zur Systemlandschaft, genauer zum Tomcat-Server und zum JDK (Java Development Kit) gemacht. Die Stockmarket-Webapp setzt auf Java 8 und einen Tomcat 7.0.64.
+Diese Properties sind zur Absicherung gedacht. Prinzipiell ist es auch möglich ein Java 7 oder eine andere Tomcat Version einzusetzen. Da aber keine vollständige Prüfung jeglicher Versionen durchgeführt wurde und auch wirtschaftlich unsinnig wäre einigt man sich auf eine spezielle Version, mit der alle Funktionalität der Anwendungen getestet werden. \\
+
+Der Parent-Knoten in den Zeilen 19-23 kann als \emph{higher-lever-}Dependency gesehen werden. Diese bindet das Spring-Boot-Start-Parent Paket ein.\\
+
+In den Zeilen 25--31 werden Dependencies nach bereits beschriebenem Format aufgeführt.\\
+
+Zeile 35-40 listet Remote-Repositories. Sinnvoll ist eine solche Definition vorallem dann, wenn mehrere Abhängigkeiten hieraus benötigt werden. 
+
+Der build-Knoten Knoten der in Zeile 44-68 beschrieben ist, ist optional und nimmt auf den Maven-Build-Zyklus einfluss. Für die Stockmarket-Webapp ist es notwenig eine Dependency, die sich nicht per Standard-Deklaration in Kontext einfügen lässt, auf diesem Weg zu integrieren. Hierbei handelt sich das Neuroph-Core-2.9.jar Softwarepaket. Da die Neuronalen Netze mit dem Neuroph-Studio, das mit dieser Version arbeitet, erstellt und trainiert wurde, war es notwendig die gleiche Version in der Anwendung zu verwenden. Da das offizielle Remote-Repository allerdings diese Version noch nicht bereitstellt musste die JAR-Datei während der \emph{install}-Phase des Maven-Builds berücksichtigt wird. In dieser Phase werden die Abhängigkeiten in das lakale Repository kopiert, was für das automatische Deployment im Tomcat-Server führt (bei entsprechender Konfiguration). \\
+Dank Maven kann der Build-Prozess der Stockmarket-Webapp dynamisch, übersichtlich und effizient gestaltet werden.   
+
+  
+\lstset{
+  numbers=left,
+  stepnumber=1,    
+  firstnumber=1,
+  numberfirstline=true
+}
+\begin{lstlisting}[basicstyle=\scriptsize, caption=POM.xml Snippet - Stockmarket-Webapp]
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+                             http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>de.soco.stockmarket</groupId>
+    <artifactId>stockmarket-app</artifactId>
+    <version>1.0</version>
+    <packaging>war</packaging>
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <tomcat.version>7.0.64</tomcat.version>
+    </properties>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.3.0.M5</version>
+    </parent>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+          ...      
+    </dependencies>
+    <repositories>    
+        <repository>
+            <id>spring-releases</id>
+            <url>https://repo.spring.io/libs-release</url>
+        </repository>
+        ...
+    </repositories>
+ \vdots
+    <build>
+        <finalName>Stockmarket-Webapp</finalName>
+        <plugins>          
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <version>2.10</version>
+                <executions>
+                    <execution>
+                        <id>copy-installed</id>
+                        <phase>install</phase>
+                        <goals>
+                            <goal>copy-dependencies</goal>
+                        </goals>
+                        <configuration>
+                            <overWriteReleases>false</overWriteReleases>
+                            <overWriteSnapshots>false</overWriteSnapshots>
+                            <overWriteIfNewer>true</overWriteIfNewer>
+                            <outputDirectory>${project.build.directory}/Stockmarket-Webapp/WEB-INF/lib</outputDirectory>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>
 \end{lstlisting}
 
 

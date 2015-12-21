@@ -52,7 +52,7 @@ Die Aufgabe der Stockmarket-Webapp ist es eine schnittstellen - und benutzerdefi
 
 \subparagraph{Visualisierung}
 Die Grundidee die Visualisierung von der Anwendungslogik weitgehend zu trennen hat diverse Vorteile. Die Abhängigkeitsreduktion von anderen Komponenten, sowie Sicherheitsaspekte spielen dabei eine besondere Rolle. 
-Die Visualisierung ist eine reine client-seitig laufende Anwendung. Diese enthält alle notwendigen Logikroutinen, um Daten anzufragen und entsprechend zu verarbeiten. Die Implementierung dieser Logik wird mit der JavaScript-Bibliothek jQuery umgesetzt. Diese speißt und manipuliert das Document-Object-Model(DOM) je nach \emph{Datenlage}. Das DOM kann auch als HTML-Gerüst bezeichnet werden. Für die visuellen Effekte, die eine bessere Veranschaulichung der Graphen ermöglichen soll, wird CSS eingesetzt. Um das Layout für Geräte mit unterschiedlicher Displaygröße gleichermaßen nutzbar zu machen, wird die CSS-Bibliothek Bootstrap verwendet. 
+Die Visualisierung ist eine rein Client-seitig laufende Anwendung. Diese enthält alle notwendigen Logikroutinen, um Daten anzufragen und entsprechend zu verarbeiten. Die Implementierung dieser Logik wird mit der JavaScript-Bibliothek jQuery umgesetzt. Diese speißt und manipuliert das Document-Object-Model(DOM) je nach \emph{Datenlage}. Das DOM kann auch als HTML-Gerüst bezeichnet werden. Für die visuellen Effekte, die eine bessere Veranschaulichung der Graphen ermöglichen soll, wird CSS eingesetzt. Um das Layout für Geräte mit unterschiedlicher Displaygröße gleichermaßen nutzbar zu machen, wird die CSS-Bibliothek Bootstrap verwendet. 
 
 
 \section{Wahl der Technologie}
