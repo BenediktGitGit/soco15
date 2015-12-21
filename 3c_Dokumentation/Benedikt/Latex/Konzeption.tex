@@ -1,0 +1,354 @@
+\chapter{Konzeption}
+\label{chapter:Konzeption}
+
+\section{Konzeption der Anwendung} %Benedikt
+\label{section:Konzeption der Anwendung} %Benedikt
+
+\subsection{Grundidee} %Benedikt
+\label{subsection:Grundidee} %Benedikt
+Bekannte Zusammenhänge zwischen prognostiziertem und tatsächlichem Wert sind meist durch einfache Rechenoperationen umsetzbar. So kann beispielsweise eine Erhöhung der Mehrwertsteuer für ein Produktpreis P mit einer Rechenoperation P = P * M errechnet werden. Für diese Zusammenhänge ist es meist nicht notwendig und sinnvoll, komplexe und vernetzte Softwaresysteme zu entwickeln. 
+
+Wie anfangs erwähnt wird bei Börsenprognosen versucht, \emph{nicht-lineare Zusammenhänge} innerhalb von Daten zu finden, da lineare und bekannte Zusammenhänge, die zudem noch exakt sind quasi nicht vorhanden sind. Deshalb ist es für die Anwendung sinnvoll und notwendig einen komplexeren und vernetzeren Ansatz zu verfolgen, auch wenn dies mit einer Steigerung der Kosten einher geht. 
+
+Neben dem Hauptziel, die Zeitreihenextrapolation von Börsendaten, soll gezeigt werden, wie es konzeptionell und technisch möglich ist, eine derartige Softcomputing-Lösung zu realisieren und in einen Unternehmenskontext zu integrieren.
+
+Weitere Faktoren, die bei der Entscheidung über die eingesetzten Frameworks und Werkzeuge mit eingeflossen sind, sind Skalierbarkeit, Wartbarkeit, Erreichbarkeit sowie Anschaulichkeit. 
+
+\begin{minipage}[c]{0.5\textwidth}
+
+\includegraphics[width=0.49\textwidth]{mag_viereck_not_linear.png}
+\captionof{figure}{Abb - nicht lineare}
+
+\end{minipage}
+\begin{minipage}[c]{0.5\textwidth}
+\includegraphics[width=0.49\textwidth]{mag_viereck_linear.png}
+\captionof{figure}{Abb - lineare}
+\end{minipage}
+
+
+
+\subsection{Mockup}
+\label{subsection:Mockup} 
+
+\begin{figure}
+\includegraphics[width=15cm]{sequence_dia_rest_env.png}
+\captionof{figure}{Sequenzdiagramm}
+\end{figure}
+
+\subparagraph{Quandl Data-Provider}
+Für Börenprognosen werden quantitative Maßeinheiten benötigt, die im Zusammenhang mit Kurs stehen. Die Wohl aussagekräftigste sind Börsenschluss-Index-Werte von vergangenen Handelsperioden. Je mehr dieser Daten vorhanden, je realistischer diese Daten sind, desto warscheinlicher ist es, einen Schlusswert in der Zukunft vorherzusagen. 
+Aus diesem Grund spricht die Anwendung, genauer der Rest-Controller der Stockmarket-Webapp den Rest-Service von Quandl an.  
+Quandl versteht sich als Datenhändler / Datenanbieter mit integrierter Suchfunktion. Das Angebot umfasst die globale Finanzbranche, so z.B. sämtliche nationale und internationale Börsenkurse der vergangenen Dekaden. 
+Die Rest-API bietet die Export-Formate \emph{XML}, \emph{JSON} und \emph{CSV} an.\linebreak; 
+Diese ermöglicht der Anwendung mit echten Börsendaten zu arbeiten. 
+
+[https://www.quandl.com/blog/getting-started-with-the-quandl-api].\linebreak;
+
+\subparagraph{Stockmarket-Webapp}
+Bei der Stockmarket-Webapp handelt es sich um einen Restful-Service der als Schnittstelle zwischen der Quandl-Rest-API, der Visualisierung sowie dem Neuroph Werkzeug fungiert. Wie in Abbildung ABBILDUNG zu sehen ist gibt es keine Kommunikation zwischen Fremd-Services, wenn diese nicht über den Controller der Stockmarket-Webapp statt findet. Hierüber können gleich mehrere Vorteile realisiert werden. 
+1) Single-Point-Of-Failure: Wenn der Datenlieferant Quandl insolvent geht oder nicht ganz so drastisch, wenn die Anfrage-Mechanismen der Quandl-Rest-API geändert werden. Ein weiteres Szenario, könnte aus Sicht der Visualisierung einen aus Performance-Bedingten Wechsel der JavaScript-Bibliothek darstellen. Sofern für diese Szenarien keine SPOF-Lösung existiert, wird eine entsprechende Anpassung womöglich ein umfassendes Refactoring aller Anwendungskoponenten erfordern. 
+2) Skalierbarkeit: Den Fall angenommen, weitere Datensätze sollen an andere Visualisierungen bzw. die Visualisierung um Diagramme erweitert werden, so ist bereits mit einer einseitigen Anpassung der Visualisierung die Anforderung erfüllt. Die durch die Rest-Spezifikation definierte Tatsache der einheitlichen Repräsentation von Anfragen spielt einem hier in die Hände. \\
+Die Aufgabe der Stockmarket-Webapp ist es eine schnittstellen - und benutzerdefinierte Datenaufbereitung zu realisieren. 
+
+\subparagraph{Visualisierung}
+Die Grundidee die Visualisierung von der Anwendungslogik weitgehend zu trennen hat diverse Vorteile. Die Abhängigkeitsreduktion von anderen Komponenten, sowie Sicherheitsaspekte spielen dabei eine besondere Rolle. 
+Die Visualisierung ist eine rein Client-seitig laufende Anwendung. Diese enthält alle notwendigen Logikroutinen, um Daten anzufragen und entsprechend zu verarbeiten. Die Implementierung dieser Logik wird mit der JavaScript-Bibliothek jQuery umgesetzt. Diese speißt und manipuliert das Document-Object-Model(DOM) je nach \emph{Datenlage}. Das DOM kann auch als HTML-Gerüst bezeichnet werden. Für die visuellen Effekte, die eine bessere Veranschaulichung der Graphen ermöglichen soll, wird CSS eingesetzt. Um das Layout für Geräte mit unterschiedlicher Displaygröße gleichermaßen nutzbar zu machen, wird die CSS-Bibliothek Bootstrap verwendet. 
+
+
+\section{Wahl der Technologie}
+Warum Java, jQuery, Spring Boot: 
+
+\section{Apache Maven}
+Die benötigten Frameworks können auf verschiedene Wege eingebunden werden. Die Softwarepakete können per Hand heruntergeladen und in den entsprechenden Verzeichnispfad kopiert werden, was allerdings bei größeren Projekten hinsichtlicher der Übersicht und Verwaltbarkeit problematisch ist. Ein besserer Ansatz ist es ein Build-Tool wie Apache Maven zu verwenden, was auch für diese Anwendung eingesetzt wurde. Alternative Build-Tools sind z.B. Apache Ant und Gradle.\\
+Zentraler Beschreibungspunkt, der das Projekt benötigter Abhängigkeiten und Build-Prozesse ist die POM.xml. POM steht dabei für \emph{Projekt Object Model}.
+Die Softwarepakte heißten im Maven-Jargon \emph{Dependencies}, also Abhängigkeiten. Dependencies werden in \emph{Repositories} verwaltet. Es gibt zwei Arten, \emph{local} und \emph{remote} Repositories.   
+Die lokale Datenhaltungskomponente stellt eine exakte Kopie aller heruntergeladenen Dependencies sowie deren Verzeichnisstruktur, von rechnerfernen Repositories dar.\\
+
+Die in ListingPOM zeigt die Grundstruktur der POM.xml der Anwendung. Diese enthält alle wichtigen Informationen um die Anwendung in der Beschriebenen Systemlandschaft zu bauen.\\
+Kurze Erläuterung zum Aufbau der POM.xml: \\
+Project-Knoten: Enthält alle anderen Knoten. Die Deklaration in 
+Zeile 1--4 verweist auf eine entsprechende Namensraum und Schema-Defintion. 
+modelVersion-Knoten: Die Versionsnummer muss mit den Versionsinformationen im Proect-Knoten übereinstimmen.
+In Zeile 7-9 sind die typischen 3 Knoten \emph{groupId}, \emph{artifactId} und \emph{version} zur Beschreibung einer Dependency. Da diese Knoten nicht mit dem dependency-Knoten eingeschlossen ist, bezieht sich die Dependency-Information auf sich selbst. Sofern die Stockmarket-Webapp also in einem anderen Projekt als Softwarepakte hinzugefügt werden soll, müsste man diese Knoten einfach in den
+dependency-Knoten aufführen.\\
+
+In Zeile 11 beschreibt der packaging-Knoten das Zielformat der kompilierten Anwendung. Für eine Spring-Webapp eignet sich ein Webarchiv (war).\\ 
+
+In Zeile 13-17 werden genaue Angaben zur Systemlandschaft, genauer zum Tomcat-Server und zum JDK (Java Development Kit) gemacht. Die Stockmarket-Webapp setzt auf Java 8 und einen Tomcat 7.0.64.
+Diese Properties sind zur Absicherung gedacht. Prinzipiell ist es auch möglich ein Java 7 oder eine andere Tomcat Version einzusetzen. Da aber keine vollständige Prüfung jeglicher Versionen durchgeführt wurde und auch wirtschaftlich unsinnig wäre einigt man sich auf eine spezielle Version, mit der alle Funktionalität der Anwendungen getestet werden. \\
+
+Der Parent-Knoten in den Zeilen 19-23 kann als \emph{higher-lever-}Dependency gesehen werden. Diese bindet das Spring-Boot-Start-Parent Paket ein.\\
+
+In den Zeilen 25--31 werden Dependencies nach bereits beschriebenem Format aufgeführt.\\
+
+Zeile 35-40 listet Remote-Repositories. Sinnvoll ist eine solche Definition vorallem dann, wenn mehrere Abhängigkeiten hieraus benötigt werden. 
+
+Der build-Knoten Knoten der in Zeile 44-68 beschrieben ist, ist optional und nimmt auf den Maven-Build-Zyklus einfluss. Für die Stockmarket-Webapp ist es notwenig eine Dependency, die sich nicht per Standard-Deklaration in Kontext einfügen lässt, auf diesem Weg zu integrieren. Hierbei handelt sich das Neuroph-Core-2.9.jar Softwarepaket. Da die Neuronalen Netze mit dem Neuroph-Studio, das mit dieser Version arbeitet, erstellt und trainiert wurde, war es notwendig die gleiche Version in der Anwendung zu verwenden. Da das offizielle Remote-Repository allerdings diese Version noch nicht bereitstellt musste die JAR-Datei während der \emph{install}-Phase des Maven-Builds berücksichtigt wird. In dieser Phase werden die Abhängigkeiten in das lakale Repository kopiert, was für das automatische Deployment im Tomcat-Server führt (bei entsprechender Konfiguration). \\
+Dank Maven kann der Build-Prozess der Stockmarket-Webapp dynamisch, übersichtlich und effizient gestaltet werden.   
+
+  
+\lstset{
+  numbers=left,
+  stepnumber=1,    
+  firstnumber=1,
+  numberfirstline=true
+}
+\begin{lstlisting}[basicstyle=\scriptsize, caption=POM.xml Snippet - Stockmarket-Webapp]
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+                             http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>de.soco.stockmarket</groupId>
+    <artifactId>stockmarket-app</artifactId>
+    <version>1.0</version>
+    <packaging>war</packaging>
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <tomcat.version>7.0.64</tomcat.version>
+    </properties>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.3.0.M5</version>
+    </parent>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+          ...      
+    </dependencies>
+    <repositories>    
+        <repository>
+            <id>spring-releases</id>
+            <url>https://repo.spring.io/libs-release</url>
+        </repository>
+        ...
+    </repositories>
+ \vdots
+    <build>
+        <finalName>Stockmarket-Webapp</finalName>
+        <plugins>          
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <version>2.10</version>
+                <executions>
+                    <execution>
+                        <id>copy-installed</id>
+                        <phase>install</phase>
+                        <goals>
+                            <goal>copy-dependencies</goal>
+                        </goals>
+                        <configuration>
+                            <overWriteReleases>false</overWriteReleases>
+                            <overWriteSnapshots>false</overWriteSnapshots>
+                            <overWriteIfNewer>true</overWriteIfNewer>
+                            <outputDirectory>${project.build.directory}/Stockmarket-Webapp/WEB-INF/lib</outputDirectory>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>
+\end{lstlisting}
+
+\subsection{Frameworks}
+Zu den nachfolgenden Frameworks und Bibliotheken werden hauptsächlich anwendungsrelevante Funktionalitäten erläutert, da es sonst den Rahmen dieser Seminararbeit sprengen würde.
+
+\subparagraph{Spring Boot}
+
+
+\subparagraph{Dependency Injection}
+
+\subsubsection{Annoationen}
+
+\subsubsection{Annotationen am Bespiel von Rest-Kommunikation}
+
+\subparagraph{Dynamik mit c3js Framework}
+
+\subparagraph{Layouts und CSS Bootstrap}
+
+
+\subsection{Das Neuroph Framework} 
+ 
+\subsection{Neuroph API} 
+
+\label{subsection:Das Neuroph Framework} 
+
+
+\section{Konzeption des künstlichen neuronalen Netzes}
+\label{section:Konzeption des künstlichen neuronalen Netzes}
+
+In den folgenden Abschnitten wird ein \acs{knn} konzeptioniert, dass als Vorlage für alle zu erstellenden \acs{knn} zur Prognose von Börsenkursen dienen soll. 
+
+\subsection{Wahl des Netztyps}
+\label{subsection:Wahl des Netztyps}
+Zunächst ist zu ermitteln, welche Netztypen sich zur Prognose von Börsenkursen grundsätzlich eignen. Nicht jeder Netztyp ist gleichermaßen zur Prognose geeignet. Bestimmte \acs{knn} sind beispielsweise überhaupt nicht in der Lage, Prognosen zu erstellen. 
+
+Grundsätzlich lassen sich \acs{knn} in zwei Oberklassen unterteilen. Es gibt hetero-assoziative Netze sowie die auto-assoziative Netze. Hetero-assoziative Netze bilden einen Vektor $A$ der Länge $n$ auf einem Vektor $B$ einer meist kürzeren Länge $m$ $\{m \in \mathbb{N} | m \le n\}$ ab. Auto-assoziative Netze wiederum bilden einen Eingabevektor der Länge $n$ auf einem Ausgabevektor der gleichen Länge ab. Innerhalb dieser zwei Klassen lassen sich \acs{knn} wiederum in mehrere Netztypen aufteilen. Die folgende Tabelle liefert hierzu eine Übersicht:
+
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline 
+\textbf{Hetero-assoziative Netzmodelle} & \textbf{Auto-assoziative Netzmodelle} \\ 
+\hline 
+(M)Adaline & Hopfield-Netze \\ 
+\hline  
+Perzeptron &  Boltzmann Maschinen \\ 
+\hline 
+Multilayerperzeptron & - \\ 
+\hline 
+\end{tabular} 
+\end{center}
+
+Das \acs{knn} soll mithilfe von mehreren vorhergehenden Börsenkursen den zukünftigen Börsenkurs prognostizieren. Da es sich bei den zu prognostizierenden Börsenkurs um einen skalaren Wert handelt, ist die Anzahl der Eingabeneuronen (und damit die Anzahl der Elemente des Eingabevektors) höher als die Anzahl der Ausgabeneuronen (und damit höher als die Anzahl der Elemente des Ausgabevektors). Somit sind für diese Seminararbeit nur hetero-assoziative Netze von Relevanz.
+
+Aus der Menge der hetero-assoziativen Netze ist nun der Netztyp zu ermitteln, der für die Anwendung am geeignetsten ist.
+
+Zur Wahl eines geeigneten Netztyps kann zunächst die Lineare Separierbarkeit betrachtet werden:
+
+\newmdtheoremenv{defi}{Definition}
+\begin{defi}Definition der linearen Separierbarkeit\\
+Seien $X_{0}$ and $X_{1}$ zwei Datenmengen im $n$-dimensionalen euklidischen Raum. Dann sind die Mengen $X_{0}$ and $X_{1}$ genau dann  "`linear separierbar"', wenn es  $n+1$ Werte $w_{1}, w_{2},..,w_{n}, k$, gibt, sodass jeder Punkt  $x \in X_{0}$ die Bedingung $\sum^{n}_{i=1} w_{i}x_{i} > k$ erfüllt und jeder Punkt $x \in X_{1}$ die Bedingung $\sum^{n}_{i=1} w_{i}x_{i} < k$ erfüllt.
+\end{defi}
+
+Um das Verständnis der oben genannten Definition zu erleichtern, kann die folgende Abbildung betrachtet werden:
+
+\begin{figure}[H]
+\centering
+		\includegraphics[width=0.95\textwidth]{Linear_Sep.png}
+	\caption{Bildliche Erläuterung der linearen Separierbarkeit}
+	\label{fig:Bildliche Erläuterung der linearen Separierbarkeit}
+\end{figure}
+
+Man erkennt also, das eine zweidimensionale Funktion dann als linear separierbar gilt, wenn zwischen zwei Ergebnismengen der Funktion eine Gerade gelegt werden kann. Analog setzt sich dies in Funktionen höherer Dimensionen fort. Ist die Funktion zum Beispiel dreidimensional, erfolgt die Separierung durch eine Ebene.
+
+Es ist bewiesen, dass einschichtige \acs{knn} nur in der Lage sind, linear separierbare Funktionen zu berechnen. Den Konkreten Beweis dazu liefern Minski \& Papert am Beispiel des XOR-Problems:
+
+\newmdtheoremenv{bew}{Beweis}
+\begin{bew}Beweis der Eingeschränkten Fähigkeit von KNN anhand des XOR-Problems\\
+
+Gegeben sind:\\
+
+Ein Perzetron der folgenden Bauart:
+
+\begin{figure}[H]
+\centering
+		\includegraphics[width=0.20\textwidth]{Perzeptron.png}
+	\caption{Beispielperzeptron zur Darstellung des XOR-Problems}
+	\label{fig:Beispielperzeptron zur Darstellung des XOR-Problems}
+\end{figure}
+
+und folgende Rahmenbedingungen:
+
+$w_1\cdot1 + w_2\cdot2 = net$\\ 
+$f_(act)(o) = id$ \\
+$\emptyset = Schwellenwert$
+
+Dann gilt folgendes:\\
+$a) w_1\cdot0 + w_2\cdot0 \le \emptyset$ Bei einem Inputvektor (0,0) liefert der Output 0.\\
+$b) w_1\cdot0 + w_2\cdot0 \geq \emptyset$ Bei einem Inputvektor (0,1) liefert der Output 1.\\
+$c) w_1\cdot0 + w_2\cdot0 \geq \emptyset$ Bei einem Inputvektor (1,0) liefert der Output 1.\\
+$d) w_1\cdot0 + w_2\cdot0 \le \emptyset$ Bei einem Inputvektor (1,1) liefert der Output 0.\\
+
+Der Widerspruch ergibt sich wie folgt:\\ $(b+c):  w_1 + w_2 \geq \emptyset  \wedge (d)  w_1 + w_2 \leq \emptyset$
+\end{bew}
+
+Dieser Beweis kann ebenfalls auf andere nicht linear separierbare Funktionen angewandt werden.Somit steht fest, dass ein einschichtiges Perzeptron nicht in der Lage sein kann, nicht linear separierbare Funktionen zu approximieren.
+
+Auf Basis der oben genannten Tatsache kann ermittelt werden, ob ein einschichtiges Perzeptron zur Approximation von Börsenkursen geeignet ist. Dafür wurde ein ein Perzeptron folgender Bauart entwickelt und untersucht, ob dieses Konvergiert.
+
+\begin{figure}[H]
+\centering
+		\includegraphics[width=0.5\textwidth]{Testperzeptron.png}
+	\caption{Grundlegendes Konzept des KNN}
+	\label{fig:Grundlegendes Konzept des KNN}
+\end{figure}
+
+Bei Betrachtung des Netzwerkfehlers des Perzeptrons erkennt man, dass das Perzeptron nicht konvergiert:
+
+\begin{figure}[H]
+\centering
+		\includegraphics[width=0.5\textwidth]{MSEperzeptron.png}
+	\caption{Grundlegendes Konzept des KNN}
+	\label{fig:Grundlegendes Konzept des KNN}
+\end{figure}
+
+Der Netzwerkfehler des Perzeptrons bleibt über alle Iterationen konstant auf einen Niveau von circa $0,10$.
+
+Nun ist es sinnvoll, folgendes Theorem zu berücksichtigen:
+ 
+\newmdtheoremenv{theo}{Theorem}
+\begin{theo}Konvergentheorem von Rosenblatt\\
+Der Lernalgorithmus des Perzeptrons konvergiert in endlicher Zeit, d.h. das Perzeptron kann in endlicher Zeit alles lernen, was es repräsentieren kann.
+\end{theo}
+
+Betrachtet man alle oben genannten mathematischen Gegebenheiten, ergibt sich die folgende Relation:
+
+Perzeptron konvergiert $\rightarrow$ Funktion Linear separierbar $\rightarrow$ Perzeptron geeignet.
+und natürlich analog:Perzeptron konvergiert nicht $\rightarrow$ Funktion nicht Linear separierbar $\rightarrow$ Perzeptron nicht geeignet.
+
+Folglich bleibt nur noch das Multilayerperzeptron als Mögliche Auswahl übrig. Das dieses \ac{knn} tatsächlich zur Prognose geeignet ist, belegt das folgende Theorem:
+
+\begin{theo}Theorem von Kolmogorov\\
+Für ${n \in \mathbb{N} | n>2}$ lässt sich jede reellwertige Funktion $f:[0;1]^n\rightarrow[0;1]$ durch ein dreischichtiges vorwärtsverknüpftes Netz mit maximal $n$ Einheiten in der Eingabeschicht,$(2n+1)$ Einheiten in der Zwischenschicht und $2n+1$ Einheiten in der Ausgabeschicht berechnen.
+\end{theo}
+
+Ein Börsenkurs kann prinzipiell jede beliebige Funktion annehmen. Durch das obige Theorem ist jedoch sichergestellt, dass das mehrschichtige vorwärtsgerichtete Netz in der Lage ist, diese Funktionen zu approximieren, da ein Multilayerperzeptron als universeller Aprroximator fungiert.
+
+\subsection{Wahl der Topologie}
+\label{subsection:Wahl der Topologie}
+
+Zur Prognose des Börsenkurses sollen die letzten vier Börsenkurse als Input dienen. Durch diesen Input soll der Börsenkurs am nächsten Tag prognostiziert werden. Zur richtigen Dimensionierung der inneren Schicht können einige Richtlinien berücksichtigt werden:
+
+\begin{itemize}
+\item Die Anzahl der versteckten Neuronen in der inneren Schicht sollte nicht zu groß gewählt werden, damit das Netz das antrainierte Verhalten nicht "'auswending`" lernt und dieses dann nur bereits trainierte Muster anwenden kann und es somit die Generalisierungsfähigkeit verliert. Man spricht in diesem Fall von Overfitting 
+\item Die Anzahl der versteckten Neuronen in der inneren Schicht sollte auch nicht zu klein gewählt werden, da eine gewisse Menge an Neuronen wichtig sind, um sich Regeln merken zu können.
+\item Eine grobe Annäherung zur Bestimmung der Obergrenze der Anzahl von Neuronen in der versteckten Schicht liefert die folgende Formel:
+
+\begin{equation}\formelentry{Optimale Anzahl Neuronen in der versteckten Schicht}
+  N_h = \frac{N_d}{10*(N_i+N_o)}
+\end{equation}
+Nh ist hierbei die Obergranze, Ni ist die Anzahl der Inputneuronen und No die Anzahl der Outputneutonen. Da 450 Trainingsdaten verwendet werden. Bedeutet das für diese SEminararbeit konkret:
+
+\begin{equation}\formelentry{Optimale Anzahl Neuronen in der versteckten Schicht}
+  N_h = \frac{450}{10*(4+1) = 9 }   
+\end{equation}
+\end{itemize}
+ 
+
+Somit ergibt sich insgesamt die folgende Topoologie:
+
+\begin{figure}[H]
+\centering
+		\includegraphics[width=0.5\textwidth]{KonzKNN.png}
+	\caption{Grundlegendes Konzept des KNN}
+	\label{fig:Grundlegendes Konzept des KNN}
+\end{figure}
+
+
+Die oben abgebildete Topologie stellt ein solides Grundkonstrukt dar, das in der Umsetzungsphase noch weiter optimiert werden kann.
+
+
+\subsection{Wahl des Lernverfahrens} 
+\label{subsection:Wahl des Lernverfahrens}
+
+Grundsätzlich gibt es drei grobe Klassifikation von Lernverfahren. in diesem Abschnitt werden alle drei Lernverfahren näher vorgestellt und anschließend eine Begründete Auswahl der Lernverfahrens getroffen.
+
+\begin{itemize}
+\item Überwachtes Lernen: Beim überwachten Lernen sind sowohl die Eingabedaten sowie die dazugehörigen Ausgabedaten bekannt. Mit Hilfe dieser Daten kann das \ac{knn} dann trainiert werden. Die berechneten Ausgabedaten können anschließend mit den tatsächlichen Ausgabedaten verglichen werden. Dieser Fehler wird dann genutzt, um die Verbindungsgewichte des \ac{knn} anzupassen. Typische Vertreter dieses Lernverfahrens sind die sogenannten Backpropagation-Lernverfahren.
+	
+\item Bestärkendes Lernen
+Ähnlich wie das überwachte Lernen, jedoch biologisch motivierter ist  das sogenannte bestärkende Lernen. Hier sind dem \ac{knn} die Eingabewerte zwar bekannt, aber die dazugehörigen Ausgabewerte nur zum Teil oder gar nicht. Das \ac{knn} wird lediglich darüber informiert, das Ergebnis richtig bzw. falsch war. Es ist ein sehr Zeitaufwändiges Lernverfahren, da es die Gewichte auf Grund der spärlichen Information nur sehr langsam anpassen kann. Dieser Verfahren kann als Mischung aus überwachtes Lernen und unüberwachtes Lernen gesehen werden.
+
+\item Unüberwachtes Lernen
+Das unüberwachte Lernen ist biologisch gesehen am plausibelsten. Bei diesem  Lernverfahren besteht existieren nur Eingabemuster, es existieren keine erwünschten Ausgaben oder Angaben, ob das Netz die Eingaben richtig oder falsch klassifiziert hat. Stattdessen versucht der Lernalgorithmus selbständig, Gruppen ähnlicher Eingabevektoren zu identifizieren und diese auf Gruppen ähnlicher oder benachbarter Neuronen abzubilden. 
+\end{itemize}
+
+
+Da sowohl die Eingabewerte als auch die Ausgabewerte der zu verwendenden Datensätze bekannt sind, bietet sich das überwachte Lernen an. Verglichen mit den anderen Lernverfahren ist dies die effizienteste Lernmethode. Sie verfügt zwar über kein biologisches Vorbild, dieser Umstand hat aber für diese Seminararbeit keine Relevanz.
+

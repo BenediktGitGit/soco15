@@ -1,0 +1,62 @@
+%%Präambel--------------------------------------------------
+
+%Dokument erstellen
+\documentclass
+[a4paper,
+ 11pt,
+ DIV11,
+ bibliography=totoc,
+ headings=normal,
+ ngerman,
+ headsepline,
+ listof=totoc,
+ parskip=half
+]{scrreprt}
+
+%Packages laden
+\input{Packages}
+
+%PDFInfos laden
+\input{PDFInfo}
+
+%Seitenstil laden
+\input{Seitenstil}
+
+
+%%Präambel--------------------------------------------------
+%%Body------------------------------------------------------
+
+%Das Dokument beginnt
+\begin{document}
+
+%Deckblatt einlesen
+\input{Deckblatt}
+
+%Verzeichnisse einlesen
+\input{Verzeichnisse}
+
+%Der eigentliche Text beginnt hier
+
+%Einleitung einlesen
+\input{Einleitung}
+%Konzepton einlesen
+\input{Konzeption}
+
+%Umsetzung einlesen
+\input{Umsetzung}
+
+%Beschreibung der Anwendung einlesen
+\input{Beschreibung}
+
+%Analyse der Anwendung einlesen
+\input{Analyse}
+
+%Fazit einlesen
+\input{Fazit}
+
+%Literaturverzeichnis anzeigen
+\bibliographystyle{plain}
+\bibliography{Literatur}
+
+\end{document}
+%%Body------------------------------------------------------
