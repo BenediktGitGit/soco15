@@ -1,33 +1,10 @@
-\chapter{Konzeption}
-\label{chapter:Konzeption}
+\chapter{Konzeption des künstlichen neuronalen Netzes}
+\label{chapter:Konzeption des künstlichen neuronalen Netzes}
 
-In den Abschnitten \ref{section:Konzeption der Anwendung} sowie \ref{section:Konzeption des künstlichen neuronalen Netzes} wird die Konzeption der Anwendung sowie des KNN beschrieben.
+In den Abschnitten \ref{section:Wahl des Netztyps}, \ref{section:Wahl der Topologie} sowie \ref{section:Wahl des Lernverfahrens} wird ein KNN zur Prognose des DAX konzeptioniert. Dieses soll als Vorlage für die Erstellung der KNN zur Prognose des Dow Jones und des Nikkei verwendet werden.
 
-\section{Konzeption der Anwendung}
-\label{section:Konzeption der Anwendung} 
-
-<<Benedikt>>
-\Blindtext
-
-\subsection{Grundidee}
-\label{subsection:Grundidee}
-
-<<Benedikt>>
-\Blindtext
-
-\subsection{Das Neuroph Framework}
-\label{subsection:Das Neuroph Framework}
-
-<<Benedikt>>
-\Blindtext
-
-\section{Konzeption des künstlichen neuronalen Netzes}
-\label{section:Konzeption des künstlichen neuronalen Netzes}
-
-In den Abschnitten \ref{subsection:Wahl des Netztyps}, \ref{subsection:Wahl der Topologie} sowie \ref{subsection:Wahl des Lernverfahrens} wird ein KNN zur Prognose des DAX konzeptioniert. Dieses soll als Vorlage für die Erstellung der KNN zur Prognose des Dow Jones und des Nikkei verwendet werden.
-
-\subsection{Wahl des Netztyps}
-\label{subsection:Wahl des Netztyps}
+\section{Wahl des Netztyps}
+\label{section:Wahl des Netztyps}
 
 Zunächst ist zu ermitteln, welche Netztypen sich zur Prognose von Börsenkursen grundsätzlich eignen. Nicht jeder Netztyp ist gleichermaßen zur Prognose geeignet. Bestimmte Netztypen sind beispielsweise überhaupt nicht in der Lage, Prognosen zu erstellen. Grundsätzlich lassen sich alle Netztypen in eine von zwei Oberklassen einordnen. Es existiert die Klasse der hetero-assoziativen Netze sowie die Klasse der auto-assoziativen Netze. Hetero-assoziative Netze bilden einen Vektor $A$ der Länge $n$ auf einem Vektor $B$ einer meist kürzeren Länge $m$ $\{m \in \mathbb{N} | m \le n\}$ ab. Auto-assoziative Netze wiederum bilden einen Eingabevektor $A$ der Länge $n$ auf einem Ausgabevektor der gleichen Länge $n$ ab. Die Tabelle \ref{tab:Netztypen} liefert hierzu eine Übersicht.\footnote{\Vgl\Zitat{Kratzer}, Seite 33 ff.}
 
@@ -131,8 +108,8 @@ Jede stetige Funktion kann mittels eines künstlichen neuronalen Netzes mit mind
 
 Ein Börsenkurs kann prinzipiell jede beliebige (stetige) Funktion annehmen. Durch Theorem 2 ist jedoch sichergestellt, dass das Multilayerperzeptron in der Lage ist, diese Funktion zu approximieren, da ein Multilayerperzeptron als universeller Approximator fungiert.
 
-\subsection{Wahl der Topologie}
-\label{subsection:Wahl der Topologie}
+\section{Wahl der Topologie}
+\label{section:Wahl der Topologie}
 
 Zur Prognose des Börsenkurses sollen die letzten vier Börsenkurse als Input dienen. Durch diesen Input soll der Börsenkurs am nächsten Tag prognostiziert werden. Folglich gestaltet sich Auswahl der Anzahl an Input-Neuronen (4) sowie Output-Neuronen (1) trivial.
 Etwas komplexer gestaltet sich jedoch die richtige Dimensionierung der inneren Schicht. Hierbei können aber einige Richtlinien hinzugezogen werden, um die Dimensionierung zu erleichtern:
@@ -165,8 +142,8 @@ Somit ergibt sich insgesamt die folgende Topologie aus Abbildung \ref{fig:Grundl
 
 Dieses KNN stellt ein solides Grundkonstrukt dar, das in der Umsetzungsphase noch weiter optimiert werden kann.
 
-\subsection{Wahl des Lernverfahrens} 
-\label{subsection:Wahl des Lernverfahrens}
+\section{Wahl des Lernverfahrens} 
+\label{section:Wahl des Lernverfahrens}
 
 Grundsätzlich existieren drei Lernverfahren, wie ein KNN trainiert werden kann. In diesem Abschnitt werden alle drei Lernverfahren näher vorgestellt und anschließend eine begründete Auswahl des gewählten Verfahrens getroffen\footnote{\Vgl\Zitat{Laemmel}}.
 
