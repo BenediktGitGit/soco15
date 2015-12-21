@@ -2,11 +2,11 @@
 \defcounter {refsection}{0}\relax 
 \select@language {ngerman}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{III}{chapter*.2}
+\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{II}{chapter*.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{IV}{chapter*.3}
+\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{III}{chapter*.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Formelverzeichnis}{V}{chapter*.4}
+\contentsline {chapter}{\nonumberline Formelverzeichnis}{IV}{chapter*.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}
 \defcounter {refsection}{0}\relax 
@@ -20,44 +20,32 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.1.1}Grundidee}{4}{subsection.2.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.2}Mockup}{6}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.2}Das Neuroph Framework}{6}{subsection.2.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.3}Das Neuroph Framework}{7}{subsection.2.1.3}
+\contentsline {section}{\numberline {2.2}Konzeption des k\IeC {\"u}nstlichen neuronalen Netzes}{7}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Konzeption des k\IeC {\"u}nstlichen neuronalen Netzes}{9}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Wahl des Netztyps}{8}{subsection.2.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}Wahl des Netztyps}{9}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Wahl der Topologie}{12}{subsection.2.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.2}Wahl der Topologie}{14}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Wahl des Lernverfahrens}{14}{subsection.2.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.3}Wahl des Lernverfahrens}{16}{subsection.2.2.3}
+\contentsline {chapter}{\numberline {3}Umsetzung}{15}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Umsetzung}{17}{chapter.3}
+\contentsline {section}{\numberline {3.1}Umsetzung der Anwendung}{15}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Umsetzung der Anwendung}{17}{section.3.1}
+\contentsline {section}{\numberline {3.2}Umsetzung des k\IeC {\"u}nstlichen neuronalen Netzes mit Neurophstudio}{17}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Umsetzung des k\IeC {\"u}nstlichen neuronalen Netzes mit Neurophstudio}{18}{section.3.2}
+\contentsline {section}{\numberline {3.3}Optimierung des k\IeC {\"u}nstlichen neuronalen Netzes}{18}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Optimierung des k\IeC {\"u}nstlichen neuronalen Netzes}{20}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Optimierung der Topologie}{18}{subsection.3.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.1}Optimierung der Topologie}{20}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Wahl der optimalen Transferfunktion}{19}{subsection.3.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.2}Wahl der optimalen Transferfunktion}{21}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Wahl der optimalen Lernregel}{20}{subsection.3.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.3}Wahl der optimalen Lernregel}{22}{subsection.3.3.3}
+\contentsline {section}{\numberline {3.4}Die endg\IeC {\"u}ltigen k\IeC {\"u}nstlichen neuronalen Netze}{23}{section.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Die endg\IeC {\"u}ltigen k\IeC {\"u}nstlichen neuronalen Netze}{25}{section.3.4}
+\contentsline {chapter}{\numberline {4}Analyse der k\IeC {\"u}nstlichen neuronalen Netze}{25}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}Zusammenf\IeC {\"u}hrung der Komponenten}{26}{section.3.5}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Beschreibung der Anwendung}{29}{chapter.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Architektur der Anwendung}{29}{section.4.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Elemente der GUI}{30}{section.4.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Analyse der k\IeC {\"u}nstlichen neuronalen Netze}{33}{chapter.5}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Zusammenfassung und Fazit}{35}{chapter.6}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Literatur- und Quellenverzeichnis}{36}{chapter*.5}
+\contentsline {chapter}{\numberline {5}Zusammenfassung und Fazit}{27}{chapter.5}
