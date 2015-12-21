@@ -6,29 +6,35 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Abb - nicht lineare}}{4}{figure.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Bildliche Erl\IeC {\"a}uterung der linearen Separierbarkeit}}{8}{figure.3.1}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Abb - lineare}}{4}{figure.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Test-Perzeptron sowie der dazugeh\IeC {\"o}rige MSE}}{11}{figure.3.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Test-Perzeptron}}}{11}{figure.3.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {MSE des Perzeptrons}}}{11}{figure.3.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Grundlegendes Konzept des KNN}}{13}{figure.3.3}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Sequenzdiagramm}}{6}{figure.2.3}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Die Sigmoide Funktion und die Tanh Funktion im Vergleich}}{30}{figure.4.1}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Bildliche Erl\IeC {\"a}uterung der linearen Separierbarkeit}}{11}{figure.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Sigmoid}}}{30}{figure.4.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Test-Perzeptron sowie der dazugeh\IeC {\"o}rige MSE}}{14}{figure.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Tanh}}}{30}{figure.4.1}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Test-Perzeptron}}}{14}{figure.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Visualisierung des Resilient Propagation Algorithmus}}{33}{figure.4.2}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {MSE des Perzeptrons}}}{14}{figure.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Das endg\IeC {\"u}ltige KNN f\IeC {\"u}r alle B\IeC {\"o}rsenkurse}}{35}{figure.4.3}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Grundlegendes Konzept des KNN}}{16}{figure.3.3}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Die Sigmoide Funktion und die Tanh Funktion im Vergleich}}{33}{figure.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Sigmoid}}}{33}{figure.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Tanh}}}{33}{figure.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Visualisierung des Resilient Propagation Algorithmus}}{35}{figure.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Das endg\IeC {\"u}ltige KNN f\IeC {\"u}r alle B\IeC {\"o}rsenkurse}}{37}{figure.4.3}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
