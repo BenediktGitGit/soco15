@@ -9,40 +9,38 @@
 \contentsline {chapter}{\numberline {2}Konzeption}{3}{chapter.2}
 \contentsline {section}{\numberline {2.1}Konzeption der Anwendung}{3}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Grundidee}{3}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Mockup}{5}{subsection.2.1.2}
-\contentsline {subsection}{\numberline {2.1.3}Systemlandschaft der Anwendung}{5}{subsection.2.1.3}
-\contentsline {section}{\numberline {2.2}Apache Tomcat}{5}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Anwendungsumfeld}{5}{subsection.2.2.1}
-\contentsline {subparagraph}{\nonumberline Quandl Data-Provider}{5}{section*.6}
-\contentsline {subparagraph}{\nonumberline Stockmarket-Webapp}{5}{section*.7}
-\contentsline {subparagraph}{\nonumberline Visualisierung}{6}{section*.8}
-\contentsline {section}{\numberline {2.3}Wahl der Technologie}{6}{section.2.3}
-\contentsline {section}{\numberline {2.4}Apache Maven}{6}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Frameworks}{9}{subsection.2.4.1}
-\contentsline {subparagraph}{\nonumberline Spring Boot}{9}{section*.9}
-\contentsline {subparagraph}{\nonumberline Dependency Injection}{9}{section*.10}
-\contentsline {subsubsection}{\nonumberline Annoationen}{10}{section*.11}
-\contentsline {subsubsection}{\nonumberline Annotationen am Bespiel von Rest-Kommunikation}{10}{section*.12}
-\contentsline {subparagraph}{\nonumberline Dynamik mit c3js Framework}{10}{section*.13}
-\contentsline {subparagraph}{\nonumberline Layouts und CSS Bootstrap}{10}{section*.14}
-\contentsline {subsection}{\numberline {2.4.2}Das Neuroph Framework}{10}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Neuroph API}{10}{subsection.2.4.3}
-\contentsline {section}{\numberline {2.5}Konzeption des k\IeC {\"u}nstlichen neuronalen Netzes}{10}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}Wahl des Netztyps}{10}{subsection.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}Wahl der Topologie}{15}{subsection.2.5.2}
-\contentsline {subsection}{\numberline {2.5.3}Wahl des Lernverfahrens}{17}{subsection.2.5.3}
-\contentsline {chapter}{\numberline {3}Umsetzung}{18}{chapter.3}
-\contentsline {section}{\numberline {3.1}Umsetzung der Anwendung}{18}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Oberfl\IeC {\"a}che}{18}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Dataset und AnnNames ajax}{20}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Anfrage}{20}{subsection.3.1.3}
-\contentsline {subsection}{\numberline {3.1.4}Anfragestellung}{20}{subsection.3.1.4}
-\contentsline {subsection}{\numberline {3.1.5}Antwort-Erstellung}{20}{subsection.3.1.5}
-\contentsline {subsection}{\numberline {3.1.6}Antwort-Verarbeitung}{26}{subsection.3.1.6}
-\contentsline {subsection}{\numberline {3.1.7}app.properties}{27}{subsection.3.1.7}
-\contentsline {section}{\numberline {3.2}Umsetzung des k\IeC {\"u}nstlichen neuronalen Netzes mit Neuroph}{28}{section.3.2}
+\contentsline {subsection}{\numberline {2.1.2}Mockup}{4}{subsection.2.1.2}
+\contentsline {subparagraph}{\nonumberline Quandl Data-Provider}{4}{section*.6}
+\contentsline {subparagraph}{\nonumberline Stockmarket-Webapp}{4}{section*.7}
+\contentsline {subparagraph}{\nonumberline Visualisierung}{5}{section*.8}
+\contentsline {section}{\numberline {2.2}Technologie}{5}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Frameworks}{5}{subsection.2.2.1}
+\contentsline {subparagraph}{\nonumberline Spring Boot}{5}{section*.9}
+\contentsline {subparagraph}{\nonumberline Dependency Injection}{7}{section*.10}
+\contentsline {subsubsection}{\nonumberline Annoationen}{7}{section*.11}
+\contentsline {subsubsection}{\nonumberline Annotationen am Bespiel von Rest-Kommunikation}{7}{section*.12}
+\contentsline {subparagraph}{\nonumberline Dynamik mit c3js Framework}{7}{section*.13}
+\contentsline {subparagraph}{\nonumberline Layouts und CSS Bootstrap}{7}{section*.14}
+\contentsline {subsection}{\numberline {2.2.2}Das Neuroph Framework}{7}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Neuroph API}{7}{subsection.2.2.3}
+\contentsline {section}{\numberline {2.3}Apache Maven}{7}{section.2.3}
+\contentsline {section}{\numberline {2.4}Konzeption des k\IeC {\"u}nstlichen neuronalen Netzes}{8}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Wahl des Netztyps}{8}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Wahl der Topologie}{12}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Wahl des Lernverfahrens}{14}{subsection.2.4.3}
+\contentsline {chapter}{\numberline {3}Umsetzung}{15}{chapter.3}
+\contentsline {section}{\numberline {3.1}Umsetzung der Anwendung}{15}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Oberfl\IeC {\"a}che}{15}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Dataset und AnnNames ajax}{17}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Anfrage}{17}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}Anfragestellung}{17}{subsection.3.1.4}
+\contentsline {subsection}{\numberline {3.1.5}Antwort-Erstellung}{17}{subsection.3.1.5}
+\contentsline {subsection}{\numberline {3.1.6}Antwort-Verarbeitung}{23}{subsection.3.1.6}
+\contentsline {subsection}{\numberline {3.1.7}Konfigurationsdatei der Stockmarket-Webapp}{24}{subsection.3.1.7}
+\contentsline {subsection}{\numberline {3.1.8}Maven POM der Anwendung}{25}{subsection.3.1.8}
+\contentsline {section}{\numberline {3.2}Umsetzung des k\IeC {\"u}nstlichen neuronalen Netzes mit Neuroph}{27}{section.3.2}
 \contentsline {section}{\numberline {3.3}Optimierung des k\IeC {\"u}nstlichen neuronalen Netzes}{28}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Optimierung der Topologie}{29}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.1}Optimierung der Topologie}{28}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}Wahl der optimalen Transferfunktion}{29}{subsection.3.3.2}
 \contentsline {subsection}{\numberline {3.3.3}Wahl der optimalen Lernregel}{30}{subsection.3.3.3}
 \contentsline {subsection}{\numberline {3.3.4}Wahl der optimalen Lernrate}{31}{subsection.3.3.4}
