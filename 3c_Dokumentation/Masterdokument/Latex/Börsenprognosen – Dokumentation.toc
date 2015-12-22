@@ -16,31 +16,31 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}Konzeption der Anwendung}{3}{chapter.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.0.1}Grundidee}{3}{subsection.2.0.1}
+\contentsline {section}{\numberline {2.1}Grundidee}{3}{section.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subparagraph}{\nonumberline Quandl Data-Provider}{4}{section*.5}
+\contentsline {paragraph}{\nonumberline Quandl Data-Provider}{4}{section*.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subparagraph}{\nonumberline Stockmarket-Webapp}{4}{section*.6}
+\contentsline {paragraph}{\nonumberline Stockmarket-Webapp}{4}{section*.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subparagraph}{\nonumberline Visualisierung}{5}{section*.7}
+\contentsline {paragraph}{\nonumberline Visualisierung}{5}{section*.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Technologie}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}Technologie}{5}{section.2.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\nonumberline Rest-Kommunikation}{5}{section*.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.1}Frameworks}{7}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.2.1}Frameworks}{7}{subsection.2.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subparagraph}{\nonumberline Spring Boot}{7}{section*.9}
+\contentsline {paragraph}{\nonumberline Spring Boot}{7}{section*.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subparagraph}{\nonumberline Dependency Injection}{7}{section*.10}
+\contentsline {paragraph}{\nonumberline Dependency Injection}{7}{section*.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline Annoationen}{7}{section*.11}
+\contentsline {subsection}{\numberline {2.2.2}Annotationen}{7}{subsection.2.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subparagraph}{\nonumberline Javascript Bibliothek - C3js}{8}{section*.12}
+\contentsline {paragraph}{\nonumberline Javascript Bibliothek - C3js}{8}{section*.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {subparagraph}{\nonumberline Layouts und CSS Bootstrap}{8}{section*.13}
+\contentsline {paragraph}{\nonumberline Layouts und CSS Bootstrap}{8}{section*.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Apache Maven}{8}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Apache Maven}{8}{subsection.2.2.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Konzeption des k\IeC {\"u}nstlichen neuronalen Netzes}{10}{chapter.3}
 \defcounter {refsection}{0}\relax 
@@ -70,7 +70,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.1.8}Maven POM der Anwendung}{28}{subsection.4.1.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Umsetzung des k\IeC {\"u}nstlichen neuronalen Netzes}{30}{section.4.2}
+\contentsline {section}{\numberline {4.2}Umsetzung des k\IeC {\"u}nstlichen neuronalen Netzes}{31}{section.4.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.3}Optimierung des k\IeC {\"u}nstlichen neuronalen Netzes}{32}{section.4.3}
 \defcounter {refsection}{0}\relax 
@@ -80,10 +80,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.3.3}Wahl der optimalen Lernregel}{34}{subsection.4.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Die endg\IeC {\"u}ltigen k\IeC {\"u}nstlichen neuronalen Netze}{36}{section.4.4}
+\contentsline {section}{\numberline {4.4}Die endg\IeC {\"u}ltigen k\IeC {\"u}nstlichen neuronalen Netze}{37}{section.4.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Analyse der k\IeC {\"u}nstlichen neuronalen Netze}{38}{chapter.5}
+\contentsline {chapter}{\numberline {5}Analyse der k\IeC {\"u}nstlichen neuronalen Netze}{39}{chapter.5}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {6}Zusammenfassung und Fazit}{40}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Literatur- und Quellenverzeichnis}{41}{chapter*.14}
+\contentsline {chapter}{\nonumberline Literatur- und Quellenverzeichnis}{41}{chapter*.13}

@@ -5,30 +5,31 @@
 \BOOKMARK [1][-]{section.1.1}{Motivation}{chapter.1}% 5
 \BOOKMARK [1][-]{section.1.2}{Ziel der Arbeit}{chapter.1}% 6
 \BOOKMARK [0][-]{chapter.2}{Konzeption der Anwendung}{}% 7
-\BOOKMARK [1][-]{subsection.2.0.1}{Grundidee}{chapter.2}% 8
-\BOOKMARK [1][-]{section.2.1}{Technologie}{chapter.2}% 9
-\BOOKMARK [2][-]{subsection.2.1.1}{Frameworks}{section.2.1}% 10
-\BOOKMARK [1][-]{section.2.2}{Apache Maven}{chapter.2}% 11
-\BOOKMARK [0][-]{chapter.3}{Konzeption des k\374nstlichen neuronalen Netzes}{}% 12
-\BOOKMARK [1][-]{section.3.1}{Wahl des Netztyps}{chapter.3}% 13
-\BOOKMARK [1][-]{section.3.2}{Wahl der Topologie}{chapter.3}% 14
-\BOOKMARK [1][-]{section.3.3}{Wahl des Lernverfahrens}{chapter.3}% 15
-\BOOKMARK [0][-]{chapter.4}{Umsetzung}{}% 16
-\BOOKMARK [1][-]{section.4.1}{Umsetzung der Anwendung}{chapter.4}% 17
-\BOOKMARK [2][-]{subsection.4.1.1}{Oberfl\344che}{section.4.1}% 18
-\BOOKMARK [2][-]{subsection.4.1.2}{Dataset und AnnNames ajax}{section.4.1}% 19
-\BOOKMARK [2][-]{subsection.4.1.3}{Anfrage}{section.4.1}% 20
-\BOOKMARK [2][-]{subsection.4.1.4}{Anfragestellung}{section.4.1}% 21
-\BOOKMARK [2][-]{subsection.4.1.5}{Antwort-Erstellung}{section.4.1}% 22
-\BOOKMARK [2][-]{subsection.4.1.6}{Antwort-Verarbeitung}{section.4.1}% 23
-\BOOKMARK [2][-]{subsection.4.1.7}{Konfigurationsdatei der Stockmarket-Webapp}{section.4.1}% 24
-\BOOKMARK [2][-]{subsection.4.1.8}{Maven POM der Anwendung}{section.4.1}% 25
-\BOOKMARK [1][-]{section.4.2}{Umsetzung des k\374nstlichen neuronalen Netzes}{chapter.4}% 26
-\BOOKMARK [1][-]{section.4.3}{Optimierung des k\374nstlichen neuronalen Netzes}{chapter.4}% 27
-\BOOKMARK [2][-]{subsection.4.3.1}{Optimierung der Topologie}{section.4.3}% 28
-\BOOKMARK [2][-]{subsection.4.3.2}{Wahl der optimalen Transferfunktion}{section.4.3}% 29
-\BOOKMARK [2][-]{subsection.4.3.3}{Wahl der optimalen Lernregel}{section.4.3}% 30
-\BOOKMARK [1][-]{section.4.4}{Die endg\374ltigen k\374nstlichen neuronalen Netze}{chapter.4}% 31
-\BOOKMARK [0][-]{chapter.5}{Analyse der k\374nstlichen neuronalen Netze}{}% 32
-\BOOKMARK [0][-]{chapter.6}{Zusammenfassung und Fazit}{}% 33
-\BOOKMARK [0][-]{chapter*.14}{Literatur- und Quellenverzeichnis}{}% 34
+\BOOKMARK [1][-]{section.2.1}{Grundidee}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.2}{Technologie}{chapter.2}% 9
+\BOOKMARK [2][-]{subsection.2.2.1}{Frameworks}{section.2.2}% 10
+\BOOKMARK [2][-]{subsection.2.2.2}{Annotationen}{section.2.2}% 11
+\BOOKMARK [2][-]{subsection.2.2.3}{Apache Maven}{section.2.2}% 12
+\BOOKMARK [0][-]{chapter.3}{Konzeption des k\374nstlichen neuronalen Netzes}{}% 13
+\BOOKMARK [1][-]{section.3.1}{Wahl des Netztyps}{chapter.3}% 14
+\BOOKMARK [1][-]{section.3.2}{Wahl der Topologie}{chapter.3}% 15
+\BOOKMARK [1][-]{section.3.3}{Wahl des Lernverfahrens}{chapter.3}% 16
+\BOOKMARK [0][-]{chapter.4}{Umsetzung}{}% 17
+\BOOKMARK [1][-]{section.4.1}{Umsetzung der Anwendung}{chapter.4}% 18
+\BOOKMARK [2][-]{subsection.4.1.1}{Oberfl\344che}{section.4.1}% 19
+\BOOKMARK [2][-]{subsection.4.1.2}{Dataset und AnnNames ajax}{section.4.1}% 20
+\BOOKMARK [2][-]{subsection.4.1.3}{Anfrage}{section.4.1}% 21
+\BOOKMARK [2][-]{subsection.4.1.4}{Anfragestellung}{section.4.1}% 22
+\BOOKMARK [2][-]{subsection.4.1.5}{Antwort-Erstellung}{section.4.1}% 23
+\BOOKMARK [2][-]{subsection.4.1.6}{Antwort-Verarbeitung}{section.4.1}% 24
+\BOOKMARK [2][-]{subsection.4.1.7}{Konfigurationsdatei der Stockmarket-Webapp}{section.4.1}% 25
+\BOOKMARK [2][-]{subsection.4.1.8}{Maven POM der Anwendung}{section.4.1}% 26
+\BOOKMARK [1][-]{section.4.2}{Umsetzung des k\374nstlichen neuronalen Netzes}{chapter.4}% 27
+\BOOKMARK [1][-]{section.4.3}{Optimierung des k\374nstlichen neuronalen Netzes}{chapter.4}% 28
+\BOOKMARK [2][-]{subsection.4.3.1}{Optimierung der Topologie}{section.4.3}% 29
+\BOOKMARK [2][-]{subsection.4.3.2}{Wahl der optimalen Transferfunktion}{section.4.3}% 30
+\BOOKMARK [2][-]{subsection.4.3.3}{Wahl der optimalen Lernregel}{section.4.3}% 31
+\BOOKMARK [1][-]{section.4.4}{Die endg\374ltigen k\374nstlichen neuronalen Netze}{chapter.4}% 32
+\BOOKMARK [0][-]{chapter.5}{Analyse der k\374nstlichen neuronalen Netze}{}% 33
+\BOOKMARK [0][-]{chapter.6}{Zusammenfassung und Fazit}{}% 34
+\BOOKMARK [0][-]{chapter*.13}{Literatur- und Quellenverzeichnis}{}% 35
