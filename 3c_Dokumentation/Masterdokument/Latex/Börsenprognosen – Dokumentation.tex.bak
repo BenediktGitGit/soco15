@@ -48,6 +48,9 @@
 %Konzepton einlesen
 \input{Inhalt/KonzeptionAnwendung}
 
+%Technologie einlesen
+\input{Inhalt/Technologie}
+
 %Konzepton einlesen
 \input{Inhalt/KonzeptionKNN}
 

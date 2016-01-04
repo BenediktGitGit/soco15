@@ -18,72 +18,70 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.1}Grundidee}{3}{section.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Quandl Data-Provider}{4}{section*.5}
+\contentsline {subsection}{\numberline {2.1.1}Quandl Data-Provider}{3}{subsection.2.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Stockmarket-Webapp}{4}{section*.6}
+\contentsline {subsection}{\numberline {2.1.2}Stockmarket-Webapp}{4}{subsection.2.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Visualisierung}{5}{section*.7}
+\contentsline {subsection}{\numberline {2.1.3}Visualisierung}{5}{subsection.2.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Technologie}{5}{section.2.2}
+\contentsline {section}{\numberline {2.2}Architektur}{5}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline Rest-Kommunikation}{5}{section*.8}
+\contentsline {chapter}{\numberline {3}Technologie}{7}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}Frameworks}{7}{subsection.2.2.1}
+\contentsline {section}{\numberline {3.1}Rest-Kommunikation}{7}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Spring Boot}{7}{section*.9}
+\contentsline {section}{\numberline {3.2}Frameworks}{7}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Dependency Injection}{7}{section*.10}
+\contentsline {subsection}{\numberline {3.2.1}Spring Boot}{7}{subsection.3.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.2}Annotationen}{7}{subsection.2.2.2}
+\contentsline {subsubsection}{\nonumberline Dependency Injection}{8}{section*.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Javascript Bibliothek - C3js}{8}{section*.11}
+\contentsline {subsubsection}{\nonumberline Annoationen}{8}{section*.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\nonumberline Layouts und CSS Bootstrap}{8}{section*.12}
+\contentsline {subsection}{\numberline {3.2.2}Javascript Bibliothek - C3js}{9}{subsection.3.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.3}Apache Maven}{8}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {3.2.3}CSS Bootstrap}{9}{subsection.3.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Konzeption des k\IeC {\"u}nstlichen neuronalen Netzes}{10}{chapter.3}
+\contentsline {section}{\numberline {3.3}Apache Maven}{9}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Wahl des Netztyps}{10}{section.3.1}
+\contentsline {chapter}{\numberline {4}Konzeption des k\IeC {\"u}nstlichen neuronalen Netzes}{11}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Wahl der Topologie}{15}{section.3.2}
+\contentsline {section}{\numberline {4.1}Wahl des Netztyps}{11}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Wahl des Lernverfahrens}{17}{section.3.3}
+\contentsline {section}{\numberline {4.2}Wahl der Topologie}{16}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Umsetzung}{18}{chapter.4}
+\contentsline {section}{\numberline {4.3}Wahl des Lernverfahrens}{18}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Umsetzung der Anwendung}{18}{section.4.1}
+\contentsline {chapter}{\numberline {5}Umsetzung}{19}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.1}Oberfl\IeC {\"a}che}{18}{subsection.4.1.1}
+\contentsline {section}{\numberline {5.1}Umsetzung der Anwendung}{19}{section.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.2}Dataset und AnnNames ajax}{20}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {5.1.1}Oberfl\IeC {\"a}che}{19}{subsection.5.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.3}Anfrage}{20}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {5.1.2}Anfrage}{21}{subsection.5.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.4}Anfragestellung}{20}{subsection.4.1.4}
+\contentsline {subparagraph}{\nonumberline Anfragestellung}{21}{section*.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.5}Antwort-Erstellung}{20}{subsection.4.1.5}
+\contentsline {subparagraph}{\nonumberline Antwort-Erstellung}{21}{section*.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.6}Antwort-Verarbeitung}{26}{subsection.4.1.6}
+\contentsline {subparagraph}{\nonumberline Antwort-Verarbeitung}{27}{section*.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.7}Konfigurationsdatei der Stockmarket-Webapp}{27}{subsection.4.1.7}
+\contentsline {subsection}{\numberline {5.1.3}Maven POM der Anwendung}{28}{subsection.5.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.8}Maven POM der Anwendung}{28}{subsection.4.1.8}
+\contentsline {section}{\numberline {5.2}Umsetzung des k\IeC {\"u}nstlichen neuronalen Netzes}{31}{section.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Umsetzung des k\IeC {\"u}nstlichen neuronalen Netzes}{31}{section.4.2}
+\contentsline {section}{\numberline {5.3}Optimierung des k\IeC {\"u}nstlichen neuronalen Netzes}{32}{section.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Optimierung des k\IeC {\"u}nstlichen neuronalen Netzes}{32}{section.4.3}
+\contentsline {subsection}{\numberline {5.3.1}Optimierung der Topologie}{33}{subsection.5.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.1}Optimierung der Topologie}{32}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Wahl der optimalen Transferfunktion}{33}{subsection.5.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.2}Wahl der optimalen Transferfunktion}{33}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Wahl der optimalen Lernregel}{34}{subsection.5.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.3}Wahl der optimalen Lernregel}{34}{subsection.4.3.3}
+\contentsline {section}{\numberline {5.4}Die endg\IeC {\"u}ltigen k\IeC {\"u}nstlichen neuronalen Netze}{37}{section.5.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Die endg\IeC {\"u}ltigen k\IeC {\"u}nstlichen neuronalen Netze}{37}{section.4.4}
+\contentsline {chapter}{\numberline {6}Analyse der k\IeC {\"u}nstlichen neuronalen Netze}{39}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Analyse der k\IeC {\"u}nstlichen neuronalen Netze}{39}{chapter.5}
+\contentsline {chapter}{\numberline {7}Zusammenfassung und Fazit}{43}{chapter.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Zusammenfassung und Fazit}{40}{chapter.6}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Literatur- und Quellenverzeichnis}{41}{chapter*.13}
+\contentsline {chapter}{\nonumberline Literatur- und Quellenverzeichnis}{44}{chapter*.10}
